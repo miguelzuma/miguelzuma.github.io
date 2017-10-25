@@ -1,0 +1,172 @@
+<HTML lang=en>
+
+<HEAD>
+<TITLE>hi_class</TITLE>
+<base href="http://www.thphys.uni-heidelberg.de/~zumalacarregui/" />
+
+
+<link rel="stylesheet" type="text/css" href="./css/mystyle.css" />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38788271-2', 'uni-heidelberg.de');
+  ga('send', 'pageview');
+
+</script>
+
+</HEAD>
+
+<BODY  text="#000000" />
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<h1 align="center"> 
+<font color=#39e600 face="courier" size=6>
+Horndeski in the Cosmic Linear <br> Anisotropy Solving System 
+</font>
+</h1>
+
+<center>
+ <img src="imgs/hi_class.gif" title="the hi_class code" width="600" HSPACE=25 VSPACE=10>
+</center>
+
+<h6 align="center"> 
+<font color=#39e600 face="courier" size=5>
+M. Zumalacarregui, E. Bellini, <br> I. Sawicki, J. Lesgourgues, P. Ferreira
+</font>
+</h6>
+
+<h4> 
+The Science
+</h4>
+
+<p>
+<tt>hi_class</tt> implements Horndeski's theory in the modern <a href="http://class-code.net/"> Cosmic Linear Anisotropy Solving System</a>. It can be used to compute any linear observable in seconds, including cosmological distances, CMB, matter power and number count spectra.
+<tt>hi_class</tt> can be readily interfaced with <a href="http://monte-python.readthedocs.org/en/latest/"> Monte Python</a> to test Gravity and Dark Energy models.
+
+<p>
+Horndeski is the most general scalar-tensor theory described by second-order equations of motion, and contains many well known models, including (but by no means limited to) covariant Galileons, Brans-Dicke, f(R), chameleons, k-essence and quintesssence. <tt>hi_class</tt> relies on a reformulation of the Effective Field Theory for Dark Energy developed by E. Bellini and I. Sawicki (see <a href="<a href="http://inspirehep.net/record/1290333"> JCAP 1407 (2014) 050</a>).
+
+<p> The publicly available version (<tt>hi_class</tt> teaser) is presented and described in:
+<ul>
+<li> <i> <tt>hi_class:</tt> Horndeski in the Cosmic Linear Anisotropy Solving System </i>
+<br> M. Zumalacarregui, E. Bellini, I. Sawicki, J. Lesgourgues, P. Ferreira
+ <a href="http://inspirehep.net/record/1462237" target ="_blank">  1605.06102 </a>
+</li>
+</ul>
+
+<p> <tt>hi_class</tt> has been used to obtain results in the following publications:
+<ul>
+<li> <i> Nonlinear evolution of the BAO scale in alternative theories of gravity </i>
+ <br> E. Bellini, M. Zumalacarregui
+ <a href="http://inspirehep.net/record/1370110" target ="_blank">  PRD92 (2015) 063522 </a>
+</li>
+<li> <i> Constraints on deviations from LCDM within Horndeski gravity </i>
+<br> E. Bellini, A. Cuesta, R. Jimenez, L. Verde 
+ <a href="http://inspirehep.net/record/1394845" target ="_blank"> JCAP 1602 (2016) 053 </a>
+</li>
+<li> <i> Gravity at the horizon: on relativistic effects, CMB-LSS correlations and ultra-large scales in Horndeski's theory </i>
+ J. Renk, M. Zumalacarregui, F. Montanari
+ <a href="http://inspirehep.net/record/1445097" target ="_blank"> JCAP 1607 (2016) 040 </a>
+</li>
+<li> <i> The Observational Future of Cosmological Scalar-Tensor Theories </i>
+<br>  D. Alonso, E. Bellini, P. G. Ferreira, M. Zumalacarregui
+ <a href="http://inspirehep.net/record/1495006" target ="_blank"> PRD95 (2017) 063502 </a>
+</li>
+<li> <i> Galileon Gravity in Light of ISW, CMB, BAO and H0 data </i>
+<br>  J. Renk, M. Zumalacarregui, F. Montanari, A. Barreira
+ <a href="http://inspirehep.net/record/1609059" target ="_blank"> 1707.02263 </a>
+</li>
+<li> <i> A comparison of Einstein-Boltzmann solvers for testing General Relativity </i>
+<br>  E. Bellini <it> et al. </it>
+ <a href="http://inspirehep.net/record/1625713" target ="_blank"> 1709.09135 </a>
+</li>
+</ul>
+
+
+<h4> 
+The Code
+</h4>
+
+<p> <tt> hi_class</tt> computes the cosmological predictions of alternative theories of gravity. The code solves the linear equations starting deep in the radiation era, and can compute any cosmological observable, including (but not limited to) cosmological distances, the matter power spectrum, Cosmic Microwave Background temperature and polarization, as well as their correlation with the matter distribution. The publicly available version incorporates parameterized models based on the Effective Field Theory of Dark Energy.
+
+<p> <tt> hi_class</tt> has been tested for a range of models against several codes in a dedicated paper
+ <a  href="http://inspirehep.net/record/1625713" target ="_blank"> <it> A comparison of Einstein-Boltzmann solvers for testing General Relativity </i> </a>. The codes validated include <a href="http://wwwhome.lorentz.leidenuniv.nl/~hu/codes/"> EFTCAMB </a>, <a href="http://www.cita.utoronto.ca/~zqhuang/coop/"> COOP </a> and the Galileon code developed by <a href="http://inspirehep.net/record/1298787"> Barreira <i> et al.</i></a> (based on CAMB). The results agree within 0.1% for CMB and matter power spectra, as good as for base CLASS/CAMB using default precision parameters (at low multipoles the agreement is within 0.5%, well within cosmic variance). The achieved precision is sufficient for tests of gravity with next-generation surveys.
+<br>
+
+<center>
+ <img src="imgs/CAMB_compare_Cl_web_inverse.png" title="hi_class test 1" width="500" HSPACE=25 VSPACE=20 style="text-align:center;">
+</center>
+
+<h4> 
+Download
+</h4>
+<p> <tt>hi_class</tt> is freely available to the scientific community. If you use it in a publication/preprint please cite at least the <a href="http://inspirehep.net/record/896300" target ="_blank"> original CLASS paper </a> and 
+<ul>
+<li> <i> <tt>hi_class:</tt> Horndeski in the Cosmic Linear Anisotropy Solving System </i> 
+<br> M. Zumalacarregui, E. Bellini, I. Sawicki, J. Lesgourgues, P. Ferreira
+ <a href="https://arxiv.org/abs/1605.06102" target ="_blank"> 1605.06102 </a>
+</ul>
+<p> The code can be cloned from <a href="https://github.com/miguelzuma/hi_class_public"> the GitHub repository </a> 
+or <a href="https://github.com/miguelzuma/hi_class_public/archive/hi_class.zip"> downloaded</a> as a compressed file. To get started and find detailed information on the available models and code functionality please read the <tt>hi_class.ini</tt> file.
+
+<h4> 
+Resources
+</h4>
+
+<ul>
+<li> <tt>hi_class</tt> <a href="https://github.com/miguelzuma/hi_class_public/wiki" target ="_blank">
+ wiki on GitHub </a>
+<li> <tt>hi_class</tt> <a href="https://groups.google.com/d/forum/hi_class" target="_blank"> forum on Google groups </a>
+<li> <tt>hi_class</tt>  <a href="https://www.youtube.com/watch?v=R22XhKUwzX4" target ="_blank">
+Youtube channel </a> and <a href="https://www.youtube.com/watch?v=R22XhKUwzX4" target ="_blank"> introduction to the CLASS code</a>
+<li>  Slides from <a href="https://lesgourg.github.io/class-tour-Tokyo.html" target ="_blank"> the official CLASS tour</a>
+<li> Basics on <a href="hi_class/hc_MP_notes_IFT.pdf" target ="_blank"> CLASS, <tt> hi_class </tt> and Monte Python</a>
+<li> Exercises on <a href="hi_class/hi_class_exercises_IFT.pdf" target ="_blank"> CLASS/<tt>hi_class</tt> </a> and <a href="hi_class/montepython_exercises_IFT.pdf" target ="_blank"> Montepython </a> from the <a href="https://workshops.ift.uam-csic.es/cosmotools2017" target="_blank"> IFT School on Cosmology Tools </a>
+</ul>
+
+<h4> 
+The Team
+</h4>
+
+<p>
+<tt> hi_class</tt> is currently being developed by
+<ul>
+<li> <a href="https://www2.physics.ox.ac.uk/contacts/people/bellini" target ="_blank">
+Emilio Bellini </a> (main developer)
+<li> <a href="www.pedroferreira.co.uk" target ="_blank"> Pedro G. Ferreira </a>
+<li> <a href="https://lesgourg.github.io/" target ="_blank"> Julien Lesgourgues </a>
+<li> <a href="http://www.ceico.cz/team/researchers/ignacy-sawicki" target ="_blank"> Ignacy Sawicki </a>
+<li> <a href="http://www.miguelzumalacarregui.es" target ="_blank"> Miguel Zumalacarregui </a> (main developer)
+</li>
+</ul>
+<p> We are very grateful to Thomas Tram for his invaluable advice, Janina Renk for puting <tt> hi_class</tt> to work during her Master's thesis and Carlos Garcia-Garcia for his continuous work with the development version.
+
+<h4> 
+Contact
+</h4>
+<p>
+If you are interesing in using a beta version or for other inquiries about <tt> hi_class</tt> please contact emilio - bellini -- physics.ox.ac.uk or miguelzuma -- berkeley.edu
+
+<div align="center" class="fb-like" data-href="https://www.facebook.com/hiclasscode" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+
+
+<center>
+ <img src="imgs/Black_Dahlias_with_Yellow_Sky_Horndeski_2017_small.JPG" title=" Black Dahlias with Yellow Sky (Horndeski 2017)" width="800" HSPACE=25 VSPACE=20 style="text-align:center;">
+</center>
+
+
+
+</BODY>
