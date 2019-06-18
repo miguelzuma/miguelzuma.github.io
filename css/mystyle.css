@@ -22,6 +22,9 @@ a:hover {color: #00CCFF; text-decoration: bold}
 ul { font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 15px; }
 
+ol { font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px; }	
+	
 /* fonts*/
 p { 
 	font-family:Verdana, Arial, Helvetica, sans-serif;
@@ -50,4 +53,4 @@ h4 {
 	font-family:  Verdana, Arial, Helvetica, sans-serif;
 	font-size: 18px;
 	margin-left: 14px;
-}c
+}
