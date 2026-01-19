@@ -27,9 +27,10 @@ ol { font-family: Verdana, Arial, Helvetica, sans-serif;
 	
 /* fonts*/
 p { 
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size: 15px; 
-} 
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin: 0.3em 0;
+}
 
 h1 {
 	font-family:  Verdana, Arial, Helvetica, sans-serif;
@@ -54,3 +55,32 @@ h4 {
 	font-size: 18px;
 	margin-left: 14px;
 }
+
+.video-block { max-width: 700px; margin: 0 auto; text-align: center; }
+.video-block img { display: block; width: 100%; margin: 0 auto; }
+.video-caption { margin: 0.2em 0 0; font-style: italic; font-size: 0.9em; line-height: 1.1; }
+
+.video-figure{
+  max-width: 700px;
+  margin: 0.4em auto 0.3em;  /* top right/left bottom */
+  padding: 0;
+  text-align: center;        /* center caption */
+}
+
+.video-figure img{
+  display: block;            /* kills inline-image whitespace */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.video-caption{
+  margin: 0.15em 0 0;        /* tiny gap from image */
+  padding: 0;
+  font-style: italic;
+  font-family:  Verdana, Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.video-caption{ margin-top: 0.05em; }
