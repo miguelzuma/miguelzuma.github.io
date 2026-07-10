@@ -7,7 +7,7 @@ html {
 }
 
 body {
-	max-width: 45em;
+	max-width: 720px; /* was 45em; pinned in px so body font-size doesn't shrink the column */
 	width: auto;
 	margin: 0 auto;
 	padding: 0 1rem;
@@ -93,6 +93,20 @@ hr {
 	margin: 0.4em 1em 0.8em 0;
 }
 
+/* Header logo strip: single centered row on desktop, stacks on mobile */
+.logo-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 10px 18px;
+	margin: 12px 0 18px;
+}
+
+.logo-row img {
+	display: block;
+}
+
 /* Responsive video/embed wrapper: keeps 16:9 and scales with the column */
 .video {
 	position: relative;
@@ -132,4 +146,7 @@ hr {
 
 	/* Rein in headings' left indent on small screens */
 	h1, h2, h3, h4 { margin-left: 0; }
+
+	/* Stack the header logos vertically on narrow screens */
+	.logo-row { flex-direction: column; gap: 14px; }
 }
