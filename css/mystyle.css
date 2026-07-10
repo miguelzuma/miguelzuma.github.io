@@ -7,7 +7,7 @@ html {
 }
 
 body {
-	max-width: 720px; /* was 45em; pinned in px so body font-size doesn't shrink the column */
+	max-width: 820px; /* pinned in px so body font-size doesn't shrink the column */
 	width: auto;
 	margin: 0 auto;
 	padding: 0 1rem;
