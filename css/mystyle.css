@@ -24,7 +24,7 @@ body {
 /* Media never overflows its column. No global height:auto — logos are sized by
    their height attribute; content images are sized by width (height stays auto by
    default, so aspect ratio is preserved when max-width caps them on small screens). */
-img, iframe {
+img, iframe, video {
 	max-width: 100%;
 }
 
