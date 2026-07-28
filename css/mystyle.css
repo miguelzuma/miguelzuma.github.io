@@ -175,3 +175,23 @@ figcaption {
 	/* Stack the header logos vertically on narrow screens */
 	.logo-row { flex-direction: column; gap: 14px; }
 }
+
+/* Flashing color cycle for NEWS highlights */
+mark {
+	animation: news-flash 4s linear infinite;
+	border-radius: 3px;
+	padding: 0 3px;
+}
+
+@keyframes news-flash {
+	0%   { background-color: #ffe14d; } /* yellow */
+	25%  { background-color: #ffb3c6; } /* pink */
+	50%  { background-color: #9be7a4; } /* green */
+	75%  { background-color: #9fd0ff; } /* blue */
+	100% { background-color: #ffe14d; } /* back to yellow */
+}
+
+/* Respect users who prefer no motion */
+@media (prefers-reduced-motion: reduce) {
+	mark { animation: none; }
+}
