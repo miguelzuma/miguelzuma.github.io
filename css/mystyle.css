@@ -93,6 +93,31 @@ hr {
 	margin: 0.4em 1em 0.8em 0;
 }
 
+/* Inserted figures with a caption: a floated <figure> caps to the column on
+   small screens; the caption sits directly under the image, dimmed so it reads
+   as secondary to the body text. */
+figure {
+	margin: 0;
+	max-width: 100%;
+}
+
+figure.float-right, figure.float-left {
+	margin-bottom: 0.9em;
+}
+
+figure img {
+	display: block;
+	width: 100%;
+}
+
+figcaption {
+	margin-top: 0.35em;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #aaa;
+	text-align: left;
+}
+
 /* Header logo strip: single centered row on desktop, stacks on mobile */
 .logo-row {
 	display: flex;
