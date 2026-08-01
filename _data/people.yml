@@ -7,7 +7,8 @@
 #
 # Fields: name (required), stage (postdoc|phd|masters|undergrad -- groups the
 # Current members section and labels alumni rows), end (year the person left,
-# used to sort alumni chronologically; 0 when unknown),
+# used to sort alumni and visitors chronologically, newest first; for an
+# ongoing collaboration use the current year; 0 when unknown),
 # role, years, topic, url (personal page),
 # photo (path under /imgs/collaborators/), next (destination, alumni only),
 # incoming (true -> card shows a "starts <starts>" badge), starts.
@@ -104,42 +105,42 @@ current:
 
 visitors:
   - name: "Manish Tamta"
-    sortkey: "tamta"
+    end: 2026
     url: "https://inspirehep.net/authors/2797698"
     role: "PhD student, IISc Bangalore"
     years: "2025, 2026"
     topic: "Lensing diffraction and dark matter."
 
   - name: "Marienza Caldarola"
-    sortkey: "caldarola"
+    end: 2025
     url: "https://inspirehep.net/authors/2673999"
     role: "PhD student, IFT-UAM/CSIC"
     years: "2025"
     topic: "Simulation-based inference for lensing."
 
   - name: "Hanxi Wang"
-    sortkey: "wang"
+    end: 2024
     url: "https://inspirehep.net/literature?q=a%20Hanxi%20Wang"
     role: "PhD student, U. Oxford"
     years: "2024"
     topic: "Lensing of starlight by supermassive black-hole binaries."
 
   - name: "Martin Pijnenburg"
-    sortkey: "pijnenburg"
+    end: 2024
     url: "https://inspirehep.net/authors/2864691"
     role: "PhD student, U. Geneva"
     years: "2024"
     topic: "Collective diffraction effects."
 
   - name: "Luka Vujeva"
-    sortkey: "vujeva"
+    end: 2024
     url: "https://inspirehep.net/authors/2873304"
     role: "PhD student, U. Copenhagen"
     years: "2024"
     topic: "Strong lensing of gravitational waves."
 
   - name: "Marius Oancea"
-    sortkey: "oancea"
+    end: 2026
     url: "https://inspirehep.net/authors/1800686"
     role: "Postdoc, U. Vienna"
     years: "2021–"

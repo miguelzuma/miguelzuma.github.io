@@ -102,7 +102,7 @@ description: >-
     them on projects that led to joint publications.
   </p>
   <ul class="alumni-list">
-    {%- assign vis = site.data.people.visitors | sort_natural: "sortkey" %}
+    {%- assign vis = site.data.people.visitors | sort: "end" | reverse %}
     {%- for p in vis %}
     <li>
       <strong>{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</strong>
