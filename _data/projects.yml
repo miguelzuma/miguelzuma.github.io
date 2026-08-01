@@ -12,13 +12,20 @@ current:
     role: "Principal Investigator"
     flagship: true
     logo: "/imgs/GLOW_Extended_Logo_Full_Color_for_Dark_Backgrounds_RGB.png"
+    grant: "Grant agreement 101230608 · 60 months"
     summary: >-
-      GLOW builds the theory, methods and software needed to turn gravitational
-      lensing of waves into a precision probe of dark matter and compact
-      objects. It spans wave-optics modelling, statistical inference on
-      gravitational-wave catalogues, and the design of searches for
-      ground- and space-based detectors.
-    team: "Supports postdoctoral researchers, PhD students and the continued development of the GLoW code."
+      Gravitational waves and fast radio bursts are coherent: their phase
+      survives the journey, so a lens does not merely magnify them but distorts
+      their wavefront. GLOW builds the theory, methods and software to exploit
+      that. It will search for lensed events in LIGO–Virgo–KAGRA data, probe
+      dark-matter objects and cold-dark-matter halos with LISA, use fast radio
+      bursts to reach planet-scale lenses, and deliver a new class of tests of
+      general relativity and dark energy through lensed propagation.
+    work_packages:
+      - "WP1 — Wave-optics phenomena: microlensing and plasma-lensing theory"
+      - "WP2 — Discovering lensed GWs: microlensed waveforms, accelerated inference, populations"
+      - "WP3 — Fundamental physics: dark matter, GW propagation and dark energy"
+    team: "Three PhD students and four postdoctoral researchers, plus continued development of the GLoW code. All software and data products will be public."
     links:
       - text: "AEI press release"
         url: "https://www.aei.mpg.de/1359867/erc-consolidator-grant-for-miguel-zumalac-rregui"
@@ -47,16 +54,16 @@ current:
       - text: "Max Planck Annual Project 2024"
         url: "https://www.mpg.de/annualproject2024"
 
-  - acronym: "Ramón y Cajal"
-    title: "Ramón y Cajal programme, Atracción de Talento and RyC-MaX"
-    funder: "Spanish Research Agency, Comunidad de Madrid and CSIC"
+  - acronym: "Ramón y Cajal programme"
+    title: "Ramón y Cajal programme"
+    funder: "Spanish Research Agency and CSIC"
     dates: "2025–"
     role: "Fellow / Principal Investigator"
     summary: >-
       Three linked components of a single return-to-Spain programme: the Ramón y
       Cajal fellowship (ranked first in Astrophysics and second in Physics in the
-      2024 call), the regional Atracción de Talento award, and the CSIC RyC-MaX
-      supplement. Together they support the development of new methods to probe
+      2024 call), the accompanying Atracción de Talento award from the same
+      national agency, and the CSIC RyC-MaX supplement. Together they support the development of new methods to probe
       cosmology, astrophysics and fundamental physics.
     links: []
 
@@ -64,12 +71,13 @@ current:
     title: "Making Sense of the Gravitational-Wave Sky"
     funder: "European Research Council — Synergy Grant"
     dates: "ongoing"
-    role: "Senior collaborator"
+    role: "Senior collaborator (not PI)"
     summary: >-
       A multi-PI programme on the interpretation of the gravitational-wave sky.
-      My contribution concerns gravitational-wave lensing: modelling wave-optics
-      signatures and folding them into the population and inference machinery
-      the project develops.
+      Unlike the projects above, which I lead, here I take part as a senior
+      collaborator. My contribution concerns gravitational-wave lensing:
+      modelling wave-optics signatures and folding them into the population and
+      inference machinery the project develops.
     links:
       - text: "GWSky team page"
         url: "https://gwsky.org/people/"

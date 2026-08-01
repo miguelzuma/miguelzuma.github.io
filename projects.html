@@ -31,9 +31,16 @@ description: >-
 
     <p class="card-meta">
       {{ pr.funder }} &middot; {{ pr.dates }} &middot; <strong>{{ pr.role }}</strong>
+      {%- if pr.grant %}<br>{{ pr.grant }}{% endif %}
     </p>
 
     <p>{{ pr.summary }}</p>
+
+    {%- if pr.work_packages %}
+    <ul class="small">
+      {%- for wp in pr.work_packages %}<li>{{ wp }}</li>{% endfor %}
+    </ul>
+    {%- endif %}
 
     {%- if pr.team %}<p class="small">{{ pr.team }}</p>{% endif %}
     {%- if pr.note %}<p class="small"><em>{{ pr.note }}</em></p>{% endif %}
