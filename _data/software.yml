@@ -93,7 +93,7 @@ papers:
     description: >-
       Scripts and notebooks that regenerate the figures and numbers of the
       GW231123 lensing analysis, starting from the released posterior samples.
-    paper_text: "Goyal, Villarrubia-Rojo & Zumalacárregui, Across the Universe: GW231123 as a magnified and diffracted black hole merger"
+    paper_text: "Goyal, Villarrubia-Rojo & Zumalacárregui, Across the Universe: GW231123 as a magnified and diffracted black hole merger, ApJL (accepted)"
     paper_url: "https://inspirehep.net/literature/3094475"
     arxiv: "2512.17631"
     note: "Most scripts run from the Zenodo posterior samples; two require GLoW2, which is not yet public."
