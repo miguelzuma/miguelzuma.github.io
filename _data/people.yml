@@ -78,17 +78,19 @@ current:
     stage: masters
     role: "Master's student (LMU)"
     years: "2026"
-    topic: "Wave-optics lensing."
+    topic: "Quasi-periodic lensed starlight from supermassive black-hole binaries."
 
   - name: "Matteo Pagani"
     stage: masters
     role: "Master's student (co-supervised, U. Bologna)"
     years: "2026"
+    topic: "Weak lensing of gravitational waves, and the connection to Euclid."
 
   - name: "Louis Salimbeni"
     stage: masters
     role: "Master's student (co-supervised, ETH Zürich)"
     years: "2026"
+    topic: "Gravitational-wave propagation beyond general relativity."
 
 visitors:
   - name: "Manish Tamta"
