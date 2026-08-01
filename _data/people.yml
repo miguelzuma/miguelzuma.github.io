@@ -104,6 +104,92 @@ current:
     topic: "Gravitational-wave propagation beyond general relativity."
 
 visitors:
+  - name: "Zakaria Belkhadria"
+    url: "https://inspirehep.net/authors/2727354"
+    end: 2026
+    role: "COST CosmoVerse Short-Term Scientific Mission"
+    years: "2026"
+    topic: "Gravitational-wave dispersion as a probe of dark energy."
+
+  - name: "Macarena Lagos"
+    url: "https://inspirehep.net/authors/1507748"
+    end: 2025
+    role: "Professor, Universidad Andrés Bello, Santiago"
+    years: "2025"
+    topic: "Propagation and lensing of gravitational waves."
+
+  - name: "Zachary Slepian"
+    end: 2025
+    role: "Professor, University of Florida"
+    years: "2024, 2025"
+
+  - name: "Dylan Jow"
+    url: "https://inspirehep.net/authors/1912080"
+    end: 2024
+    role: "Postdoc, Stanford University"
+    years: "2024"
+    topic: "Wave-optics lensing of nanohertz gravitational-wave sources as a route to the Hubble constant."
+
+  - name: "Jenny Wagner"
+    url: "https://inspirehep.net/authors/1779043"
+    end: 2024
+    role: "Independent researcher"
+    years: "2024"
+
+  - name: "Charles Dalang"
+    url: "https://inspirehep.net/authors/1809345"
+    end: 2024
+    role: "Postdoc, Queen Mary University of London and ICG Portsmouth"
+    years: "2024"
+
+  - name: "Kieran Wood"
+    url: "https://inspirehep.net/authors/2653639"
+    end: 2024
+    role: "University of Nottingham"
+    years: "2024"
+
+  - name: "Uddeepta Deka"
+    url: "https://inspirehep.net/authors/2586041"
+    end: 2024
+    years: "2024"
+
+  - name: "Upala Mukhopadhyay"
+    url: "https://inspirehep.net/authors/1044823"
+    end: 2023
+    role: "Centre for Theoretical Physics, Jamia Millia Islamia"
+    years: "2023"
+
+  - name: "Parita Mehta"
+    end: 2023
+    role: "PhD student, Astronomical Observatory, University of Warsaw"
+    years: "2023"
+    topic: "Strong lensing of gravitational waves."
+
+  - name: "David Díaz-Guerra Sánchez"
+    url: "https://inspirehep.net/authors/3088465"
+    end: 2023
+    role: "Master's student, Universidad Complutense de Madrid"
+    years: "2023"
+    topic: "Gravitational signatures of fuzzy dark-matter halos, constraining the boson mass with pulsar timing arrays."
+
+  - name: "Hiroki Takeda"
+    url: "https://inspirehep.net/authors/1684306"
+    end: 2023
+    role: "Theoretical Astrophysics Group, Kyoto University"
+    years: "2023"
+
+  - name: "Luisa G. Jaime"
+    url: "https://inspirehep.net/authors/1258854"
+    end: 2022
+    role: "UNAM, Mexico"
+    years: "2022"
+
+  - name: "Julian Adamek"
+    url: "https://inspirehep.net/authors/1057360"
+    end: 2022
+    role: "Institute for Computational Science, University of Zurich"
+    years: "2020, 2022"
+
   - name: "Manish Tamta"
     end: 2026
     url: "https://inspirehep.net/authors/2797698"
@@ -140,10 +226,10 @@ visitors:
     topic: "Strong lensing of gravitational waves."
 
   - name: "Marius Oancea"
-    end: 2026
+    end: 2021
     url: "https://inspirehep.net/authors/1800686"
     role: "Postdoc, U. Vienna"
-    years: "2021–"
+    years: "2021"
     topic: "Gravitational spin-Hall effect and polarization-dependent lensing."
 
 
