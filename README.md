@@ -28,9 +28,9 @@ Only `name` is required. Add a square photo to `imgs/collaborators/` and set
 **Add a project or code** — append to `_data/projects.yml` or
 `_data/software.yml`. No HTML editing needed.
 
-**Complete the AEI → IFT move** — edit the `affiliation:` block in
-`_config.yml`. Every page that shows an affiliation reads from it. The Contact
-page also has a hard-coded postal address that needs updating separately.
+**Change an affiliation** — edit the `affiliation:` block in `_config.yml`.
+Every page that names an affiliation reads from it. The two postal addresses on
+the Contact page are written out in `contact.html` and need updating there.
 
 ## Local preview
 

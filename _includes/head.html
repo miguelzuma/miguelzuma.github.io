@@ -59,11 +59,18 @@
       "url": "{{ site.url }}/",
       "image": "{{ site.og_image | absolute_url }}",
       "identifier": "{{ site.author.orcid_url }}",
-      "affiliation": {
-        "@type": "Organization",
-        "name": {{ site.affiliation.primary_name | jsonify }},
-        "url": "{{ site.affiliation.primary_url }}"
-      },
+      "affiliation": [
+        {
+          "@type": "Organization",
+          "name": {{ site.affiliation.primary_name | jsonify }},
+          "url": "{{ site.affiliation.primary_url }}"
+        },
+        {
+          "@type": "Organization",
+          "name": {{ site.affiliation.secondary_name | jsonify }},
+          "url": "{{ site.affiliation.secondary_url }}"
+        }
+      ],
       "knowsAbout": [
         "Gravitational lensing",
         "Wave optics",
