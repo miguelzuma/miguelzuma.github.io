@@ -64,7 +64,7 @@ current:
     years: "2026–"
     incoming: true
     starts: "October 2026"
-    # topic: TODO
+    topic: "Tests of gravitational-wave propagation."
 
   - name: "Emanuela Alberici"
     stage: phd
@@ -72,7 +72,7 @@ current:
     years: "2026–"
     incoming: true
     starts: "October 2026"
-    # topic: TODO
+    topic: "Searches for lensed gravitational waves, and the data analysis behind them."
 
   - name: "Pablo Vega del Castillo"
     stage: masters
