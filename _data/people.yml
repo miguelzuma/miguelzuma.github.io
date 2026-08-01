@@ -7,6 +7,7 @@
 #
 # Fields: name (required), stage (postdoc|phd|masters|undergrad -- groups the
 # Current members section and labels alumni rows), end (year the person left,
+# duration (only given for stays longer than a week), end (year they left,
 # used to sort alumni and visitors chronologically, newest first; for an
 # ongoing collaboration use the current year; 0 when unknown),
 # role, years, topic, url (personal page),
@@ -104,13 +105,6 @@ current:
     topic: "Gravitational-wave propagation beyond general relativity."
 
 visitors:
-  - name: "Zakaria Belkhadria"
-    url: "https://inspirehep.net/authors/2727354"
-    end: 2026
-    role: "COST CosmoVerse Short-Term Scientific Mission"
-    years: "2026"
-    topic: "Gravitational-wave dispersion as a probe of dark energy."
-
   - name: "Macarena Lagos"
     url: "https://inspirehep.net/authors/1507748"
     end: 2025
@@ -128,7 +122,7 @@ visitors:
     end: 2024
     role: "Postdoc, Stanford University"
     years: "2024"
-    topic: "Wave-optics lensing of nanohertz gravitational-wave sources as a route to the Hubble constant."
+    topic: "Wave-optics lensing and the Hubble constant."
 
   - name: "Jenny Wagner"
     url: "https://inspirehep.net/authors/1779043"
@@ -153,6 +147,11 @@ visitors:
     end: 2024
     years: "2024"
 
+  - name: "Ankur Barsode"
+    url: "https://inspirehep.net/authors/3081663"
+    end: 2024
+    years: "2024"
+
   - name: "Upala Mukhopadhyay"
     url: "https://inspirehep.net/authors/1044823"
     end: 2023
@@ -160,9 +159,11 @@ visitors:
     years: "2023"
 
   - name: "Parita Mehta"
+    url: "https://inspirehep.net/authors/1019229"
     end: 2023
     role: "PhD student, Astronomical Observatory, University of Warsaw"
     years: "2023"
+    duration: "1 month"
     topic: "Strong lensing of gravitational waves."
 
   - name: "David Díaz-Guerra Sánchez"
@@ -170,7 +171,8 @@ visitors:
     end: 2023
     role: "Master's student, Universidad Complutense de Madrid"
     years: "2023"
-    topic: "Gravitational signatures of fuzzy dark-matter halos, constraining the boson mass with pulsar timing arrays."
+    duration: "3 weeks"
+    topic: "Fuzzy dark matter and pulsar timing."
 
   - name: "Hiroki Takeda"
     url: "https://inspirehep.net/authors/1684306"
@@ -183,6 +185,7 @@ visitors:
     end: 2022
     role: "UNAM, Mexico"
     years: "2022"
+    duration: "3 weeks"
 
   - name: "Julian Adamek"
     url: "https://inspirehep.net/authors/1057360"
@@ -195,6 +198,7 @@ visitors:
     url: "https://inspirehep.net/authors/2797698"
     role: "PhD student, IISc Bangalore"
     years: "2025, 2026"
+    duration: "two months each"
     topic: "Lensing diffraction and dark matter."
 
   - name: "Marienza Caldarola"
@@ -202,6 +206,7 @@ visitors:
     url: "https://inspirehep.net/authors/2673999"
     role: "PhD student, IFT-UAM/CSIC"
     years: "2025"
+    duration: "3 months"
     topic: "Simulation-based inference for lensing."
 
   - name: "Hanxi Wang"
@@ -209,6 +214,7 @@ visitors:
     url: "https://inspirehep.net/literature?q=a%20Hanxi%20Wang"
     role: "PhD student, U. Oxford"
     years: "2024"
+    duration: "5 weeks"
     topic: "Lensing of starlight by supermassive black-hole binaries."
 
   - name: "Martin Pijnenburg"
@@ -216,6 +222,7 @@ visitors:
     url: "https://inspirehep.net/authors/2864691"
     role: "PhD student, U. Geneva"
     years: "2024"
+    duration: "2 months"
     topic: "Collective diffraction effects."
 
   - name: "Luka Vujeva"
@@ -230,7 +237,7 @@ visitors:
     url: "https://inspirehep.net/authors/1800686"
     role: "Postdoc, U. Vienna"
     years: "2021"
-    topic: "Gravitational spin-Hall effect and polarization-dependent lensing."
+    topic: "Gravitational spin-Hall effect."
 
 
 alumni:

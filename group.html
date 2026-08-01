@@ -108,6 +108,7 @@ description: >-
       <strong>{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</strong>
       {%- if p.role %} — {{ p.role }}{% if p.years %}, {{ p.years }}{% endif %}
       {%- elsif p.years %} — {{ p.years }}{% endif %}
+      {%- if p.duration %} ({{ p.duration }}){% endif %}
       {%- if p.topic %} &middot; {{ p.topic }}{% endif %}
     </li>
     {%- endfor %}
