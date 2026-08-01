@@ -20,12 +20,12 @@ current:
       that. It will search for lensed events in LIGO–Virgo–KAGRA data, probe
       dark-matter objects and cold-dark-matter halos with LISA, use fast radio
       bursts to reach planet-scale lenses, and deliver a new class of tests of
-      general relativity and dark energy through lensed propagation.
+      general relativity and dark energy through lensed propagation. All
+      software and data products will be public.
     work_packages:
       - "WP1 — Wave-optics phenomena: microlensing and plasma-lensing theory"
       - "WP2 — Discovering lensed GWs: microlensed waveforms, accelerated inference, populations"
       - "WP3 — Fundamental physics: dark matter, GW propagation and dark energy"
-    team: "Three PhD students and four postdoctoral researchers, plus continued development of the GLoW code. All software and data products will be public."
     links:
       - text: "AEI press release"
         url: "https://www.aei.mpg.de/1359867/erc-consolidator-grant-for-miguel-zumalac-rregui"
