@@ -407,13 +407,11 @@ main { padding-bottom: 3rem; }
 	margin: 0 0 1rem;
 }
 
-/* The source photo is a wide banner crop; `cover` with a shifted focal point
-   turns it into a portrait without needing a second image file. */
 .hero-portrait {
 	width: 100%;
 	aspect-ratio: 4 / 5;
 	object-fit: cover;
-	object-position: 64% 30%;
+	object-position: center 40%;
 	border-radius: var(--radius);
 	border: 1px solid var(--border);
 	display: block;
@@ -660,6 +658,34 @@ h2 + .stage-heading { margin-top: 1.2rem; }
 }
 
 .alumni-list .next::before { content: " → "; color: var(--accent-dim); }
+
+/* A framed plate for logos inside cards, so marks with different backgrounds
+   and proportions all sit in the same box instead of floating on the card. */
+.logo-plate {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.7rem 0.9rem;
+	margin-bottom: 1rem;
+	background: var(--bg-raised);
+	border: 1px solid var(--border);
+	border-radius: 8px;
+	min-height: 108px;
+}
+
+/* Capped on both axes: these marks range from square (hi_class) to 2:1
+   extended wordmarks (GLOW), and height alone leaves the wide ones unreadable. */
+.logo-plate img {
+	display: block;
+	max-height: 90px;
+	max-width: 280px;
+	width: auto;
+}
+
+@media (max-width: 620px) {
+	.logo-plate { padding: 0.6rem 0.75rem; min-height: 84px; }
+	.logo-plate img { max-height: 68px; max-width: 210px; }
+}
 
 /* ---- Logo strips ----------------------------------------------------- */
 

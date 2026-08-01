@@ -21,8 +21,7 @@ description: >-
            style="{% if pr.flagship %}border-color: var(--accent-dim);{% endif %}">
 
     {%- if pr.logo %}
-    <img src="{{ pr.logo | relative_url }}" alt="" loading="lazy"
-         style="max-height:70px; width:auto; margin-bottom:0.9rem; display:block;">
+    <div class="logo-plate"><img src="{{ pr.logo | relative_url }}" alt="" loading="lazy"></div>
     {%- endif %}
 
     <h3 class="card-title" style="font-size:1.3rem;">

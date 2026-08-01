@@ -34,7 +34,7 @@ affiliation:
   secondary_address: "C/ Nicolás Cabrera 13-15, Campus de Cantoblanco, 28049 Madrid, Spain"
 
 # Social sharing image used for Open Graph / Twitter cards
-og_image: "/imgs/miguelzuma.jpg"
+og_image: "/imgs/miguelzuma_aei.jpg"
 
 markdown: kramdown
 kramdown:

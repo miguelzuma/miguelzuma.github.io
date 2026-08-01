@@ -17,6 +17,7 @@
 
 current:
   - name: "Han-Gil Choi"
+    sortkey: "choi"
     url: "https://inspirehep.net/authors/1852430"
     stage: postdoc
     role: "Postdoctoral researcher"
@@ -24,6 +25,7 @@ current:
     topic: "Signatures of low-mass dark-matter halos in LISA through stochastic diffraction."
 
   - name: "Xikai Shan"
+    sortkey: "shan"
     url: "https://inspirehep.net/authors/1837042"
     stage: postdoc
     role: "Affiliated postdoctoral researcher"
@@ -32,6 +34,7 @@ current:
     topic: "Lensing of gravitational waves by stellar fields and effective descriptions of diffraction."
 
   - name: "Juan Urrutia"
+    sortkey: "urrutia"
     url: "https://inspirehep.net/authors/2049477"
     stage: postdoc
     role: "Postdoctoral researcher"
@@ -41,6 +44,7 @@ current:
     topic: "Dark-matter halos and diffraction signatures in space-based gravitational-wave data."
 
   - name: "Héctor Villarrubia-Rojo"
+    sortkey: "villarrubia-rojo"
     url: "https://inspirehep.net/authors/1897475"
     stage: postdoc
     role: "Postdoctoral researcher"
@@ -50,6 +54,7 @@ current:
     topic: "Lead developer of the GLoW code; wave-optics methods for gravitational lensing. Previously a Margarita Salas Fellow in the group (2022–2024)."
 
   - name: "Daniel Ballard"
+    sortkey: "ballard"
     url: "https://inspirehep.net/authors/2648800"
     stage: postdoc
     role: "Postdoctoral researcher"
@@ -59,6 +64,7 @@ current:
     topic: "Lens modelling and analysis."
 
   - name: "Manon van Zyl"
+    sortkey: "van zyl"
     stage: phd
     role: "PhD student"
     years: "2026–"
@@ -67,6 +73,7 @@ current:
     topic: "Tests of gravitational-wave propagation."
 
   - name: "Emanuela Alberici"
+    sortkey: "alberici"
     stage: phd
     role: "PhD student"
     years: "2026–"
@@ -75,18 +82,21 @@ current:
     topic: "Searches for lensed gravitational waves, and the data analysis behind them."
 
   - name: "Pablo Vega del Castillo"
+    sortkey: "vega del castillo"
     stage: masters
     role: "Master's student (LMU)"
     years: "2026"
     topic: "Quasi-periodic lensed starlight from supermassive black-hole binaries."
 
   - name: "Matteo Pagani"
+    sortkey: "pagani"
     stage: masters
     role: "Master's student (co-supervised, U. Bologna)"
     years: "2026"
     topic: "Weak lensing of gravitational waves, and the connection to Euclid."
 
   - name: "Louis Salimbeni"
+    sortkey: "salimbeni"
     stage: masters
     role: "Master's student (co-supervised, ETH Zürich)"
     years: "2026"
@@ -94,36 +104,42 @@ current:
 
 visitors:
   - name: "Manish Tamta"
+    sortkey: "tamta"
     url: "https://inspirehep.net/authors/2797698"
     role: "PhD student, IISc Bangalore"
     years: "2025, 2026"
     topic: "Lensing diffraction and dark matter."
 
   - name: "Marienza Caldarola"
+    sortkey: "caldarola"
     url: "https://inspirehep.net/authors/2673999"
     role: "PhD student, IFT-UAM/CSIC"
     years: "2025"
     topic: "Simulation-based inference for lensing."
 
   - name: "Hanxi Wang"
+    sortkey: "wang"
     url: "https://inspirehep.net/literature?q=a%20Hanxi%20Wang"
     role: "PhD student, U. Oxford"
     years: "2024"
     topic: "Lensing of starlight by supermassive black-hole binaries."
 
   - name: "Martin Pijnenburg"
+    sortkey: "pijnenburg"
     url: "https://inspirehep.net/authors/2864691"
     role: "PhD student, U. Geneva"
     years: "2024"
     topic: "Collective diffraction effects."
 
   - name: "Luka Vujeva"
+    sortkey: "vujeva"
     url: "https://inspirehep.net/authors/2873304"
     role: "PhD student, U. Copenhagen"
     years: "2024"
     topic: "Strong lensing of gravitational waves."
 
   - name: "Marius Oancea"
+    sortkey: "oancea"
     url: "https://inspirehep.net/authors/1800686"
     role: "Postdoc, U. Vienna"
     years: "2021–"

@@ -24,7 +24,7 @@ description: >-
   {%- assign stages = "postdoc,phd,masters" | split: "," %}
   {%- assign labels = "Postdoctoral researchers,PhD students,Master's students" | split: "," %}
   {%- for stage in stages %}
-  {%- assign people = site.data.people.current | where: "stage", stage %}
+  {%- assign people = site.data.people.current | where: "stage", stage | sort_natural: "sortkey" %}
   {%- if people.size > 0 %}
   <h3 class="stage-heading">{{ labels[forloop.index0] }}</h3>
   <div class="grid grid-2">
@@ -102,7 +102,8 @@ description: >-
     them on projects that led to joint publications.
   </p>
   <ul class="alumni-list">
-    {%- for p in site.data.people.visitors %}
+    {%- assign vis = site.data.people.visitors | sort_natural: "sortkey" %}
+    {%- for p in vis %}
     <li>
       <strong>{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</strong>
       — {{ p.role }}{% if p.years %}, {{ p.years }}{% endif %}{% if p.topic %} &middot; {{ p.topic }}{% endif %}

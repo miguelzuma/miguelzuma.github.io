@@ -17,8 +17,7 @@ description: >-
 <article class="card section" id="{{ s.name | downcase }}" style="border-color: var(--accent-dim);">
 
   {%- if s.logo %}
-  <img src="{{ s.logo | relative_url }}" alt="{{ s.logo_alt }}" loading="lazy"
-       style="max-height:80px; width:auto; margin-bottom:1rem; display:block;">
+  <div class="logo-plate"><img src="{{ s.logo | relative_url }}" alt="{{ s.logo_alt }}" loading="lazy"></div>
   {%- endif %}
 
   <h2 style="margin-top:0;">{{ s.name }}</h2>
