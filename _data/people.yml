@@ -6,7 +6,8 @@
 # `earlier_mentees`.
 #
 # Fields: name (required), role, years, topic, url (personal page),
-# photo (path under /imgs/collaborators/), next (destination, alumni only).
+# photo (path under /imgs/collaborators/), next (destination, alumni only),
+# incoming (true -> card shows a "starts <starts>" badge), starts.
 #
 # To add a photo: drop a square-ish JPG in imgs/collaborators/ and set
 # `photo: Name_Surname.jpg`.  Without a photo the card shows initials.
@@ -25,12 +26,37 @@ current:
   - name: "Juan Urrutia"
     role: "Humboldt Fellow"
     years: "2026–"
+    incoming: true
+    starts: "October 2026"
     topic: "Dark-matter halos and diffraction signatures in space-based gravitational-wave data."
 
-  - name: "Nicola Menadeo"
-    role: "PhD student (co-supervised, U. Naples)"
-    years: "2023–2025"
-    topic: "Gravitational-wave propagation beyond geometric optics and lens-induced dispersion."
+  - name: "Héctor Villarrubia-Rojo"
+    role: "Postdoctoral researcher"
+    years: "2026–"
+    incoming: true
+    starts: "October 2026"
+    topic: "Lead developer of the GLoW code; wave-optics methods for gravitational lensing. Previously a Margarita Salas Fellow in the group (2022–2024)."
+
+  - name: "Daniel Ballard"
+    role: "Postdoctoral researcher"
+    years: "2026–"
+    incoming: true
+    starts: "October 2026"
+    # topic: TODO
+
+  - name: "Manon van Zyl"
+    role: "PhD student"
+    years: "2026–"
+    incoming: true
+    starts: "October 2026"
+    # topic: TODO
+
+  - name: "Emanuela Alberici"
+    role: "PhD student"
+    years: "2026–"
+    incoming: true
+    starts: "October 2026"
+    # topic: TODO
 
   - name: "Pablo Vega del Castillo"
     role: "Master's student (LMU)"
@@ -82,6 +108,11 @@ visitors:
     topic: "Model-independent reconstruction of the dark-energy density."
 
 alumni:
+  - name: "Nicola Menadeo"
+    role: "PhD student (co-supervised, U. Naples), long-term stay in the group"
+    years: "2023–2025"
+    next: "Postdoc at Humboldt University of Berlin"
+
   - name: "Srashti Goyal"
     role: "Postdoc"
     years: "2023–2026"
@@ -91,11 +122,6 @@ alumni:
     role: "Postdoc"
     years: "2024–2025"
     next: "Postdoc at Imperial College London"
-
-  - name: "Héctor Villarrubia-Rojo"
-    role: "Margarita Salas Fellow"
-    years: "2022–2024"
-    next: "Return phase at UCM; lead developer of GLoW"
 
   - name: "Guilherme Brando"
     role: "Humboldt Fellow"
@@ -158,13 +184,13 @@ alumni:
     years: "2023"
     next: "PhD at Stanford"
 
+# Mentees from before the Potsdam group (2020), kept for the record.
+earlier_mentees:
   - name: "Ho Yeuk Cheung"
-    role: "Undergraduate, then long-term collaborator"
+    role: "Undergraduate at UC Berkeley, then PhD student at JHU (informal)"
     years: "2020–2025"
     next: "Fellow at Princeton IAS"
 
-# Mentees from before the Potsdam group (2020), kept for the record.
-earlier_mentees:
   - name: "José María Ezquiaga"
     role: "PhD student (informal), IFT-UAM"
     years: "2015–2019"

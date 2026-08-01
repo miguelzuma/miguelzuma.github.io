@@ -594,6 +594,8 @@ figure.float-left {
 
 .person-note { font-size: 0.9rem; margin: 0; color: var(--text-soft); }
 
+.person-incoming { margin: 0 0 0.4rem; }
+
 .alumni-list { list-style: none; padding: 0; }
 
 .alumni-list li {

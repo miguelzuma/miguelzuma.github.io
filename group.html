@@ -35,6 +35,7 @@ description: >-
         <div class="person-body">
           <p class="person-name">{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</p>
           <p class="person-role">{{ p.role }}{% if p.years %} &middot; {{ p.years }}{% endif %}</p>
+          {%- if p.incoming %}<p class="person-incoming"><span class="badge">Starts {{ p.starts }}</span></p>{% endif %}
           {%- if p.topic %}<p class="person-note">{{ p.topic }}</p>{% endif %}
         </div>
       </div>
@@ -43,26 +44,9 @@ description: >-
   </div>
 </section>
 
-<section class="section" id="visitors">
-  <h2>Visitors and close collaborators</h2>
-  <p>
-    Long-term visitors and collaborators who spend extended periods with the
-    group, or with whom projects run continuously across institutions.
-  </p>
-  <div class="grid grid-2">
-    {%- for p in site.data.people.visitors %}
-    <article class="card">
-      <p class="person-name">{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</p>
-      <p class="person-role">{{ p.role }}{% if p.years %} &middot; {{ p.years }}{% endif %}</p>
-      {%- if p.topic %}<p class="person-note">{{ p.topic }}</p>{% endif %}
-    </article>
-    {%- endfor %}
-  </div>
-</section>
-
 <section class="section" id="alumni">
   <h2>Alumni</h2>
-  <p>Where members of the group have gone on to.</p>
+  <p>Former members of the group, and where they went next.</p>
   <ul class="alumni-list">
     {%- for p in site.data.people.alumni %}
     <li>
@@ -85,58 +69,75 @@ description: >-
   </ul>
 </section>
 
+<section class="section" id="visitors">
+  <h2>Visitors</h2>
+  <p>
+    Researchers who have spent extended periods working with the group, most of
+    them on projects that led to joint publications.
+  </p>
+  <div class="grid grid-2">
+    {%- for p in site.data.people.visitors %}
+    <article class="card">
+      <p class="person-name">{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</p>
+      <p class="person-role">{{ p.role }}{% if p.years %} &middot; {{ p.years }}{% endif %}</p>
+      {%- if p.topic %}<p class="person-note">{{ p.topic }}</p>{% endif %}
+    </article>
+    {%- endfor %}
+  </div>
+</section>
+
 <section class="section" id="joining">
   <h2>Joining the group</h2>
+
+  <p class="lede">
+    Please read this before writing. Funded positions are advertised publicly
+    and applications go through the advert, not through me directly.
+  </p>
 
   <div class="grid grid-2">
 
     <article class="card">
-      <h3 class="card-title">Postdoctoral researchers</h3>
+      <h3 class="card-title">Funded positions</h3>
       <p>
-        Positions funded through the
-        <a href="{{ '/projects.html#glow' | relative_url }}">GLoW</a> ERC
-        Consolidator Grant are advertised as they open. I am also glad to host
-        applicants for external fellowships — Humboldt, Marie Skłodowska-Curie,
-        Margarita Salas and similar schemes — and the group has hosted several
-        successfully. Get in touch well before the deadline so we can develop a
-        project together.
+        Postdoctoral and doctoral positions supported by the group's
+        <a href="{{ '/projects.html' | relative_url }}">projects</a> are
+        advertised on
+        <a href="https://inspirehep.net/jobs" rel="noopener">INSPIRE-HEP</a>.
+        That is where to look, and applying through the advert is the way in.
+        There is no advantage to writing separately.
       </p>
     </article>
 
     <article class="card">
-      <h3 class="card-title">PhD students</h3>
+      <h3 class="card-title">Fellowship applications</h3>
       <p>
-        Doctoral positions at the AEI are normally filled through the
-        <a href="https://imprs-gw.aei.mpg.de/" rel="noopener">IMPRS on Gravitational-Wave Astronomy</a>
-        and the institute's annual call. Mention my name and a specific interest
-        in your application. Co-supervision with other institutions is also
-        possible and has worked well in the past.
+        I can support a limited number of applications for external fellowships
+        each year: Marie Skłodowska-Curie and Juan de la Cierva for
+        postdoctoral researchers, FPU and “la Caixa” for doctoral students.
+        These need a project developed jointly and well ahead of the deadline,
+        so the number I can take on is genuinely small.
       </p>
     </article>
 
     <article class="card">
-      <h3 class="card-title">Master's and undergraduate projects</h3>
+      <h3 class="card-title">Master's theses</h3>
       <p>
-        I regularly supervise Master's theses and summer internships, often
-        jointly with a home-university supervisor. Projects tend to be
-        computational and connected to an ongoing paper. Write with a short
-        description of your background and what you would like to work on.
+        Master's projects are prioritized for students of the
+        <a href="{{ site.affiliation.incoming_url }}" rel="noopener">IFT</a>
+        master's programme. Projects tend to be computational and attached to
+        an ongoing paper.
       </p>
     </article>
 
     <article class="card">
-      <h3 class="card-title">Visitors</h3>
+      <h3 class="card-title">Visits</h3>
       <p>
-        Short and long research visits are welcome, and several have led to joint
-        publications. The group can sometimes contribute to local costs. Please
-        propose concrete dates and a project idea.
+        Research visits normally grow out of an existing collaboration, and
+        several have led to joint publications — see the
+        <a href="#visitors">visitors</a> above. The group can sometimes
+        contribute to local costs.
       </p>
     </article>
 
-  </div>
-
-  <div class="btn-row">
-    <a class="btn btn-primary" href="{{ '/contact.html' | relative_url }}">Contact details</a>
-    <a class="btn" href="{{ '/projects.html' | relative_url }}">Funded projects</a>
   </div>
 </section>
