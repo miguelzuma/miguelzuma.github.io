@@ -71,13 +71,16 @@ current:
     title: "Making Sense of the Gravitational-Wave Sky"
     funder: "European Research Council — Synergy Grant"
     dates: "ongoing"
-    role: "Senior collaborator (not PI)"
+    role: "Senior collaborator"
     summary: >-
       A multi-PI programme on the interpretation of the gravitational-wave sky.
-      Unlike the projects above, which I lead, here I take part as a senior
-      collaborator. My contribution concerns gravitational-wave lensing:
-      modelling wave-optics signatures and folding them into the population and
-      inference machinery the project develops.
+      I contribute the lensing side. A lensed event is not a new kind of source
+      but a distorted one, which puts wave-optics signatures squarely at the
+      interface between waveform modelling and data analysis: the distortion has
+      to enter the templates and the inference machinery before lensing can be
+      searched for at catalogue scale. The same work cuts the other way, since
+      unmodelled lensing is a systematic — a diffracted signal can otherwise be
+      read as exotic source physics or as a biased set of parameters.
     links:
       - text: "GWSky team page"
         url: "https://gwsky.org/people/"
