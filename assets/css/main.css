@@ -529,6 +529,14 @@ figure.float-left {
 
 .pubs .journal { color: var(--text-mute); }
 
+/* Institutional or press coverage of a paper, distinct from its citation */
+.pubs .feature {
+	display: block;
+	font-size: 0.85rem;
+	color: var(--text-mute);
+	margin-top: 0.1rem;
+}
+
 .badge {
 	display: inline-block;
 	font-size: 0.72rem;
