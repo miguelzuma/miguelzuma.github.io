@@ -1,0 +1,102 @@
+# Scientific software.  `flagship: true` entries get a full card with
+# installation, citation and contributor details.
+
+flagship:
+  - name: "GLoW"
+    subtitle: "Gravitational Lensing of Waves"
+    logo: "/imgs/GLoW_Code_Extended_Logo_Full_Color_for_Dark_Backgrounds_RBG.png"
+    logo_alt: ""
+    purpose: >-
+      GLoW computes the amplification factor for gravitational waves propagating
+      through a gravitational lens, in the wave-optics regime where diffraction
+      and interference matter. It handles general matter distributions, not just
+      the handful of symmetric lenses that admit closed-form solutions, and it is
+      fast enough to sit inside a parameter-estimation loop.
+    detail: >-
+      The code combines contour-integration and time-domain methods with careful
+      treatment of the singular structure of the Fermat potential. It is the
+      engine behind our analyses of stochastic diffraction, of weakly lensed
+      gravitational waves, and of GW231123 as a magnified and diffracted merger.
+    repo: "https://github.com/miguelzuma/GLoW_public"
+    docs: "https://miguelzuma.github.io/GLoW_public/index.html"
+    install: "git clone https://github.com/miguelzuma/GLoW_public\ncd GLoW_public\npip install ."
+    install_note: "Requires numpy and scipy; the optional C backend also needs GSL. See the repository README for details."
+    paper:
+      text: "Villarrubia-Rojo, Savastano, Zumalacárregui, Choi, Goyal, Dai & Tambalo, GLoW: novel methods for wave-optics phenomena in gravitational lensing"
+      url: "https://inspirehep.net/literature/2826315"
+    citation: >-
+      Please cite the repository and the main GLoW paper
+      (Villarrubia-Rojo et al. 2024), together with the method papers for the
+      specific algorithms you rely on.
+    contributors: "Héctor Villarrubia-Rojo (lead developer), Stefano Savastano, Lyla Choi, Srashti Goyal, Liang Dai, Giovanni Tambalo, Miguel Zumalacárregui."
+    usage: "Used in 18+ publications."
+    tutorials: "Worked examples and notebooks ship with the repository."
+    tags: ["Python", "wave optics", "gravitational-wave lensing", "open source"]
+
+  - name: "hi_class"
+    subtitle: "Horndeski in the Cosmic Linear Anisotropy Solving System"
+    logo: "/imgs/hi_class.gif"
+    logo_alt: ""
+    purpose: >-
+      hi_class extends the CLASS Einstein–Boltzmann solver to general
+      Horndeski scalar–tensor theories, producing accurate cosmological
+      observables — CMB spectra, matter power spectra, background evolution —
+      for essentially any dark-energy or modified-gravity model in that class.
+    detail: >-
+      It is fast and stable enough for Markov-chain analyses, interfaces with
+      MontePython, and has become a standard tool for confronting gravity
+      theories with cosmological data. It was the tool behind our work on
+      Galileon solutions to the Hubble tension and on the observational future
+      of scalar–tensor cosmology.
+    repo: "https://github.com/miguelzuma/hi_class_public"
+    website: "https://hiclass-code.net"
+    docs: "https://miguelzuma.github.io/hi_class_public/"
+    docs_note: "Manual in doc/manual; explanatory.ini documents every input parameter."
+    install: "git clone https://github.com/miguelzuma/hi_class_public\ncd hi_class_public/class\nmake clean; make   # `make class` builds without the Python wrapper"
+    install_note: "Builds like CLASS, and includes the classy Python wrapper. Test the build with ./class explanatory.ini."
+    paper:
+      text: "Zumalacárregui, Bellini, Sawicki, Lesgourgues & Ferreira, hi_class: Horndeski in the Cosmic Linear Anisotropy Solving System, JCAP 1708 (2017) 019"
+      url: "https://inspirehep.net/literature/1462237"
+    citation: >-
+      Cite the hi_class papers together with the underlying CLASS references —
+      at minimum "CLASS II: approximation schemes" (arXiv:1104.2933), as
+      requested by the CLASS authors.
+    contributors: "Miguel Zumalacárregui, Emilio Bellini, Ignacy Sawicki, Julien Lesgourgues, Pedro G. Ferreira."
+    usage: "Used in 80+ publications."
+    usage_url: "https://miguelzuma.github.io/hi_class_public/#pubs"
+    tutorials: "Course material and MontePython exercises are linked from the Talks & Outreach page."
+    tags: ["C", "Python wrapper", "Einstein–Boltzmann", "dark energy", "open source"]
+
+related:
+  - name: "GSHE"
+    description: "Gravitational spin-Hall effect: strong-field, polarization-dependent corrections to ray propagation in Kerr spacetime."
+    lead: "Led by Richard Stiskalek, with Marius Oancea."
+    repo: "https://github.com/Richard-Sti/GSHE_public"
+    paper_url: "https://inspirehep.net/literature/2151522"
+
+  - name: "Glworia"
+    description: "Bayesian parameter estimation for wave-optics lensing of gravitational waves."
+    lead: "Led by Ho Yeuk Cheung."
+    repo: "https://github.com/mhycheung/glworia"
+
+  - name: "WOlensing"
+    description: "Wave-optics amplification factors for non-symmetric lens configurations."
+    lead: "Led by Man Chun Yeung."
+    repo: "https://github.com/manchunyeung/wolensing"
+
+  - name: "Quintessence in CLASS"
+    description: "Scalar-field dark energy in CLASS, since integrated into the public release."
+    repo: "https://github.com/miguelzuma/class_scf"
+
+historical:
+  - name: "Disformal LatticeEasy"
+    description: >-
+      A modified version of LatticeEasy solving the non-linear equations of
+      disformally coupled theories (with Y. Murakami and D. Bettoni).
+    paper_url: "https://inspirehep.net/literature/1114681"
+
+  - name: "CMBEasy extensions"
+    description: >-
+      Implementations of LTB void models, disformally coupled dark energy and
+      disformal quintessence in CMBEasy.
+    paper_url: "https://inspirehep.net/literature/1084620"

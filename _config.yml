@@ -1,0 +1,53 @@
+title: "Miguel Zumalacárregui"
+tagline: "Gravitation, Cosmology and Data Interpretation"
+description: >-
+  Miguel Zumalacárregui leads a research programme on gravitational lensing of
+  waves, dark matter, black holes and tests of gravity at the Max Planck
+  Institute for Gravitational Physics (Albert Einstein Institute).
+url: "https://miguelzuma.github.io"
+baseurl: ""
+lang: en
+
+author:
+  name: "Miguel Zumalacárregui"
+  email: "miguel.zumalacarregui@aei.mpg.de"
+  orcid: "0000-0002-9943-6490"
+  orcid_url: "https://orcid.org/0000-0002-9943-6490"
+  inspire: "https://inspirehep.net/authors/1113379"
+  scholar: "https://scholar.google.com/citations?user=Zsvsq0MAAAAJ&hl=en"
+  ads: "https://ui.adsabs.harvard.edu/search/q=author%3A%22Zumalacarregui%2C%20Miguel%22&sort=date%20desc"
+  github: "https://github.com/miguelzuma"
+  institutional_page: "https://www.aei.mpg.de/person/104068/337435"
+
+# Affiliation block. Editing these three lines is enough to complete the
+# AEI -> IFT transition on every page that shows an affiliation.
+affiliation:
+  primary_name: "Max Planck Institute for Gravitational Physics (Albert Einstein Institute)"
+  primary_short: "AEI Potsdam"
+  primary_url: "https://www.aei.mpg.de/"
+  primary_role: "Group Leader, Astrophysical and Cosmological Relativity"
+  incoming_name: "Instituto de Física Teórica IFT-UAM/CSIC"
+  incoming_short: "IFT Madrid"
+  incoming_url: "https://www.ift.uam-csic.es/"
+  incoming_role: "Ramón y Cajal Fellow (incoming)"
+
+# Social sharing image used for Open Graph / Twitter cards
+og_image: "/imgs/miguelzuma.jpg"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .jekyll-cache

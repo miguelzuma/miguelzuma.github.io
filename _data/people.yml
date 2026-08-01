@@ -1,0 +1,206 @@
+# Group members and alumni.
+#
+# Source: CV_Miguel_Zuma.tex, "Supervision & coordination".  Everyone hosted
+# from 2020 onwards (the start of the MPI-Grav group) is listed as a group
+# member; earlier mentees and short-stay visitors appear under `visitors` or
+# `earlier_mentees`.
+#
+# Fields: name (required), role, years, topic, url (personal page),
+# photo (path under /imgs/collaborators/), next (destination, alumni only).
+#
+# To add a photo: drop a square-ish JPG in imgs/collaborators/ and set
+# `photo: Name_Surname.jpg`.  Without a photo the card shows initials.
+
+current:
+  - name: "Han-Gil Choi"
+    role: "Postdoctoral researcher"
+    years: "2026–"
+    topic: "Signatures of low-mass dark-matter halos in LISA through stochastic diffraction."
+
+  - name: "Xikai Shan"
+    role: "Postdoctoral researcher"
+    years: "2026–"
+    topic: "Lensing of gravitational waves by stellar fields and effective descriptions of diffraction."
+
+  - name: "Juan Urrutia"
+    role: "Humboldt Fellow"
+    years: "2026–"
+    topic: "Dark-matter halos and diffraction signatures in space-based gravitational-wave data."
+
+  - name: "Nicola Menadeo"
+    role: "PhD student (co-supervised, U. Naples)"
+    years: "2023–2025"
+    topic: "Gravitational-wave propagation beyond geometric optics and lens-induced dispersion."
+
+  - name: "Pablo Vega del Castillo"
+    role: "Master's student (LMU)"
+    years: "2026"
+    topic: "Wave-optics lensing."
+
+  - name: "Matteo Pagani"
+    role: "Master's student (co-supervised, U. Bologna)"
+    years: "2026"
+
+  - name: "Louis Salimbeni"
+    role: "Master's student (co-supervised, ETH Zürich)"
+    years: "2026"
+
+visitors:
+  - name: "Manish Tamta"
+    role: "PhD student, IISc Bangalore"
+    years: "2025, 2026"
+    topic: "Lensing diffraction and dark matter."
+
+  - name: "Marienza Caldarola"
+    role: "PhD student, IFT-UAM/CSIC"
+    years: "2025"
+    topic: "Simulation-based inference for lensing."
+
+  - name: "Hanxi Wang"
+    role: "PhD student, U. Oxford"
+    years: "2024"
+    topic: "Lensing of starlight by supermassive black-hole binaries."
+
+  - name: "Martin Pijnenburg"
+    role: "PhD student, U. Geneva"
+    years: "2024"
+    topic: "Collective diffraction effects."
+
+  - name: "Luka Vujeva"
+    role: "PhD student, U. Copenhagen"
+    years: "2024"
+    topic: "Strong lensing of gravitational waves."
+
+  - name: "Marius Oancea"
+    role: "Postdoc, U. Vienna"
+    years: "2021–"
+    topic: "Gravitational spin-Hall effect and polarization-dependent lensing."
+
+  - name: "Maria Berti"
+    role: "Postdoc, U. Geneva"
+    years: "2024–2025"
+    topic: "Model-independent reconstruction of the dark-energy density."
+
+alumni:
+  - name: "Srashti Goyal"
+    role: "Postdoc"
+    years: "2023–2026"
+    next: "Independent Fellow at IUCAA"
+
+  - name: "Serena Giardino"
+    role: "Postdoc"
+    years: "2024–2025"
+    next: "Postdoc at Imperial College London"
+
+  - name: "Héctor Villarrubia-Rojo"
+    role: "Margarita Salas Fellow"
+    years: "2022–2024"
+    next: "Return phase at UCM; lead developer of GLoW"
+
+  - name: "Guilherme Brando"
+    role: "Humboldt Fellow"
+    years: "2022–2024"
+    next: "Tenured Researcher at UFES, Brazil"
+
+  - name: "Giovanni Tambalo"
+    role: "Postdoc"
+    years: "2020–2023"
+    next: "Postdoc at ETH Zürich, then Marie Skłodowska-Curie Fellow at IPhT Saclay"
+
+  - name: "Stefano Savastano"
+    role: "PhD student (main supervisor)"
+    years: "2020–2024"
+    next: "PhD awarded at HU Berlin / MPI-Grav"
+
+  - name: "Selin Üstündag"
+    role: "Master's intern"
+    years: "2026"
+    next: "PhD at Newcastle University"
+
+  - name: "Marcel Glätzer"
+    role: "Master's student (HU Berlin)"
+    years: "2024–2025"
+
+  - name: "Jaime Raynaud"
+    role: "Master's intern (TU Berlin & KTH)"
+    years: "2024–2025"
+    next: "PhD at MPIA"
+
+  - name: "Vaibhav Omble"
+    role: "Master's student (LMU)"
+    years: "2023–2024"
+
+  - name: "Julius Streibert"
+    role: "Master's student (co-supervised, FU Berlin)"
+    years: "2022–2023"
+
+  - name: "Shashwat Singh"
+    role: "Master's student (Paris Observatory)"
+    years: "2022–2023"
+    next: "PhD at the University of Glasgow"
+
+  - name: "Richard Stiskalek"
+    role: "Master's student (co-supervised, LMU)"
+    years: "2021–2022"
+    next: "PhD at Oxford, pre-doctoral Fellow at CCA, now postdoc at Oxford"
+
+  - name: "Alessandro Longo"
+    role: "Master's student (co-supervised, U. Trieste)"
+    years: "2020–2021"
+    next: "PhD student at SISSA"
+
+  - name: "Daryna Yushchenko"
+    role: "Undergraduate (Princeton summer programme)"
+    years: "2024"
+
+  - name: "Lyla Choi"
+    role: "Undergraduate (Princeton summer programme)"
+    years: "2023"
+    next: "PhD at Stanford"
+
+  - name: "Ho Yeuk Cheung"
+    role: "Undergraduate, then long-term collaborator"
+    years: "2020–2025"
+    next: "Fellow at Princeton IAS"
+
+# Mentees from before the Potsdam group (2020), kept for the record.
+earlier_mentees:
+  - name: "José María Ezquiaga"
+    role: "PhD student (informal), IFT-UAM"
+    years: "2015–2019"
+    next: "NASA Einstein Fellow at U. Chicago, now Associate Professor at NBI and chair of the LVK lensing group"
+
+  - name: "Carlos García-García"
+    role: "PhD student (co-supervisor), IFF-CSIC"
+    years: "2017–2020"
+    next: "Beecroft Fellow at Oxford, now tenure-track scientist at CIEMAT"
+    photo: "Carlos_Garcia-Garcia.jpg"
+
+  - name: "Dina Traykova"
+    role: "PhD student (informal), U. Oxford"
+    years: "2018–2021"
+    next: "Postdoc at MPI-Grav"
+
+  - name: "Janina Renk"
+    role: "Master's student (co-supervised), U. Heidelberg"
+    years: "2015–2016"
+    next: "PhD at Stockholm University"
+    photo: "Janina_Renk.jpg"
+
+  - name: "Micah Brush"
+    role: "PhD student (informal), UC Berkeley"
+    next: "Postdoc at the University of Alberta"
+
+  - name: "Alessio Spurio Mancini"
+    role: "PhD student (informal), U. Heidelberg"
+    next: "Postdoc at the University of Cambridge"
+
+  - name: "Yukei Murakami"
+    role: "Undergraduate, UC Berkeley"
+    years: "2018–2019"
+    next: "PhD at Johns Hopkins University"
+
+  - name: "Brindha Kanniah"
+    role: "Undergraduate (MIT summer programme, Heidelberg)"
+    years: "2015"
+    next: "Master's at MIT"

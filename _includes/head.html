@@ -1,0 +1,88 @@
+{%- comment -%}
+  Per-page metadata. Pages set `title`, `description` and (optionally)
+  `og_image` in their front matter; sensible site-wide fallbacks apply.
+{%- endcomment -%}
+{%- assign page_title = page.title | default: site.title -%}
+{%- if page.nav == "home" -%}
+  {%- assign full_title = "Miguel Zumalacárregui | Gravitation, Cosmology and Data Interpretation" -%}
+{%- else -%}
+  {%- assign full_title = page_title | append: " | Miguel Zumalacárregui" -%}
+{%- endif -%}
+{%- assign page_desc = page.description | default: site.description -%}
+{%- assign canonical = page.url | replace: "index.html", "" | absolute_url -%}
+{%- assign share_image = page.og_image | default: site.og_image | absolute_url -%}
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ full_title }}</title>
+<meta name="description" content="{{ page_desc | strip_newlines | strip }}">
+<meta name="author" content="{{ site.author.name }}">
+<link rel="canonical" href="{{ canonical }}">
+
+<meta property="og:type" content="{% if page.nav == 'home' %}profile{% else %}article{% endif %}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ full_title }}">
+<meta property="og:description" content="{{ page_desc | strip_newlines | strip }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:image" content="{{ share_image }}">
+<meta property="og:locale" content="en_GB">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ full_title }}">
+<meta name="twitter:description" content="{{ page_desc | strip_newlines | strip }}">
+<meta name="twitter:image" content="{{ share_image }}">
+
+<link rel="icon" type="image/png" href="{{ '/hi_class_icon_64x64.png' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+{%- if page.nav == "home" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "{{ site.url }}/#website",
+      "url": "{{ site.url }}/",
+      "name": "{{ site.title }}",
+      "description": {{ site.description | strip_newlines | strip | jsonify }},
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Person",
+      "@id": "{{ site.url }}/#person",
+      "name": "Miguel Zumalacárregui",
+      "givenName": "Miguel",
+      "familyName": "Zumalacárregui",
+      "jobTitle": {{ site.affiliation.primary_role | jsonify }},
+      "description": "Theoretical physicist working on gravitational lensing of waves, dark matter, black holes and tests of gravity.",
+      "url": "{{ site.url }}/",
+      "image": "{{ site.og_image | absolute_url }}",
+      "identifier": "{{ site.author.orcid_url }}",
+      "affiliation": {
+        "@type": "Organization",
+        "name": {{ site.affiliation.primary_name | jsonify }},
+        "url": "{{ site.affiliation.primary_url }}"
+      },
+      "knowsAbout": [
+        "Gravitational lensing",
+        "Wave optics",
+        "Gravitational waves",
+        "Dark matter",
+        "Black holes",
+        "Cosmology",
+        "Dark energy",
+        "Modified gravity"
+      ],
+      "sameAs": [
+        "{{ site.author.orcid_url }}",
+        "{{ site.author.inspire }}",
+        "{{ site.author.scholar }}",
+        "{{ site.author.github }}",
+        "{{ site.author.institutional_page }}"
+      ]
+    }
+  ]
+}
+</script>
+{%- endif %}

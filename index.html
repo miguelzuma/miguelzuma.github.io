@@ -1,132 +1,217 @@
-<!DOCTYPE html>
-<HTML lang=en>
+---
+layout: default
+nav: home
+title: "Home"
+description: >-
+  Miguel Zumalacárregui leads a research programme on gravitational lensing of
+  waves, dark matter and black holes at the Albert Einstein Institute. ERC
+  Consolidator Grant holder (GLoW), senior co-chair of the LISA Cosmology
+  Working Group and lead of Euclid's gravitational-wave science working group.
+---
 
-<HEAD>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<TITLE>Zuma's Home Page</TITLE>
-<base href="https://miguelzuma.github.io/" />
+<div class="wrap">
 
-<link rel="stylesheet" type="text/css" href="./css/mystyle.css" />
+  <!-- ============ Hero ============ -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div>
+      <h1 id="hero-heading">Miguel Zumalac&aacute;rregui</h1>
+      <p class="hero-title">Gravitation, Cosmology and Data Interpretation</p>
+      <p>
+        I lead a research programme that uses the lensing of gravitational waves
+        and light to find what the Universe hides: dark-matter structures,
+        black holes, and departures from Einstein's theory. The work runs from
+        wave-optics theory through public software to the analysis of real
+        gravitational-wave and cosmological data.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="{{ '/research.html' | relative_url }}">Research programme</a>
+        <a class="btn" href="{{ '/group.html' | relative_url }}">Group</a>
+        <a class="btn" href="{{ site.author.inspire }}" rel="noopener">Publications (INSPIRE)</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img class="hero-portrait" src="{{ '/imgs/miguelzuma.jpg' | relative_url }}"
+           alt="Portrait of Miguel Zumalacárregui" width="600" height="750">
+    </div>
+  </section>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38788271-3"></script>
+  <!-- ============ Roles ============ -->
+  <section class="section" aria-labelledby="roles-heading">
+    <h2 id="roles-heading">Current roles</h2>
+    <ul class="roles">
+      <li>
+        <strong>Principal Investigator, GLoW</strong>
+        <span>ERC Consolidator Grant, 2026–2031</span>
+      </li>
+      <li>
+        <strong>Senior Co-Chair, LISA Cosmology Working Group</strong>
+        <span>Elected 2025 &middot; 500+ members</span>
+      </li>
+      <li>
+        <strong>Lead, Euclid Gravitational Waves SWG</strong>
+        <span>Appointed 2025 &middot; 80+ members</span>
+      </li>
+      <li>
+        <strong>{{ site.affiliation.primary_role }}</strong>
+        <span><a href="{{ site.affiliation.primary_url }}" rel="noopener">{{ site.affiliation.primary_short }}</a>
+          &middot; incoming <a href="{{ site.affiliation.incoming_url }}" rel="noopener">{{ site.affiliation.incoming_short }}</a></span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ Programme ============ -->
+  <section class="section" aria-labelledby="programme-heading">
+    <h2 id="programme-heading">The research programme</h2>
+    <p class="lede">
+      Most of the group's effort goes into one connected problem: what the
+      lensing of waves can tell us about the dark contents of the Universe.
+    </p>
+
+    <div class="grid grid-2">
+      <a class="card card-link" href="{{ '/research.html#lensing-waves' | relative_url }}">
+        <p class="card-title">Gravitational lensing of waves</p>
+        <p>Diffraction and interference imprint the mass distribution of a lens
+        directly on a gravitational-wave signal. We build the theory and the
+        methods that read it back out.</p>
+      </a>
+      <a class="card card-link" href="{{ '/research.html#dark-matter' | relative_url }}">
+        <p class="card-title">Dark matter and compact structures</p>
+        <p>Lensing is one of the few probes sensitive to dark matter on
+        sub-galactic scales, where the leading candidates disagree most sharply.</p>
+      </a>
+      <a class="card card-link" href="{{ '/research.html#black-holes' | relative_url }}">
+        <p class="card-title">Black holes and strong gravity</p>
+        <p>Black holes both bend light and radiate. We use them as lenses, as
+        sources, and as laboratories for gravity in the strong field.</p>
+      </a>
+      <a class="card card-link" href="{{ '/research.html#methods' | relative_url }}">
+        <p class="card-title">Methods, inference and software</p>
+        <p>Fast wave-optics solvers, statistical searches and the public codes
+        GLoW and hi_class — so the results are reproducible by anyone.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ Featured results ============ -->
+  <section class="section" aria-labelledby="featured-heading">
+    <h2 id="featured-heading">Featured recent results</h2>
+
+    <div class="grid grid-3">
+
+      <article class="card">
+        <p class="card-title">
+          <a href="https://arxiv.org/abs/2512.17631" rel="noopener">GW231123: a magnified and diffracted merger</a>
+        </p>
+        <p class="card-meta">Goyal, Villarrubia-Rojo &amp; Zumalacárregui (2025)</p>
+        <p>The first compelling candidate for a black-hole merger magnified and
+        diffracted by a compact object of 190–850&nbsp;M<sub>&#9737;</sub>.</p>
+        <ul class="tags">
+          <li class="tag tag-accent">LIGO–Virgo–KAGRA</li>
+          <li class="tag">wave optics</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <p class="card-title">
+          <a href="https://inspirehep.net/literature/3180014" rel="noopener">Stochastic diffraction with LISA</a>
+        </p>
+        <p class="card-meta">Choi, Urrutia &amp; Zumalacárregui (2025)</p>
+        <p>Populations of 10–10<sup>4</sup>&nbsp;M<sub>&#9737;</sub> dark-matter
+        halos leave a coherent diffraction imprint that LISA can detect.</p>
+        <ul class="tags">
+          <li class="tag tag-accent">LISA</li>
+          <li class="tag">dark matter</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <p class="card-title">
+          <a href="https://journals.aps.org/prl/abstract/10.1103/1sfl-87t4" rel="noopener">Black holes as telescopes</a>
+        </p>
+        <p class="card-meta">Wang, Zumalacárregui &amp; Kocsis, PRL <strong>136</strong>, 061403 (2026)</p>
+        <p>Quasi-periodic lensed starlight reveals supermassive black-hole
+        binaries that are otherwise invisible.
+        <span class="badge">Editors' Suggestion</span></p>
+        <ul class="tags">
+          <li class="tag tag-accent">SMBH binaries</li>
+          <li class="tag">strong lensing</li>
+        </ul>
+      </article>
+
+    </div>
+
+    <figure>
+      <video width="960" height="540" autoplay muted loop playsinline
+             poster="{{ '/imgs/qpls_loop_fold_still.png' | relative_url }}"
+             aria-label="Animation of quasi-periodic lensing of starlight by a supermassive black-hole binary">
+        <source src="{{ '/imgs/qpls_loop_fold.webm' | relative_url }}" type="video/webm">
+        <source src="{{ '/imgs/qpls_loop_fold.mp4' | relative_url }}" type="video/mp4">
+      </video>
+      <figcaption>
+        Quasi-periodic lensing of starlight: as a sub-parsec black-hole binary
+        orbits, its caustics sweep repeatedly across a background star in the
+        host galaxy. From
+        <a href="https://arxiv.org/abs/2506.16544" rel="noopener">Wang, Zumalacárregui &amp; Kocsis, PRL <strong>136</strong>, 061403 (2026)</a>.
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ Previews ============ -->
+  <section class="section" aria-labelledby="more-heading">
+    <h2 id="more-heading">Group, projects and software</h2>
+
+    <div class="grid grid-3">
+
+      <a class="card card-link" href="{{ '/group.html' | relative_url }}">
+        <p class="card-title">The group</p>
+        <p>Postdocs, PhD and Master's students working on wave-optics lensing,
+        dark matter and gravitational-wave propagation — plus visitors,
+        alumni and information for applicants.</p>
+      </a>
+
+      <a class="card card-link" href="{{ '/projects.html' | relative_url }}">
+        <p class="card-title">Projects &amp; funding</p>
+        <p>GLoW (ERC Consolidator), With Einstein on Crooked Paths, the Ramón y
+        Cajal programme, and a senior collaborator role in the GWSky ERC
+        Synergy Grant.</p>
+      </a>
+
+      <a class="card card-link" href="{{ '/software.html' | relative_url }}">
+        <p class="card-title">GLoW and hi_class</p>
+        <p>Two public codes: a wave-optics lensing solver used in 18+ papers,
+        and an Einstein–Boltzmann solver for dark energy and modified gravity
+        used in 80+.</p>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ============ Intro video ============ -->
+  <section class="section" aria-labelledby="video-heading">
+    <h2 id="video-heading">Start here</h2>
+    <p>
+      A short introduction to gravitational-wave lensing, for a general audience.
+      More talks, lectures and popular writing are on the
+      <a href="{{ '/outreach.html' | relative_url }}">Talks &amp; Outreach</a> page.
+    </p>
+    <div class="video">
+      <iframe src="https://www.youtube-nocookie.com/embed/zv9tStMviwA"
+              title="Introductory video on gravitational-wave lensing"
+              loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+    </div>
+  </section>
+
+</div>
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-38788271-3');
+// Honour reduced-motion for the autoplaying figure: pause it and expose controls.
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('video[autoplay]').forEach(function (v) {
+    v.removeAttribute('autoplay');
+    v.controls = true;
+    v.pause();
+  });
+}
 </script>
-
-<link rel="icon" type="image/png"
- href="hi_class_icon_64x64.png">
-
-</HEAD>
-
-<BODY>
-
-<div id="nav-menu">
-<p> <b>Welcome to my page!</b> </p>
-<a href="index.html">HOME </a> |
-<a href="research.html">RESEARCH </a> |
-<a href="software.html">SOFTWARE </a> |
-<a href="outreach.html">OUTREACH </a> |
-<a href="contact.html">CONTACT </a>
-</p>
-</div>
-
-<HR>
-
-<H2>
-Miguel Zumalac&aacute;rregui <br>
-</H2>
-
-<div class="logo-row">
-<a href="https://www.aei.mpg.de/" target="_blank"><img src="imgs/AEI_logo.png" title="Albert Einstein Institute" height="110"></a>
-<a href="https://www.mpg.de/de" target="_blank"><img src="imgs/2560px-Max-Planck-Gesellschaft.png" title="Max Planck Society" height="110"></a>
-<a href="https://erc.europa.eu/news-events/news/erc-2025-consolidator-grants-results" target="_blank"><img src="imgs/ERC_dark.jpeg" title="ERC" height="120"></a>
-<a href="https://www.aei.mpg.de/1359867/erc-consolidator-grant-for-miguel-zumalac-rregui" target="_blank"><img src="imgs/GLOW_Extended_Logo_Full_Color_for_Dark_Backgrounds_RGB.png" title="GLOW" height="120"></a>
-</div>
-
-  
-
-
-
-<br>
-
-<img class="center" src="imgs/miguelzuma.jpg" title="Hello!" width="600" style="margin:1em auto;">
-
-
-<p>
-I am a Group Leader at the <a href="https://www.aei.mpg.de/" target="_blank"> Max Planck Institute for Gravitational Physics (Albert Einstein Institute)</a> in Potsdam (Germany), working at the interface between cosmology, gravitation and fundamental physics. Previously I was a Marie Sklodowska-Curie Global Fellow at the
-<a href="http://bccp.berkeley.edu" target="_blank"> Berkeley Center for Cosmological Physics</a> &amp <a href="https://www.ipht.fr/en/index.php" target="_blank"> IPhT</a> Saclay, a <a href="https://www.nordita.org/" target="_blank"> Nordita </a> Fellow and a postdoc at <a href="https://www.nordita.org/" target="_blank"> ITP Heidelberg</a>. 
-Since 2025 I am senior Co-Chair of the LISA Cosmology Working Group and a Lead in Euclid's Science Working Group for Gravitational Waves.
-
-
-<p><mark>NEWS:</mark> My project GLOW "Gravitational Lensing of Waves" was awarded a 2025 ERC Consolidator Grant (<a href="https://www.aei.mpg.de/1359867/erc-consolidator-grant-for-miguel-zumalac-rregui" target="_blank">AEI press release</a>). 
-
-<p><mark>NEWS:</mark> <i>Black Holes as Telescopes</i> published in
-    <a href="https://journals.aps.org/prl/abstract/10.1103/1sfl-87t4" target="_blank">PRL  as <i>Editor’s Suggestion</i></a>, (<a href="https://www.aei.mpg.de/1407139/new-method-could-reveal-hidden-supermassive-black-hole-binaries" target="_blank">AEI Press Release</a>).
-    
-<p><mark>NEWS:</mark> Our analysis of GW231123 as a <i>potentially lensed and diffracted black hole merger </i> is out (<a href="https://arxiv.org/pdf/2512.17631" target="_blank">arXiv:2512.17631</a>), see also the associated <a href="https://youtu.be/ZGqOpDTL8k4?si=HyzJFQFJTZk-vvVy" target="_blank">Cosmology Talk</a>.
-
-<p>My project
-  <a href="https://www.aei.mpg.de/1227766/with-einstein-on-crooked-paths" target="_blank">"With Einstein on crooked paths"</a> is developing new methods to identify lensed gravitational waves and study the small-scale properties of dark matter.</p>
-
-<p style="margin-bottom:0.2em;">
-▶ <a href="https://www.youtube.com/watch?v=zv9tStMviwA" target="_blank">
-Introductory video on gravitational-wave lensing
-</a> (YouTube)
-</p>
-<div class="video">
-<iframe src="https://www.youtube-nocookie.com/embed/zv9tStMviwA"
-        title="Introductory video on gravitational-wave lensing"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-</div>
-
-<p>
-My research encompasses four key predictions of Einstein's theory of General Relativity: cosmology (the dynamics and history of the Universe), gravitational waves (radiation in spacetime itself), black holes (compact objects with strong gravity) and gravitational lensing (the distortion of signals travelling through the Universe). I leverage these phenomena to explore astrophysics, dark matter, dark energy and gravity.
-For more details see:
-<ul>
-<li><a href="https://inspirehep.net/search?p=author%3AM.Zumalacarregui.1" target="_blank"> List of publications</a> </li>
-<li><a href="research.html">Description of research interests</a>  </li>
-<li><a href="https://www.aei.mpg.de/person/104068/337435"> AEI professional page </a></li>
-</ul>
-<p> My group develops the <a href="https://github.com/miguelzuma/GLoW_public" target="_blank">GLoW code</a> for gravitational lensing in the wave-optics regime.
- I am also a main developer of the <a href="http://www.hiclass-code.net" target="_blank"> hi_class code</a>, a fast and flexible tool to test cosmological gravity and dark-energy theories.
-In the past I worked on other <a href="software.html"> software implementations</a> to investigate cosmology and gravitation.
-
-<p>
-My earlier research is contained in my PhD dissertation
-<a href="files/PhD_thesis_miguel_zuma.pdf" target="_blank">"Probing the Foundations of the Standard Cosmological Model</a>
-and summarized in my
-<a href="http://prezi.com/a2mhizem_sod/probing-the-foundations-of-the-standard-cosmological-model/" target="_blank">PhD defense presentation</a> (shown below) </li>
-
-
-<div class="video embed-4x3">
-<iframe id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" src="https://prezi.com/embed/a2mhizem_sod/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE1IY3I0cGJhMWlwTW9JL2t6TllGS2JZRTBtMFdDUmcrZ3hVT0Y0bnpUTT0&amp;landing_sign=Nr-Vo6uesR7giq-eR9gzV6otdtJSr6POJ9X8AaY_No0"></iframe>
-</div>
-<br>
-
-
-<p> I love <a href="outreach.html#teaching">teaching</a> and <a href="outreach.html">science communication</a> with the general public (in  <a href="outreach.html#popular_es">Spanish</a>, <a href="outreach.html#popular_en">English</a> or <a href="outreach.html#popular_de">German</a>).
-
-<br>
-
-<p> Wrong Zuma? You might be looking for <a href="http://www.anazumalacarregui.org/" target="_blank"> my sister Ana </a> (number theorist in University of NSW) or <a href="http://canalcocina.es/cocinero/veronica-zumalacarregui" target="_blank"> my cousin Veronica </a> (world food reporter in Canal Cocina).
-Or my distant relative <a href="https://es.wikipedia.org/wiki/Miguel_Antonio_de_Zumalac%C3%A1rregui" target="_blank">Miguel Antonio</a> (liberal politician in the 18th century), or his brother <a href="https://es.wikipedia.org/wiki/Tom%C3%A1s_de_Zumalac%C3%A1rregui" target="_blank"> "Uncle Tomás"</a> (conservative general in that same period).
-
-<br>
-
-
-<img class="center" src="imgs/books.jpg" title="Books" width="600" style="margin:2em auto;">
-<hr>
-
-<small> The GLOW Project logo was designed by Ana Carvalho </small>
-
-</BODY>
-
-</HTML>

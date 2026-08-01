@@ -1,0 +1,23 @@
+# Site navigation. `id` must match the `nav` front-matter key of each page so
+# the active link can be highlighted.
+- id: home
+  title: Home
+  url: /
+- id: research
+  title: Research
+  url: /research.html
+- id: group
+  title: Group
+  url: /group.html
+- id: projects
+  title: Projects
+  url: /projects.html
+- id: software
+  title: Software
+  url: /software.html
+- id: outreach
+  title: Talks & Outreach
+  url: /outreach.html
+- id: contact
+  title: Contact
+  url: /contact.html

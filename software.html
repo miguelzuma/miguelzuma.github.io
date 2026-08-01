@@ -1,88 +1,152 @@
-<!DOCTYPE html>
-<HTML lang=en>
+---
+layout: page
+nav: software
+title: "Scientific Software"
+eyebrow: "GLoW, hi_class and related projects"
+lede: >-
+  Two flagship open-source codes anchor the group's work: GLoW for wave-optics
+  gravitational lensing, and hi_class for cosmology in general scalar–tensor
+  theories. Both are public, documented and used well beyond our own papers.
+description: >-
+  Open-source scientific software: GLoW (wave-optics gravitational lensing) and
+  hi_class (Horndeski cosmology), plus GSHE, Glworia, WOlensing and related
+  projects.
+---
 
-<HEAD>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<TITLE>Zuma's Code</TITLE>
-<base href="https://miguelzuma.github.io/" />
+{%- for s in site.data.software.flagship %}
+<article class="card section" id="{{ s.name | downcase }}" style="border-color: var(--accent-dim);">
 
+  {%- if s.logo %}
+  <img src="{{ s.logo | relative_url }}" alt="{{ s.logo_alt }}" loading="lazy"
+       style="max-height:80px; width:auto; margin-bottom:1rem; display:block;">
+  {%- endif %}
 
-<link rel="stylesheet" type="text/css" href="./css/mystyle.css" />
+  <h2 style="margin-top:0;">{{ s.name }}</h2>
+  <p class="card-meta">{{ s.subtitle }}{% if s.usage %} &middot; {% if s.usage_url %}<a href="{{ s.usage_url }}" rel="noopener">{{ s.usage }}</a>{% else %}{{ s.usage }}{% endif %}{% endif %}</p>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38788271-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <p>{{ s.purpose }}</p>
+  <p>{{ s.detail }}</p>
 
-  gtag('config', 'UA-38788271-3');
-</script>
+  <h3>Get it</h3>
+  <div class="btn-row">
+    <a class="btn btn-primary" href="{{ s.repo }}" rel="noopener">Repository</a>
+    {%- if s.docs %}<a class="btn" href="{{ s.docs }}" rel="noopener">Documentation</a>{% endif %}
+    {%- if s.website %}<a class="btn" href="{{ s.website }}" rel="noopener">Website</a>{% endif %}
+    <a class="btn" href="{{ s.paper.url }}" rel="noopener">Reference paper</a>
+  </div>
 
-<link rel="icon" type="image/png"
- href="hi_class_icon_64x64.png">
+  <h4>Installation</h4>
+  <pre><code>{{ s.install }}</code></pre>
+  {%- if s.install_note %}<p class="small">{{ s.install_note }}</p>{% endif %}
+  {%- if s.docs_note %}<p class="small">{{ s.docs_note }}</p>{% endif %}
 
-</HEAD>
+  <h4>Reference paper</h4>
+  <p><a href="{{ s.paper.url }}" rel="noopener">{{ s.paper.text }}</a></p>
 
-<BODY>
+  <h4>How to cite</h4>
+  <p>{{ s.citation }}</p>
 
-<div id="nav-menu">
-<p> <b> Miguel Zumalac&aacute;rregui </b> </p>
-<a href="index.html">HOME </a> |
-<a href="research.html">RESEARCH </a> |
-<a href="software.html">SOFTWARE </a> |
-<a href="outreach.html">OUTREACH </a> |
-<a href="contact.html">CONTACT </a>
-</p>
-</div>
+  <h4>Tutorials and examples</h4>
+  <p>{{ s.tutorials }}</p>
 
-<HR>
+  <h4>Main contributors</h4>
+  <p>{{ s.contributors }}</p>
 
-<H1>
-Software <br><br>
-</H1>
+  {%- if s.tags %}
+  <ul class="tags">
+    {%- for t in s.tags %}<li class="tag">{{ t }}</li>{% endfor %}
+  </ul>
+  {%- endif %}
 
-<p>Over the years I have contributed to several software packages for cosmology and gravitational physics:
-<ul>
-  <li> <a href="https://github.com/miguelzuma/GLoW_public" target ="_blank">GLoW: Gravitational Lensing of Waves</a> a flexible code for gravitational lensing in the wave-optics regime (led by H. Villarrubia-Rojo, also w/ S. Savastano, L. Choi, S. Goyal, L. Dai and G. Tambalo)  </li>
-<li> <a href="http://hiclass-code.net" target ="_blank"> Hi_CLASS: Horndeski in the Cosmic Linear Anisotropy Solving System</a> an Einstein-Boltzmann solver for dark-energy and modified gravity (with E. Bellini, P. Ferreira, J. Lesgourgues and I. Sawicki)
-  <li> <a href="https://github.com/Richard-Sti/GSHE_public" target ="_blank"> Gravitational Spin Hall Effect</a> computes strong field corrections to geodesics in Kerr spacetime (led by R. Stiskalek) </li>
-  <li> <a href="https://github.com/mhycheung/glworia" target ="_blank">Glworia</a>: a code for Bayesian parameter estimation in wave-optics lensing (led by H.Y. Cheung) </li>
-  <li> <a href="https://github.com/manchunyeung/wolensing" target ="_blank">WOlensing</a>:  another code for wave-optics in non-symmetric lenses (led by M.C. Yeung) </li>
-<li> <a href="https://github.com/miguelzuma/class_scf" target ="_blank"> Quintessence in CLASS</a>, already integrated in the public version </li>
-<li> A modified version of <a href="http://felderbooks.com/latticeeasy/index.html" target ="_blank"> Latticeeasy </a> to solve the non-linear equations describing <a href="http://inspirehep.net/record/1114681" target ="_blank"> disformally coupled </a> theories (with Y. Murakami, D. Bettoni) </li>
-<li> Other codes for LTB models (<a href = "https://inspirehep.net/literature/1084620" target = "_blank">1201.2790</a>), disformally coupled DE (<a href = "https://inspirehep.net/literature/1194087" target = "_blank">1210.8016</a>) and disformal quintessence (<a href = "https://inspirehep.net/literature/852011" target = "_blank">1004.2684</a>) in CMBEasy </li>
-</ul>
-<p> You can also visit my <a href="https://github.com/miguelzuma/" target="_blank"> Github page </a> to see what I have made public or email me if you are interested in codes not released yet.
+</article>
+{%- endfor %}
 
-<p>
+<p class="small">The GLoW code logo was designed by Ana Carvalho.</p>
 
-<div class="center" style="margin:1em 0;">
-  <a href="https://github.com/miguelzuma/GLoW_public" target="_blank">
-    <img src="imgs/GLoW_Code_Extended_Logo_Full_Color_for_Dark_Backgrounds_RBG.png" title="the GLoW code" width="400" style="vertical-align:middle; margin:10px 4px;">
-   </a>
-<a href="http://www.hiclass-code.net" target="_blank">
- <img src="imgs/hi_class.gif" title="the Hi_CLASS code" width="170" style="vertical-align:middle; margin:10px 4px;">
-</a>
-</div>
+<section class="section" id="related">
+  <h2>Related projects</h2>
+  <p>
+    Codes developed by collaborators and group members, to which I have
+    contributed.
+  </p>
+  <div class="grid grid-2">
+    {%- for s in site.data.software.related %}
+    <article class="card">
+      <p class="card-title"><a href="{{ s.repo }}" rel="noopener">{{ s.name }}</a></p>
+      <p>{{ s.description }}</p>
+      {%- if s.lead %}<p class="card-meta" style="margin-bottom:0;">{{ s.lead }}</p>{% endif %}
+      {%- if s.paper_url %}<p class="small"><a href="{{ s.paper_url }}" rel="noopener">Reference paper</a></p>{% endif %}
+    </article>
+    {%- endfor %}
+  </div>
+</section>
 
-<small> The GLoW code logo was designed by Ana Carvalho </small>
+<section class="section" id="historical">
+  <h2>Historical software</h2>
+  <p class="small">
+    Earlier implementations, kept for the record. These are no longer maintained.
+  </p>
+  <ul>
+    {%- for s in site.data.software.historical %}
+    <li>
+      <strong>{{ s.name }}</strong> — {{ s.description }}
+      {%- if s.paper_url %} (<a href="{{ s.paper_url }}" rel="noopener">paper</a>){% endif %}
+    </li>
+    {%- endfor %}
+    <li>
+      Other codes for LTB models
+      (<a href="https://inspirehep.net/literature/1084620" rel="noopener">1201.2790</a>),
+      disformally coupled dark energy
+      (<a href="https://inspirehep.net/literature/1194087" rel="noopener">1210.8016</a>)
+      and disformal quintessence
+      (<a href="https://inspirehep.net/literature/852011" rel="noopener">1004.2684</a>)
+      in CMBEasy.
+    </li>
+  </ul>
+  <p>
+    Further public repositories are on my
+    <a href="{{ site.author.github }}" rel="noopener">GitHub page</a>. If you are
+    interested in something not yet released, please
+    <a href="{{ '/contact.html' | relative_url }}">get in touch</a>.
+  </p>
+</section>
 
-<p>
-Some codes that I like:
+<section class="section" id="resources">
+  <h2>Resources for students</h2>
+  <p>Tools I recommend to people starting out in this field.</p>
 
-<h4> Boltzmann Codes: </h4>
-<p> My codes of choice to obtain predictions for models representing fundamental physics are
-<a href="http://lesgourg.web.cern.ch/lesgourg/class.php" target="_blank"> CLASS</a> and
-<a href="http://www.thphys.uni-heidelberg.de/~robbers/cmbeasy/" target="_blank"> CMBEasy</a> (the latter one becoming less useful, as it is not maintained).
-Although I use it less, I find the <a href="http://lambda.gsfc.nasa.gov/toolbox/tb_camb_form.cfm" target="_blank"> CAMB online tool </a> very useful.
+  <div class="grid grid-2">
 
+    <article class="card">
+      <h3 class="card-title">Einstein–Boltzmann solvers</h3>
+      <p>
+        <a href="https://lesgourg.github.io/class_public/class.html" rel="noopener">CLASS</a>
+        is my solver of choice for cosmological predictions, and the basis of
+        hi_class. The
+        <a href="https://lambda.gsfc.nasa.gov/toolbox/camb_online.html" rel="noopener">CAMB online tool</a>
+        is a quick way to get spectra without installing anything.
+      </p>
+    </article>
 
-<h4> Tensor Calculus: </h4>
-<p> There are two excellent packages for Mathematica that I strongly recommend:
-<a href="http://www.xact.es/" target="_blank"> xAct</a> is able to handle symbolic computations within differential geometry in a very general way, but it is difficult to learn. <a href="http://www.inp.demokritos.gr/~sbonano/RGTC/" target="_blank"> RGTC </a> is very easy to learn, but limited to tensor computations in a given set of coordinates.
-<br>
+    <article class="card">
+      <h3 class="card-title">Tensor calculus</h3>
+      <p>
+        Two excellent Mathematica packages:
+        <a href="https://www.xact.es/" rel="noopener">xAct</a> handles symbolic
+        differential geometry in full generality but takes real effort to learn;
+        <a href="https://people.uwm.edu/rgtc/" rel="noopener">RGTC</a> is easy to
+        pick up but limited to tensor computations in a fixed coordinate system.
+      </p>
+    </article>
 
+    <article class="card">
+      <h3 class="card-title">Course material</h3>
+      <p>
+        Lecture notes and exercises for hi_class and MontePython, prepared for
+        graduate schools, are collected on the
+        <a href="{{ '/outreach.html#teaching' | relative_url }}">Talks &amp; Outreach</a> page.
+      </p>
+    </article>
 
-</BODY>
+  </div>
+</section>

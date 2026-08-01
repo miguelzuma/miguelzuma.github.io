@@ -1,58 +1,116 @@
-<!DOCTYPE html>
-<HTML lang=en>
+---
+layout: page
+nav: contact
+title: "Contact"
+eyebrow: "Get in touch"
+lede: >-
+  For scientific collaboration, applications to the group, seminar invitations
+  or media enquiries.
+description: >-
+  Contact details for Miguel Zumalacárregui: institutional address, email,
+  ORCID, INSPIRE, Google Scholar and GitHub, with guidance for collaborators,
+  applicants, seminar organizers and journalists.
+---
 
-<HEAD>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<TITLE>Contact</TITLE>
-<base href="https://miguelzuma.github.io/" />
+<div class="grid grid-2">
 
-<link rel="stylesheet" type="text/css" href="./css/mystyle.css" />
+  <section class="card">
+    <h2 style="margin-top:0;">Current affiliation</h2>
+    <p>
+      <strong>Dr Miguel Zumalacárregui</strong><br>
+      {{ site.affiliation.primary_role }}<br>
+      <a href="{{ site.affiliation.primary_url }}" rel="noopener">{{ site.affiliation.primary_name }}</a>
+    </p>
+    <p>
+      Am Mühlenberg 1<br>
+      14476 Potsdam<br>
+      Germany
+    </p>
+    <p>
+      <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a><br>
+      <a href="{{ site.author.institutional_page }}" rel="noopener">Institutional profile</a>
+    </p>
+  </section>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38788271-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <section class="card">
+    <h2 style="margin-top:0;">Incoming affiliation</h2>
+    <p>
+      <strong>{{ site.affiliation.incoming_role }}</strong><br>
+      <a href="{{ site.affiliation.incoming_url }}" rel="noopener">{{ site.affiliation.incoming_name }}</a><br>
+      Campus de Cantoblanco, Madrid, Spain
+    </p>
+    <p class="small">
+      I am in transition between Potsdam and Madrid. Until the move completes,
+      the AEI address above remains the reliable way to reach me; please use the
+      email address rather than post if your message is time-sensitive.
+    </p>
+  </section>
 
-  gtag('config', 'UA-38788271-3');
-</script>
-
-<link rel="icon" type="image/png"
- href="hi_class_icon_64x64.png">
-
-</HEAD>
-
-<BODY>
-
-<div id="nav-menu">
-<p> <b> Miguel Zumalac&aacute;rregui </b> </p> 
-<a href="index.html">HOME </a> |
-<a href="research.html">RESEARCH </a> | 
-<a href="software.html">SOFTWARE </a> |
-<a href="outreach.html">OUTREACH </a> |
-<a href="contact.html">CONTACT </a>
-</p>
 </div>
 
-<HR>
+<section class="section">
+  <h2>Profiles and publication databases</h2>
+  <ul>
+    <li><a href="{{ site.author.inspire }}" rel="noopener">INSPIRE-HEP</a> — the most complete and current publication record</li>
+    <li><a href="{{ site.author.scholar }}" rel="noopener">Google Scholar</a></li>
+    <li><a href="{{ site.author.ads }}" rel="noopener">NASA ADS</a></li>
+    <li><a href="{{ site.author.orcid_url }}" rel="noopener">ORCID {{ site.author.orcid }}</a></li>
+    <li><a href="{{ site.author.github }}" rel="noopener">GitHub</a> — GLoW, hi_class and other public code</li>
+  </ul>
+</section>
 
-<H1> 
-Contact 
-</H1>
+<section class="section">
+  <h2>Before you write</h2>
 
-<img src="imgs/AEI_golm.jpg" title="the Max Planck Institute for Gravitational Physics" width="350" class="float-right">
+  <div class="grid grid-2">
 
-<p>
-Dr. Miguel Zumalacarregui <br><br>
-Am Mühlenberg 1 <br><br>
-14476 Potsdam <br><br>
-Germany
+    <article class="card">
+      <h3 class="card-title">Scientific collaboration</h3>
+      <p>
+        I am interested in collaborations on wave-optics lensing, dark-matter
+        substructure, black-hole binaries and gravitational-wave propagation.
+        A paragraph on what you have in mind, and which of our papers it connects
+        to, is the most useful opening.
+      </p>
+    </article>
 
-<p><br>
-miguel.zumalacarregui-at-aei.mpg.de
-</p>
+    <article class="card">
+      <h3 class="card-title">Prospective students and postdocs</h3>
+      <p>
+        Please read the
+        <a href="{{ '/group.html#joining' | relative_url }}">joining the group</a>
+        section first — it explains which routes are open and when. Include a CV
+        and say which specific topic interests you; generic applications are hard
+        to answer usefully.
+      </p>
+    </article>
 
+    <article class="card">
+      <h3 class="card-title">Seminar and colloquium invitations</h3>
+      <p>
+        Very welcome. Please include the date, format, audience level and whether
+        the talk will be recorded. Recorded talks from previous years are on the
+        <a href="{{ '/outreach.html#featured-talks' | relative_url }}">Talks &amp; Outreach</a> page.
+      </p>
+    </article>
 
-</BODY>
+    <article class="card">
+      <h3 class="card-title">Media enquiries</h3>
+      <p>
+        Happy to comment on gravitational waves, lensing, dark matter and dark
+        energy, in English, Spanish or German. For institutional coordination,
+        the AEI press office can be reached through the
+        <a href="https://www.aei.mpg.de/" rel="noopener">institute website</a>.
+        Previous coverage is collected under
+        <a href="{{ '/outreach.html#press' | relative_url }}">press and media</a>.
+      </p>
+    </article>
+
+  </div>
+</section>
+
+<figure>
+  <img src="{{ '/imgs/AEI_golm.jpg' | relative_url }}"
+       alt="The Max Planck Institute for Gravitational Physics building in Potsdam-Golm." loading="lazy" width="900" height="596">
+  <figcaption>The Max Planck Institute for Gravitational Physics in Potsdam-Golm.</figcaption>
+</figure>

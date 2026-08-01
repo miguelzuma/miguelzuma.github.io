@@ -1,0 +1,125 @@
+# Research projects and funding.  Amounts are recorded but deliberately not
+# used as the visual headline on the Projects page.
+
+current:
+  - acronym: "GLoW"
+    title: "Gravitational Lensing of Waves"
+    funder: "European Research Council — Consolidator Grant"
+    dates: "2026–2031"
+    role: "Principal Investigator"
+    flagship: true
+    logo: "/imgs/GLOW_Extended_Logo_Full_Color_for_Dark_Backgrounds_RGB.png"
+    summary: >-
+      GLoW builds the theory, methods and software needed to turn gravitational
+      lensing of waves into a precision probe of dark matter and compact
+      objects. It spans wave-optics modelling, statistical inference on
+      gravitational-wave catalogues, and the design of searches for
+      ground- and space-based detectors.
+    team: "Supports postdoctoral researchers, PhD students and the continued development of the GLoW code."
+    links:
+      - text: "AEI press release"
+        url: "https://www.aei.mpg.de/1359867/erc-consolidator-grant-for-miguel-zumalac-rregui"
+      - text: "ERC 2025 Consolidator results"
+        url: "https://erc.europa.eu/news-events/news/erc-2025-consolidator-grants-results"
+      - text: "Max Planck Society announcement"
+        url: "https://www.mpg.de/25845263/erc-consolidator-grants-2025"
+    note: "A dedicated GLoW project website with work packages, team profiles and openings is in preparation."
+
+  - acronym: "With Einstein on Crooked Paths"
+    title: "Mit Einstein auf krummen Wegen"
+    funder: "Max Planck Society Annual Project (supporting members)"
+    dates: "2024–"
+    role: "Principal Investigator"
+    logo: "/imgs/MPG_logo_crop.jpg"
+    summary: >-
+      A philanthropically funded programme developing new methods to identify
+      lensed gravitational waves and to use them to probe the small-scale
+      structure of dark matter. Because the funding comes from private donors,
+      the project carries an explicit outreach commitment: explaining lensed
+      gravitational waves to a non-specialist public.
+    team: "Supports doctoral and postdoctoral work on lensing signatures of dark matter."
+    links:
+      - text: "AEI feature"
+        url: "https://www.aei.mpg.de/1227766/with-einstein-on-crooked-paths"
+      - text: "Max Planck Annual Project 2024"
+        url: "https://www.mpg.de/annualproject2024"
+
+  - acronym: "Ramón y Cajal"
+    title: "Ramón y Cajal programme, Atracción de Talento and RyC-MaX"
+    funder: "Spanish Research Agency, Comunidad de Madrid and CSIC"
+    dates: "2025–"
+    role: "Fellow / Principal Investigator"
+    summary: >-
+      Three linked components of a single return-to-Spain programme: the Ramón y
+      Cajal fellowship (ranked first in Astrophysics and second in Physics in the
+      2024 call), the regional Atracción de Talento award, and the CSIC RyC-MaX
+      supplement. Together they fund the establishment of a research line on
+      gravitational lensing and gravitational waves.
+    links: []
+
+  - acronym: "GWSky"
+    title: "Making Sense of the Gravitational-Wave Sky"
+    funder: "European Research Council — Synergy Grant"
+    dates: "ongoing"
+    role: "Senior collaborator"
+    summary: >-
+      A multi-PI programme on the interpretation of the gravitational-wave sky.
+      My contribution concerns gravitational-wave lensing: modelling wave-optics
+      signatures and folding them into the population and inference machinery
+      the project develops.
+    links:
+      - text: "GWSky team page"
+        url: "https://gwsky.org/people/"
+
+archive:
+  - acronym: "MPI-Grav Group"
+    title: "Independent research group, Astrophysical and Cosmological Relativity"
+    funder: "Max Planck Institute for Gravitational Physics"
+    dates: "2020–"
+    role: "Group Leader"
+    summary: >-
+      Five-year core funding for the PI, two postdoctoral positions and a PhD
+      student, which established the group's work on wave-optics lensing.
+
+  - acronym: "NLO-CO"
+    title: "Large-scale structure of the Universe and fundamental physics"
+    funder: "Marie Skłodowska-Curie Global Fellowship"
+    dates: "2015–2020"
+    role: "Fellow / PI"
+    summary: >-
+      Outgoing phase at the Berkeley Center for Cosmological Physics and return
+      phase at IPhT Saclay, covering tests of gravity with large-scale structure
+      and the supernova-lensing limits on compact dark matter.
+    links:
+      - text: "CORDIS record"
+        url: "https://cordis.europa.eu/project/id/706434"
+
+  - acronym: "ESI workshop"
+    title: "Lensing and Wave Optics in Strong Gravity"
+    funder: "Erwin Schrödinger Institute, Vienna"
+    dates: "2024"
+    role: "Organizer"
+    summary: >-
+      A dedicated workshop with roughly 60 participants and 25 recorded talks
+      that helped define the wave-optics lensing community.
+    links:
+      - text: "Workshop page"
+        url: "https://www.esi.ac.at/events/e546/"
+
+  - acronym: "Nordita Fellowship"
+    title: "Nordita Fellow"
+    funder: "Nordic Institute for Theoretical Physics"
+    dates: "2015–2017"
+    role: "Fellow"
+    summary: >-
+      Two-year independent fellowship in Stockholm on scalar–tensor gravity and
+      dark-energy phenomenology.
+
+  - acronym: "FPI"
+    title: "Doctoral fellowship and research stays"
+    funder: "Spanish Ministry of Science (FPI)"
+    dates: "2008–2012"
+    role: "Fellow"
+    summary: >-
+      Four-year PhD funding at ICC Barcelona and IFT-UAM/CSIC, with research
+      stays in Heidelberg and Oslo.

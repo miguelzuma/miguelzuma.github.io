@@ -1,0 +1,87 @@
+---
+layout: page
+nav: projects
+title: "Projects & Funding"
+eyebrow: "Programmes"
+lede: >-
+  Four current programmes support the group's work, led by the GLoW ERC
+  Consolidator Grant. Together they fund postdoctoral and doctoral positions,
+  the development of public software, and an explicit outreach commitment.
+description: >-
+  Research projects and funding led by Miguel Zumalacárregui: the GLoW ERC
+  Consolidator Grant, With Einstein on Crooked Paths, the Ramón y Cajal
+  programme and the GWSky ERC Synergy Grant.
+---
+
+<section class="section" id="current">
+  <h2>Current projects</h2>
+
+  {%- for pr in site.data.projects.current %}
+  <article class="card section" id="{{ pr.acronym | downcase | replace: ' ', '-' }}"
+           style="{% if pr.flagship %}border-color: var(--accent-dim);{% endif %}">
+
+    {%- if pr.logo %}
+    <img src="{{ pr.logo | relative_url }}" alt="" loading="lazy"
+         style="max-height:70px; width:auto; margin-bottom:0.9rem; display:block;">
+    {%- endif %}
+
+    <h3 class="card-title" style="font-size:1.3rem;">
+      {{ pr.acronym }}{% if pr.title != pr.acronym %} — {{ pr.title }}{% endif %}
+    </h3>
+
+    <p class="card-meta">
+      {{ pr.funder }} &middot; {{ pr.dates }} &middot; <strong>{{ pr.role }}</strong>
+    </p>
+
+    <p>{{ pr.summary }}</p>
+
+    {%- if pr.team %}<p class="small">{{ pr.team }}</p>{% endif %}
+    {%- if pr.note %}<p class="small"><em>{{ pr.note }}</em></p>{% endif %}
+
+    {%- if pr.links and pr.links.size > 0 %}
+    <div class="btn-row" style="margin-bottom:0;">
+      {%- for l in pr.links %}
+      <a class="btn" href="{{ l.url }}" rel="noopener">{{ l.text }}</a>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+
+  </article>
+  {%- endfor %}
+</section>
+
+<section class="section" id="archive">
+  <h2>Earlier programmes</h2>
+  <p>Completed projects, fellowships and funded activities.</p>
+
+  <div class="grid grid-2">
+    {%- for pr in site.data.projects.archive %}
+    <article class="card">
+      <p class="card-title">{{ pr.acronym }}</p>
+      <p class="card-meta">{{ pr.funder }} &middot; {{ pr.dates }} &middot; {{ pr.role }}</p>
+      <p class="small">{{ pr.title }}</p>
+      <p>{{ pr.summary }}</p>
+      {%- if pr.links %}
+      {%- for l in pr.links %}
+      <p><a href="{{ l.url }}" rel="noopener">{{ l.text }}</a></p>
+      {%- endfor %}
+      {%- endif %}
+    </article>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="section">
+  <h2>Recognition</h2>
+  <ul>
+    <li>Ramón y Cajal Fellowship 2024 — ranked first in Astrophysics and second in Physics.</li>
+    <li>Host institution for two awarded Humboldt Fellowships (2022, 2025) and one Margarita Salas Fellowship (2022).</li>
+    <li>R3 certification, Spanish Research Agency.</li>
+    <li>Berkeley Connect Fellow (2018), Marie Skłodowska-Curie Global Fellow (2015), Nordita Fellow (2015).</li>
+  </ul>
+</section>
+
+<div class="logo-row logo-row-quiet">
+  <a href="https://erc.europa.eu/" rel="noopener"><img src="{{ '/imgs/LOGO_ERC-FLAG_EU_darkbg_fixed.png' | relative_url }}" alt="European Research Council" loading="lazy" width="2048" height="882" style="height:70px;width:auto;"></a>
+  <a href="https://www.mpg.de/" rel="noopener"><img src="{{ '/imgs/MPI-AEI_wide_E_neg_rgb_transparent.png' | relative_url }}" alt="Max Planck Institute for Gravitational Physics" loading="lazy" width="1945" height="436" style="height:60px;width:auto;"></a>
+</div>
