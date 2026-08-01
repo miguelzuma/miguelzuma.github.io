@@ -21,13 +21,12 @@ description: >-
            style="{% if pr.flagship %}border-color: var(--accent-dim);{% endif %}">
 
     {%- if pr.logo %}
-    <div class="logo-plate"><img src="{{ pr.logo | relative_url }}" alt="" loading="lazy"></div>
+    <img class="card-logo" src="{{ pr.logo | relative_url }}" alt="" loading="lazy">
     {%- endif %}
 
     <h3 class="card-title" style="font-size:1.3rem;">
       {{ pr.acronym }}{% if pr.title != pr.acronym %} — {{ pr.title }}{% endif %}
     </h3>
-
     <p class="card-meta">
       {{ pr.funder }} &middot; {{ pr.dates }} &middot; <strong>{{ pr.role }}</strong>
       {%- if pr.grant %}<br>{{ pr.grant }}{% endif %}

@@ -409,9 +409,10 @@ main { padding-bottom: 3rem; }
 
 .hero-portrait {
 	width: 100%;
-	aspect-ratio: 4 / 5;
+	max-width: 260px;
+	aspect-ratio: 1 / 1;
 	object-fit: cover;
-	object-position: center 40%;
+	object-position: center 32%;
 	border-radius: var(--radius);
 	border: 1px solid var(--border);
 	display: block;
@@ -659,32 +660,27 @@ h2 + .stage-heading { margin-top: 1.2rem; }
 
 .alumni-list .next::before { content: " → "; color: var(--accent-dim); }
 
-/* A framed plate for logos inside cards, so marks with different backgrounds
-   and proportions all sit in the same box instead of floating on the card. */
-.logo-plate {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	padding: 0.7rem 0.9rem;
-	margin-bottom: 1rem;
-	background: var(--bg-raised);
-	border: 1px solid var(--border);
-	border-radius: 8px;
-	min-height: 108px;
+/* Project and software logos float right so the card text wraps around them.
+   Declared before the heading in source order, which is what float needs. */
+.card-logo {
+	float: right;
+	display: block;
+	max-height: 130px;
+	max-width: 300px;
+	width: auto;
+	margin: 0.15rem 0 1rem 1.6rem;
 }
 
-/* Capped on both axes: these marks range from square (hi_class) to 2:1
-   extended wordmarks (GLOW), and height alone leaves the wide ones unreadable. */
-.logo-plate img {
-	display: block;
-	max-height: 90px;
-	max-width: 280px;
-	width: auto;
-}
+/* Cards must contain the float, or it bleeds into the next card. */
+.card::after { content: ""; display: block; clear: both; }
 
 @media (max-width: 620px) {
-	.logo-plate { padding: 0.6rem 0.75rem; min-height: 84px; }
-	.logo-plate img { max-height: 68px; max-width: 210px; }
+	.card-logo {
+		float: none;
+		max-height: 76px;
+		max-width: 210px;
+		margin: 0 0 1rem;
+	}
 }
 
 /* ---- Logo strips ----------------------------------------------------- */
