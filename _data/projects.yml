@@ -74,55 +74,38 @@ current:
       - text: "GWSky team page"
         url: "https://gwsky.org/people/"
 
-archive:
-  - acronym: "MPI-Grav Group"
-    title: "Independent research group, Astrophysical and Cosmological Relativity"
-    funder: "Max Planck Institute for Gravitational Physics"
+# Core funding and fellowships. Unlike `current`, the headline here is the
+# position or fellowship itself -- that is the thing worth reading first.
+positions:
+  - headline: "Group Leader"
+    org: "Max Planck Institute for Gravitational Physics (Albert Einstein Institute)"
     dates: "2020–"
-    role: "Group Leader"
-    summary: >-
+    detail: >-
+      Research group in the Astrophysical and Cosmological Relativity division.
       Five-year core funding for the PI, two postdoctoral positions and a PhD
       student, which established the group's work on wave-optics lensing.
 
-  - acronym: "NLO-CO"
-    title: "Large-scale structure of the Universe and fundamental physics"
-    funder: "Marie Skłodowska-Curie Global Fellowship"
+  - headline: "Marie Skłodowska-Curie Global Fellowship"
+    org: "European Commission"
     dates: "2015–2020"
-    role: "Fellow / PI"
-    summary: >-
-      Outgoing phase at the Berkeley Center for Cosmological Physics and return
-      phase at IPhT Saclay, covering tests of gravity with large-scale structure
-      and the supernova-lensing limits on compact dark matter.
+    project: "NLO-CO — Next-to-Leading-Order Cosmology"
+    detail: >-
+      Novel tests of dark matter, dark energy and gravity. Outgoing phase at the
+      Berkeley Center for Cosmological Physics, return phase at IPhT Saclay.
     links:
       - text: "CORDIS record"
         url: "https://cordis.europa.eu/project/id/706434"
 
-  - acronym: "ESI workshop"
-    title: "Lensing and Wave Optics in Strong Gravity"
-    funder: "Erwin Schrödinger Institute, Vienna"
-    dates: "2024"
-    role: "Organizer"
-    summary: >-
-      A dedicated workshop with roughly 60 participants and 25 recorded talks
-      that helped define the wave-optics lensing community.
-    links:
-      - text: "Workshop page"
-        url: "https://www.esi.ac.at/events/e546/"
-
-  - acronym: "Nordita Fellowship"
-    title: "Nordita Fellow"
-    funder: "Nordic Institute for Theoretical Physics"
+  - headline: "Nordita Fellowship"
+    org: "Nordic Institute for Theoretical Physics, Stockholm"
     dates: "2015–2017"
-    role: "Fellow"
-    summary: >-
-      Two-year independent fellowship in Stockholm on scalar–tensor gravity and
-      dark-energy phenomenology.
+    detail: >-
+      Two-year independent fellowship on scalar–tensor gravity and dark-energy
+      phenomenology.
 
-  - acronym: "FPI"
-    title: "Doctoral fellowship and research stays"
-    funder: "Spanish Ministry of Science (FPI)"
+  - headline: "FPI doctoral fellowship"
+    org: "Spanish Ministry of Science"
     dates: "2008–2012"
-    role: "Fellow"
-    summary: >-
+    detail: >-
       Four-year PhD funding at ICC Barcelona and IFT-UAM/CSIC, with research
       stays in Heidelberg and Oslo.
