@@ -55,27 +55,44 @@ description: >-
 
 <section class="section" id="alumni">
   <h2>Alumni</h2>
-  <p>Former members of the group, and where they went next.</p>
+  <p>Former members of the group, and where they went next. Most recent first.</p>
+
+  {%- assign al_stages = "postdoc,phd,masters,undergrad" | split: "," %}
+  {%- assign al_labels = "Postdoctoral researchers,PhD students,Master's students,Undergraduates" | split: "," %}
+
+  {%- for stage in al_stages %}
+  {%- assign people = site.data.people.alumni | where: "stage", stage | sort: "end" | reverse %}
+  {%- if people.size > 0 %}
+  <h3 class="stage-heading">{{ al_labels[forloop.index0] }}<span class="stage-count">{{ people.size }}</span></h3>
   <ul class="alumni-list">
-    {%- for p in site.data.people.alumni %}
+    {%- for p in people %}
     <li>
       <strong>{{ p.name }}</strong> — {{ p.role }}{% if p.years %}, {{ p.years }}{% endif %}{% if p.next %}<span class="next">{{ p.next }}</span>{% endif %}
     </li>
     {%- endfor %}
   </ul>
+  {%- endif %}
+  {%- endfor %}
 
-  <h3>Earlier mentees</h3>
+  <h2 style="font-size:1.25rem;">Earlier mentees</h2>
   <p class="small">
     Students and postdocs supervised before the group was established in Potsdam
     in 2020.
   </p>
+
+  {%- for stage in al_stages %}
+  {%- assign people = site.data.people.earlier_mentees | where: "stage", stage | sort: "end" | reverse %}
+  {%- if people.size > 0 %}
+  <h3 class="stage-heading">{{ al_labels[forloop.index0] }}<span class="stage-count">{{ people.size }}</span></h3>
   <ul class="alumni-list">
-    {%- for p in site.data.people.earlier_mentees %}
+    {%- for p in people %}
     <li>
       <strong>{{ p.name }}</strong> — {{ p.role }}{% if p.years %}, {{ p.years }}{% endif %}{% if p.next %}<span class="next">{{ p.next }}</span>{% endif %}
     </li>
     {%- endfor %}
   </ul>
+  {%- endif %}
+  {%- endfor %}
 </section>
 
 <section class="section" id="visitors">

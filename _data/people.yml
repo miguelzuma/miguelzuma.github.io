@@ -5,8 +5,10 @@
 # member; earlier mentees and short-stay visitors appear under `visitors` or
 # `earlier_mentees`.
 #
-# Fields: name (required), stage (postdoc|phd|masters -- groups the Current
-# members section), role, years, topic, url (personal page),
+# Fields: name (required), stage (postdoc|phd|masters|undergrad -- groups the
+# Current members section and labels alumni rows), end (year the person left,
+# used to sort alumni chronologically; 0 when unknown),
+# role, years, topic, url (personal page),
 # photo (path under /imgs/collaborators/), next (destination, alumni only),
 # incoming (true -> card shows a "starts <starts>" badge), starts.
 #
@@ -116,77 +118,109 @@ visitors:
 
 alumni:
   - name: "Nicola Menadeo"
+    stage: phd
+    end: 2025
     role: "PhD student (co-supervised, U. Naples), long-term stay in the group"
     years: "2023–2025"
     next: "Postdoc at Humboldt University of Berlin"
 
   - name: "Srashti Goyal"
+    stage: postdoc
+    end: 2026
     role: "Postdoc"
     years: "2023–2026"
     next: "Independent Fellow at IUCAA"
 
   - name: "Serena Giardino"
+    stage: postdoc
+    end: 2025
     role: "Postdoc"
     years: "2024–2025"
     next: "Postdoc at Imperial College London"
 
   - name: "Guilherme Brando"
+    stage: postdoc
+    end: 2024
     role: "Humboldt Fellow"
     years: "2022–2024"
     next: "Tenured Researcher at UFES, Brazil"
 
   - name: "Giovanni Tambalo"
+    stage: postdoc
+    end: 2023
     role: "Postdoc"
     years: "2020–2023"
     next: "Postdoc at ETH Zürich, then Marie Skłodowska-Curie Fellow at IPhT Saclay"
 
   - name: "Stefano Savastano"
+    stage: phd
+    end: 2024
     role: "PhD student, co-supervised with A. Buonanno"
     years: "2020–2024"
     next: "PhD awarded at HU Berlin"
 
   - name: "Selin Üstündag"
+    stage: masters
+    end: 2026
     role: "Master's intern"
     years: "2026"
     next: "PhD at Newcastle University"
 
   - name: "Marcel Glätzer"
+    stage: masters
+    end: 2025
     role: "Master's student (HU Berlin)"
     years: "2024–2025"
 
   - name: "Jaime Raynaud"
+    stage: masters
+    end: 2025
     role: "Master's intern (TU Berlin & KTH)"
     years: "2024–2025"
     next: "PhD at MPIA"
 
   - name: "Vaibhav Omble"
+    stage: masters
+    end: 2024
     role: "Master's student (LMU)"
     years: "2023–2024"
 
   - name: "Julius Streibert"
+    stage: masters
+    end: 2023
     role: "Master's student (co-supervised, FU Berlin)"
     years: "2022–2023"
 
   - name: "Shashwat Singh"
+    stage: masters
+    end: 2023
     role: "Master's student (Paris Observatory)"
     years: "2022–2023"
     next: "PhD at the University of Glasgow"
 
   - name: "Richard Stiskalek"
+    stage: masters
+    end: 2022
     role: "Master's student (co-supervised, LMU)"
     years: "2021–2022"
     next: "PhD at Oxford, pre-doctoral Fellow at CCA, now postdoc at Oxford"
 
   - name: "Alessandro Longo"
+    stage: masters
+    end: 2021
     role: "Master's student (co-supervised, U. Trieste)"
     years: "2020–2021"
     next: "PhD student at SISSA"
 
   - name: "Daryna Yushchenko"
+    stage: undergrad
+    end: 2024
     role: "Undergraduate (Princeton summer programme)"
     years: "2024"
 
   - name: "Lyla Choi"
+    stage: undergrad
+    end: 2023
     role: "Undergraduate (Princeton summer programme)"
     years: "2023"
     next: "PhD at Stanford"
@@ -194,46 +228,64 @@ alumni:
 # Mentees from before the Potsdam group (2020), kept for the record.
 earlier_mentees:
   - name: "Ho Yeuk Cheung"
+    stage: phd
+    end: 2025
     role: "Undergraduate at UC Berkeley, then PhD student at JHU (informal)"
     years: "2020–2025"
     next: "Fellow at Princeton IAS"
 
   - name: "José María Ezquiaga"
+    stage: phd
+    end: 2019
     role: "PhD student (informal), IFT-UAM"
     years: "2015–2019"
     next: "NASA Einstein Fellow at U. Chicago, now Associate Professor at NBI and chair of the LVK lensing group"
 
   - name: "Carlos García-García"
+    stage: phd
+    end: 2020
     role: "PhD student (co-supervisor), IFF-CSIC"
     years: "2017–2020"
     next: "Beecroft Fellow at Oxford, now tenure-track scientist at CIEMAT"
     photo: "Carlos_Garcia-Garcia.jpg"
 
   - name: "Dina Traykova"
+    stage: phd
+    end: 2021
     role: "PhD student (informal), U. Oxford"
     years: "2018–2021"
     next: "Postdoc at MPI-Grav"
 
   - name: "Janina Renk"
+    stage: masters
+    end: 2016
     role: "Master's student (co-supervised), U. Heidelberg"
     years: "2015–2016"
     next: "PhD at Stockholm University"
     photo: "Janina_Renk.jpg"
 
   - name: "Micah Brush"
+    stage: phd
+    end: 0
     role: "PhD student (informal), UC Berkeley"
     next: "Postdoc at the University of Alberta"
 
   - name: "Alessio Spurio Mancini"
+    stage: phd
+    end: 0
     role: "PhD student (informal), U. Heidelberg"
     next: "Postdoc at the University of Cambridge"
 
   - name: "Yukei Murakami"
+    stage: undergrad
+    end: 2019
     role: "Undergraduate, UC Berkeley"
     years: "2018–2019"
     next: "PhD at Johns Hopkins University"
 
   - name: "Brindha Kanniah"
+    stage: undergrad
+    end: 2015
     role: "Undergraduate (MIT summer programme, Heidelberg)"
     years: "2015"
     next: "Master's at MIT"
