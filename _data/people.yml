@@ -26,7 +26,8 @@ current:
   - name: "Xikai Shan"
     url: "https://inspirehep.net/authors/1837042"
     stage: postdoc
-    role: "Postdoctoral researcher"
+    role: "Affiliated postdoctoral researcher"
+    location: "based at the AEI, Potsdam"
     years: "2026–"
     topic: "Lensing of gravitational waves by stellar fields and effective descriptions of diffraction."
 

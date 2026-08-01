@@ -41,7 +41,7 @@ description: >-
         {%- endif %}
         <div class="person-body">
           <p class="person-name">{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</p>
-          <p class="person-role">{{ p.role }}{% if p.years %} &middot; {{ p.years }}{% endif %}</p>
+          <p class="person-role">{{ p.role }}{% if p.location %}, {{ p.location }}{% endif %}{% if p.years %} &middot; {{ p.years }}{% endif %}</p>
           {%- if p.incoming %}<p class="person-incoming"><span class="badge">Starts {{ p.starts }}</span></p>{% endif %}
           {%- if p.topic %}<p class="person-note">{{ p.topic }}</p>{% endif %}
         </div>
