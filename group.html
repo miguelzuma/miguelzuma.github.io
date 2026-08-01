@@ -67,7 +67,7 @@ description: >-
   <ul class="alumni-list">
     {%- for p in people %}
     <li>
-      <strong>{{ p.name }}</strong> — {{ p.role }}{% if p.years %}, {{ p.years }}{% endif %}{% if p.next %}<span class="next">{{ p.next }}</span>{% endif %}
+      <strong>{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</strong> — {{ p.role }}{% if p.years %}, {{ p.years }}{% endif %}{% if p.next %}<span class="next">{{ p.next }}</span>{% endif %}
     </li>
     {%- endfor %}
   </ul>
@@ -87,7 +87,7 @@ description: >-
   <ul class="alumni-list">
     {%- for p in people %}
     <li>
-      <strong>{{ p.name }}</strong> — {{ p.role }}{% if p.years %}, {{ p.years }}{% endif %}{% if p.next %}<span class="next">{{ p.next }}</span>{% endif %}
+      <strong>{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</strong> — {{ p.role }}{% if p.years %}, {{ p.years }}{% endif %}{% if p.next %}<span class="next">{{ p.next }}</span>{% endif %}
     </li>
     {%- endfor %}
   </ul>

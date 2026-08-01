@@ -17,26 +17,30 @@
 
 current:
   - name: "Han-Gil Choi"
+    url: "https://inspirehep.net/authors/1852430"
     stage: postdoc
     role: "Postdoctoral researcher"
     years: "2026–"
     topic: "Signatures of low-mass dark-matter halos in LISA through stochastic diffraction."
 
   - name: "Xikai Shan"
+    url: "https://inspirehep.net/authors/1837042"
     stage: postdoc
     role: "Postdoctoral researcher"
     years: "2026–"
     topic: "Lensing of gravitational waves by stellar fields and effective descriptions of diffraction."
 
   - name: "Juan Urrutia"
+    url: "https://inspirehep.net/authors/2049477"
     stage: postdoc
-    role: "Humboldt Fellow"
+    role: "Postdoctoral researcher"
     years: "2026–"
     incoming: true
     starts: "October 2026"
     topic: "Dark-matter halos and diffraction signatures in space-based gravitational-wave data."
 
   - name: "Héctor Villarrubia-Rojo"
+    url: "https://inspirehep.net/authors/1897475"
     stage: postdoc
     role: "Postdoctoral researcher"
     years: "2026–"
@@ -45,12 +49,13 @@ current:
     topic: "Lead developer of the GLoW code; wave-optics methods for gravitational lensing. Previously a Margarita Salas Fellow in the group (2022–2024)."
 
   - name: "Daniel Ballard"
+    url: "https://inspirehep.net/authors/2648800"
     stage: postdoc
     role: "Postdoctoral researcher"
     years: "2026–"
     incoming: true
     starts: "October 2026"
-    # topic: TODO
+    topic: "Lens modelling and analysis."
 
   - name: "Manon van Zyl"
     stage: phd
@@ -86,31 +91,37 @@ current:
 
 visitors:
   - name: "Manish Tamta"
+    url: "https://inspirehep.net/authors/2797698"
     role: "PhD student, IISc Bangalore"
     years: "2025, 2026"
     topic: "Lensing diffraction and dark matter."
 
   - name: "Marienza Caldarola"
+    url: "https://inspirehep.net/authors/2673999"
     role: "PhD student, IFT-UAM/CSIC"
     years: "2025"
     topic: "Simulation-based inference for lensing."
 
   - name: "Hanxi Wang"
+    url: "https://inspirehep.net/literature?q=a%20Hanxi%20Wang"
     role: "PhD student, U. Oxford"
     years: "2024"
     topic: "Lensing of starlight by supermassive black-hole binaries."
 
   - name: "Martin Pijnenburg"
+    url: "https://inspirehep.net/authors/2864691"
     role: "PhD student, U. Geneva"
     years: "2024"
     topic: "Collective diffraction effects."
 
   - name: "Luka Vujeva"
+    url: "https://inspirehep.net/authors/2873304"
     role: "PhD student, U. Copenhagen"
     years: "2024"
     topic: "Strong lensing of gravitational waves."
 
   - name: "Marius Oancea"
+    url: "https://inspirehep.net/authors/1800686"
     role: "Postdoc, U. Vienna"
     years: "2021–"
     topic: "Gravitational spin-Hall effect and polarization-dependent lensing."
@@ -118,6 +129,7 @@ visitors:
 
 alumni:
   - name: "Nicola Menadeo"
+    url: "https://inspirehep.net/authors/2661950"
     stage: phd
     end: 2025
     role: "PhD student (co-supervised, U. Naples), long-term stay in the group"
@@ -125,6 +137,7 @@ alumni:
     next: "Postdoc at Humboldt University of Berlin"
 
   - name: "Srashti Goyal"
+    url: "https://inspirehep.net/authors/1877314"
     stage: postdoc
     end: 2026
     role: "Postdoc"
@@ -132,6 +145,7 @@ alumni:
     next: "Independent Fellow at IUCAA"
 
   - name: "Serena Giardino"
+    url: "https://inspirehep.net/authors/1799396"
     stage: postdoc
     end: 2025
     role: "Postdoc"
@@ -139,6 +153,7 @@ alumni:
     next: "Postdoc at Imperial College London"
 
   - name: "Guilherme Brando"
+    url: "https://inspirehep.net/authors/1700346"
     stage: postdoc
     end: 2024
     role: "Humboldt Fellow"
@@ -146,6 +161,7 @@ alumni:
     next: "Tenured Researcher at UFES, Brazil"
 
   - name: "Giovanni Tambalo"
+    url: "https://inspirehep.net/authors/1762176"
     stage: postdoc
     end: 2023
     role: "Postdoc"
@@ -153,6 +169,7 @@ alumni:
     next: "Postdoc at ETH Zürich, then Marie Skłodowska-Curie Fellow at IPhT Saclay"
 
   - name: "Stefano Savastano"
+    url: "https://inspirehep.net/authors/1820538"
     stage: phd
     end: 2024
     role: "PhD student, co-supervised with A. Buonanno"
@@ -186,12 +203,14 @@ alumni:
     years: "2023–2024"
 
   - name: "Julius Streibert"
+    url: "https://inspirehep.net/authors/2776373"
     stage: masters
     end: 2023
     role: "Master's student (co-supervised, FU Berlin)"
     years: "2022–2023"
 
   - name: "Shashwat Singh"
+    url: "https://inspirehep.net/authors/2964272"
     stage: masters
     end: 2023
     role: "Master's student (Paris Observatory)"
@@ -199,6 +218,7 @@ alumni:
     next: "PhD at the University of Glasgow"
 
   - name: "Richard Stiskalek"
+    url: "https://inspirehep.net/authors/1878325"
     stage: masters
     end: 2022
     role: "Master's student (co-supervised, LMU)"
@@ -206,6 +226,7 @@ alumni:
     next: "PhD at Oxford, pre-doctoral Fellow at CCA, now postdoc at Oxford"
 
   - name: "Alessandro Longo"
+    url: "https://inspirehep.net/authors/2742948"
     stage: masters
     end: 2021
     role: "Master's student (co-supervised, U. Trieste)"
@@ -219,6 +240,7 @@ alumni:
     years: "2024"
 
   - name: "Lyla Choi"
+    url: "https://inspirehep.net/authors/2660856"
     stage: undergrad
     end: 2023
     role: "Undergraduate (Princeton summer programme)"
@@ -228,6 +250,7 @@ alumni:
 # Mentees from before the Potsdam group (2020), kept for the record.
 earlier_mentees:
   - name: "Ho Yeuk Cheung"
+    url: "https://inspirehep.net/authors/1853401"
     stage: phd
     end: 2025
     role: "Undergraduate at UC Berkeley, then PhD student at JHU (informal)"
@@ -235,6 +258,7 @@ earlier_mentees:
     next: "Fellow at Princeton IAS"
 
   - name: "José María Ezquiaga"
+    url: "https://inspirehep.net/authors/1430977"
     stage: phd
     end: 2019
     role: "PhD student (informal), IFT-UAM"
@@ -242,6 +266,7 @@ earlier_mentees:
     next: "NASA Einstein Fellow at U. Chicago, now Associate Professor at NBI and chair of the LVK lensing group"
 
   - name: "Carlos García-García"
+    url: "https://inspirehep.net/authors/1763622"
     stage: phd
     end: 2020
     role: "PhD student (co-supervisor), IFF-CSIC"
@@ -250,6 +275,7 @@ earlier_mentees:
     photo: "Carlos_Garcia-Garcia.jpg"
 
   - name: "Dina Traykova"
+    url: "https://inspirehep.net/authors/1724905"
     stage: phd
     end: 2021
     role: "PhD student (informal), U. Oxford"
@@ -257,6 +283,7 @@ earlier_mentees:
     next: "Postdoc at MPI-Grav"
 
   - name: "Janina Renk"
+    url: "https://inspirehep.net/authors/1448250"
     stage: masters
     end: 2016
     role: "Master's student (co-supervised), U. Heidelberg"
@@ -265,6 +292,7 @@ earlier_mentees:
     photo: "Janina_Renk.jpg"
 
   - name: "Micah Brush"
+    url: "https://inspirehep.net/authors/2549427"
     stage: phd
     end: 2019
     role: "PhD student (informal), UC Berkeley"
@@ -272,6 +300,7 @@ earlier_mentees:
     next: "Postdoc at the University of Alberta"
 
   - name: "Alessio Spurio Mancini"
+    url: "https://inspirehep.net/authors/1698172"
     stage: phd
     end: 2016
     role: "PhD student (informal), U. Heidelberg"
@@ -279,6 +308,7 @@ earlier_mentees:
     next: "Postdoc at the University of Cambridge"
 
   - name: "Yukei Murakami"
+    url: "https://inspirehep.net/authors/2000678"
     stage: undergrad
     end: 2019
     role: "Undergraduate, UC Berkeley"
