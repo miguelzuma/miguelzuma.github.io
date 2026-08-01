@@ -683,6 +683,29 @@ h2 + .stage-heading { margin-top: 1.2rem; }
 	}
 }
 
+/* A row of photos with mismatched aspect ratios: match on height, not width,
+   so a square and a panorama sit together without one dwarfing the other. */
+.photo-strip {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem 1.2rem;
+	align-items: flex-start;
+	margin: 2rem 0 0;
+}
+
+.photo-strip figure { margin: 0; }
+
+.photo-strip img {
+	height: 190px;
+	width: auto;
+	max-width: 100%;
+	border-radius: 8px;
+}
+
+@media (max-width: 620px) {
+	.photo-strip img { height: auto; width: 100%; }
+}
+
 /* ---- Logo strips ----------------------------------------------------- */
 
 .logo-row {
