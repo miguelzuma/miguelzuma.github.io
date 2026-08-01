@@ -90,6 +90,26 @@ description: >-
       candidate for a magnified and diffracted black-hole merger.
     </p>
 
+    <figure>
+      <video width="1560" height="520" autoplay muted loop playsinline
+             poster="{{ '/imgs/pls_gamma_web_dark_still.png' | relative_url }}"
+             aria-label="Animation of the microcaustics, time-domain lensing integral and amplification factor as the slope of the lens profile is varied.">
+        <source src="{{ '/imgs/pls_gamma_web_dark.webm' | relative_url }}" type="video/webm">
+        <source src="{{ '/imgs/pls_gamma_web_dark.mp4' | relative_url }}" type="video/mp4">
+      </video>
+      <figcaption>
+        How the wave-optics signature responds to the shape of the lens. As the
+        density slope &gamma;&#771; is varied, the microcaustics in the lens
+        plane (left) reorganise, the time-domain arrivals (centre) merge and
+        split, and the amplification factor |F(f)| (right) changes its
+        modulation pattern — which is why a single diffracted event constrains
+        the profile and not only the mass. Produced with
+        <a href="{{ '/software.html' | relative_url }}">GLoW</a>; the code and
+        data are in the
+        <a href="https://github.com/miguelzuma/GW231123_lensing_PLS" rel="noopener">GW231123 lensing release</a>.
+      </figcaption>
+    </figure>
+
     <h4>Selected publications</h4>
     <ul class="pubs">
       <li>
@@ -371,6 +391,24 @@ description: >-
       network trained on microlensed waveforms can return a posterior in seconds
       rather than days, making a population-level search feasible at all.
     </p>
+
+    <figure>
+      <video width="1560" height="520" autoplay muted loop playsinline
+             poster="{{ '/imgs/sampling_L1_web_dark_still.png' | relative_url }}"
+             aria-label="Animation of posterior samples for the lens of GW231123, each shown as the whitened strain template it predicts in LIGO Livingston.">
+        <source src="{{ '/imgs/sampling_L1_web_dark.webm' | relative_url }}" type="video/webm">
+        <source src="{{ '/imgs/sampling_L1_web_dark.mp4' | relative_url }}" type="video/mp4">
+      </video>
+      <figcaption>
+        Every posterior sample is a lens. Walking up the GW231123 lensing
+        posterior in the (M<sub>Lz</sub>, &gamma;&#771;) plane (left), each
+        sample predicts a different whitened template in LIGO Livingston
+        (right): the merger stays anchored while the post-merger diffraction
+        echoes move and reshape as the sampler climbs towards the best fit.
+        Samples from the
+        <a href="https://github.com/miguelzuma/GW231123_lensing_PLS" rel="noopener">public data release</a>.
+      </figcaption>
+    </figure>
 
     <h4>Selected publications</h4>
     <ul class="pubs">
@@ -683,3 +721,14 @@ description: >-
   </section>
 
 </div>
+
+<script>
+// Honour reduced-motion for the autoplaying figures: pause them and expose controls.
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('video[autoplay]').forEach(function (v) {
+    v.removeAttribute('autoplay');
+    v.controls = true;
+    v.pause();
+  });
+}
+</script>
