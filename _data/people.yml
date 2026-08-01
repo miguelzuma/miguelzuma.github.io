@@ -266,14 +266,16 @@ earlier_mentees:
 
   - name: "Micah Brush"
     stage: phd
-    end: 0
+    end: 2019
     role: "PhD student (informal), UC Berkeley"
+    years: "2019"
     next: "Postdoc at the University of Alberta"
 
   - name: "Alessio Spurio Mancini"
     stage: phd
-    end: 0
+    end: 2016
     role: "PhD student (informal), U. Heidelberg"
+    years: "2016"
     next: "Postdoc at the University of Cambridge"
 
   - name: "Yukei Murakami"
