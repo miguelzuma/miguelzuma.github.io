@@ -606,14 +606,6 @@ figure.float-left {
 	background: var(--border);
 }
 
-.stage-heading .stage-count {
-	flex: 0 0 auto;
-	text-transform: none;
-	letter-spacing: 0.02em;
-	font-size: 0.8rem;
-	font-weight: 550;
-	color: var(--text-mute);
-}
 
 /* First band sits directly under the section heading */
 h2 + .stage-heading { margin-top: 1.2rem; }
