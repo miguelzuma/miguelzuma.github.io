@@ -34,8 +34,19 @@ page also has a hard-coded postal address that needs updating separately.
 
 ## Local preview
 
-Requires Ruby with development headers (`sudo apt install ruby-dev
-build-essential` on Debian/Ubuntu):
+```
+./tools/preview.sh          # builds, then serves at http://127.0.0.1:4000
+PORT=8080 ./tools/preview.sh
+```
+
+This works around a local toolchain limitation: Ruby is installed but the
+development headers are not, so gems with native extensions (`eventmachine`,
+`http_parser.rb`) cannot compile. Those are only needed by `jekyll serve
+--livereload`, never by `jekyll build`, so `tools/jekyll_build.rb` loads Jekyll
+directly and Python serves the result.
+
+If you install the headers (`sudo apt install ruby-dev build-essential`), the
+standard route works and the scripts become unnecessary:
 
 ```
 bundle install
