@@ -18,6 +18,9 @@
 - id: outreach
   title: Talks & Outreach
   url: /outreach.html
+- id: cv
+  title: CV
+  url: /cv.html
 - id: contact
   title: Contact
   url: /contact.html

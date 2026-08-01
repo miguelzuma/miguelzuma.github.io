@@ -5,15 +5,13 @@ title: "Research"
 eyebrow: "Gravitation, Cosmology and Data Interpretation"
 lede: >-
   The bulk of my current effort goes into one programme: using the gravitational
-  lensing of coherent signals — gravitational waves and fast radio bursts — to
-  find dark matter, compact objects and black holes, and to test gravity itself.
-  Around it sits a broader foundation in cosmology, dark energy and
-  gravitational theory.
+  lensing of waves to find dark matter, compact objects and black holes, and to
+  test gravity itself. Around it sits a broader foundation in cosmology, dark
+  energy and gravitational theory.
 description: >-
   Research programme on gravitational lensing of waves: wave optics, dark
-  matter and small-scale structure, black holes as lenses, fast radio bursts,
-  tests of gravity through lensed propagation, dark energy and scalar–tensor
-  cosmology.
+  matter and small-scale structure, strong-field and multi-messenger lensing,
+  tests of gravity, dark energy and scalar–tensor cosmology.
 ---
 
 <p>
@@ -26,10 +24,8 @@ description: >-
 <div class="btn-row">
   <a class="btn" href="#lensing-waves">Wave optics</a>
   <a class="btn" href="#dark-matter">Dark matter</a>
-  <a class="btn" href="#black-holes">Black holes</a>
   <a class="btn" href="#strong-field">Strong-field &amp; multi-messenger</a>
-  <a class="btn" href="#frbs">Fast radio bursts</a>
-  <a class="btn" href="#lensed-gravity">Tests of gravity</a>
+  <a class="btn" href="#tests-of-gravity">Tests of gravity</a>
   <a class="btn" href="#methods">Methods &amp; software</a>
 </div>
 
@@ -44,10 +40,9 @@ description: >-
   the wavelengths LIGO–Virgo–KAGRA and LISA observe, the wave diffracts and
   interferes with itself, and the resulting frequency-dependent pattern encodes
   the mass, the profile and even the substructure of the lens. The same is true
-  of any phase-coherent signal, fast radio bursts included. That makes lensing
-  of coherent sources a probe of objects that emit no light at all — and, because
-  a lens breaks the symmetry of the background, a test of gravity itself. This
-  is the programme funded by the
+  of any phase-coherent signal. That makes lensing a probe of objects that emit
+  no light at all — and, because a lens breaks the symmetry of the background, a
+  test of gravity itself. This is the programme funded by the
   <a href="{{ '/projects.html#glow' | relative_url }}">GLOW</a> ERC Consolidator
   Grant.
 </p>
@@ -187,9 +182,9 @@ description: >-
     </ul>
   </section>
 
-  <!-- ---------- Black holes ---------- -->
-  <section class="section" id="black-holes">
-    <h3>Black holes as gravitational lenses</h3>
+  <!-- ---------- Strong field & multi-messenger ---------- -->
+  <section class="section" id="strong-field">
+    <h3>Strong-field and multi-messenger lensing</h3>
 
     <figure class="float-right" style="width:340px;">
       <img src="{{ '/imgs/BH_as_telescopes.png' | relative_url }}"
@@ -204,22 +199,24 @@ description: >-
       Black holes are usually studied as sources. They are also excellent lenses,
       and a binary black hole is a lens whose caustic structure moves. When a
       sub-parsec supermassive binary sits in front of stars in its host galaxy,
-      those caustics sweep across background stars repeatedly, once per orbit,
-      producing a quasi-periodic magnification with a very distinctive shape.
+      those caustics sweep across background stars once per orbit, producing a
+      quasi-periodic magnification with a distinctive shape. That turns an
+      existing problem on its head: the systems that will dominate the LISA and
+      pulsar-timing signal are almost impossible to resolve directly, but
+      quasi-periodic lensed starlight offers a way to find them
+      electromagnetically and measure their orbital parameters before their
+      gravitational waves are ever observed. Closer to home, continuous
+      gravitational waves from sources behind Sgr&nbsp;A* can be strongly lensed
+      well beyond the Einstein radius.
     </p>
     <p>
-      This turns an existing problem on its head. Sub-parsec supermassive
-      binaries are the systems that will dominate the LISA and pulsar-timing
-      signal, and they are almost impossible to resolve directly. Quasi-periodic
-      lensed starlight offers a way to find them electromagnetically, measure
-      their orbital parameters, and so predict their gravitational-wave emission
-      before it is observed.
-    </p>
-    <p>
-      The same physics applies closer to home. Continuous gravitational waves
-      from sources behind Sgr&nbsp;A* can be strongly lensed well beyond the
-      Einstein radius, and identifying such signals would give a direct handle on
-      the mass distribution in the Galactic Centre.
+      Multi-messenger lensing is the wider frontier. A lensed gravitational wave
+      and a lensed electromagnetic counterpart of the same event constrain the
+      lens far better than either alone, because they probe complementary
+      regimes: the wave diffracts, the light does not. Building this into a
+      coherent observational strategy across LIGO–Virgo–KAGRA, Einstein
+      Telescope, Rubin and Euclid is a community-scale effort, and I coordinated
+      the microlensing section of the community white paper on it.
     </p>
 
     <h4>Flagship publications</h4>
@@ -235,8 +232,8 @@ description: >-
         <span class="authors">S. Savastano, F. Vernizzi, M. Zumalacárregui</span>
       </li>
       <li>
-        <a href="https://inspirehep.net/literature/2151522" rel="noopener">From the gates of the abyss: frequency- and polarization-dependent lensing of gravitational waves in strong gravitational fields</a>
-        <span class="authors">M. Oancea, R. Stiskalek, M. Zumalacárregui</span>
+        <a href="https://inspirehep.net/literature/2904454" rel="noopener">Multi-messenger gravitational lensing</a>
+        <span class="authors">G. Smith et al. — coordinator, microlensing section</span>
       </li>
     </ul>
 
@@ -247,84 +244,9 @@ description: >-
     </ul>
   </section>
 
-  <!-- ---------- Strong field & multi-messenger ---------- -->
-  <section class="section" id="strong-field">
-    <h3>Strong-field and multi-messenger lensing</h3>
-
-    <p>
-      Close to a massive body, the standard lensing formalism — weak fields, small
-      deflections, a single flat propagation background — no longer applies. The
-      wave couples to the background curvature at subleading order in the
-      wavelength, and its two polarizations propagate differently. This
-      gravitational spin-Hall effect makes the trajectory polarization dependent,
-      an effect with no counterpart in the geometric-optics picture.
-    </p>
-    <p>
-      Multi-messenger lensing is the other frontier. A lensed gravitational wave
-      and a lensed electromagnetic counterpart of the same event constrain the
-      lens far better than either alone, because they probe complementary regimes:
-      the wave diffracts, the light does not. Building this into a coherent
-      observational strategy across LIGO–Virgo–KAGRA, Einstein Telescope, Rubin
-      and Euclid is a community-scale effort, and I coordinated the microlensing
-      section of the community white paper on it.
-    </p>
-
-    <h4>Flagship publications</h4>
-    <ul class="pubs">
-      <li>
-        <a href="https://inspirehep.net/literature/2904454" rel="noopener">Multi-messenger gravitational lensing</a>
-        <span class="authors">G. Smith et al. — coordinator, microlensing section</span>
-      </li>
-      <li>
-        <a href="https://inspirehep.net/literature/2151522" rel="noopener">Frequency- and polarization-dependent lensing of gravitational waves in strong gravitational fields</a>
-        <span class="authors">M. Oancea, R. Stiskalek, M. Zumalacárregui</span>
-      </li>
-      <li>
-        <a href="https://inspirehep.net/literature/2847089" rel="noopener">Gravitational wave propagation beyond general relativity: geometric-optics expansion and lens-induced dispersion</a>
-        <span class="authors">N. Menadeo, M. Zumalacárregui</span>
-      </li>
-    </ul>
-
-    <ul class="arrow-list">
-      <li><a href="https://www.aei.mpg.de/1183585/strong-space-time-curvature" rel="noopener">How does strong space-time curvature affect the propagation of gravitational waves?</a> — AEI research highlight</li>
-    </ul>
-  </section>
-
-  <!-- ---------- Fast radio bursts ---------- -->
-  <section class="section" id="frbs">
-    <h3>Fast radio bursts and coherent radio sources</h3>
-
-    <p>
-      Gravitational waves are not the only phase-coherent signals reaching us
-      from cosmological distances. Fast radio bursts — brief, powerful
-      extragalactic transients — are coherent too, and the next generation of
-      radio observatories will detect them in numbers large enough for lensing
-      to become a statistical tool. Because radio wavelengths are far longer
-      than optical ones, wave-optics effects appear for much smaller lenses:
-      FRBs can reach down to planet-scale masses that no other probe touches.
-    </p>
-    <p>
-      Radio sources also carry an effect gravitational waves do not. Free
-      electrons along the line of sight produce plasma lensing, dispersive
-      (scaling as 1/f<sup>2</sup>) and opposite in sign to gravitational
-      deflection — light scattered into a rainbow. Plasma lensing already
-      matters for pulsar timing and for probing the interstellar and
-      circumgalactic medium, but it has largely been treated in the geometric
-      limit. Developing wave-optics plasma lensing is one of the programme's
-      theory goals, and it feeds back into the interpretation of FRB emission
-      itself.
-    </p>
-    <p>
-      Further ahead, the same machinery applies wherever a coherent source meets
-      a small lens: plasma diffraction in pulsars as a probe of the interstellar
-      medium, and diffraction of optical and X-ray sources in searches for
-      asteroid-mass primordial black holes.
-    </p>
-  </section>
-
-  <!-- ---------- Tests of gravity through lensing ---------- -->
-  <section class="section" id="lensed-gravity">
-    <h3>Tests of gravity and dark energy with lensed waves</h3>
+  <!-- ---------- Tests of gravity ---------- -->
+  <section class="section" id="tests-of-gravity">
+    <h3>Tests of gravity and dark energy</h3>
 
     <figure class="float-right" style="width:210px;">
       <img src="{{ '/imgs/LIB_results_Goyal_23_V.png' | relative_url }}"
@@ -336,21 +258,34 @@ description: >-
     </figure>
 
     <p>
-      A lens does something a smooth cosmological background cannot: it breaks
-      the symmetry. In theories beyond general relativity that lets a
-      gravitational wave interact with new fields of different spin — couplings
-      that vanish exactly on a homogeneous background. The result is a family of
-      observable effects with no counterpart in Einstein's theory: birefringence,
-      where the two polarizations travel at different speeds so the lens acts
-      like an anisotropic crystal; dispersion, as in plasma lensing; and
-      modified diffraction.
+      A gravitational wave accumulates any departure from general relativity
+      along its entire path, which makes propagation one of the cleanest tests
+      available. My earlier work identified the speed of gravitational waves as
+      the sharpest discriminant among scalar–tensor theories — a prediction
+      settled spectacularly by GW170817, whose near-simultaneous electromagnetic
+      counterpart ruled out entire classes of dark-energy models in a single
+      stroke.
+    </p>
+    <p>
+      Lensing sharpens the test considerably, because a lens does something a
+      smooth cosmological background cannot: it breaks the symmetry. In theories
+      beyond general relativity that lets a wave interact with new fields of
+      different spin — couplings that vanish exactly on a homogeneous
+      background. The result is a family of effects with no counterpart in
+      Einstein's theory: birefringence, where the two polarizations travel at
+      different speeds so the lens acts like an anisotropic crystal; dispersion,
+      as in plasma lensing; and modified diffraction.
     </p>
     <p>
       This makes lensing a test of gravity that needs no electromagnetic
       counterpart. We searched for lens-induced birefringence across 43 events in
       the LIGO–Virgo–KAGRA catalogue and obtained bounds comparable to those from
-      the GW170817 neutron-star merger — from gravitational-wave data alone. The
-      constraints improve sharply once multiply-imaged events are found.
+      GW170817 — from gravitational-wave data alone, and they improve sharply
+      once multiply-imaged events are found. Where gravity is strong rather than
+      modified, the wave couples to the background curvature at subleading order
+      in the wavelength and its polarizations no longer follow the same path: a
+      gravitational spin-Hall effect that must be understood before any departure
+      from general relativity can be claimed from a lensed signal.
     </p>
     <p>
       The programme extends this in two directions: from the high-frequency
@@ -364,6 +299,13 @@ description: >-
     <h4>Flagship publications</h4>
     <ul class="pubs">
       <li>
+        <a href="https://inspirehep.net/literature/1630865" rel="noopener">Dark energy after GW170817: dead ends and the road ahead</a>
+        <span class="authors">J. M. Ezquiaga, M. Zumalacárregui</span>
+        <span class="journal">Phys. Rev. Lett. <strong>119</strong>, 251304 (2017)</span>
+        <span class="badge">Editors' Suggestion</span>
+        <a href="https://link.aps.org/doi/10.1103/Physics.10.134" rel="noopener">Physics Viewpoint</a>
+      </li>
+      <li>
         <a href="https://inspirehep.net/literature/2622629" rel="noopener">Probing lens-induced gravitational-wave birefringence as a test of general relativity</a>
         <span class="authors">S. Goyal, A. Vijaykumar, J. M. Ezquiaga, M. Zumalacárregui</span>
       </li>
@@ -374,13 +316,33 @@ description: >-
         <span class="badge">Editors' Suggestion</span>
       </li>
       <li>
+        <a href="https://inspirehep.net/literature/1479752" rel="noopener">Speed of gravitational waves and the fate of scalar–tensor gravity</a>
+        <span class="authors">D. Bettoni, J. M. Ezquiaga, K. Hinterbichler, M. Zumalacárregui</span>
+        <span class="journal">Phys. Rev. D <strong>95</strong>, 084029 (2017)</span>
+      </li>
+      <li>
+        <a href="https://inspirehep.net/literature/2151522" rel="noopener">From the gates of the abyss: frequency- and polarization-dependent lensing of gravitational waves in strong gravitational fields</a>
+        <span class="authors">M. Oancea, R. Stiskalek, M. Zumalacárregui</span>
+      </li>
+      <li>
         <a href="https://inspirehep.net/literature/3081772" rel="noopener">Gravitational-wave dispersion over inhomogeneous space-times: general relativity, screened theories of gravity and non-minimal dark energy</a>
         <span class="authors">N. Menadeo, S. Giardino, M. Zumalacárregui</span>
       </li>
     </ul>
 
+    <p class="small">
+      See also
+      <a href="https://inspirehep.net/literature/2847089" rel="noopener">geometric-optics expansion and lens-induced dispersion</a>,
+      the review
+      <a href="https://inspirehep.net/literature/1683707" rel="noopener">Dark energy in light of multi-messenger gravitational-wave astronomy</a>,
+      and
+      <a href="https://inspirehep.net/literature/1738351" rel="noopener">Testing modified gravity at cosmological distances with LISA standard sirens</a>.
+    </p>
+
     <ul class="arrow-list">
+      <li><a href="https://youtu.be/1k0o0QiL288" rel="noopener">Tests of gravitational-wave propagation</a> — Dark Energy from Home (2026)</li>
       <li><a href="https://www.youtube.com/watch?v=w2vnenwbJWY" rel="noopener">GW lensing beyond general relativity</a> — SISSA gravity webinars</li>
+      <li><a href="https://www.aei.mpg.de/1183585/strong-space-time-curvature" rel="noopener">How does strong space-time curvature affect the propagation of gravitational waves?</a> — AEI research highlight</li>
       <li><a href="https://astrobites.org/2023/04/11/gravitational-waves-a-la-general-relativity-or-scrambled/" rel="noopener">Gravitational waves à la general relativity, or scrambled?</a> — Astrobites</li>
     </ul>
   </section>
@@ -409,10 +371,10 @@ description: >-
       code someone else can download.
     </p>
     <p>
-      The same commitment predates the lensing work:
-      <a href="https://hiclass-code.net" rel="noopener">hi_class</a>, our
-      Einstein–Boltzmann solver for general scalar–tensor theories, has been used
-      in more than eighty publications by groups other than ours.
+      Speed is not only a convenience. Searching a catalogue means running
+      inference thousands of times, which is where machine learning enters: a
+      network trained on microlensed waveforms can return a posterior in seconds
+      rather than days, making a population-level search feasible at all.
     </p>
 
     <h4>Flagship publications</h4>
@@ -422,13 +384,8 @@ description: >-
         <span class="authors">H. Villarrubia-Rojo, S. Savastano, M. Zumalacárregui, L. Choi, S. Goyal, L. Dai, G. Tambalo</span>
       </li>
       <li>
-        <a href="https://inspirehep.net/literature/2781293" rel="noopener">Lens stochastic diffraction: a signature of compact objects in gravitational-wave data</a>
-        <span class="authors">M. Zumalacárregui</span>
-      </li>
-      <li>
-        <a href="https://inspirehep.net/literature/1462237" rel="noopener">hi_class: Horndeski in the Cosmic Linear Anisotropy Solving System</a>
-        <span class="authors">M. Zumalacárregui, E. Bellini, I. Sawicki, J. Lesgourgues, P. G. Ferreira</span>
-        <span class="journal">JCAP <strong>1708</strong>, 019 (2017)</span>
+        <a href="https://inspirehep.net/literature/3081783" rel="noopener">Accelerated inference of microlensed gravitational waves with machine learning</a>
+        <span class="authors">M. Caldarola, S. Goyal, N. Gupte, S. R. Green, M. Zumalacárregui</span>
       </li>
     </ul>
 
@@ -439,61 +396,6 @@ description: >-
   </section>
 
 </div>
-
-<!-- ==================================================================
-     OTHER ACTIVE RESEARCH
-     ================================================================== -->
-
-<h2 id="tests-of-gravity">Other active research</h2>
-
-<section class="secondary section" aria-labelledby="gw-gravity-heading">
-  <h3 id="gw-gravity-heading">Gravitational-wave propagation and the speed of gravity</h3>
-
-  <p>
-    Before lensing offered a sharper handle, the cleanest test of cosmological
-    gravity was the propagation of gravitational waves across a smooth Universe.
-    My earlier work identified the speed of gravitational waves as the sharpest
-    discriminant among scalar–tensor theories — a prediction settled
-    spectacularly by GW170817, whose near-simultaneous electromagnetic
-    counterpart ruled out entire classes of dark-energy models in a single
-    stroke.
-  </p>
-  <p>
-    That line continues, and it is where the lensing-based tests in the
-    <a href="#lensed-gravity">main programme</a> grew from.
-  </p>
-
-  <h4>Selected publications</h4>
-  <ul class="pubs">
-    <li>
-      <a href="https://inspirehep.net/literature/1630865" rel="noopener">Dark energy after GW170817: dead ends and the road ahead</a>
-      <span class="authors">J. M. Ezquiaga, M. Zumalacárregui</span>
-      <span class="journal">Phys. Rev. Lett. <strong>119</strong>, 251304 (2017)</span>
-      <span class="badge">Editors' Suggestion</span>
-      <a href="https://link.aps.org/doi/10.1103/Physics.10.134" rel="noopener">Physics Viewpoint</a>
-    </li>
-    <li>
-      <a href="https://inspirehep.net/literature/1479752" rel="noopener">Speed of gravitational waves and the fate of scalar–tensor gravity</a>
-      <span class="authors">D. Bettoni, J. M. Ezquiaga, K. Hinterbichler, M. Zumalacárregui</span>
-      <span class="journal">Phys. Rev. D <strong>95</strong>, 084029 (2017)</span>
-    </li>
-    <li>
-      <a href="https://inspirehep.net/literature/1683707" rel="noopener">Dark energy in light of multi-messenger gravitational-wave astronomy</a>
-      <span class="authors">J. M. Ezquiaga, M. Zumalacárregui — review</span>
-      <span class="journal">Front. Astron. Space Sci. <strong>5</strong>, 44 (2018)</span>
-    </li>
-    <li>
-      <a href="https://inspirehep.net/literature/1738351" rel="noopener">Testing modified gravity at cosmological distances with LISA standard sirens</a>
-      <span class="authors">LISA Cosmology Working Group</span>
-      <span class="journal">JCAP <strong>1907</strong>, 024</span>
-    </li>
-  </ul>
-
-  <ul class="arrow-list">
-    <li><a href="https://youtu.be/1k0o0QiL288" rel="noopener">Tests of gravitational-wave propagation</a> — Dark Energy from Home (2026)</li>
-    <li><a href="https://www.youtube.com/watch?v=f47WCOd_Iqo" rel="noopener">Gravitational waves and dark energy</a> — DARKMOD, IPhT Saclay (2017)</li>
-  </ul>
-</section>
 
 <!-- ==================================================================
      FOUNDATIONS
@@ -525,6 +427,8 @@ description: >-
         <span class="badge">Editors' Suggestion</span></li>
       <li><a href="https://inspirehep.net/literature/1495006" rel="noopener">Observational future of cosmological scalar–tensor theories</a>
         <span class="authors">D. Alonso, E. Bellini, P. G. Ferreira, M. Zumalacárregui</span></li>
+      <li><a href="https://inspirehep.net/literature/1370110" rel="noopener">Nonlinear evolution of the baryon acoustic oscillation scale in alternative theories of gravity</a>
+        <span class="authors">E. Bellini, M. Zumalacárregui</span></li>
     </ul>
   </section>
 
@@ -543,8 +447,6 @@ description: >-
         <span class="authors">M. Zumalacárregui — PRD <strong>102</strong>, 023523 (2020)</span></li>
       <li><a href="https://inspirehep.net/literature/1609059" rel="noopener">Galileon gravity in light of ISW, CMB, BAO and H<sub>0</sub> data</a>
         <span class="authors">J. Renk, M. Zumalacárregui, F. Montanari, A. Barreira</span></li>
-      <li><a href="https://inspirehep.net/literature/1370110" rel="noopener">Nonlinear evolution of the baryon acoustic oscillation scale in alternative theories of gravity</a>
-        <span class="authors">E. Bellini, M. Zumalacárregui</span></li>
     </ul>
   </section>
 
@@ -672,44 +574,19 @@ description: >-
       Defining the scientific case for ESA's gravitational-wave missions after
       LISA.
     </p>
+  </section>
+
+  <section class="card">
+    <h3 class="card-title">Future detectors and mission concepts</h3>
+    <p>
+      Contributions to the science case for next-generation ground detectors,
+      for μHz-band concepts, and coordination of the microlensing section of the
+      multi-messenger lensing white paper. GUEST is a separate mission concept
+      that would detect gravitational waves by tracking satellites.
+    </p>
     <ul class="pubs">
       <li><a href="https://inspirehep.net/literature/3182212" rel="noopener">GUEST: Gravitational Universe Exploration with Satellite Tracking</a>
         <span class="authors">D. Blas et al.</span></li>
-    </ul>
-  </section>
-
-  <section class="card">
-    <h3 class="card-title">Workshops and meetings organized</h3>
-    <ul class="pubs">
-      <li>
-        <a href="https://indico.icc.ub.edu/event/677/" rel="noopener">13th LISA Cosmology Working Group Workshop</a>
-        <span class="journal">Barcelona, 2026</span>
-      </li>
-      <li>
-        <a href="https://indico.cern.ch/event/1488828/" rel="noopener">12th LISA Cosmology Working Group Workshop</a>
-        <span class="journal">Tallinn, 2025</span>
-      </li>
-      <li>
-        <a href="https://www.esi.ac.at/events/e546/" rel="noopener">Lensing and Wave Optics in Strong Gravity</a>
-        <span class="journal">Erwin Schrödinger Institute, Vienna, 2024 &middot; ~60 participants, 25 recorded talks</span>
-      </li>
-      <li>
-        <a href="https://workshops.aei.mpg.de/fpmeetswavelisa/" rel="noopener">LISA Fundamental Physics + Waveform meeting</a>
-        <span class="journal">Potsdam, 2024 &middot; 120+ participants</span>
-      </li>
-    </ul>
-  </section>
-
-  <section class="card">
-    <h3 class="card-title">Next-generation ground detectors and multi-messenger lensing</h3>
-    <p>
-      Contributions to the science case for Einstein Telescope and Cosmic
-      Explorer, and coordination of the microlensing section of the
-      multi-messenger lensing white paper.
-    </p>
-    <ul class="pubs">
-      <li><a href="https://inspirehep.net/literature/2904454" rel="noopener">Multi-messenger gravitational lensing</a>
-        <span class="authors">G. Smith et al.</span></li>
       <li><a href="https://arxiv.org/abs/2111.06990" rel="noopener">The next generation global gravitational wave observatory: the science book</a>
         <span class="authors">V. Kalogera et al.</span></li>
       <li><a href="https://arxiv.org/abs/1908.11391" rel="noopener">Unveiling the gravitational Universe at μHz frequencies</a>
