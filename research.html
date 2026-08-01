@@ -389,25 +389,31 @@ description: >-
      FOUNDATIONS
      ================================================================== -->
 
-<h2 id="foundations">Broader and foundational contributions</h2>
+<h2 id="cosmology">Cosmology</h2>
 
 <p class="lede">
-  These lines are the intellectual foundation the current programme grew out of.
-  They remain active through collaborations, through hi_class, and through the
-  theoretical machinery they supply to the lensing work.
+  The cosmology I worked on before the lensing programme, and still do through
+  collaborations and through hi_class. It is where the theoretical machinery the
+  lensing work relies on came from.
 </p>
 
 <div class="grid grid-2">
 
   <section class="card" id="dark-energy">
-    <h3 class="card-title">Dark energy and cosmology</h3>
+    <h3 class="card-title">Dark energy and cosmic acceleration</h3>
     <p>
-      Testing the physics behind cosmic acceleration with cosmological data. Some
-      models have unexpectedly attractive features: the covariant Galileon can
-      relieve the tension between CMB and distance-ladder measurements of
-      H<sub>0</sub> through several distinct mechanisms within one theory. More
-      recently we re-examined DESI's evidence for dynamical dark energy with a
-      model-independent reconstruction of the dark-energy density.
+      Testing the physics behind cosmic acceleration against data, rather than
+      assuming a cosmological constant and stopping there. Recent work
+      re-examined DESI's evidence for dynamical dark energy by reconstructing the
+      dark-energy density directly from the data, without committing to a
+      parameterization — a way of asking what the observations actually require
+      rather than which model fits best.
+    </p>
+    <p>
+      Earlier work mapped what surveys will be able to say about scalar–tensor
+      theories in general, and showed that the baryon acoustic oscillation scale
+      shifts non-linearly in modified gravity, which matters for how the standard
+      ruler is calibrated.
     </p>
     <ul class="pubs">
       <li><a href="https://inspirehep.net/literature/2901653" rel="noopener">Reconstructing the dark energy density in light of DESI BAO observations</a>
@@ -421,13 +427,22 @@ description: >-
   </section>
 
   <section class="card" id="hubble">
-    <h3 class="card-title">Hubble tension and large-scale structure</h3>
+    <h3 class="card-title">The Hubble tension</h3>
+    <p>
+      The disagreement between the Hubble constant inferred from the CMB and
+      measured on the distance ladder may be a systematic, or it may be physics.
+      Modified gravity offers a route to the second: the covariant Galileon
+      relieves the tension through several distinct mechanisms within one theory,
+      and gravity in the era of matter–radiation equality can shift
+      H<sub>0</sub> without the fine-tuned initial conditions that other
+      solutions require.
+    </p>
     <figure>
       <img src="{{ '/imgs/master_plot_annotated.png' | relative_url }}"
-           alt="Parameter space showing how the covariant Galileon shifts the inferred Hubble constant towards distance-ladder values." loading="lazy" width="600" height="466">
+           alt="Parameter space showing how the covariant Galileon shifts the inferred Hubble constant towards distance-ladder values." loading="lazy" width="853" height="662">
       <figcaption>
-        The covariant Galileon offers several mechanisms to relieve the tension
-        between CMB and distance-ladder measurements of H<sub>0</sub>.
+        Several mechanisms within the covariant Galileon shift H<sub>0</sub>
+        towards distance-ladder values.
       </figcaption>
     </figure>
     <ul class="pubs">
@@ -442,28 +457,47 @@ description: >-
     <h3 class="card-title">hi_class</h3>
     <p>
       An Einstein–Boltzmann solver covering the full Horndeski class, fast and
-      stable enough for Markov-chain analyses. It has been used in more than
-      eighty publications and remains a standard tool for confronting gravity
-      theories with cosmological data.
+      stable enough for Markov-chain analyses. Getting this right is unglamorous
+      and essential: a modified-gravity constraint is only as trustworthy as the
+      code that produced the predictions, so hi_class is validated against
+      independent implementations wherever they exist.
     </p>
+    <figure>
+      <img src="{{ '/imgs/CAMB_compare_Cl_web.png' | relative_url }}"
+           alt="CMB temperature power spectra for Galileon models computed with hi_class, with a lower panel showing relative deviations from an independent implementation below one per cent." loading="lazy" width="399" height="397">
+      <figcaption>
+        hi_class validated against an independent Galileon implementation: CMB
+        temperature spectra agree to better than one per cent.
+      </figcaption>
+    </figure>
     <ul class="pubs">
       <li><a href="https://inspirehep.net/literature/1462237" rel="noopener">hi_class: Horndeski in the Cosmic Linear Anisotropy Solving System</a>
-        <span class="authors">M. Zumalacárregui, E. Bellini, I. Sawicki, J. Lesgourgues, P. G. Ferreira — JCAP <strong>1708</strong>, 019</span></li>
+        <span class="authors">M. Zumalacárregui, E. Bellini, I. Sawicki, J. Lesgourgues, P. G. Ferreira — JCAP <strong>08</strong>, 019 (2017)</span></li>
+      <li><a href="https://inspirehep.net/literature/1752568" rel="noopener">hi_class: background evolution, initial conditions and approximation schemes</a>
+        <span class="authors">E. Bellini, I. Sawicki, M. Zumalacárregui — JCAP <strong>02</strong>, 008 (2020)</span></li>
     </ul>
-    <div class="btn-row">
+    <div class="btn-row" style="margin-bottom:0;">
       <a class="btn" href="{{ '/software.html#hi_class' | relative_url }}">Code details</a>
       <a class="btn" href="https://hiclass-code.net" rel="noopener">hiclass-code.net</a>
     </div>
   </section>
 
   <section class="card" id="scalar-tensor">
-    <h3 class="card-title">Scalar–tensor gravity and beyond Horndeski</h3>
+    <h3 class="card-title">Scalar–tensor gravity beyond Horndeski</h3>
+    <p>
+      Horndeski's theory was long taken to be the most general scalar–tensor
+      theory with second-order equations of motion, and therefore free of the
+      instabilities that plague higher-derivative theories. Generalized field
+      redefinitions show that the boundary sits further out: there are viable
+      theories beyond Horndeski, and I constructed the first explicit examples.
+    </p>
     <figure>
       <img src="{{ '/imgs/beyond_Horndeski.jpg' | relative_url }}"
-           alt="Diagram of stable regions in the parameter space of theories beyond the Horndeski class." loading="lazy" width="600" height="422">
+           alt="Hand-drawn map of scalar–tensor theory space, showing labelled regions such as JBD and Horndeski as islands separated by an expanse marked Ostrogradski's Sea." loading="lazy" width="600" height="422">
       <figcaption>
-        Generalized field redefinitions open up viable theories beyond Horndeski,
-        once thought the most general ghost-free class of its kind.
+        Theory space drawn as a map: viable scalar–tensor theories are islands
+        in Ostrogradski's sea of instabilities. Field redefinitions extend the
+        coastline beyond Horndeski.
       </figcaption>
     </figure>
     <ul class="pubs">
@@ -479,12 +513,20 @@ description: >-
   <section class="card" id="disformal">
     <h3 class="card-title">Disformal transformations</h3>
     <p>
-      Field redefinitions that mix the metric with derivatives of a scalar field
-      generalize the notion of Einstein and Jordan frames. They connect
-      disformally coupled theories to DBI Galileons, provide a screening mechanism
-      for fifth forces, and supply much of the technical apparatus behind the
-      beyond-Horndeski results.
+      A field redefinition that mixes the metric with derivatives of a scalar
+      field generalizes the familiar Einstein and Jordan frames. The consequences
+      are concrete: disformally coupled theories turn out to be DBI Galileons in
+      disguise, and the same coupling screens fifth forces in dense environments,
+      hiding the scalar where laboratory tests would otherwise have found it.
     </p>
+    <figure>
+      <img src="{{ '/imgs/disfgrav.jpg' | relative_url }}"
+           alt="Diagram relating the Einstein and Jordan frames to Galileon and disformal descriptions through metric field redefinitions." loading="lazy" width="1230" height="802">
+      <figcaption>
+        Disformal field redefinitions connect the Einstein and Jordan frames to
+        Galileon and disformal descriptions of the same theory.
+      </figcaption>
+    </figure>
     <ul class="pubs">
       <li><a href="https://inspirehep.net/literature/1114681" rel="noopener">Screening modifications of gravity through disformally coupled fields</a>
         <span class="authors">T. Koivisto, D. Mota, M. Zumalacárregui — Phys. Rev. Lett. <strong>109</strong>, 241102</span></li>
@@ -496,13 +538,23 @@ description: >-
   </section>
 
   <section class="card" id="inhomogeneous">
-    <h3 class="card-title">Inhomogeneous cosmologies and data assumptions</h3>
+    <h3 class="card-title">Inhomogeneous cosmologies</h3>
     <p>
-      Non-standard cosmologies are useful even when they are wrong: they expose
-      the model-dependent assumptions buried in standard analysis pipelines. Our
-      work on Lemaître–Tolman–Bondi void models showed how cosmic rulers strain
-      inhomogeneous alternatives to dark energy.
+      Before dark energy was assumed, one alternative was that we sit near the
+      centre of a very large underdensity, with apparent acceleration produced by
+      inhomogeneity rather than by a new component. Testing that idea properly
+      turned out to be useful well beyond its own merits: it exposes which steps
+      in a standard analysis quietly assume homogeneity, and cosmic rulers strain
+      the void models badly once supernovae, BAO and the CMB are combined.
     </p>
+    <figure>
+      <img src="{{ '/imgs/tensioninthevoid.jpg' | relative_url }}"
+           alt="Constraint contours in the matter-density and Hubble-rate plane for void models, showing supernova, BAO and CMB data preferring different regions." loading="lazy" width="675" height="467">
+      <figcaption>
+        Supernovae, BAO and the CMB pull in different directions in
+        Lemaître–Tolman–Bondi void models; the combination strains the model.
+      </figcaption>
+    </figure>
     <ul class="pubs">
       <li><a href="https://inspirehep.net/literature/1084620" rel="noopener">Tension in the void: cosmic rulers strain inhomogeneous cosmologies</a>
         <span class="authors">M. Zumalacárregui, J. García-Bellido, P. Ruiz-Lapuente — JCAP <strong>1210</strong>, 009</span></li>
@@ -516,10 +568,6 @@ description: >-
   <li><a href="https://youtu.be/MHcLT31gaYQ" rel="noopener">Solutions to the H<sub>0</sub> problem beyond general relativity</a> — Cosmology from Home (2020)</li>
   <li><a href="https://www.youtube.com/watch?v=HmfRQPrbp3Y" rel="noopener">Beyond-Horndeski theories</a> — Extended Theories of Gravity, Nordita (2015)</li>
 </ul>
-
-<!-- ==================================================================
-     LEADERSHIP
-     ================================================================== -->
 
 <h2 id="leadership">Scientific leadership and future observatories</h2>
 
@@ -535,9 +583,16 @@ description: >-
     <h3 class="card-title">LISA</h3>
     <p class="card-meta">Consortium member since 2018 · Council member and Senior Co-Chair of the Cosmology Working Group since 2025</p>
     <p>
-      Elected by peers to co-chair a working group of more than 500 members;
+      Elected by peers to co-chair a working group of more than 500 members, and
       previously section coordinator for gravitational-wave lensing in the LISA
       Cosmology white paper.
+    </p>
+    <p>
+      LISA is where wave-optics lensing stops being a curiosity: at millihertz
+      frequencies the wavelengths are long enough that diffraction by
+      dark-matter halos becomes detectable, and unmodelled it could contaminate
+      the whole data stream. Preparing the mission for that is part of the
+      working group's remit.
     </p>
     <ul class="pubs">
       <li><a href="https://arxiv.org/abs/2204.05434" rel="noopener">Cosmology with the Laser Interferometer Space Antenna</a>
@@ -553,6 +608,14 @@ description: >-
       connecting the survey to gravitational-wave science, and leading the
       "bright sirens" work package.
     </p>
+    <p>
+      Euclid will map the galaxies that host gravitational-wave sources and the
+      structures that lens them, which is what makes the connection worth
+      building: the same survey supplies the redshifts for standard sirens and
+      the lens catalogues for multi-messenger lensing. I am also a member of the
+      Strong Lensing, Cosmology Theory, and Supernovae &amp; Transients working
+      groups.
+    </p>
   </section>
 
   <section class="card">
@@ -560,7 +623,14 @@ description: >-
     <p class="card-meta">Coordinator, cosmography section, since 2023</p>
     <p>
       Defining the scientific case for ESA's gravitational-wave missions after
-      LISA.
+      LISA. Decisions taken now about frequency band and sensitivity determine
+      what is measurable decades from now, so the cosmography case has to be
+      made before the instrument is designed rather than after.
+    </p>
+    <p>
+      My section covers what these missions could contribute to measuring
+      distances and the expansion history — including through lensed sources,
+      which become more common the further out a detector can see.
     </p>
   </section>
 
