@@ -9,8 +9,8 @@ lede: >-
   theories. Both are public, documented and used well beyond our own papers.
 description: >-
   Open-source scientific software: GLoW (wave-optics gravitational lensing) and
-  hi_class (Horndeski cosmology), plus GSHE, Glworia, WOlensing and related
-  projects.
+  hi_class (Horndeski cosmology), related codes such as GSHE, Glworia and
+  WOlensing, and repositories reproducing individual papers.
 ---
 
 {%- for s in site.data.software.flagship %}
@@ -25,32 +25,34 @@ description: >-
   <p class="card-meta">{{ s.subtitle }}{% if s.usage %} &middot; {% if s.usage_url %}<a href="{{ s.usage_url }}" rel="noopener">{{ s.usage }}</a>{% else %}{{ s.usage }}{% endif %}{% endif %}</p>
 
   <p>{{ s.purpose }}</p>
-  <p>{{ s.detail }}</p>
 
-  <h3>Get it</h3>
   <div class="btn-row">
     <a class="btn btn-primary" href="{{ s.repo }}" rel="noopener">Repository</a>
     {%- if s.docs %}<a class="btn" href="{{ s.docs }}" rel="noopener">Documentation</a>{% endif %}
     {%- if s.website %}<a class="btn" href="{{ s.website }}" rel="noopener">Website</a>{% endif %}
-    <a class="btn" href="{{ s.paper.url }}" rel="noopener">Reference paper</a>
   </div>
 
-  <h4>Installation</h4>
   <pre><code>{{ s.install }}</code></pre>
   {%- if s.install_note %}<p class="small">{{ s.install_note }}</p>{% endif %}
   {%- if s.docs_note %}<p class="small">{{ s.docs_note }}</p>{% endif %}
 
-  <h4>Reference paper</h4>
-  <p><a href="{{ s.paper.url }}" rel="noopener">{{ s.paper.text }}</a></p>
+  <dl class="code-facts">
+    <dt>{% if s.papers.size > 1 %}Papers{% else %}Paper{% endif %}</dt>
+    <dd>
+      {%- for p in s.papers -%}
+      <a href="{{ p.url }}" rel="noopener">{{ p.short }}</a>{% unless forloop.last %}; {% endunless %}
+      {%- endfor -%}
+    </dd>
 
-  <h4>How to cite</h4>
-  <p>{{ s.citation }}</p>
+    <dt>Cite</dt>
+    <dd>{{ s.cite }}</dd>
 
-  <h4>Tutorials and examples</h4>
-  <p>{{ s.tutorials }}</p>
+    <dt>Examples</dt>
+    <dd>{{ s.examples }}</dd>
 
-  <h4>Main contributors</h4>
-  <p>{{ s.contributors }}</p>
+    <dt>Contributors</dt>
+    <dd>{{ s.contributors }}</dd>
+  </dl>
 
   {%- if s.tags %}
   <ul class="tags">
@@ -74,40 +76,44 @@ description: >-
     <article class="card">
       <p class="card-title"><a href="{{ s.repo }}" rel="noopener">{{ s.name }}</a></p>
       <p>{{ s.description }}</p>
-      {%- if s.lead %}<p class="card-meta" style="margin-bottom:0;">{{ s.lead }}</p>{% endif %}
-      {%- if s.paper_url %}<p class="small"><a href="{{ s.paper_url }}" rel="noopener">Reference paper</a></p>{% endif %}
+      {%- if s.lead %}<p class="card-meta">{{ s.lead }}</p>{% endif %}
+      {%- if s.paper_url %}
+      <p class="small"><a href="{{ s.paper_url }}" rel="noopener">{{ s.paper_text | default: "Reference paper" }}</a></p>
+      {%- endif %}
     </article>
     {%- endfor %}
   </div>
 </section>
 
-<section class="section" id="historical">
-  <h2>Historical software</h2>
-  <p class="small">
-    Earlier implementations, kept for the record. These are no longer maintained.
+<section class="section" id="papers">
+  <h2>Code accompanying papers</h2>
+  <p>
+    Repositories that reproduce the results of a specific paper — figures,
+    numbers and the analysis behind them.
   </p>
-  <ul>
-    {%- for s in site.data.software.historical %}
-    <li>
-      <strong>{{ s.name }}</strong> — {{ s.description }}
-      {%- if s.paper_url %} (<a href="{{ s.paper_url }}" rel="noopener">paper</a>){% endif %}
-    </li>
+
+  <div class="grid grid-2">
+    {%- for s in site.data.software.papers %}
+    <article class="card">
+      <p class="card-title"><a href="{{ s.repo }}" rel="noopener">{{ s.name }}</a></p>
+      <p>{{ s.description }}</p>
+      <p class="small">
+        <a href="{{ s.paper_url }}" rel="noopener">{{ s.paper_text }}</a>
+        {%- if s.arxiv %} &middot; <a href="https://arxiv.org/abs/{{ s.arxiv }}" rel="noopener">arXiv:{{ s.arxiv }}</a>{% endif %}
+      </p>
+      {%- if s.note %}<p class="small"><em>{{ s.note }}</em></p>{% endif %}
+      {%- if s.tags %}
+      <ul class="tags">
+        {%- for t in s.tags %}<li class="tag">{{ t }}</li>{% endfor %}
+      </ul>
+      {%- endif %}
+    </article>
     {%- endfor %}
-    <li>
-      Other codes for LTB models
-      (<a href="https://inspirehep.net/literature/1084620" rel="noopener">1201.2790</a>),
-      disformally coupled dark energy
-      (<a href="https://inspirehep.net/literature/1194087" rel="noopener">1210.8016</a>)
-      and disformal quintessence
-      (<a href="https://inspirehep.net/literature/852011" rel="noopener">1004.2684</a>)
-      in CMBEasy.
-    </li>
-  </ul>
+  </div>
+
   <p>
     Further public repositories are on my
-    <a href="{{ site.author.github }}" rel="noopener">GitHub page</a>. If you are
-    interested in something not yet released, please
-    <a href="{{ '/contact.html' | relative_url }}">get in touch</a>.
+    <a href="{{ site.author.github }}" rel="noopener">GitHub page</a>.
   </p>
 </section>
 

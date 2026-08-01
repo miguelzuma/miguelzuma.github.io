@@ -1,8 +1,11 @@
 # Research projects and funding.  Amounts are recorded but deliberately not
 # used as the visual headline on the Projects page.
+#
+# Note: GLOW (all caps) is the ERC project.  The software is GLoW, with a
+# lowercase "o" -- see _data/software.yml.
 
 current:
-  - acronym: "GLoW"
+  - acronym: "GLOW"
     title: "Gravitational Lensing of Waves"
     funder: "European Research Council — Consolidator Grant"
     dates: "2026–2031"
@@ -10,7 +13,7 @@ current:
     flagship: true
     logo: "/imgs/GLOW_Extended_Logo_Full_Color_for_Dark_Backgrounds_RGB.png"
     summary: >-
-      GLoW builds the theory, methods and software needed to turn gravitational
+      GLOW builds the theory, methods and software needed to turn gravitational
       lensing of waves into a precision probe of dark matter and compact
       objects. It spans wave-optics modelling, statistical inference on
       gravitational-wave catalogues, and the design of searches for
@@ -23,7 +26,7 @@ current:
         url: "https://erc.europa.eu/news-events/news/erc-2025-consolidator-grants-results"
       - text: "Max Planck Society announcement"
         url: "https://www.mpg.de/25845263/erc-consolidator-grants-2025"
-    note: "A dedicated GLoW project website with work packages, team profiles and openings is in preparation."
+    note: "A dedicated GLOW project website with work packages, team profiles and openings is in preparation."
 
   - acronym: "With Einstein on Crooked Paths"
     title: "Mit Einstein auf krummen Wegen"

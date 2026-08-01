@@ -55,6 +55,10 @@ bundle exec jekyll serve
 
 ## Conventions
 
+- **GLOW vs GLoW.** `GLOW` (all caps) is the ERC Consolidator project. `GLoW`
+  (lowercase "o") is the software. They also have separate logos:
+  `imgs/GLOW_Extended_Logo_*` for the project, `imgs/GLoW_Code_Extended_Logo_*`
+  for the code. Getting this wrong is the easiest mistake to make on this site.
 - Body text is left-aligned, never justified.
 - Every scientific figure needs descriptive `alt` text; decorative logos take `alt=""`.
 - External links opened in a new tab need `rel="noopener"`.
