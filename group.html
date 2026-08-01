@@ -26,7 +26,7 @@ description: >-
   {%- for stage in stages %}
   {%- assign people = site.data.people.current | where: "stage", stage %}
   {%- if people.size > 0 %}
-  <h3>{{ labels[forloop.index0] }}</h3>
+  <h3 class="stage-heading">{{ labels[forloop.index0] }}<span class="stage-count">{{ people.size }}</span></h3>
   <div class="grid grid-2">
     {%- for p in people %}
     <article class="card">
