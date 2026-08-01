@@ -5,7 +5,8 @@
 # member; earlier mentees and short-stay visitors appear under `visitors` or
 # `earlier_mentees`.
 #
-# Fields: name (required), role, years, topic, url (personal page),
+# Fields: name (required), stage (postdoc|phd|masters -- groups the Current
+# members section), role, years, topic, url (personal page),
 # photo (path under /imgs/collaborators/), next (destination, alumni only),
 # incoming (true -> card shows a "starts <starts>" badge), starts.
 #
@@ -14,16 +15,19 @@
 
 current:
   - name: "Han-Gil Choi"
+    stage: postdoc
     role: "Postdoctoral researcher"
     years: "2026–"
     topic: "Signatures of low-mass dark-matter halos in LISA through stochastic diffraction."
 
   - name: "Xikai Shan"
+    stage: postdoc
     role: "Postdoctoral researcher"
     years: "2026–"
     topic: "Lensing of gravitational waves by stellar fields and effective descriptions of diffraction."
 
   - name: "Juan Urrutia"
+    stage: postdoc
     role: "Humboldt Fellow"
     years: "2026–"
     incoming: true
@@ -31,6 +35,7 @@ current:
     topic: "Dark-matter halos and diffraction signatures in space-based gravitational-wave data."
 
   - name: "Héctor Villarrubia-Rojo"
+    stage: postdoc
     role: "Postdoctoral researcher"
     years: "2026–"
     incoming: true
@@ -38,6 +43,7 @@ current:
     topic: "Lead developer of the GLoW code; wave-optics methods for gravitational lensing. Previously a Margarita Salas Fellow in the group (2022–2024)."
 
   - name: "Daniel Ballard"
+    stage: postdoc
     role: "Postdoctoral researcher"
     years: "2026–"
     incoming: true
@@ -45,6 +51,7 @@ current:
     # topic: TODO
 
   - name: "Manon van Zyl"
+    stage: phd
     role: "PhD student"
     years: "2026–"
     incoming: true
@@ -52,6 +59,7 @@ current:
     # topic: TODO
 
   - name: "Emanuela Alberici"
+    stage: phd
     role: "PhD student"
     years: "2026–"
     incoming: true
@@ -59,15 +67,18 @@ current:
     # topic: TODO
 
   - name: "Pablo Vega del Castillo"
+    stage: masters
     role: "Master's student (LMU)"
     years: "2026"
     topic: "Wave-optics lensing."
 
   - name: "Matteo Pagani"
+    stage: masters
     role: "Master's student (co-supervised, U. Bologna)"
     years: "2026"
 
   - name: "Louis Salimbeni"
+    stage: masters
     role: "Master's student (co-supervised, ETH Zürich)"
     years: "2026"
 
@@ -102,10 +113,6 @@ visitors:
     years: "2021–"
     topic: "Gravitational spin-Hall effect and polarization-dependent lensing."
 
-  - name: "Maria Berti"
-    role: "Postdoc, U. Geneva"
-    years: "2024–2025"
-    topic: "Model-independent reconstruction of the dark-energy density."
 
 alumni:
   - name: "Nicola Menadeo"

@@ -20,8 +20,15 @@ description: >-
 
 <section class="section" id="current">
   <h2>Current members</h2>
+
+  {%- assign stages = "postdoc,phd,masters" | split: "," %}
+  {%- assign labels = "Postdoctoral researchers,PhD students,Master's students" | split: "," %}
+  {%- for stage in stages %}
+  {%- assign people = site.data.people.current | where: "stage", stage %}
+  {%- if people.size > 0 %}
+  <h3>{{ labels[forloop.index0] }}</h3>
   <div class="grid grid-2">
-    {%- for p in site.data.people.current %}
+    {%- for p in people %}
     <article class="card">
       <div class="person">
         {%- if p.photo %}
@@ -42,6 +49,8 @@ description: >-
     </article>
     {%- endfor %}
   </div>
+  {%- endif %}
+  {%- endfor %}
 </section>
 
 <section class="section" id="alumni">
@@ -75,15 +84,14 @@ description: >-
     Researchers who have spent extended periods working with the group, most of
     them on projects that led to joint publications.
   </p>
-  <div class="grid grid-2">
+  <ul class="alumni-list">
     {%- for p in site.data.people.visitors %}
-    <article class="card">
-      <p class="person-name">{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</p>
-      <p class="person-role">{{ p.role }}{% if p.years %} &middot; {{ p.years }}{% endif %}</p>
-      {%- if p.topic %}<p class="person-note">{{ p.topic }}</p>{% endif %}
-    </article>
+    <li>
+      <strong>{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</strong>
+      — {{ p.role }}{% if p.years %}, {{ p.years }}{% endif %}{% if p.topic %} &middot; {{ p.topic }}{% endif %}
+    </li>
     {%- endfor %}
-  </div>
+  </ul>
 </section>
 
 <section class="section" id="joining">

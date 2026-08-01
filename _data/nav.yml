@@ -15,8 +15,11 @@
 - id: software
   title: Software
   url: /software.html
+- id: talks
+  title: Talks
+  url: /talks.html
 - id: outreach
-  title: Talks & Outreach
+  title: Outreach
   url: /outreach.html
 - id: cv
   title: CV
