@@ -333,6 +333,9 @@ main { padding-bottom: 3rem; }
 /* min() guards the track floor: without it, auto-fit forces a 340px column even
    when the container is narrower, and the page scrolls sideways on small phones. */
 .grid-2 { grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); }
+
+/* A card that spans the whole grid, so an odd count still balances */
+.card-wide { grid-column: 1 / -1; }
 .grid-3 { grid-template-columns: repeat(auto-fit, minmax(min(275px, 100%), 1fr)); }
 
 /* Compact label/value rows: keeps the software cards from turning into a
