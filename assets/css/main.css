@@ -337,23 +337,14 @@ main { padding-bottom: 3rem; }
 /* A card that spans the whole grid, so an odd count still balances */
 .card-wide { grid-column: 1 / -1; }
 
-/* Wide card with a figure column that runs the full height beside the text */
-.card-split { display: grid; grid-template-columns: 1fr minmax(240px, 360px); column-gap: 1.8rem; }
-.card-split > * { grid-column: 1; }
-.card-split > .card-side {
-	grid-column: 2;
-	grid-row: 1 / -1;
-	align-self: stretch;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin: 0;
-}
+.card-split { display: grid; grid-template-columns: 1fr minmax(240px, 340px); gap: 1.4rem 1.8rem; align-items: center; }
+.card-split > .card-col > :last-child { margin-bottom: 0; }
+.card-split > .card-side { margin: 0; }
 .card-split > .card-side img { width: 100%; height: auto; }
 
 @media (max-width: 720px) {
 	.card-split { display: block; }
-	.card-split > .card-side { margin: 1.2rem 0; }
+	.card-split > .card-side { margin: 1.2rem 0 0; }
 }
 .grid-3 { grid-template-columns: repeat(auto-fit, minmax(min(275px, 100%), 1fr)); }
 

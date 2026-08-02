@@ -540,14 +540,33 @@ description: >-
   </section>
 
   <section class="card card-wide card-split" id="hiclass">
-    <h3 class="card-title">hi_class</h3>
-    <p>
-      An Einstein–Boltzmann solver covering the full Horndeski class, fast and
-      stable enough for Markov-chain analyses. Getting this right is unglamorous
-      and essential: a modified-gravity constraint is only as trustworthy as the
-      code that produced the predictions, so hi_class is validated against
-      independent implementations wherever they exist.
-    </p>
+
+    <div class="card-col">
+      <h3 class="card-title">hi_class</h3>
+      <p>
+        An Einstein–Boltzmann solver covering the full Horndeski class, fast and
+        stable enough for Markov-chain analyses. Getting this right is unglamorous
+        and essential: a modified-gravity constraint is only as trustworthy as the
+        code that produced the predictions, so hi_class is validated against
+        independent implementations wherever they exist.
+      </p>
+      <ul class="pubs">
+        <li><a href="https://inspirehep.net/literature/1462237" rel="noopener">hi_class: Horndeski in the Cosmic Linear Anisotropy Solving System</a>
+          <span class="authors">M. Zumalacárregui, E. Bellini, I. Sawicki, J. Lesgourgues, P. G. Ferreira</span>
+          <span class="journal">JCAP <strong>08</strong>, 019 (2017)</span></li>
+        <li><a href="https://inspirehep.net/literature/1752568" rel="noopener">hi_class: background evolution, initial conditions and approximation schemes</a>
+          <span class="authors">E. Bellini, I. Sawicki, M. Zumalacárregui</span>
+          <span class="journal">JCAP <strong>02</strong>, 008 (2020)</span></li>
+        <li><a href="https://inspirehep.net/literature/1625713" rel="noopener">Comparison of Einstein–Boltzmann solvers for testing general relativity</a>
+          <span class="authors">E. Bellini, A. Barreira, N. Frusciante <em>et al.</em></span>
+          <span class="journal">Phys. Rev. D <strong>97</strong>, 023520 (2018)</span></li>
+      </ul>
+      <div class="btn-row" style="margin-bottom:0;">
+        <a class="btn" href="{{ '/software.html#hi_class' | relative_url }}">Code details</a>
+        <a class="btn" href="https://hiclass-code.net" rel="noopener">hiclass-code.net</a>
+      </div>
+    </div>
+
     <figure class="card-side">
       <img src="{{ '/imgs/CAMB_compare_Cl_web_inverse.png' | relative_url }}"
            alt="CMB temperature power spectra for Galileon models computed with hi_class, with a lower panel showing relative deviations from an independent implementation below one per cent." loading="lazy" width="399" height="397">
@@ -556,16 +575,7 @@ description: >-
         temperature spectra agree to better than one per cent.
       </figcaption>
     </figure>
-    <ul class="pubs">
-      <li><a href="https://inspirehep.net/literature/1462237" rel="noopener">hi_class: Horndeski in the Cosmic Linear Anisotropy Solving System</a>
-        <span class="authors">M. Zumalacárregui, E. Bellini, I. Sawicki, J. Lesgourgues, P. G. Ferreira — JCAP <strong>08</strong>, 019 (2017)</span></li>
-      <li><a href="https://inspirehep.net/literature/1752568" rel="noopener">hi_class: background evolution, initial conditions and approximation schemes</a>
-        <span class="authors">E. Bellini, I. Sawicki, M. Zumalacárregui — JCAP <strong>02</strong>, 008 (2020)</span></li>
-    </ul>
-    <div class="btn-row" style="margin-bottom:0;">
-      <a class="btn" href="{{ '/software.html#hi_class' | relative_url }}">Code details</a>
-      <a class="btn" href="https://hiclass-code.net" rel="noopener">hiclass-code.net</a>
-    </div>
+
   </section>
 
   <section class="card" id="scalar-tensor">
