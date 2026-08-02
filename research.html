@@ -5,11 +5,11 @@ title: "Research"
 eyebrow: "Gravitation, Cosmology and Data Interpretation"
 lede: >-
   The bulk of my current effort goes into one programme: using the gravitational
-  lensing of waves to find dark matter, compact objects and black holes, and to
+  wave-optics lensing to find dark matter, compact objects and black holes, and to
   test gravity itself. Around it sits a broader foundation in cosmology, dark
   energy and gravitational theory.
 description: >-
-  Research programme on gravitational lensing of waves: wave optics, dark
+  Research programme on wave-optics lensing phenomena: dark
   matter and small-scale structure, strong-field and multi-messenger lensing,
   tests of gravity, dark energy and scalar–tensor cosmology.
 ---
@@ -35,7 +35,7 @@ description: >-
      MAIN PROGRAMME
      ================================================================== -->
 
-<h2 id="main-programme">Main programme: gravitational lensing of waves and compact objects</h2>
+<h2 id="main-programme">Main programme: wave-optics lensing and compact objects</h2>
 
 <p class="lede">
   A gravitational wave that passes near a mass does not simply get brighter. At
@@ -53,7 +53,7 @@ description: >-
 
   <!-- ---------- Wave optics ---------- -->
   <section class="section" id="lensing-waves">
-    <h3>Wave optics and gravitational-wave lensing</h3>
+    <h3>Wave-optics lensing phenomena</h3>
 
     <figure class="float-right" style="width:400px;">
       <img src="{{ '/imgs/GW231123_annotation.png' | relative_url }}"
@@ -459,19 +459,23 @@ description: >-
       assuming a cosmological constant and stopping there. Recent work
       re-examined DESI's evidence for dynamical dark energy by reconstructing the
       dark-energy density directly from the data, without committing to a
-      parameterization — a way of asking what the observations actually require
-      rather than which model fits best.
+      parameterization.
     </p>
+    <figure>
+      <img src="{{ '/imgs/desi_de_reconstruction.png' | relative_url }}"
+           alt="Reconstructed dark-energy density relative to its present value as a function of redshift, with confidence bands that widen with redshift and cross the constant-density line." loading="lazy" width="1200" height="615">
+      <figcaption>
+        The dark-energy density reconstructed from CMB, BAO and supernova data
+        without assuming a parameterization. A cosmological constant is the flat
+        line at zero.
+      </figcaption>
+    </figure>
     <p>
-      The rest of the line is about what surveys can actually deliver. Earlier
-      work mapped what forthcoming data will be able to say about scalar–tensor
-      theories in general, and a series of papers worked through the individual
-      signatures: tomographic cosmic shear, the non-linear shift of the baryon
-      acoustic oscillation scale — which matters for how the standard ruler is
-      calibrated — relativistic effects in the
-      <a href="https://inspirehep.net/literature/1445097" rel="noopener">CMB–galaxy cross-correlation at ultra-large scales</a>,
-      and how to extract fully relativistic predictions from ordinary Newtonian
-      N-body simulations.
+      The rest of the line is about what surveys can actually deliver: what
+      forthcoming data will say about scalar–tensor theories, and the individual
+      signatures — cosmic shear, the non-linear shift of the BAO ruler,
+      <a href="https://inspirehep.net/literature/1445097" rel="noopener">relativistic effects at ultra-large scales</a>,
+      and relativistic predictions from ordinary Newtonian simulations.
     </p>
     <ul class="pubs">
       <li><a href="https://inspirehep.net/literature/2901653" rel="noopener">Reconstructing the dark energy density in light of DESI BAO observations</a>
@@ -499,25 +503,17 @@ description: >-
     <p>
       A constraint on a phenomenological parameter is not a theory. This line
       builds complete theories instead — ones that can be confronted with every
-      dataset at once, and that still have to survive tests on scales from the
-      solar system to the horizon.
+      dataset at once, and that still have to survive tests from the solar
+      system to the horizon.
     </p>
     <p>
-      The Hubble tension is the sharpest case. The disagreement between the
-      Hubble constant inferred from the CMB and measured on the distance ladder
-      may be a systematic, or it may be physics. Modified gravity offers a route
-      to the second: the covariant Galileon relieves the tension through several
-      distinct mechanisms within one theory, and gravity in the era of
-      matter–radiation equality can shift H<sub>0</sub> without the fine-tuned
-      initial conditions that other solutions require.
-    </p>
-    <p>
-      Model building also means charting the space systematically rather than
-      one theory at a time — imposing theoretical priors on shift-symmetric
-      Horndeski models to see which regions survive before any data are
-      involved — and testing paradigms that sit outside the scalar–tensor
-      framework altogether, such as whether massive gravity can accommodate
-      cosmic expansion at all.
+      The Hubble tension is the sharpest case: the covariant Galileon relieves
+      it through several distinct mechanisms within one theory, and gravity in
+      the era of matter–radiation equality can shift H<sub>0</sub> without
+      fine-tuned initial conditions. Beyond individual models, theoretical
+      priors chart which regions of Horndeski space survive before any data are
+      involved, and massive gravity tests whether cosmic expansion is
+      accommodated at all.
     </p>
     <figure>
       <img src="{{ '/imgs/master_plot_annotated.png' | relative_url }}"
@@ -543,7 +539,7 @@ description: >-
     </ul>
   </section>
 
-  <section class="card card-wide" id="hiclass">
+  <section class="card card-wide card-split" id="hiclass">
     <h3 class="card-title">hi_class</h3>
     <p>
       An Einstein–Boltzmann solver covering the full Horndeski class, fast and
@@ -552,8 +548,8 @@ description: >-
       code that produced the predictions, so hi_class is validated against
       independent implementations wherever they exist.
     </p>
-    <figure class="float-right" style="width:330px;">
-      <img src="{{ '/imgs/CAMB_compare_Cl_web.png' | relative_url }}"
+    <figure class="card-side">
+      <img src="{{ '/imgs/CAMB_compare_Cl_web_inverse.png' | relative_url }}"
            alt="CMB temperature power spectra for Galileon models computed with hi_class, with a lower panel showing relative deviations from an independent implementation below one per cent." loading="lazy" width="399" height="397">
       <figcaption>
         hi_class validated against an independent Galileon implementation: CMB
