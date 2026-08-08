@@ -9,15 +9,24 @@ lede: >-
 description: >-
   Public lectures, popular-science articles, press coverage and media
   appearances by Miguel Zumalacárregui, in English, Spanish and German.
+sections:
+  - id: intro
+    label: "Start here"
+  - id: articles
+    label: "Popular science"
+  - id: public-lectures
+    label: "Public lectures"
+  - id: press
+    label: "Press &amp; media"
+  - id: archive
+    label: "By language"
 ---
 
 <div class="btn-row">
-  <a class="btn" href="#articles">Popular science</a>
-  <a class="btn" href="#public-lectures">Public lectures</a>
-  <a class="btn" href="#press">Press &amp; media</a>
-  <a class="btn" href="#archive">Archive by language</a>
   <a class="btn" href="{{ '/talks.html' | relative_url }}">Scientific talks</a>
 </div>
+
+{% include subnav.html %}
 
 <section class="section" id="intro">
   <h2>Start here</h2>

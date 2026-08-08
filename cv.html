@@ -10,6 +10,25 @@ lede: >-
 description: >-
   Curriculum vitae of Miguel Zumalacárregui: positions, education, scientific
   coordination, workshops organized, teaching, awards and peer-review service.
+sections:
+  - id: positions
+    label: "Positions"
+  - id: education
+    label: "Education"
+  - id: coordination
+    label: "Coordination"
+  - id: workshops
+    label: "Workshops"
+  - id: teaching
+    label: "Teaching"
+  - id: awards
+    label: "Awards"
+  - id: peer-review
+    label: "Peer review"
+  - id: selected-talks
+    label: "Talks"
+  - id: languages
+    label: "Languages"
 ---
 
 <div class="btn-row">
@@ -17,6 +36,8 @@ description: >-
   <a class="btn" href="{{ '/group.html' | relative_url }}">Supervision</a>
   <a class="btn" href="{{ '/projects.html' | relative_url }}">Funding</a>
 </div>
+
+{% include subnav.html %}
 
 <div class="btn-row">
   <a class="btn" href="#positions">Positions</a>
@@ -30,7 +51,7 @@ description: >-
 </div>
 
 <section class="section" id="positions">
-  <h2>Positions</h2>
+  <h2 id="positions">Positions</h2>
   <ul class="pubs">
     <li>
       <strong>Ramón y Cajal Fellow</strong>
@@ -60,7 +81,7 @@ description: >-
 </section>
 
 <section class="section" id="education">
-  <h2>Education</h2>
+  <h2 id="education">Education</h2>
   <ul class="pubs">
     <li>
       <strong>PhD in Physics</strong>, <em>Cum Laude</em> with International Mention
@@ -78,7 +99,7 @@ description: >-
 </section>
 
 <section class="section" id="leadership">
-  <h2>Scientific coordination</h2>
+  <h2 id="coordination">Scientific coordination</h2>
   <ul class="pubs">
     <li>
       <strong>LISA Consortium</strong> <span class="journal">member since 2018</span>
@@ -100,7 +121,7 @@ description: >-
 </section>
 
 <section class="section" id="events">
-  <h2>Workshops and meetings organized</h2>
+  <h2 id="workshops">Workshops and meetings organized</h2>
   <ul class="pubs">
     <li>
       <a href="https://indico.icc.ub.edu/event/677/" rel="noopener">13th LISA Cosmology Working Group Workshop</a>
@@ -138,7 +159,7 @@ description: >-
 </section>
 
 <section class="section" id="teaching">
-  <h2>Teaching</h2>
+  <h2 id="teaching">Teaching</h2>
 
   <h3>Graduate schools</h3>
   <ul class="pubs">
@@ -189,7 +210,7 @@ description: >-
 </section>
 
 <section class="section" id="awards">
-  <h2>Awards and fellowships</h2>
+  <h2 id="awards">Awards and fellowships</h2>
   <ul>
     <li>Ramón y Cajal Fellowship (2024).</li>
     <li>R3 certification, Spanish Research Agency.</li>
@@ -206,7 +227,7 @@ description: >-
 </section>
 
 <section class="section" id="service">
-  <h2>Evaluation and peer review</h2>
+  <h2 id="peer-review">Evaluation and peer review</h2>
 
   <h3>Evaluation panels</h3>
   <ul>
@@ -232,7 +253,7 @@ description: >-
 </section>
 
 <section class="section" id="talks">
-  <h2>Selected talks</h2>
+  <h2 id="selected-talks">Selected talks</h2>
   <ul class="pubs">
     <li>
       <strong>Spanish &amp; Portuguese Relativity Meeting</strong> — Universidad de Murcia, 2026 &middot; plenary
@@ -283,6 +304,6 @@ description: >-
 </section>
 
 <section class="section" id="languages">
-  <h2>Languages</h2>
+  <h2 id="languages">Languages</h2>
   <p>Spanish (native), English (C2), German (C1).</p>
 </section>
