@@ -6,6 +6,9 @@ matter, each with an `id` matching an element on the page and a `label`:
       - id: lensing-waves
         label: "Wave optics"
 
+Add `rule: true` to draw a divider before an entry, which is how a page whose
+sections are not all at the same level keeps that hierarchy visible.
+
 The bar sticks below the site header once scrolled past, and the link for the
 section currently in view is marked with aria-current (see assets/js/subnav.js).
 {%- endcomment -%}
@@ -13,7 +16,7 @@ section currently in view is marked with aria-current (see assets/js/subnav.js).
 <nav class="subnav" aria-label="Sections on this page" data-subnav>
   <ul>
     {%- for s in page.sections %}
-    <li><a href="#{{ s.id }}">{{ s.label }}</a></li>
+    <li{% if s.rule %} class="subnav-rule"{% endif %}><a href="#{{ s.id }}">{{ s.label }}</a></li>
     {%- endfor %}
   </ul>
 </nav>

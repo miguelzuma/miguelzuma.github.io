@@ -866,6 +866,14 @@ h2 + .stage-heading { margin-top: 1.2rem; }
 	color: var(--accent-strong);
 }
 
+/* Where a page's sections are not all at the same level, a rule keeps the
+   subsections of one heading reading as a group. */
+.subnav li.subnav-rule {
+	margin-left: 0.55rem;
+	padding-left: 0.65rem;
+	border-left: 1px solid var(--border-strong);
+}
+
 /* Anchor jumps must clear both sticky bars. */
 .subnav ~ * [id],
 .subnav ~ [id] {
