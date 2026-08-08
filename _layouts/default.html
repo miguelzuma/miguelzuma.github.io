@@ -15,5 +15,9 @@
 
 {%- include footer.html -%}
 
+{%- if page.sections and page.sections.size > 0 %}
+<script src="{{ '/assets/js/subnav.js' | relative_url }}" defer></script>
+{%- endif %}
+
 </body>
 </html>

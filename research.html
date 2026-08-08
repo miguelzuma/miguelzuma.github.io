@@ -4,24 +4,93 @@ nav: research
 title: "Research"
 eyebrow: "Gravitation, Cosmology and Data Interpretation"
 lede: >-
-  The bulk of my current effort goes into one programme: using the gravitational
-  wave-optics lensing to find dark matter, compact objects and black holes, and to
-  test gravity itself. Around it sits a broader foundation in cosmology, dark
-  energy and gravitational theory.
+  The bulk of my current effort goes into one programme: using wave-optics
+  lensing to find dark matter, compact objects and black holes, and to test
+  gravity itself. Around it sits a broader foundation in cosmology, dark energy
+  and gravitational theory.
 description: >-
   Research programme on wave-optics lensing phenomena: dark
   matter and small-scale structure, strong-field and multi-messenger lensing,
   tests of gravity, dark energy and scalar–tensor cosmology.
+sections:
+  - id: lensing-waves
+    label: "Wave optics"
+  - id: dark-matter
+    label: "Dark matter"
+  - id: strong-field
+    label: "Strong fields"
+  - id: tests-of-gravity
+    label: "Tests of gravity"
+  - id: methods
+    label: "Methods &amp; software"
+  - id: cosmology
+    label: "Cosmology &amp; gravity"
+  - id: leadership
+    label: "Future missions"
 ---
 
 <p>
   My research encompasses four key predictions of Einstein's theory of general
   relativity: cosmology (the dynamics and history of the Universe),
-  gravitational waves (radiation in spacetime itself), black holes (compact
-  objects with strong gravity) and gravitational lensing (the distortion of
-  signals travelling through the Universe). I leverage these phenomena to
-  explore astrophysics, dark matter, dark energy and gravity.
+  gravitational waves (ripples in spacetime itself), black holes (regions where
+  gravity is strong enough to trap light) and gravitational lensing (the
+  distortion of signals travelling through the Universe). I use these phenomena
+  to explore astrophysics, dark matter, dark energy and gravity.
 </p>
+
+<figure class="skymap">
+  <div class="skymap-frame">
+  <picture>
+    <source srcset="{{ '/imgs/source_lens_observer.webp' | relative_url }}" type="image/webp">
+    <img src="{{ '/imgs/source_lens_observer.jpg' | relative_url }}"
+         alt="A binary black hole at left, a galaxy at centre and the Earth at right. An arrow traces a gravitational wave from the binary, bending as it passes the galaxy, on to the Earth."
+         width="1600" height="850">
+  </picture>
+  <!-- Top row: how the work is done. Bottom row is positioned so each card
+       sits under what it refers to — sources, lens, observer. -->
+  <div class="skymap-cards skymap-cards-top">
+    <a class="skymap-card tint-wave" href="#lensing-waves">
+      <strong>Wave optics</strong>
+      <span>Diffraction and interference: theory, computation and
+      phenomenology.</span>
+    </a>
+    <a class="skymap-card tint-methods" href="#methods">
+      <strong>Methods &amp; data analysis</strong>
+      <span>Fast solvers, statistical searches, and the public codes GLoW and
+      hi_class.</span>
+    </a>
+    <a class="skymap-card tint-strong" href="#strong-field">
+      <strong>Strong fields &amp; <span>multi-messenger</span></strong>
+      <span>Black holes as lenses, and lensed waves paired with lensed
+      light.</span>
+    </a>
+  </div>
+  <div class="skymap-cards skymap-cards-bottom">
+    <!-- TODO: repoint at #high-redshift once that section exists. -->
+    <a class="skymap-card tint-source" href="#lensing-waves">
+      <strong>High-redshift sources</strong>
+      <span>Magnified black holes beyond <em>z</em>&nbsp;=&nbsp;3, and remnants
+      of the first stars.</span>
+    </a>
+    <a class="skymap-card tint-lens" href="#dark-matter">
+      <strong>Dark matter</strong>
+      <span>Compact objects and halos, 10<sup>&minus;6</sup> to
+      10<sup>7</sup>&nbsp;M<sub>&#9737;</sub>, and their initial
+      conditions.</span>
+    </a>
+    <a class="skymap-card tint-grav" href="#tests-of-gravity">
+      <strong>Tests of gravity</strong>
+      <span>Effects beyond general relativity, and dynamical dark energy.</span>
+    </a>
+  </div>
+  </div>
+  <figcaption>
+    A wave that leaves a distant binary, passes a lens and reaches us carries
+    information about the whole journey: the source that made it, the matter
+    along the way, the strong fields it crossed, and the theory of gravity
+    behind all of it.
+  </figcaption>
+</figure>
 
 <p>
   Selected work appears below. For the complete and current record, see
@@ -30,15 +99,7 @@ description: >-
   <a href="{{ site.author.scholar }}" rel="noopener">Google Scholar</a>.
 </p>
 
-<div class="btn-row">
-  <a class="btn" href="#lensing-waves">Wave optics</a>
-  <a class="btn" href="#dark-matter">Dark matter</a>
-  <a class="btn" href="#strong-field">Strong-field &amp; multi-messenger</a>
-  <a class="btn" href="#tests-of-gravity">Tests of gravity</a>
-  <a class="btn" href="#methods">Methods &amp; software</a>
-  <a class="btn" href="#cosmology">Cosmology &amp; gravity theories</a>
-  <a class="btn" href="#leadership">Scientific coordination</a>
-</div>
+{% include subnav.html %}
 
 <!-- ==================================================================
      MAIN PROGRAMME
@@ -47,13 +108,13 @@ description: >-
 <h2 id="main-programme">Main programme: wave-optics lensing and compact objects</h2>
 
 <p class="lede">
-  A gravitational wave that passes near a mass does not simply get brighter. At
-  the wavelengths LIGO–Virgo–KAGRA and LISA observe, the wave diffracts and
-  interferes with itself, and the resulting frequency-dependent pattern encodes
-  the mass, the profile and even the substructure of the lens. The same is true
-  of any phase-coherent signal. That makes lensing a probe of objects that emit
-  no light at all — and, because a lens breaks the symmetry of the background, a
-  test of gravity itself. This is the programme funded by the
+  A gravitational wave that passes near a mass is not simply magnified. When the
+  lens is small enough that its size is comparable to the wavelength, the wave
+  diffracts and interferes with itself, and the resulting frequency-dependent
+  pattern encodes the mass, the profile and even the substructure of the lens.
+  The same is true of any phase-coherent signal. That makes lensing a probe of
+  objects that emit no light at all — and, because a lens breaks the symmetry of
+  the background, a test of gravity itself. This is the programme funded by the
   <a href="{{ '/projects.html#glow' | relative_url }}">GLOW</a> ERC Consolidator
   Grant.
 </p>
@@ -87,16 +148,17 @@ description: >-
       event constrains the lens mass and the shape of its density profile,
       because different profiles diffract differently. It also breaks the
       magnification–distance degeneracy that plagues lensing in the geometric
-      limit: a diffracted signal carries an absolute mass scale, not just a
-      relative one.
+      limit: the modulation is set by the redshifted lens mass, so a diffracted
+      signal carries an absolute mass scale rather than only a relative
+      magnification.
     </p>
     <p>
       We derived efficient methods for computing these amplification factors,
       validated them against symmetric lenses where analytic results exist, and
       extended them to general matter distributions. The resulting machinery is
       public as the <a href="{{ '/software.html' | relative_url }}">GLoW code</a>,
-      and it is what allowed us to analyse GW231123 — the first compelling
-      candidate for a magnified and diffracted black-hole merger.
+      and it is what allowed us to analyse GW231123, which we argue is the first
+      compelling candidate for a magnified and diffracted black-hole merger.
     </p>
 
     <figure>
@@ -154,8 +216,9 @@ description: >-
       <img src="{{ '/imgs/no_LIGO_MACHO.jpg' | relative_url }}"
            alt="Constraints on the fraction of dark matter in compact objects as a function of mass, from the lensing of type Ia supernovae." loading="lazy" width="330" height="212">
       <figcaption>
-        The absence of magnified type Ia supernovae rules out LIGO-mass compact
-        objects as the dominant component of dark matter.
+        The absence of lensing-induced skew in type Ia supernova brightnesses
+        rules out LIGO-mass compact objects as the dominant component of dark
+        matter.
       </figcaption>
     </figure>
 
@@ -170,17 +233,19 @@ description: >-
       Two complementary handles come out of this. Individual diffracted events
       constrain individual lenses, their masses and their profiles. And even when
       no single lens dominates, the accumulated effect of many small structures
-      along the line of sight leaves a coherent stochastic imprint on the signal —
-      a "lens stochastic diffraction" that behaves like a noise term with a very
-      specific spectral shape. For LISA, that imprint is sensitive to halos in the
-      10–10<sup>4</sup>&nbsp;M<sub>&#9737;</sub> range that no other method reaches.
+      along the line of sight leaves a coherent imprint on the signal — lens
+      stochastic diffraction, which resembles a noise term but with a very
+      specific spectral shape. For LISA, that imprint would be sensitive to halos
+      of 10–10<sup>4</sup>&nbsp;M<sub>&#9737;</sub>, a range that is hard to reach
+      by other means.
     </p>
     <p>
       The electromagnetic side of the same argument gave one of the sharpest
       existing limits on compact dark matter: if a large fraction of dark matter
-      were in stellar-mass black holes, distant type Ia supernovae would be
-      measurably magnified. They are not, which rules out LIGO-mass black holes
-      as the bulk of dark matter.
+      were in stellar-mass black holes, the brightnesses of distant type Ia
+      supernovae would be visibly skewed — most slightly dimmed, a few strongly
+      magnified. The observed distribution shows no such skew, which rules out
+      LIGO-mass black holes as the bulk of dark matter.
     </p>
 
     <h4>Selected publications</h4>
@@ -239,17 +304,19 @@ description: >-
       pulsar-timing signal are almost impossible to resolve directly, but
       quasi-periodic lensed starlight offers a way to find them
       electromagnetically and measure their orbital parameters before their
-      gravitational waves are ever observed. Closer to home, continuous
-      gravitational waves from sources behind Sgr&nbsp;A* can be strongly lensed
-      well beyond the Einstein radius.
+      gravitational waves are ever observed. Closer to home, we found that
+      continuous gravitational waves from sources behind Sgr&nbsp;A* can be
+      <a href="https://inspirehep.net/literature/2619345" rel="noopener">strongly lensed well beyond the Einstein radius</a>,
+      and resolved as separate images.
     </p>
     <p>
       Strong fields also change how the wave itself propagates. Near a massive
       body the standard lensing formalism — weak fields, small deflections, a
-      single flat background — no longer holds: the wave couples to the
-      background curvature at subleading order in the wavelength, and its two
-      polarizations stop following the same path. This gravitational spin-Hall
-      effect has no counterpart in geometric optics.
+      single flat background — no longer holds: at first order beyond geometric
+      optics the wave's polarization couples to the background curvature, and
+      the two polarizations follow slightly different trajectories. This
+      gravitational spin-Hall effect makes the arrival time depend on both
+      frequency and polarization.
     </p>
     <p>
       Multi-messenger lensing is the wider frontier. A lensed gravitational wave
@@ -305,21 +372,21 @@ description: >-
       A gravitational wave accumulates any departure from general relativity
       along its entire path, which makes propagation one of the cleanest tests
       available. My earlier work identified the speed of gravitational waves as
-      the sharpest discriminant among scalar–tensor theories — a prediction
-      settled spectacularly by GW170817, whose near-simultaneous electromagnetic
-      counterpart ruled out entire classes of dark-energy models in a single
-      stroke.
+      the sharpest discriminant among scalar–tensor theories. GW170817 settled
+      the question: its near-simultaneous electromagnetic counterpart fixed that
+      speed to one part in 10<sup>15</sup>, which removed large classes of
+      dark-energy models at a stroke.
     </p>
     <p>
       Lensing sharpens the test, because a lens does what a smooth cosmological
       background cannot: it breaks the symmetry. In theories beyond general
-      relativity that lets a wave interact with new fields of different spin,
-      couplings that vanish exactly on a homogeneous background. The result is
-      birefringence — the two polarizations travelling at different speeds, the
-      lens acting as an anisotropic crystal — along with dispersion and modified
-      diffraction. This is a test that needs no electromagnetic counterpart, and
-      the bounds we obtained from gravitational-wave data alone already rival
-      those from GW170817.
+      relativity that allows the wave to mix with new fields of different spin
+      through couplings that vanish on a homogeneous, isotropic background. The
+      result is birefringence — the two polarizations propagating differently,
+      the lens acting as an anisotropic crystal — along with dispersion and
+      modified diffraction. This test needs no electromagnetic counterpart, so
+      it applies to the whole catalogue rather than to the single event that
+      came with one.
     </p>
     <p>
       The programme extends this from the high-frequency expansion to a complete
@@ -386,8 +453,7 @@ description: >-
     <p>
       The results are public. <a href="{{ '/software.html' | relative_url }}">GLoW</a>
       implements contour-integration and time-domain methods for general matter
-      distributions and has been used in more than eighteen publications. Alongside
-      it, collaborators lead
+      distributions. Alongside it, collaborators lead
       <a href="https://github.com/mhycheung/glworia" rel="noopener">Glworia</a> for
       Bayesian parameter estimation and
       <a href="https://github.com/manchunyeung/wolensing" rel="noopener">WOlensing</a>
@@ -472,11 +538,11 @@ description: >-
     </p>
     <figure>
       <img src="{{ '/imgs/desi_de_reconstruction.png' | relative_url }}"
-           alt="Reconstructed dark-energy density relative to its present value as a function of redshift, with confidence bands that widen with redshift and cross the constant-density line." loading="lazy" width="1200" height="615">
+           alt="Reconstructed change in the dark-energy density relative to its present value, as a function of redshift, with confidence bands that widen with redshift and remain consistent with zero." loading="lazy" width="1200" height="615">
       <figcaption>
-        The dark-energy density reconstructed from CMB, BAO and supernova data
-        without assuming a parameterization. A cosmological constant is the flat
-        line at zero.
+        The change in dark-energy density with redshift, reconstructed from CMB,
+        BAO and supernova data without assuming a parameterization. A
+        cosmological constant is the flat line at zero.
       </figcaption>
     </figure>
     <p>
@@ -521,8 +587,8 @@ description: >-
       the era of matter–radiation equality can shift H<sub>0</sub> without
       fine-tuned initial conditions. Beyond individual models, theoretical
       priors chart which regions of Horndeski space survive before any data are
-      involved, and massive gravity tests whether cosmic expansion is
-      accommodated at all.
+      involved, and massive gravity raises the prior question of whether cosmic
+      expansion can be accommodated at all.
     </p>
     <figure>
       <img src="{{ '/imgs/master_plot_annotated.png' | relative_url }}"
@@ -580,8 +646,9 @@ description: >-
       <img src="{{ '/imgs/CAMB_compare_Cl_web_inverse.png' | relative_url }}"
            alt="CMB temperature power spectra for Galileon models computed with hi_class, with a lower panel showing relative deviations from an independent implementation below one per cent." loading="lazy" width="399" height="397">
       <figcaption>
-        hi_class validated against an independent Galileon implementation: CMB
-        temperature spectra agree to better than one per cent.
+        hi_class checked against an independent Galileon implementation
+        (Barreira et al.): the CMB temperature spectra agree to better than one
+        per cent across the whole range of multipoles.
       </figcaption>
     </figure>
 
@@ -590,11 +657,12 @@ description: >-
   <section class="card" id="scalar-tensor">
     <h3 class="card-title">Scalar–tensor gravity beyond Horndeski</h3>
     <p>
-      Horndeski's theory was long taken to be the most general scalar–tensor
-      theory with second-order equations of motion, and therefore free of the
-      instabilities that plague higher-derivative theories. Generalized field
-      redefinitions show that the boundary sits further out: there are viable
-      theories beyond Horndeski, and I constructed the first explicit examples.
+      Horndeski's theory is the most general scalar–tensor theory with
+      second-order equations of motion, which was long taken to be what a theory
+      needs in order to avoid the ghosts that plague higher-derivative theories.
+      It is not: equations of higher order can still be degenerate, and so free
+      of ghosts. Generalized field redefinitions of the metric are how the first
+      explicit examples beyond Horndeski were built.
     </p>
     <figure>
       <img src="{{ '/imgs/beyond_Horndeski.jpg' | relative_url }}"
@@ -607,7 +675,7 @@ description: >-
     </figure>
     <ul class="pubs">
       <li><a href="https://inspirehep.net/literature/1250251" rel="noopener">Transforming gravity: from derivative couplings to matter to second-order scalar–tensor theories beyond the Horndeski Lagrangian</a>
-        <span class="authors">M. Zumalacárregui, J. García-Bellido — PRD <strong>89</strong>, 064046</span>
+        <span class="authors">M. Zumalacárregui, J. García-Bellido</span>
         <span class="journal">Phys. Rev. D <strong>89</strong>, 064046 (2014)</span></li>
       <li><a href="https://inspirehep.net/literature/1426081" rel="noopener">Towards the most general scalar–tensor theories of gravity: a unified approach in the language of differential forms</a>
         <span class="authors">J. M. Ezquiaga, J. García-Bellido, M. Zumalacárregui</span>
@@ -621,10 +689,11 @@ description: >-
   <section class="card" id="disformal">
     <h3 class="card-title">Disformal transformations</h3>
     <p>
-      A field redefinition that mixes the metric with derivatives of a scalar
-      field generalizes the familiar Einstein and Jordan frames. The consequences
-      are concrete: disformally coupled theories turn out to be DBI Galileons in
-      disguise, and the same coupling screens fifth forces in dense environments,
+      Adding to the metric a term built from derivatives of a scalar field
+      generalizes the conformal rescaling that relates the Einstein and Jordan
+      frames. The consequences are concrete: a disformally coupled scalar becomes
+      a DBI Galileon once written in the Einstein frame, and the same coupling
+      screens fifth forces in dense environments,
       hiding the scalar where laboratory tests would otherwise have found it.
       Recast in the language of differential forms, these redefinitions become a
       systematic tool for moving between theories beyond Einstein gravity.
@@ -656,7 +725,7 @@ description: >-
 </div>
 
 <ul class="arrow-list">
-  <li><a href="https://cds.cern.ch/record/2810852" rel="noopener">Review talk on dark energy</a> — talk at the EuCAPT Annual Symposium (2022)</li>
+  <li><a href="https://cds.cern.ch/record/2810852" rel="noopener">Dark energy and tests of gravity</a> — review talk at the EuCAPT Annual Symposium (2022)</li>
   <li><a href="https://youtu.be/MHcLT31gaYQ" rel="noopener">Solutions to the H<sub>0</sub> problem beyond general relativity</a> — talk at Cosmology from Home (2020)</li>
   <li><a href="https://www.youtube.com/watch?v=HmfRQPrbp3Y" rel="noopener">Beyond-Horndeski theories</a> — talk at Extended Theories of Gravity, Nordita (2015)</li>
 </ul>
@@ -676,8 +745,8 @@ description: >-
     <p>
       LISA is where wave-optics lensing stops being a curiosity. At millihertz
       frequencies the wavelengths are long enough that diffraction by dark-matter
-      halos becomes detectable — and, left unmodelled, could contaminate the
-      whole data stream. Preparing the mission for that is part of the Cosmology
+      halos becomes detectable — and, left unmodelled, could bias the inferred
+      source parameters. Preparing the mission for that is part of the Cosmology
       Working Group's remit.
     </p>
     <p class="card-meta">

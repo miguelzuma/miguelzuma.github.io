@@ -1,0 +1,20 @@
+{%- comment -%}
+In-page section navigation. Opt in by listing `sections` in a page's front
+matter, each with an `id` matching an element on the page and a `label`:
+
+    sections:
+      - id: lensing-waves
+        label: "Wave optics"
+
+The bar sticks below the site header once scrolled past, and the link for the
+section currently in view is marked with aria-current (see assets/js/subnav.js).
+{%- endcomment -%}
+{%- if page.sections and page.sections.size > 0 -%}
+<nav class="subnav" aria-label="Sections on this page" data-subnav>
+  <ul>
+    {%- for s in page.sections %}
+    <li><a href="#{{ s.id }}">{{ s.label }}</a></li>
+    {%- endfor %}
+  </ul>
+</nav>
+{%- endif -%}
