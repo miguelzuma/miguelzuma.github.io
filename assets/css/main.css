@@ -582,11 +582,14 @@ figure.float-left {
 
 .section { margin: 2.8rem 0; }
 
-/* The dominant research programme gets a subtle left rail */
-.programme {
+/* The dominant research programme gets a subtle left rail. It runs per section
+   rather than unbroken down the whole block, so the five read as five things
+   sharing a rail and not as one continuous stretch of page. */
+.programme { margin-left: 0; }
+
+.programme > .section {
 	border-left: 2px solid var(--accent-dim);
 	padding-left: 1.6rem;
-	margin-left: 0;
 }
 
 /* Secondary material sits in a quieter, denser block */
