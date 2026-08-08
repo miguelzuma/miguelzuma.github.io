@@ -38,10 +38,10 @@ flagship:
       scalar–tensor theories, producing accurate cosmological observables — CMB
       spectra, matter power spectra, background evolution — for essentially any
       dark-energy or modified-gravity model in that class. Fast and stable
-      enough for Markov-chain analyses and interfaced with MontePython, it has
-      become a standard tool for confronting gravity theories with cosmological
-      data, and was behind our work on Galileon solutions to the Hubble tension
-      and on the observational future of scalar–tensor cosmology.
+      enough for Markov-chain analyses and interfaced with MontePython, it is
+      used to confront gravity theories with cosmological data, and was behind
+      our work on Galileon solutions to the Hubble tension and on the
+      observational future of scalar–tensor cosmology.
     repo: "https://github.com/miguelzuma/hi_class_public"
     website: "https://hiclass-code.net"
     docs: "https://miguelzuma.github.io/hi_class_public/"
