@@ -221,6 +221,14 @@ pre code { background: none; border: none; padding: 0; }
 	max-width: 68ch;
 }
 
+/* A sentence naming what is further down the page, for pages short enough that
+   a sticky section bar would cost more room than it saves. */
+.page-toc {
+	color: var(--text-mute);
+	max-width: 68ch;
+	margin: 1.2rem 0 1.8rem;
+}
+
 .page-head {
 	padding: 2.4rem 0 0.4rem;
 	border-bottom: 1px solid var(--border);
