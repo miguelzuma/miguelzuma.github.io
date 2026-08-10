@@ -53,3 +53,4 @@ exclude:
   - Gemfile.lock
   - vendor
   - .jekyll-cache
+  - tools
