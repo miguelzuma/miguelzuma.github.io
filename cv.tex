@@ -1,0 +1,172 @@
+---
+layout: null
+sitemap: false
+---
+% Curriculum vitae — GENERATED. Do not edit this output; edit the sources:
+%
+%   _data/cv.yml       every section except supervision
+%   _data/people.yml   supervision, shared with the Group page
+%   cv.tex             this template (front matter marks it for Jekyll)
+%
+% tools/build_cv.sh renders it and runs pdflatex, writing
+% files/CV_Miguel_Zumalacarregui.pdf.
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2.2cm,top=1.9cm,bottom=1.9cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{accent}{HTML}{4B3FA8}
+\definecolor{soft}{HTML}{444444}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  pdftitle={Curriculum vitae — {{ site.author.name }}},
+  pdfauthor={ {{- site.author.name -}} },
+  pdfsubject={Curriculum vitae}
+}
+
+\pagestyle{plain}
+\setlength{\parindent}{0pt}
+
+% Section headings: coloured, over a rule, matching the site's quiet hierarchy.
+\titleformat{\section}
+  {\normalfont\large\bfseries\color{accent}}{}{0pt}{}[\vspace{-0.6em}\rule{\textwidth}{0.6pt}]
+\titlespacing*{\section}{0pt}{1.15em}{0.55em}
+
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{1.1em}{0.35em}
+
+\newenvironment{entries}
+  {\begin{itemize}[leftmargin=1.1em,itemsep=0.32em,parsep=0pt,topsep=0.3em]}
+  {\end{itemize}}
+\newenvironment{plainlist}
+  {\begin{itemize}[leftmargin=1.1em,itemsep=0.2em,parsep=0pt,topsep=0.3em]}
+  {\end{itemize}}
+
+\begin{document}
+
+% ---------------------------------------------------------------- header ----
+\begin{center}
+  {\LARGE\bfseries {{ site.author.name }}}\\[0.45em]
+  {\color{soft}{{ site.affiliation.primary_role }} ---
+   {{ site.affiliation.primary_name }}, Potsdam}\\[0.2em]
+  {\color{soft}{{ site.affiliation.secondary_role }} --- {{ site.affiliation.secondary_name }}, Madrid}\\[0.5em]
+  {\small
+   \href{mailto:{{ site.author.email }}}{ {{- site.author.email -}} }
+   \quad$\cdot$\quad
+   \href{ {{- site.url -}} }{ {{- site.url | remove: 'https://' -}} }
+   \quad$\cdot$\quad
+   \href{ {{- site.author.orcid_url -}} }{ORCID {{ site.author.orcid }}}}
+\end{center}
+
+\vspace{0.2em}
+{\small\color{soft}
+The publication record is maintained on
+\href{ {{- site.author.inspire -}} }{INSPIRE-HEP}; research
+\href{ {{- '/projects.html' | absolute_url -}} }{projects and funding} are listed on the website.}
+
+% ------------------------------------------------------------- positions ----
+\section{Positions}
+\begin{entries}
+{%- for e in site.data.cv.positions %}{% include tex-entry.html e=e %}{% endfor %}
+\end{entries}
+
+% ------------------------------------------------------------- education ----
+\section{Education}
+\begin{entries}
+{%- for e in site.data.cv.education %}{% include tex-entry.html e=e %}{% endfor %}
+\end{entries}
+
+% ----------------------------------------------------------- supervision ----
+% Team members only: the `current` and `alumni` lists of _data/people.yml.
+% Visiting researchers and the informal mentees from before the Potsdam group
+% are left to the Group page, which is where the full record lives.
+\section{Supervision}
+{%- for g in site.data.cv.supervision_groups %}
+{%- assign cur = site.data.people.current | where_exp: "p", "g.stages contains p.stage" %}
+{%- assign alu = site.data.people.alumni | where_exp: "p", "g.stages contains p.stage" %}
+{%- assign members = cur | concat: alu %}
+
+\subsection{ {{- g.heading -}} }
+{%- if g.style == 'paragraph' %}
+{% for p in members %}\textbf{ {%- include tex-escape.html s=p.name -%} } {% include tex-person.html p=p g=g %}{% unless forloop.last %}; {% endunless %}{% endfor %}.
+{%- else %}
+\begin{plainlist}
+{%- for p in members %}
+  \item \textbf{ {%- include tex-escape.html s=p.name -%} } {% include tex-person.html p=p g=g %}
+{%- endfor %}
+\end{plainlist}
+{%- endif %}
+{%- endfor %}
+
+\vspace{0.4em}
+{\small\color{soft}Visiting researchers, and the students mentored informally before the group
+started in 2020, are listed at
+\href{ {{- '/group.html' | absolute_url -}} }{ {{- site.url | remove: 'https://' -}} /group.html}.}
+
+% ---------------------------------------------------------- coordination ----
+\section{Scientific coordination}
+\begin{entries}
+{%- for e in site.data.cv.coordination %}{% include tex-entry.html e=e %}{% endfor %}
+\end{entries}
+
+% ------------------------------------------------------------- workshops ----
+\section{Workshops and meetings organized}
+\begin{entries}
+{%- for e in site.data.cv.workshops %}{% include tex-entry.html e=e %}{% endfor %}
+\end{entries}
+
+% -------------------------------------------------------------- teaching ----
+\section{Teaching}
+
+\subsection{Graduate schools}
+\begin{entries}
+{%- for e in site.data.cv.teaching_schools %}{% include tex-entry.html e=e %}{% endfor %}
+\end{entries}
+
+\subsection{University courses}
+\begin{entries}
+{%- for e in site.data.cv.teaching_courses %}{% include tex-entry.html e=e %}{% endfor %}
+\end{entries}
+
+% ---------------------------------------------------------------- awards ----
+\section{Awards and fellowships}
+\begin{plainlist}
+{%- for a in site.data.cv.awards %}
+  \item {% include tex-escape.html s=a %}
+{%- endfor %}
+\end{plainlist}
+
+% ----------------------------------------------------------- peer review ----
+\section{Evaluation and peer review}
+
+\subsection{Evaluation panels}
+\begin{plainlist}
+{%- for p in site.data.cv.panels %}
+  \item {% include tex-escape.html s=p %}
+{%- endfor %}
+\end{plainlist}
+
+\subsection{External evaluator for funding agencies}
+{% include tex-escape.html s=site.data.cv.agencies %}
+
+\subsection{Refereeing}
+{% include tex-escape.html s=site.data.cv.refereeing %}
+
+% ----------------------------------------------------------------- talks ----
+\section{Selected talks}
+\begin{entries}
+{%- for e in site.data.cv.talks %}{% include tex-entry.html e=e %}{% endfor %}
+\end{entries}
+
+% ------------------------------------------------------------- languages ----
+\section{Languages}
+{% include tex-escape.html s=site.data.cv.languages %}
+
+\end{document}

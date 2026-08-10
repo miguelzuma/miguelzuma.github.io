@@ -1,0 +1,31 @@
+{%- comment -%}
+One CV entry as a <li>, from an item of _data/cv.yml. See that file for the
+fields. The LaTeX counterpart is _includes/tex-entry.html; keep the two in step.
+
+    {% include cv-entry.html e=entry %}
+
+Everything from the data file goes through escape_once, since it is written as
+plain text: an ampersand in "Supernovae & Transients" has to reach the page as
+an entity. escape_once leaves apostrophes and any entity already there alone.
+{%- endcomment -%}
+{%- assign e = include.e -%}
+<li>
+  {%- if e.lead_url %}<a href="{{ e.lead_url }}" rel="noopener">{{ e.lead | escape_once }}</a>
+  {%- elsif e.plain_lead %}{{ e.lead | escape_once }}
+  {%- else %}<strong>{{ e.lead | escape_once }}</strong>{% endif -%}
+  {%- if e.lead_em %}, <em>{{ e.lead_em | escape_once }}</em>{% endif -%}
+  {{- e.lead_rest | escape_once -}}
+  {%- for m in e.meta %}
+  <span class="journal">
+    {%- if m.text or m.links -%}
+      {{- m.text | escape_once -}}
+      {%- for l in m.links -%}
+        {%- if forloop.first %}{% if m.text %} {% endif %}{% else %} &middot; {% endif -%}
+        <a href="{% if l.url contains '://' %}{{ l.url }}" rel="noopener{% else %}{{ l.url | relative_url }}{% endif %}">{{ l.text | escape_once }}</a>
+      {%- endfor -%}
+    {%- else -%}
+      {{- m | escape_once -}}
+    {%- endif -%}
+  </span>
+  {%- endfor %}
+</li>

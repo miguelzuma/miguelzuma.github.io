@@ -1,0 +1,27 @@
+# Replacements for _includes/tex-escape.html that cannot be written inline.
+#
+# Liquid ends a {{ ... }} expression at the first "}" it sees, even inside a
+# quoted string, so any literal brace in a filter argument has to arrive as a
+# variable. Everything here is a plain character or a LaTeX control sequence
+# containing braces; the rest of the escaping is written out in the include.
+open_brace: '{'
+close_brace: '}'
+escaped_open: '\{'
+escaped_close: '\}'
+
+# replace runs on Ruby's gsub, where "\&" in a replacement means the whole
+# match — so the obvious '\&' would swap an ampersand for itself. The doubled
+# backslash is what actually yields a literal "\&".
+ampersand: '&'
+escaped_ampersand: '\\&'
+
+tilde: '~'
+escaped_tilde: '\textasciitilde{}'
+
+caret: '^'
+escaped_caret: '\textasciicircum{}'
+
+# The backslash is parked on this placeholder first, so that the backslashes
+# the escaping itself introduces are not escaped a second time.
+backslash_placeholder: 'XxBACKSLASHxX'
+escaped_backslash: '\textbackslash{}'

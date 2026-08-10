@@ -1,0 +1,31 @@
+{%- comment -%}
+Escape a string from _data for LaTeX:
+
+    {% include tex-escape.html s=some.string %}
+
+Order matters. Braces and the dollar sign are escaped before we introduce any
+of our own, and a literal backslash is parked on a placeholder so the escapes
+we add are not escaped a second time. The middle dot is the separator the data
+files use; LaTeX wants it as math.
+
+The brace-bearing replacements come from _data/tex.yml — Liquid ends a {{ ... }}
+expression at the first "}", so they cannot be written here literally.
+
+Accented letters, dashes and curly quotes need no help: inputenc and the T1
+font encoding handle them.
+{%- endcomment -%}
+{%- assign t = site.data.tex -%}
+{{- include.s
+  | replace: '\', t.backslash_placeholder
+  | replace: t.open_brace, t.escaped_open
+  | replace: t.close_brace, t.escaped_close
+  | replace: '$', '\$'
+  | replace: t.ampersand, t.escaped_ampersand
+  | replace: '%', '\%'
+  | replace: '#', '\#'
+  | replace: '_', '\_'
+  | replace: t.tilde, t.escaped_tilde
+  | replace: t.caret, t.escaped_caret
+  | replace: t.backslash_placeholder, t.escaped_backslash
+  | replace: '·', '$\cdot$'
+-}}

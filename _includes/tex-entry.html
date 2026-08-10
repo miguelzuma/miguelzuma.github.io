@@ -1,0 +1,31 @@
+{%- comment -%}
+One CV entry as a LaTeX \item, from an item of _data/cv.yml. The HTML
+counterpart is _includes/cv-entry.html; keep the two in step.
+
+    {% include tex-entry.html e=entry %}
+
+The braces are spaced as `\href{ {{- x -}} }` on purpose: written closed up,
+`\href{{{ x }}}` would read as a Liquid tag starting one brace early.
+
+The line break before each \href is load-bearing. Liquid discards output that
+is nothing but whitespace, so a space cannot be emitted from inside a tag —
+but a newline left in the template survives, and LaTeX reads it as a space.
+{%- endcomment -%}
+{%- assign e = include.e -%}
+  \item {% if e.lead_url %}\href{ {{- e.lead_url -}} }{ {%- include tex-escape.html s=e.lead -%} }
+{%- elsif e.plain_lead %}{% include tex-escape.html s=e.lead %}
+{%- else %}\textbf{ {%- include tex-escape.html s=e.lead -%} }{% endif %}
+{%- if e.lead_em %}, \emph{ {%- include tex-escape.html s=e.lead_em -%} }{% endif %}
+{%- if e.lead_rest %}{% include tex-escape.html s=e.lead_rest %}{% endif %}
+{%- for m in e.meta %}\\[0.1em]{\small\color{soft}
+{%- if m.text or m.links -%}
+  {%- if m.text %}{% include tex-escape.html s=m.text %}{% endif -%}
+  {%- for l in m.links -%}
+    {%- capture url %}{% if l.url contains '://' %}{{ l.url }}{% else %}{{ l.url | absolute_url }}{% endif %}{% endcapture -%}
+    {%- if forloop.first %}{% else %} $\cdot${% endif %}
+    \href{ {{- url -}} }{ {%- include tex-escape.html s=l.text -%} }
+  {%- endfor -%}
+{%- else -%}
+  {%- include tex-escape.html s=m -%}
+{%- endif -%}
+}{% endfor %}

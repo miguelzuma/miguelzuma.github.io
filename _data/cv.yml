@@ -1,0 +1,284 @@
+# Curriculum vitae content, rendered twice: cv.html for the website and cv.tex
+# for the PDF at files/CV_Miguel_Zumalacarregui.pdf. Edit here, never in either
+# template, or the two drift apart.
+#
+# Supervision is not in this file: it comes from people.yml, which already
+# drives the Group page.
+#
+# Entry fields, all optional except `lead`:
+#   lead       the headline, bold (or a link, given lead_url)
+#   lead_url   makes the headline a link instead
+#   lead_em    italic clause after the headline, preceded by a comma
+#   lead_rest  continuation of the headline, in ordinary weight
+#   meta       list of quieter lines under it. Each is either a plain string,
+#              or `text` plus `links` when part of it should be a link:
+#
+#                meta:
+#                  - "Nordita, Stockholm · 2015–2017"
+#                  - text: "Dissertation:"
+#                    links:
+#                      - text: "Probing the Foundations"
+#                        url: "/files/PhD_thesis_miguel_zuma.pdf"
+#
+# A url starting with "/" is resolved against the site, so it works in both the
+# page and the PDF. Write "·" for a separator; the LaTeX template converts it.
+
+# How the PDF groups the Supervision section. The people come from people.yml,
+# which already drives the Group page: `stages` picks them out of its `current`
+# and `alumni` lists, in that order. `default_roles` are the roles the heading
+# already states, left off each line. `style: paragraph` runs the group as
+# running text instead of a list, for the groups with the most names in them.
+#
+# The website has no Supervision section — the Group page is that, in full.
+supervision_groups:
+  - heading: "Postdoctoral researchers"
+    stages: ["postdoc"]
+    default_roles: ["Postdoctoral researcher", "Postdoc"]
+
+  - heading: "PhD students"
+    stages: ["phd"]
+    default_roles: ["PhD student"]
+
+  - heading: "Master's and undergraduate students"
+    stages: ["masters", "undergrad"]
+    style: "paragraph"
+
+positions:
+  - lead: "Ramón y Cajal Fellow"
+    meta:
+      - "Instituto de Física Teórica IFT-UAM/CSIC, Madrid · 2026–"
+
+  - lead: "Group Leader"
+    lead_rest: ", Astrophysical and Cosmological Relativity"
+    meta:
+      - "Max Planck Institute for Gravitational Physics (Albert Einstein Institute), Potsdam · 2020–"
+
+  - lead: "Marie Skłodowska-Curie Global Fellow"
+    meta:
+      - "Berkeley Center for Cosmological Physics, with return phase at IPhT Saclay · 2017–2020"
+
+  - lead: "Nordita Fellow"
+    meta:
+      - "Nordic Institute for Theoretical Physics, Stockholm · 2015–2017"
+
+  - lead: "Postdoctoral Researcher"
+    meta:
+      - "Institut für Theoretische Physik, University of Heidelberg · 2013–2015"
+
+  - lead: "Postdoctoral Researcher"
+    meta:
+      - "Instituto de Física Teórica IFT-UAM/CSIC, Madrid · 2013"
+
+education:
+  - lead: "PhD in Physics"
+    lead_em: "Cum Laude"
+    lead_rest: " with International Mention"
+    meta:
+      - "Universidad Autónoma de Madrid · 2012 · Graduate work at ICC Barcelona and IFT-UAM/CSIC (FPI fellowship)"
+      - text: "Dissertation:"
+        links:
+          - text: "Probing the Foundations of the Standard Cosmological Model"
+            url: "/files/PhD_thesis_miguel_zuma.pdf"
+          - text: "defense presentation"
+            url: "https://prezi.com/a2mhizem_sod/"
+
+  - lead: "Master's thesis"
+    meta:
+      - text: "Universidad Autónoma de Madrid ·"
+        links:
+          - text: "PDF"
+            url: "/files/master_thesis_miguel_zuma.pdf"
+
+coordination:
+  - lead: "LISA Consortium"
+    meta:
+      - "member since 2018"
+      - "Council member and Senior Co-Chair of the Cosmology Working Group (2025–); section coordinator for gravitational-wave lensing in the LISA Cosmology white paper (2022)"
+
+  - lead: "Euclid Consortium"
+    meta:
+      - "member since 2014"
+      - "Lead of the Science Working Group on Gravitational Waves and of its “bright sirens” work package (2025–); member of the Strong Lensing, Cosmology Theory, and Supernovae & Transients working groups"
+
+  - lead: "GW-Space 2050"
+    meta:
+      - "Coordinator for the cosmography section, defining ESA's gravitational-wave missions after LISA (2023–)"
+
+  - lead: "Multi-messenger lensing white paper"
+    meta:
+      - "Coordinator for the microlensing section (2024)"
+
+workshops:
+  - lead: "13th LISA Cosmology Working Group Workshop"
+    lead_url: "https://indico.icc.ub.edu/event/677/"
+    meta:
+      - "Barcelona, 2026"
+
+  - lead: "12th LISA Cosmology Working Group Workshop"
+    lead_url: "https://indico.cern.ch/event/1488828/"
+    meta:
+      - "Tallinn, 2025"
+
+  - lead: "Lensing and Wave Optics in Strong Gravity"
+    lead_url: "https://www.esi.ac.at/events/e546/"
+    meta:
+      - "Erwin Schrödinger Institute, Vienna, 2024"
+
+  - lead: "LISA joint Fundamental Physics + Waveform meeting"
+    lead_url: "https://workshops.aei.mpg.de/fpmeetswavelisa/"
+    meta:
+      - "Potsdam, 2024"
+
+  - lead: "ACR Division Seminars"
+    lead_url: "https://www.aei.mpg.de/139117/seminars"
+    meta:
+      - "Max Planck Institute for Gravitational Physics, 2020–2022"
+
+  - lead: "BCCP Cosmology Lunch"
+    plain_lead: true
+    meta:
+      - "UC Berkeley, 2016–2017"
+
+  - lead: "Cosmology Seminars, Institut für Theoretische Physik"
+    plain_lead: true
+    meta:
+      - "University of Heidelberg, 2014–2015"
+
+  - lead: "TRR33 Winter Schools"
+    plain_lead: true
+    meta:
+      - "Passo del Tonale, 2013, 2014 and 2015"
+
+teaching_schools:
+  - lead: "Gravitational waves"
+    lead_rest: " — TAE (Taller de Altas Energías), Benasque, 2024"
+    meta:
+      - links:
+          - text: "Slides"
+            url: "https://www.benasque.org/2024tae/talks_contr/094_GW_Lectures_-_TAE_2024_-_Zumalacarregui_-_PDF.pdf"
+
+  - lead: "Tests of gravity and dark energy with cosmology and gravitational waves"
+    meta:
+      - "II Mesoamerican Workshop on Gravity and Cosmology, Chiapas, 2018"
+
+  - lead: "Alternative gravity theories"
+    lead_rest: " — Cosmology School in the Canary Islands, 2017"
+    meta:
+      - links:
+          - text: "Video lecture"
+            url: "http://iactalks.iac.es/talks/view/1081"
+
+  - lead: "School for Cosmology Tools"
+    lead_rest: " — IFT Madrid, 2017"
+    meta:
+      - text: "Lectures on CLASS, hi_class and MontePython; material on the"
+        links:
+          - text: "Talks & Teaching page"
+            url: "/talks.html#teaching"
+
+  - lead: "Workshop on CLASS and MontePython"
+    lead_rest: " — MPIA Munich, 2014"
+
+teaching_courses:
+  - lead: "Berkeley Connect Instructor"
+    lead_rest: " — UC Berkeley, 2018–2019"
+    meta:
+      - "Two semesters of undergraduate mentoring and teaching"
+
+  - lead: "Lecturer"
+    lead_rest: " — University of Heidelberg, 2014–2015"
+    meta:
+      - "Advanced Cosmology; Introduction to CMB Physics; Statistical Mechanics; advanced seminar"
+
+  - lead: "Teaching assistant"
+    lead_rest: " — University of Heidelberg, 2014–2015"
+    meta:
+      - "Theoretical Astrophysics (graduate), with M. Bartelmann"
+
+  - lead: "Teaching assistant"
+    lead_rest: " — Universidad Autónoma de Madrid, 2013"
+    meta:
+      - "Gravitation and Cosmology; Physics of the Cosmos"
+
+  - lead: "Mini-course on inhomogeneous cosmologies"
+    lead_rest: " — University of Barcelona, 2012"
+
+awards:
+  - "Ramón y Cajal Fellowship (2024)."
+  - "R3 certification, Spanish Research Agency."
+  - "Berkeley Connect Fellow, UC Berkeley (2018)."
+  - "Marie Skłodowska-Curie Global Fellowship (2015)."
+  - "Nordita Fellowship (2015)."
+  - "Yggdrasil Fellowship (2011) — research stay at ITA Oslo."
+  - "FPI doctoral fellowship (2008) and UAM Master's scholarship (2007)."
+
+panels:
+  - "NASA Hubble Fellowship Program, Physics and Cosmology panel."
+  - "FCT — Portuguese Foundation for Science and Technology, Individual Support Call."
+  - "Max Planck Institute for Gravitational Physics — postdoctoral hiring committee, since 2020."
+
+agencies: >-
+  European Research Council (Starting Grants), STFC/UKRI, Swiss National
+  Science Foundation, Alexander von Humboldt Foundation, InterTalentum
+  (Marie Skłodowska-Curie COFUND), Netherlands Research Council (NWO),
+  Research Grants Council of Hong Kong, and the Estonian Research Council.
+
+refereeing: >-
+  Peer review for more than 40 papers, including Physical Review Letters,
+  Physical Review D, Nature Astronomy, JCAP, The Astrophysical Journal and
+  Astrophysical Journal Letters.
+
+talks:
+  - lead: "Spanish & Portuguese Relativity Meeting"
+    lead_rest: " — Universidad de Murcia, 2026 · plenary"
+    meta:
+      - "Gravitational lensing of waves: a new window into astrophysics, dark matter and gravity"
+
+  - lead: "IAS and Princeton University"
+    lead_rest: " — gravitational-wave meeting, Princeton, 2026 · seminar"
+    meta:
+      - "GW231123 as a diffracted and magnified black-hole merger"
+
+  - lead: "Leibniz Institute for Astrophysics"
+    lead_rest: " — Potsdam, 2024 · institute colloquium"
+    meta:
+      - "Gravitational lensing of waves"
+
+  - lead: "New Frontiers in Strong Gravity"
+    lead_rest: " — Benasque, 2024 · plenary"
+    meta:
+      - "Wave-optical phenomena in gravitational-wave lensing"
+
+  - lead: "Workshop on Tensions in Cosmology"
+    lead_rest: " — Corfu, 2022 · plenary"
+    meta:
+      - "Towards solutions to the Hubble problem beyond Einstein's gravity"
+
+  - lead: "EuCAPT Annual Symposium"
+    lead_rest: " — CERN, 2022 · plenary review"
+    meta:
+      - links:
+          - text: "Dark energy and tests of gravity with cosmology and gravitational-wave propagation"
+            url: "https://cds.cern.ch/record/2810852"
+
+  - lead: "Institute of Theoretical Astrophysics"
+    lead_rest: " — University of Oslo, 2021 · institute colloquium"
+    meta:
+      - "The dark Universe in the era of gravitational-wave astronomy"
+
+  - lead: "Progress in Old and New Themes in Cosmology"
+    lead_rest: " — Palais des Papes, Avignon, 2020 · plenary"
+    meta:
+      - "Tests of gravity with gravitational waves"
+
+  - lead: "COSMO"
+    lead_rest: " — Aachen University, 2019 · plenary"
+    meta:
+      - "Tests of dark energy and modified gravity"
+
+  - lead: "Rencontres du Vietnam"
+    lead_rest: " — Very High Energy Phenomena in the Universe, 2018 · plenary"
+    meta:
+      - "The dark Universe in the era of gravitational-wave astronomy"
+
+languages: "Spanish (native), English (C2), German (C1)."

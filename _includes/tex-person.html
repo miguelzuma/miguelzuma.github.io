@@ -1,0 +1,26 @@
+{%- comment -%}
+The detail that follows a name in the CV's Supervision section, from an entry
+of _data/people.yml and the group it was matched into (_data/cv.yml,
+supervision_groups).
+
+    {% include tex-person.html p=person g=group %}
+
+Roles the heading already states are left off — "Postdoctoral researcher" under
+"Postdoctoral researchers" is noise. In the paragraph style the role is reduced
+to whatever it names in brackets, which is where people.yml puts the institution:
+"Master's student (co-supervised, U. Bologna)" becomes "(U. Bologna, 2026)".
+{%- endcomment -%}
+{%- assign p = include.p -%}
+{%- assign g = include.g -%}
+{%- capture when %}{% if p.incoming %}from {{ p.starts }}{% else %}{{ p.years }}{% endif %}{% endcapture -%}
+{%- if g.style == 'paragraph' -%}
+  {%- assign bracketed = p.role | split: '(' -%}
+  {%- capture where %}{% if bracketed.size > 1 %}{{ bracketed[1] | remove: ')' }}, {% endif %}{% endcapture -%}
+({% include tex-escape.html s=where %}{% include tex-escape.html s=when %}
+  {%- if p.next %} $\rightarrow$ {% include tex-escape.html s=p.next %}{% endif -%}
+  )
+{%- else -%}
+---
+  {%- unless g.default_roles contains p.role %} {% include tex-escape.html s=p.role %},{% endunless %} {% include tex-escape.html s=when %}
+  {%- if p.next %} $\rightarrow$ {% include tex-escape.html s=p.next %}{% endif -%}
+{%- endif -%}

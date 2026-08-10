@@ -31,6 +31,8 @@ sections:
     label: "Languages"
 ---
 
+{%- assign cv = site.data.cv %}
+
 <div class="btn-row">
   <a class="btn btn-primary" href="{{ '/files/CV_Miguel_Zumalacarregui.pdf' | relative_url }}">Download CV (PDF)</a>
   <a class="btn" href="{{ site.author.inspire }}" rel="noopener">Publications (INSPIRE-HEP)</a>
@@ -43,108 +45,28 @@ sections:
 <section class="section" id="positions">
   <h2>Positions</h2>
   <ul class="pubs">
-    <li>
-      <strong>Ramón y Cajal Fellow</strong>
-      <span class="journal">Instituto de Física Teórica IFT-UAM/CSIC, Madrid &middot; 2026–</span>
-    </li>
-    <li>
-      <strong>Group Leader</strong>, Astrophysical and Cosmological Relativity
-      <span class="journal">Max Planck Institute for Gravitational Physics (Albert Einstein Institute), Potsdam &middot; 2020–</span>
-    </li>
-    <li>
-      <strong>Marie Skłodowska-Curie Global Fellow</strong>
-      <span class="journal">Berkeley Center for Cosmological Physics, with return phase at IPhT Saclay &middot; 2017–2020</span>
-    </li>
-    <li>
-      <strong>Nordita Fellow</strong>
-      <span class="journal">Nordic Institute for Theoretical Physics, Stockholm &middot; 2015–2017</span>
-    </li>
-    <li>
-      <strong>Postdoctoral Researcher</strong>
-      <span class="journal">Institut für Theoretische Physik, University of Heidelberg &middot; 2013–2015</span>
-    </li>
-    <li>
-      <strong>Postdoctoral Researcher</strong>
-      <span class="journal">Instituto de Física Teórica IFT-UAM/CSIC, Madrid &middot; 2013</span>
-    </li>
+    {%- for e in cv.positions %}{% include cv-entry.html e=e %}{% endfor %}
   </ul>
 </section>
 
 <section class="section" id="education">
   <h2>Education</h2>
   <ul class="pubs">
-    <li>
-      <strong>PhD in Physics</strong>, <em>Cum Laude</em> with International Mention
-      <span class="journal">Universidad Autónoma de Madrid &middot; 2012 &middot; Graduate work at ICC Barcelona and IFT-UAM/CSIC (FPI fellowship)</span>
-      <span class="journal">Dissertation:
-        <a href="{{ '/files/PhD_thesis_miguel_zuma.pdf' | relative_url }}">Probing the Foundations of the Standard Cosmological Model</a>
-        &middot; <a href="https://prezi.com/a2mhizem_sod/" rel="noopener">defense presentation</a></span>
-    </li>
-    <li>
-      <strong>Master's thesis</strong>
-      <span class="journal">Universidad Autónoma de Madrid &middot;
-        <a href="{{ '/files/master_thesis_miguel_zuma.pdf' | relative_url }}">PDF</a></span>
-    </li>
+    {%- for e in cv.education %}{% include cv-entry.html e=e %}{% endfor %}
   </ul>
 </section>
 
 <section class="section" id="coordination">
   <h2>Scientific coordination</h2>
   <ul class="pubs">
-    <li>
-      <strong>LISA Consortium</strong> <span class="journal">member since 2018</span>
-      <span class="journal">Council member and Senior Co-Chair of the Cosmology Working Group (2025–); section coordinator for gravitational-wave lensing in the LISA Cosmology white paper (2022)</span>
-    </li>
-    <li>
-      <strong>Euclid Consortium</strong> <span class="journal">member since 2014</span>
-      <span class="journal">Lead of the Science Working Group on Gravitational Waves and of its “bright sirens” work package (2025–); member of the Strong Lensing, Cosmology Theory, and Supernovae &amp; Transients working groups</span>
-    </li>
-    <li>
-      <strong>GW-Space 2050</strong>
-      <span class="journal">Coordinator for the cosmography section, defining ESA's gravitational-wave missions after LISA (2023–)</span>
-    </li>
-    <li>
-      <strong>Multi-messenger lensing white paper</strong>
-      <span class="journal">Coordinator for the microlensing section (2024)</span>
-    </li>
+    {%- for e in cv.coordination %}{% include cv-entry.html e=e %}{% endfor %}
   </ul>
 </section>
 
 <section class="section" id="workshops">
   <h2>Workshops and meetings organized</h2>
   <ul class="pubs">
-    <li>
-      <a href="https://indico.icc.ub.edu/event/677/" rel="noopener">13th LISA Cosmology Working Group Workshop</a>
-      <span class="journal">Barcelona, 2026</span>
-    </li>
-    <li>
-      <a href="https://indico.cern.ch/event/1488828/" rel="noopener">12th LISA Cosmology Working Group Workshop</a>
-      <span class="journal">Tallinn, 2025</span>
-    </li>
-    <li>
-      <a href="https://www.esi.ac.at/events/e546/" rel="noopener">Lensing and Wave Optics in Strong Gravity</a>
-      <span class="journal">Erwin Schrödinger Institute, Vienna, 2024</span>
-    </li>
-    <li>
-      <a href="https://workshops.aei.mpg.de/fpmeetswavelisa/" rel="noopener">LISA joint Fundamental Physics + Waveform meeting</a>
-      <span class="journal">Potsdam, 2024</span>
-    </li>
-    <li>
-      <a href="https://www.aei.mpg.de/139117/seminars" rel="noopener">ACR Division Seminars</a>
-      <span class="journal">Max Planck Institute for Gravitational Physics, 2020–2022</span>
-    </li>
-    <li>
-      BCCP Cosmology Lunch
-      <span class="journal">UC Berkeley, 2016–2017</span>
-    </li>
-    <li>
-      Cosmology Seminars, Institut für Theoretische Physik
-      <span class="journal">University of Heidelberg, 2014–2015</span>
-    </li>
-    <li>
-      TRR33 Winter Schools
-      <span class="journal">Passo del Tonale, 2013, 2014 and 2015</span>
-    </li>
+    {%- for e in cv.workshops %}{% include cv-entry.html e=e %}{% endfor %}
   </ul>
 </section>
 
@@ -153,62 +75,21 @@ sections:
 
   <h3>Graduate schools</h3>
   <ul class="pubs">
-    <li>
-      <strong>Gravitational waves</strong> — TAE (Taller de Altas Energías), Benasque, 2024
-      <span class="journal"><a href="https://www.benasque.org/2024tae/talks_contr/094_GW_Lectures_-_TAE_2024_-_Zumalacarregui_-_PDF.pdf" rel="noopener">Slides</a></span>
-    </li>
-    <li>
-      <strong>Tests of gravity and dark energy with cosmology and gravitational waves</strong>
-      <span class="journal">II Mesoamerican Workshop on Gravity and Cosmology, Chiapas, 2018</span>
-    </li>
-    <li>
-      <strong>Alternative gravity theories</strong> — Cosmology School in the Canary Islands, 2017
-      <span class="journal"><a href="http://iactalks.iac.es/talks/view/1081" rel="noopener">Video lecture</a></span>
-    </li>
-    <li>
-      <strong>School for Cosmology Tools</strong> — IFT Madrid, 2017
-      <span class="journal">Lectures on CLASS, hi_class and MontePython; material on the
-        <a href="{{ '/talks.html#teaching' | relative_url }}">Talks &amp; Teaching</a> page</span>
-    </li>
-    <li>
-      <strong>Workshop on CLASS and MontePython</strong> — MPIA Munich, 2014
-    </li>
+    {%- for e in cv.teaching_schools %}{% include cv-entry.html e=e %}{% endfor %}
   </ul>
 
   <h3>University courses</h3>
   <ul class="pubs">
-    <li>
-      <strong>Berkeley Connect Instructor</strong> — UC Berkeley, 2018–2019
-      <span class="journal">Two semesters of undergraduate mentoring and teaching</span>
-    </li>
-    <li>
-      <strong>Lecturer</strong> — University of Heidelberg, 2014–2015
-      <span class="journal">Advanced Cosmology; Introduction to CMB Physics; Statistical Mechanics; advanced seminar</span>
-    </li>
-    <li>
-      <strong>Teaching assistant</strong> — University of Heidelberg, 2014–2015
-      <span class="journal">Theoretical Astrophysics (graduate), with M. Bartelmann</span>
-    </li>
-    <li>
-      <strong>Teaching assistant</strong> — Universidad Autónoma de Madrid, 2013
-      <span class="journal">Gravitation and Cosmology; Physics of the Cosmos</span>
-    </li>
-    <li>
-      <strong>Mini-course on inhomogeneous cosmologies</strong> — University of Barcelona, 2012
-    </li>
+    {%- for e in cv.teaching_courses %}{% include cv-entry.html e=e %}{% endfor %}
   </ul>
 </section>
 
 <section class="section" id="awards">
   <h2>Awards and fellowships</h2>
   <ul>
-    <li>Ramón y Cajal Fellowship (2024).</li>
-    <li>R3 certification, Spanish Research Agency.</li>
-    <li>Berkeley Connect Fellow, UC Berkeley (2018).</li>
-    <li>Marie Skłodowska-Curie Global Fellowship (2015).</li>
-    <li>Nordita Fellowship (2015).</li>
-    <li>Yggdrasil Fellowship (2011) — research stay at ITA Oslo.</li>
-    <li>FPI doctoral fellowship (2008) and UAM Master's scholarship (2007).</li>
+    {%- for a in cv.awards %}
+    <li>{{ a | escape_once }}</li>
+    {%- endfor %}
   </ul>
   <p class="small">
     Funding awards are listed on the
@@ -221,70 +102,22 @@ sections:
 
   <h3>Evaluation panels</h3>
   <ul>
-    <li>NASA Hubble Fellowship Program, Physics and Cosmology panel.</li>
-    <li>FCT — Portuguese Foundation for Science and Technology, Individual Support Call.</li>
-    <li>Max Planck Institute for Gravitational Physics — postdoctoral hiring committee, since 2020.</li>
+    {%- for p in cv.panels %}
+    <li>{{ p | escape_once }}</li>
+    {%- endfor %}
   </ul>
 
   <h3>External evaluator for funding agencies</h3>
-  <p>
-    European Research Council (Starting Grants), STFC/UKRI, Swiss National
-    Science Foundation, Alexander von Humboldt Foundation, InterTalentum
-    (Marie Skłodowska-Curie COFUND), Netherlands Research Council (NWO),
-    Research Grants Council of Hong Kong, and the Estonian Research Council.
-  </p>
+  <p>{{ cv.agencies | escape_once }}</p>
 
   <h3>Refereeing</h3>
-  <p>
-    Peer review for more than 40 papers, including Physical Review Letters,
-    Physical Review D, Nature Astronomy, JCAP, The Astrophysical Journal and
-    Astrophysical Journal Letters.
-  </p>
+  <p>{{ cv.refereeing | escape_once }}</p>
 </section>
 
 <section class="section" id="selected-talks">
   <h2>Selected talks</h2>
   <ul class="pubs">
-    <li>
-      <strong>Spanish &amp; Portuguese Relativity Meeting</strong> — Universidad de Murcia, 2026 &middot; plenary
-      <span class="journal">Gravitational lensing of waves: a new window into astrophysics, dark matter and gravity</span>
-    </li>
-    <li>
-      <strong>IAS and Princeton University</strong> — gravitational-wave meeting, Princeton, 2026 &middot; seminar
-      <span class="journal">GW231123 as a diffracted and magnified black-hole merger</span>
-    </li>
-    <li>
-      <strong>Leibniz Institute for Astrophysics</strong> — Potsdam, 2024 &middot; institute colloquium
-      <span class="journal">Gravitational lensing of waves</span>
-    </li>
-    <li>
-      <strong>New Frontiers in Strong Gravity</strong> — Benasque, 2024 &middot; plenary
-      <span class="journal">Wave-optical phenomena in gravitational-wave lensing</span>
-    </li>
-    <li>
-      <strong>Workshop on Tensions in Cosmology</strong> — Corfu, 2022 &middot; plenary
-      <span class="journal">Towards solutions to the Hubble problem beyond Einstein's gravity</span>
-    </li>
-    <li>
-      <strong>EuCAPT Annual Symposium</strong> — CERN, 2022 &middot; plenary review
-      <span class="journal"><a href="https://cds.cern.ch/record/2810852" rel="noopener">Dark energy and tests of gravity with cosmology and gravitational-wave propagation</a></span>
-    </li>
-    <li>
-      <strong>Institute of Theoretical Astrophysics</strong> — University of Oslo, 2021 &middot; institute colloquium
-      <span class="journal">The dark Universe in the era of gravitational-wave astronomy</span>
-    </li>
-    <li>
-      <strong>Progress in Old and New Themes in Cosmology</strong> — Palais des Papes, Avignon, 2020 &middot; plenary
-      <span class="journal">Tests of gravity with gravitational waves</span>
-    </li>
-    <li>
-      <strong>COSMO</strong> — Aachen University, 2019 &middot; plenary
-      <span class="journal">Tests of dark energy and modified gravity</span>
-    </li>
-    <li>
-      <strong>Rencontres du Vietnam</strong> — Very High Energy Phenomena in the Universe, 2018 &middot; plenary
-      <span class="journal">The dark Universe in the era of gravitational-wave astronomy</span>
-    </li>
+    {%- for e in cv.talks %}{% include cv-entry.html e=e %}{% endfor %}
   </ul>
   <p class="small">
     Recorded talks and public lectures are on the
@@ -295,5 +128,5 @@ sections:
 
 <section class="section" id="languages">
   <h2>Languages</h2>
-  <p>Spanish (native), English (C2), German (C1).</p>
+  <p>{{ cv.languages | escape_once }}</p>
 </section>
