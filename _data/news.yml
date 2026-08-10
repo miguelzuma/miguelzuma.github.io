@@ -1,0 +1,47 @@
+# Short, dated items for the News list on the home page. Newest first is not
+# required: the template sorts by date.
+#
+#   date   YYYY-MM-DD. Only the month is displayed, so the day is just for
+#          ordering within a month — use 01 when the exact day does not matter.
+#   text   one sentence, plain prose. An event, not a boast: what happened,
+#          not how well it was received.
+#   links  optional [{text, url}], shown after the sentence.
+#
+# Items newer than the freshness window (set in index.html) carry a pulsing
+# "New" flag, which expires on its own at the next site build.
+#
+# The four most recent appear on the home page; older ones stay here as the
+# record. Past a dozen or so, this wants an archive page rather than a longer
+# home page.
+
+- date: 2026-02-01
+  text: >-
+    Black holes as telescopes was published in Physical Review Letters as an
+    Editors' Suggestion, on finding supermassive black-hole binaries through
+    quasi-periodic lensed starlight.
+  links:
+    - text: "PRL 136, 061403"
+      url: "https://dx.doi.org/10.1103/1sfl-87t4"
+    - text: "AEI press release"
+      url: "https://www.aei.mpg.de/1407139/new-method-could-reveal-hidden-supermassive-black-hole-binaries"
+
+- date: 2025-12-01
+  text: >-
+    Our analysis of GW231123 as a magnified and diffracted black-hole merger is
+    out, the first compelling candidate of its kind.
+  links:
+    - text: "arXiv:2512.17631"
+      url: "https://arxiv.org/abs/2512.17631"
+    - text: "Cosmology Talk"
+      url: "https://youtu.be/ZGqOpDTL8k4"
+
+# CHECK THE MONTH: the ERC announcement date is a guess from the 2025 call.
+- date: 2025-11-01
+  text: >-
+    GLOW, Gravitational Lensing of Waves, was awarded an ERC Consolidator Grant
+    and starts in 2026.
+  links:
+    - text: "AEI announcement"
+      url: "https://www.aei.mpg.de/1359867/erc-consolidator-grant-for-miguel-zumalac-rregui"
+    - text: "ERC results"
+      url: "https://erc.europa.eu/news-events/news/erc-2025-consolidator-grants-results"
