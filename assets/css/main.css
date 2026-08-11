@@ -550,6 +550,11 @@ figure.float-left {
 
 .pubs .journal { color: var(--text-mute); }
 
+/* Where an entry carries its authors and reference in one line rather than in
+   a separate .authors span, break it below the title so the titles still scan
+   down the left edge. */
+.pubs-stacked .journal { display: block; font-size: 0.9rem; }
+
 /* Institutional or press coverage of a paper, distinct from its citation */
 .pubs .feature {
 	display: block;

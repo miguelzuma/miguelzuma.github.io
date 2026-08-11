@@ -282,3 +282,64 @@ talks:
       - "The dark Universe in the era of gravitational-wave astronomy"
 
 languages: "Spanish (native), English (C2), German (C1)."
+
+# The ten selected in CVA_Zumalacarregui_2026, plus the GW231123 paper accepted
+# since. Newest first. Citation counts and contribution statements stay in the
+# application documents — this is a website, not a funding form.
+#
+# References are copied from the same papers as they appear on research.html.
+selected_publications:
+  - lead: "Across the Universe: GW231123 as a magnified and diffracted black hole merger"
+    lead_url: "https://inspirehep.net/literature/3094475"
+    meta:
+      - "S. Goyal, H. Villarrubia-Rojo, M. Zumalacárregui · Astrophys. J. Lett., accepted · arXiv:2512.17631"
+
+  - lead: "Black holes as telescopes: discovering supermassive binaries through quasi-periodic lensed starlight"
+    lead_url: "https://inspirehep.net/literature/2937368"
+    meta:
+      - "H. Wang, M. Zumalacárregui, B. Kocsis · Phys. Rev. Lett. 136, 061403 (2026) · Editors' Suggestion"
+
+  - lead: "GLoW: novel methods for wave-optics phenomena in gravitational lensing"
+    lead_url: "https://inspirehep.net/literature/2826315"
+    meta:
+      - "H. Villarrubia-Rojo, S. Savastano, M. Zumalacárregui, L. Choi, S. Goyal, L. Dai, G. Tambalo · Phys. Rev. D 111, 103539 (2025)"
+
+  - lead: "Gravitational wave lensing as a probe of halo properties and dark matter"
+    lead_url: "https://inspirehep.net/literature/2617458"
+    meta:
+      - "G. Tambalo, M. Zumalacárregui, L. Dai, M. Cheung · Phys. Rev. D 108, 103529 (2023)"
+
+  - lead: "Gravitational wave lensing beyond general relativity: birefringence, echoes and shadows"
+    lead_url: "https://inspirehep.net/literature/1819285"
+    meta:
+      - "J. M. Ezquiaga, M. Zumalacárregui · Phys. Rev. D 102, 124048 (2020) · Editors' Suggestion"
+
+  - lead: "Gravity in the era of equality: towards solutions to the Hubble problem without fine-tuned initial conditions"
+    lead_url: "https://inspirehep.net/literature/1785417"
+    meta:
+      - "M. Zumalacárregui · Phys. Rev. D 102, 023523 (2020)"
+
+  - lead: "Limits on stellar-mass compact objects as dark matter from gravitational lensing of type Ia supernovae"
+    lead_url: "https://inspirehep.net/literature/1641243"
+    meta:
+      - "M. Zumalacárregui, U. Seljak · Phys. Rev. Lett. 121, 141101 (2018) · Editors' Suggestion"
+
+  - lead: "Dark energy after GW170817: dead ends and the road ahead"
+    lead_url: "https://inspirehep.net/literature/1630865"
+    meta:
+      - "J. M. Ezquiaga, M. Zumalacárregui · Phys. Rev. Lett. 119, 251304 (2017) · Editors' Suggestion"
+
+  - lead: "hi_class: Horndeski in the Cosmic Linear Anisotropy Solving System"
+    lead_url: "https://inspirehep.net/literature/1462237"
+    meta:
+      - "M. Zumalacárregui, E. Bellini, I. Sawicki, J. Lesgourgues, P. G. Ferreira · JCAP 08, 019 (2017)"
+
+  - lead: "Transforming gravity: from derivative couplings to matter to second-order scalar–tensor theories beyond the Horndeski Lagrangian"
+    lead_url: "https://inspirehep.net/literature/1250251"
+    meta:
+      - "M. Zumalacárregui, J. García-Bellido · Phys. Rev. D 89, 064046 (2014)"
+
+  - lead: "DBI Galileons in the Einstein frame: local gravity and cosmology"
+    lead_url: "https://inspirehep.net/literature/1194087"
+    meta:
+      - "M. Zumalacárregui, T. Koivisto, D. Mota · Phys. Rev. D 87, 083010 (2013)"

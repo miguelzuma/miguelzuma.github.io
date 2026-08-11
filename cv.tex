@@ -169,4 +169,12 @@ started in 2020, are listed at
 \section{Languages}
 {% include tex-escape.html s=site.data.cv.languages %}
 
+% ---------------------------------------------------------- publications ----
+\section{Selected publications}
+{\small\color{soft}Chosen for what they opened up rather than for where they appeared.
+The complete record is on \href{ {{- site.author.inspire -}} }{INSPIRE-HEP}.}
+\begin{entries}
+{%- for e in site.data.cv.selected_publications %}{% include tex-entry.html e=e %}{% endfor %}
+\end{entries}
+
 \end{document}
