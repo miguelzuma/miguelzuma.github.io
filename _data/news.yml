@@ -25,7 +25,9 @@
     - text: "AEI press release"
       url: "https://www.aei.mpg.de/1407139/new-method-could-reveal-hidden-supermassive-black-hole-binaries"
 
-- date: 2025-12-01
+# Both December 2025. The day only orders them within the month, and this
+# order is a guess — swap the two if the grant landed after the preprint.
+- date: 2025-12-02
   text: >-
     Our analysis of GW231123 as a magnified and diffracted black-hole merger is
     out, the first compelling candidate of its kind.
@@ -35,8 +37,7 @@
     - text: "Cosmology Talk"
       url: "https://youtu.be/ZGqOpDTL8k4"
 
-# CHECK THE MONTH: the ERC announcement date is a guess from the 2025 call.
-- date: 2025-11-01
+- date: 2025-12-01
   text: >-
     GLOW, Gravitational Lensing of Waves, was awarded an ERC Consolidator Grant
     and starts in 2026.
