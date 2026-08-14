@@ -42,7 +42,7 @@ current:
     role: "Principal Investigator"
     logo: "/imgs/2560px-Max-Planck-Gesellschaft.png"
     summary: >-
-      A philanthropically funded programme developing new methods to identify
+      A philanthropically funded program developing new methods to identify
       lensed gravitational waves and to use them to probe the small-scale
       structure of dark matter. Because the funding comes from private donors,
       the project carries an explicit outreach commitment: explaining lensed
@@ -53,13 +53,13 @@ current:
       - text: "Max Planck Annual Project 2024"
         url: "https://www.mpg.de/annualproject2024"
 
-  - acronym: "Ramón y Cajal programme"
-    title: "Ramón y Cajal programme"
+  - acronym: "Ramón y Cajal program"
+    title: "Ramón y Cajal program"
     funder: "Spanish Research Agency and CSIC"
     dates: "2025–"
     role: "Fellow / Principal Investigator"
     summary: >-
-      Three linked components of a single return-to-Spain programme: the Ramón y
+      Three linked components of a single return-to-Spain program: the Ramón y
       Cajal fellowship, the accompanying Atracción de Talento award from the same
       national agency, and the CSIC RyC-MaX supplement. Together they support the development of new methods to probe
       cosmology, astrophysics and fundamental physics.
@@ -72,13 +72,13 @@ current:
     role: "Senior collaborator"
     logo: "/imgs/gwsky_logo.png"
     summary: >-
-      A multi-PI programme on the interpretation of the gravitational-wave sky.
+      A multi-PI program on the interpretation of the gravitational-wave sky.
       I contribute the lensing side. A lensed event is not a new kind of source
       but a distorted one, which puts wave-optics signatures squarely at the
-      interface between waveform modelling and data analysis: the distortion has
+      interface between waveform modeling and data analysis: the distortion has
       to enter the templates and the inference machinery before lensing can be
-      searched for at catalogue scale. The same work cuts the other way, since
-      unmodelled lensing is a systematic — a diffracted signal can otherwise be
+      searched for at catalog scale. The same work cuts the other way, since
+      unmodeled lensing is a systematic — a diffracted signal can otherwise be
       read as exotic source physics or as a biased set of parameters.
     links:
       - text: "GWSky team page"

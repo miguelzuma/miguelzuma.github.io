@@ -63,7 +63,7 @@ current:
     years: "2026–"
     incoming: true
     starts: "October 2026"
-    topic: "Lens modelling and analysis."
+    topic: "Lens modeling and analysis."
 
   - name: "Manon van Zyl"
     sortkey: "van zyl"
@@ -349,14 +349,14 @@ alumni:
   - name: "Daryna Yushchenko"
     stage: undergrad
     end: 2024
-    role: "Undergraduate (Princeton summer programme)"
+    role: "Undergraduate (Princeton summer program)"
     years: "2024"
 
   - name: "Lyla Choi"
     url: "https://inspirehep.net/authors/2660856"
     stage: undergrad
     end: 2023
-    role: "Undergraduate (Princeton summer programme)"
+    role: "Undergraduate (Princeton summer program)"
     years: "2023"
     next: "PhD at Stanford"
 
@@ -431,6 +431,6 @@ earlier_mentees:
   - name: "Brindha Kanniah"
     stage: undergrad
     end: 2015
-    role: "Undergraduate (MIT summer programme, Heidelberg)"
+    role: "Undergraduate (MIT summer program, Heidelberg)"
     years: "2015"
     next: "Master's at MIT"

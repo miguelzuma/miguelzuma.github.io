@@ -7,7 +7,7 @@
 (function () {
   var ALIASES = {
     'research.html': {
-      pbh: 'main-programme',
+      pbh: 'main-program',
       gws: 'tests-of-gravity',
       tests: 'cosmology',
       theory: 'scalar-tensor',

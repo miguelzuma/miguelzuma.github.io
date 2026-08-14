@@ -156,7 +156,7 @@ a:focus-visible {
 	background: var(--bg-card);
 }
 
-/* Active page: colour plus an underline bar, so it is not colour-only */
+/* Active page: color plus an underline bar, so it is not color-only */
 .site-nav a[aria-current="page"] {
 	color: var(--accent-strong);
 	background: var(--bg-card);
@@ -667,12 +667,12 @@ figure.float-left {
 
 .section { margin: 2.8rem 0; }
 
-/* The dominant research programme gets a subtle left rail. It runs per section
+/* The dominant research program gets a subtle left rail. It runs per section
    rather than unbroken down the whole block, so the five read as five things
    sharing a rail and not as one continuous stretch of page. */
-.programme { margin-left: 0; }
+.program { margin-left: 0; }
 
-.programme > .section {
+.program > .section {
 	border-left: 2px solid var(--accent-dim);
 	padding-left: 1.6rem;
 }
@@ -893,7 +893,7 @@ h2 + .stage-heading { margin-top: 1.2rem; }
 		width: 100% !important;
 	}
 
-	.programme { padding-left: 1rem; }
+	.program { padding-left: 1rem; }
 
 	.secondary { padding: 1.1rem; }
 
