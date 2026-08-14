@@ -283,7 +283,7 @@ talks:
 
 languages: "Spanish (native), English (C2), German (C1)."
 
-# The ten selected in CVA_Zumalacarregui_2026, plus the GW231123 paper accepted
+# The selection from CVA_Zumalacarregui_2026, plus the GW231123 paper accepted
 # since. Newest first. Citation counts and contribution statements stay in the
 # application documents — this is a website, not a funding form.
 #
@@ -338,8 +338,3 @@ selected_publications:
     lead_url: "https://inspirehep.net/literature/1250251"
     meta:
       - "M. Zumalacárregui, J. García-Bellido · Phys. Rev. D 89, 064046 (2014)"
-
-  - lead: "DBI Galileons in the Einstein frame: local gravity and cosmology"
-    lead_url: "https://inspirehep.net/literature/1194087"
-    meta:
-      - "M. Zumalacárregui, T. Koivisto, D. Mota · Phys. Rev. D 87, 083010 (2013)"
