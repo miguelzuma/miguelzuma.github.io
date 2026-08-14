@@ -12,18 +12,22 @@ description: >-
   Research group of Miguel Zumalacárregui at the Albert Einstein Institute:
   current members, visitors, alumni and information for prospective students,
   postdocs and visitors.
+sections:
+  - id: current
+    label: "Current members"
+  - id: alumni
+    label: "Alumni"
+  - id: visitors
+    label: "Visitors"
+  - id: joining
+    label: "Joining"
 ---
 
 {%- comment -%}
   Renders one person card. Falls back to initials when no photo is available.
 {%- endcomment -%}
 
-<div class="btn-row">
-  <a class="btn" href="#current">Current members</a>
-  <a class="btn" href="#alumni">Alumni</a>
-  <a class="btn" href="#visitors">Visitors</a>
-  <a class="btn" href="#joining">Joining the group</a>
-</div>
+{% include subnav.html %}
 
 <section class="section" id="current">
   <h2>Current members</h2>

@@ -9,14 +9,20 @@ lede: >-
 description: >-
   Recorded scientific talks by Miguel Zumalacárregui, lecture and course
   material for hi_class and MontePython, and advice on academic applications.
+sections:
+  - id: recorded-talks
+    label: "Recorded talks"
+  - id: teaching
+    label: "Teaching"
+  - id: careers
+    label: "Career advice"
 ---
 
 <div class="btn-row">
-  <a class="btn" href="#recorded-talks">Recorded talks</a>
-  <a class="btn" href="#teaching">Teaching material</a>
-  <a class="btn" href="#careers">Career advice</a>
   <a class="btn" href="{{ '/outreach.html' | relative_url }}">Outreach &amp; press</a>
 </div>
+
+{% include subnav.html %}
 
 <!-- ================= Featured talks ================= -->
 <section class="section" id="recorded-talks">
