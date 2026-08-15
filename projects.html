@@ -49,6 +49,11 @@ description: >-
 
     {%- if pr.note %}<p class="small"><em>{{ pr.note }}</em></p>{% endif %}
 
+    {%- if pr.funding_logo %}
+    <img class="funding-logo" src="{{ pr.funding_logo.src | relative_url }}"
+         alt="{{ pr.funding_logo.alt }}" loading="lazy">
+    {%- endif %}
+
     {%- if pr.links and pr.links.size > 0 %}
     <div class="btn-row" style="margin-bottom:0;">
       {%- for l in pr.links %}

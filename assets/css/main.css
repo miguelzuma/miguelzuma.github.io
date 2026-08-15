@@ -783,6 +783,19 @@ h2 + .stage-heading { margin-top: 1.2rem; }
 /* Cards must contain the float, or it bleeds into the next card. */
 .card::after { content: ""; display: block; clear: both; }
 
+/* Funding acknowledgement: a block of its own under the card body, so it never
+   competes with the project's own logo floating opposite it. */
+.funding-logo {
+	clear: both;
+	display: block;
+	/* Sized by width, not height: the emblem carries wordmarks that have to
+	   stay readable, and the lock-up is wide. */
+	width: 300px;
+	max-width: 100%;
+	height: auto;
+	margin: 1.5rem 0 0.4rem;
+}
+
 @media (max-width: 620px) {
 	.card-logo {
 		float: none;
