@@ -31,6 +31,15 @@ description: >-
     <img class="card-logo" src="{{ pr.logo | relative_url }}" alt="" loading="lazy">
     {%- endif %}
 
+    {%- comment -%}
+      Must follow the card logo in the source: a float cannot rise above where
+      it appears in flow, and clear:right is what stacks it underneath.
+    {%- endcomment -%}
+    {%- if pr.funding_logo %}
+    <img class="funding-logo" src="{{ pr.funding_logo.src | relative_url }}"
+         alt="{{ pr.funding_logo.alt }}" loading="lazy">
+    {%- endif %}
+
     <h3 class="card-title" style="font-size:1.3rem;">
       {{ pr.acronym }}{% if pr.title != pr.acronym %} — {{ pr.title }}{% endif %}
     </h3>
@@ -48,11 +57,6 @@ description: >-
     {%- endif %}
 
     {%- if pr.note %}<p class="small"><em>{{ pr.note }}</em></p>{% endif %}
-
-    {%- if pr.funding_logo %}
-    <img class="funding-logo" src="{{ pr.funding_logo.src | relative_url }}"
-         alt="{{ pr.funding_logo.alt }}" loading="lazy">
-    {%- endif %}
 
     {%- if pr.links and pr.links.size > 0 %}
     <div class="btn-row" style="margin-bottom:0;">

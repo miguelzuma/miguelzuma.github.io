@@ -785,15 +785,19 @@ h2 + .stage-heading { margin-top: 1.2rem; }
 
 /* Funding acknowledgement: a block of its own under the card body, so it never
    competes with the project's own logo floating opposite it. */
+/* Funding acknowledgement: stacked directly under the project's own logo, at
+   the same width. The card logo is height-limited (130px), so its rendered
+   width follows from its aspect ratio -- 265px for the GLOW lock-up. Matching
+   on width rather than height is what makes the two read as one block, since
+   the two images are not the same shape. */
 .funding-logo {
-	clear: both;
+	float: right;
+	clear: right;
 	display: block;
-	/* Sized by width, not height: the emblem carries wordmarks that have to
-	   stay readable, and the lock-up is wide. */
-	width: 300px;
+	width: 265px;
 	max-width: 100%;
 	height: auto;
-	margin: 1.5rem 0 0.4rem;
+	margin: 0 0 1.2rem 1.6rem;
 }
 
 @media (max-width: 620px) {
@@ -801,6 +805,12 @@ h2 + .stage-heading { margin-top: 1.2rem; }
 		float: none;
 		max-height: 76px;
 		max-width: 210px;
+		margin: 0 0 1rem;
+	}
+
+	.funding-logo {
+		float: none;
+		width: 155px; /* 76px tall at the GLOW logo's aspect ratio */
 		margin: 0 0 1rem;
 	}
 }
