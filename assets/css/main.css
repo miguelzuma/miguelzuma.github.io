@@ -703,7 +703,10 @@ figure.float-left {
 	text-transform: uppercase;
 	letter-spacing: 0.12em;
 	font-weight: 650;
-	color: var(--accent);
+	/* Neutral, not accent: the accent is what marks a link, and these bands sit
+	   directly above lists of names that are links. Caps, letter-spacing and
+	   the trailing rule already say "heading" without borrowing that colour. */
+	color: var(--text-soft);
 	line-height: 1.3;
 }
 

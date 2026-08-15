@@ -43,7 +43,14 @@
 		for (var i = 0; i < targets.length; i++) {
 			if (targets[i] && targets[i].getBoundingClientRect().top <= cutoff) found = i;
 		}
-		/* Past the end of the page, keep the last section marked. */
+		/* A short final section never reaches the cutoff, so scrolling to the
+		   foot of the page would leave the previous one lit. At the bottom,
+		   the last section is the one you are looking at. */
+		if (innerHeight + scrollY >= root.scrollHeight - 2) {
+			for (var j = targets.length - 1; j >= 0; j--) {
+				if (targets[j]) { found = j; break; }
+			}
+		}
 		if (found === current) return;
 		if (current !== null && links[current]) links[current].removeAttribute('aria-current');
 		if (found >= 0) links[found].setAttribute('aria-current', 'true');

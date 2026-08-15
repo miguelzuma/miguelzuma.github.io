@@ -21,6 +21,8 @@ sections:
     label: "Visitors"
   - id: joining
     label: "Joining"
+  - id: photos
+    label: "Photos"
 ---
 
 {%- comment -%}
@@ -183,7 +185,10 @@ sections:
   </div>
 </section>
 
-<div class="photo-strip">
+<section class="section" id="photos">
+  <h2>Photos</h2>
+
+  <div class="photo-strip">
   <figure>
     <img src="{{ '/imgs/group_bbq_2026.jpg' | relative_url }}"
          alt="The group seated around a long table in a garden, under trees, at a summer barbecue."
@@ -196,4 +201,5 @@ sections:
          width="900" height="397" loading="lazy">
     <figcaption>Group dinner in Berlin, June 2026.</figcaption>
   </figure>
-</div>
+  </div>
+</section>
