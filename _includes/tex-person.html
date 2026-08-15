@@ -6,16 +6,19 @@ supervision_groups).
     {% include tex-person.html p=person g=group %}
 
 Roles the heading already states are left off — "Postdoctoral researcher" under
-"Postdoctoral researchers" is noise. In the paragraph style the role is reduced
-to whatever it names in brackets, which is where people.yml puts the institution:
-"Master's student (co-supervised, U. Bologna)" becomes "(U. Bologna, 2026)".
+"Postdoctoral researchers" is noise. In the paragraph style the role sheds the
+stage, which the heading already gives, and keeps what follows it: people.yml
+writes roles as "Role, Institution (relationship)", so "Master's student,
+U. Bologna (co-supervised)" becomes "(U. Bologna, co-supervised, 2026)". The
+brackets are flattened to commas, the whole thing being inside brackets already.
 {%- endcomment -%}
 {%- assign p = include.p -%}
 {%- assign g = include.g -%}
 {%- capture when %}{% if p.incoming %}from {{ p.starts }}{% else %}{{ p.years }}{% endif %}{% endcapture -%}
 {%- if g.style == 'paragraph' -%}
-  {%- assign bracketed = p.role | split: '(' -%}
-  {%- capture where %}{% if bracketed.size > 1 %}{{ bracketed[1] | remove: ')' }}, {% endif %}{% endcapture -%}
+  {%- assign stage = p.role | split: ', ' | first -%}
+  {%- assign detail = p.role | remove_first: stage | remove_first: ', ' | replace: ' (', ', ' | remove: ')' -%}
+  {%- capture where %}{% if detail != '' %}{{ detail }}, {% endif %}{% endcapture -%}
 ({% include tex-escape.html s=where %}{% include tex-escape.html s=when %}
   {%- if p.next %} $\rightarrow$ {% include tex-escape.html s=p.next %}{% endif -%}
   )
