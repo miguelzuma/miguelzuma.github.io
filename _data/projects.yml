@@ -56,10 +56,10 @@ current:
       the project carries an explicit outreach commitment: explaining lensed
       gravitational waves to a non-specialist public.
     links:
-      - text: "AEI feature"
-        url: "https://www.aei.mpg.de/1227766/with-einstein-on-crooked-paths"
       - text: "Max Planck Annual Project 2024"
         url: "https://www.mpg.de/annualproject2024"
+      - text: "AEI feature"
+        url: "https://www.aei.mpg.de/1227766/with-einstein-on-crooked-paths"
 
   - acronym: "Ramón y Cajal program"
     title: "Ramón y Cajal program"
