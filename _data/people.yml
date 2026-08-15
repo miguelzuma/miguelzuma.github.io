@@ -5,8 +5,10 @@
 # member; earlier mentees and short-stay visitors appear under `visitors` or
 # `earlier_mentees`.
 #
-# Fields: name (required), stage (postdoc|phd|masters|undergrad -- groups the
-# Current members section and labels alumni rows), end (year the person left,
+# Fields: name (required), stage (postdoc|phd|masters|intern|undergrad --
+# groups the Current members section and labels alumni rows; `intern` is for
+# anyone who worked here on a project rather than on a thesis supervised in
+# the group), end (year the person left,
 # duration (only given for stays longer than a week), end (year they left,
 # used to sort alumni and visitors chronologically, newest first; for an
 # ongoing collaboration use the current year; 0 when unknown),
@@ -301,29 +303,29 @@ alumni:
     next: "PhD awarded at HU Berlin"
 
   - name: "Selin Üstündag"
-    stage: masters
+    stage: intern
     end: 2026
-    role: "Master's intern"
+    role: "Research intern"
     years: "2026"
     next: "PhD at Newcastle University"
 
   - name: "Marcel Glätzer"
-    stage: masters
+    stage: intern
     end: 2025
-    role: "Master's student, HU Berlin"
+    role: "Research project, HU Berlin"
     years: "2024–2025"
 
   - name: "Jaime Raynaud"
-    stage: masters
+    stage: intern
     end: 2025
-    role: "Master's intern, TU Berlin & KTH"
+    role: "Research intern, TU Berlin & KTH"
     years: "2024–2025"
     next: "PhD at MPIA"
 
   - name: "Vaibhav Omble"
-    stage: masters
+    stage: intern
     end: 2024
-    role: "Master's student, LMU"
+    role: "Research project, LMU"
     years: "2023–2024"
 
   - name: "Julius Streibert"
@@ -358,14 +360,14 @@ alumni:
     next: "PhD student at SISSA"
 
   - name: "Daryna Yushchenko"
-    stage: undergrad
+    stage: intern
     end: 2024
     role: "Undergraduate, Princeton summer program"
     years: "2024"
 
   - name: "Lyla Choi"
     url: "https://inspirehep.net/authors/2660856"
-    stage: undergrad
+    stage: intern
     end: 2023
     role: "Undergraduate, Princeton summer program"
     years: "2023"
@@ -433,14 +435,14 @@ earlier_mentees:
 
   - name: "Yukei Murakami"
     url: "https://inspirehep.net/authors/2000678"
-    stage: undergrad
+    stage: intern
     end: 2019
     role: "Undergraduate, UC Berkeley"
     years: "2018–2019"
     next: "PhD at Johns Hopkins University"
 
   - name: "Brindha Kanniah"
-    stage: undergrad
+    stage: intern
     end: 2015
     role: "Undergraduate, MIT summer program in Heidelberg"
     years: "2015"

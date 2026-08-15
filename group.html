@@ -70,8 +70,14 @@ sections:
   <h2>Alumni</h2>
   <p>Former members of the group, and where they went next. Most recent first.</p>
 
-  {%- assign al_stages = "postdoc,phd,masters,undergrad" | split: "," %}
-  {%- assign al_labels = "Postdoctoral researchers,PhD students,Master's students,Undergraduates" | split: "," %}
+  {%- comment -%}
+    "intern" covers everyone who worked here on a project rather than on a
+    thesis supervised in the group: research interns, summer students and
+    undergraduates. Grouping them by what they did avoids a heading that
+    implies a degree stage nobody claimed.
+  {%- endcomment -%}
+  {%- assign al_stages = "postdoc,phd,masters,intern,undergrad" | split: "," %}
+  {%- assign al_labels = "Postdoctoral researchers,PhD students,Master's students,Research internships and projects,Undergraduates" | split: "," %}
 
   {%- for stage in al_stages %}
   {%- assign people = site.data.people.alumni | where: "stage", stage | sort: "end" | reverse %}

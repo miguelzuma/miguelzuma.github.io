@@ -39,8 +39,12 @@ supervision_groups:
     stages: ["phd"]
     default_roles: ["PhD student"]
 
-  - heading: "Master's and undergraduate students"
-    stages: ["masters", "undergrad"]
+  - heading: "Master's students"
+    stages: ["masters"]
+    style: "paragraph"
+
+  - heading: "Research interns and undergraduates"
+    stages: ["intern", "undergrad"]
     style: "paragraph"
 
 positions:
