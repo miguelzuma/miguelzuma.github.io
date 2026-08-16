@@ -4,9 +4,10 @@ nav: research
 title: "Research"
 eyebrow: "Gravitation, Cosmology and Data Interpretation"
 lede: >-
-  My largest current effort uses wave-optics lensing to find dark matter,
-  compact objects and black holes, and to test gravity itself. Alongside it run
-  separately funded lines on cosmology, dark energy and gravitational theory.
+  My research runs in parallel strands — wave-optics lensing of gravitational
+  waves, lensing of light, dark matter, tests of gravity — resting on a
+  foundation of cosmology, dark energy and gravitational theory. Each strand
+  has its own funding, and its papers are below.
 description: >-
   Research program on wave-optics lensing phenomena: dark
   matter and small-scale structure, strong-field and multi-messenger lensing,
@@ -22,8 +23,7 @@ sections:
     label: "Tests of gravity"
   - id: methods
     label: "Methods &amp; software"
-  # The five above are subsections of the main program; these two are
-  # top-level sections, so a rule sets them apart.
+  # A rule sets the last two apart: they stand outside the lensing strands.
   - id: cosmology
     label: "Cosmology &amp; gravity"
     rule: true
@@ -104,416 +104,407 @@ sections:
 
 {% include subnav.html %}
 
-<!-- ==================================================================
-     CURRENT FOCUS
-     ================================================================== -->
 
-<h2 id="main-program">Current focus: wave-optics lensing and compact objects</h2>
+<!-- ---------- Wave optics ---------- -->
+<section class="section" id="lensing-waves">
+  <h2>Wave-optics lensing phenomena</h2>
 
-<p class="lede">
-  A gravitational wave that passes near a mass is not simply magnified. When the
-  lens is such that its gravitational radius is comparable to the wavelength, the
-  wave diffracts and interferes with itself: the resulting frequency-dependent
-  pattern encodes the mass, the profile and even the substructure of the lens.
-  The same is true of any phase-coherent signal. That makes lensing a probe of
-  objects that emit no light at all — and, because a lens breaks the symmetry of
-  the background, a test of gravity itself. This is the program funded by the
-  <a href="{{ '/projects.html#glow' | relative_url }}">GLOW</a> ERC Consolidator
-  Grant.
-</p>
+  <p class="lede">
+    A gravitational wave that passes near a mass is not simply magnified. When
+    the lens is such that its gravitational radius is comparable to the
+    wavelength, the wave diffracts and interferes with itself: the resulting
+    frequency-dependent pattern encodes the mass, the profile and even the
+    substructure of the lens. The same is true of any phase-coherent signal.
+    That makes lensing a probe of objects that emit no light at all — and,
+    because a lens breaks the symmetry of the background, a test of gravity
+    itself. This strand is funded by the
+    <a href="{{ '/projects.html#glow' | relative_url }}">GLOW</a> ERC
+    Consolidator Grant.
+  </p>
 
-<div class="program">
+  <figure class="float-right" style="width:400px;">
+    <img src="{{ '/imgs/GW231123_annotation.png' | relative_url }}"
+         alt="Time–frequency representation of GW231123 with the modulation expected from a magnified and diffracted signal marked on it." loading="lazy" width="400" height="285">
+    <figcaption>
+      GW231123 sounds like a magnified and diffracted black-hole merger, lensed by
+      a compact object of 190–850&nbsp;M<sub>&#9737;</sub>.
+    </figcaption>
+  </figure>
 
-  <!-- ---------- Wave optics ---------- -->
-  <section class="section" id="lensing-waves">
-    <h3>Wave-optics lensing phenomena</h3>
+  <p>
+    Geometric optics — the picture of light rays bending around a mass — breaks
+    down when the wavelength becomes comparable to the Schwarzschild radius of
+    the lens. For gravitational waves that happens for lens masses below
+    ~10<sup>4</sup>&nbsp;M<sub>&#9737;</sub> in the LIGO band, and far
+    higher masses for LISA. In this wave-optics regime the amplification factor
+    becomes frequency dependent, producing a characteristic modulation across
+    the signal rather than a simple overall magnification.
+  </p>
+  <p>
+    That frequency dependence is what makes the effect useful. A lensed event
+    constrains the lens mass distribution because different profiles diffract
+    differently, analogous to diffraction patterns observed in
+    crystallography. It also breaks the magnification–distance degeneracy that
+    plagues lensing in the geometric limit: the modulation is set by the
+    redshifted lens mass, so a diffracted signal carries an absolute mass
+    scale rather than only a relative magnification. The presence of a
+    diffracting object further breaks degeneracies with the external
+    potential, helping constrain the gravitational magnification.
+  </p>
+  <p>
+    We derived efficient methods for computing these amplification factors,
+    validated them against symmetric lenses where analytic results exist, and
+    extended them to general matter distributions. The resulting machinery is
+    public as the <a href="{{ '/software.html' | relative_url }}">GLoW code</a>.
+    It allowed us to analyze GW231123, which we argue is the first
+    compelling candidate for a magnified and diffracted black-hole merger.
+  </p>
 
-    <figure class="float-right" style="width:400px;">
-      <img src="{{ '/imgs/GW231123_annotation.png' | relative_url }}"
-           alt="Time–frequency representation of GW231123 with the modulation expected from a magnified and diffracted signal marked on it." loading="lazy" width="400" height="285">
-      <figcaption>
-        GW231123 sounds like a magnified and diffracted black-hole merger, lensed by
-        a compact object of 190–850&nbsp;M<sub>&#9737;</sub>.
-      </figcaption>
-    </figure>
+  <figure>
+    <video width="1560" height="520" autoplay muted loop playsinline
+           poster="{{ '/imgs/pls_gamma_web_dark_still.png' | relative_url }}"
+           aria-label="Animation of the microcaustics, time-domain lensing integral and amplification factor as the slope of the lens profile is varied.">
+      <source src="{{ '/imgs/pls_gamma_web_dark.webm' | relative_url }}" type="video/webm">
+      <source src="{{ '/imgs/pls_gamma_web_dark.mp4' | relative_url }}" type="video/mp4">
+    </video>
+    <figcaption>
+      How the wave-optics signature responds to the shape of the lens. As the
+      density slope &gamma;&#771; is varied, the microcaustics in the lens
+      plane (left) reorganize, the time-domain arrivals (center) merge and
+      split, and the amplification factor |F(f)| (right) changes its
+      modulation pattern — which is why a single diffracted event constrains
+      the profile and not only the mass. Produced with
+      <a href="{{ '/software.html' | relative_url }}">GLoW</a>; the code and
+      data are in the
+      <a href="https://github.com/miguelzuma/GW231123_lensing_PLS" rel="noopener">GW231123 lensing release</a>.
+    </figcaption>
+  </figure>
 
-    <p>
-      Geometric optics — the picture of light rays bending around a mass — breaks
-      down when the wavelength becomes comparable to the Schwarzschild radius of
-      the lens. For gravitational waves that happens for lens masses below
-      ~10<sup>4</sup>&nbsp;M<sub>&#9737;</sub> in the LIGO band, and far
-      higher masses for LISA. In this wave-optics regime the amplification factor
-      becomes frequency dependent, producing a characteristic modulation across
-      the signal rather than a simple overall magnification.
-    </p>
-    <p>
-      That frequency dependence is what makes the effect useful. A lensed event
-      constrains the lens mass distribution because different profiles diffract
-      differently, analogous to diffraction patterns observed in
-      crystallography. It also breaks the magnification–distance degeneracy that
-      plagues lensing in the geometric limit: the modulation is set by the
-      redshifted lens mass, so a diffracted signal carries an absolute mass
-      scale rather than only a relative magnification. The presence of a
-      diffracting object further breaks degeneracies with the external
-      potential, helping constrain the gravitational magnification.
-    </p>
-    <p>
-      We derived efficient methods for computing these amplification factors,
-      validated them against symmetric lenses where analytic results exist, and
-      extended them to general matter distributions. The resulting machinery is
-      public as the <a href="{{ '/software.html' | relative_url }}">GLoW code</a>.
-      It allowed us to analyze GW231123, which we argue is the first
-      compelling candidate for a magnified and diffracted black-hole merger.
-    </p>
+  <h3>Selected publications</h3>
+  <ul class="pubs">
+    <li>
+      <a href="https://inspirehep.net/literature/3094475" rel="noopener">Across the Universe: GW231123 as a magnified and diffracted black hole merger</a>
+      <span class="authors">S. Goyal, H. Villarrubia-Rojo, M. Zumalacárregui</span>
+      <span class="journal">Astrophys. J. Lett., accepted &middot; arXiv:2512.17631</span>
+    </li>
+    <li>
+      <a href="https://inspirehep.net/literature/2164124" rel="noopener">Lensing of gravitational waves: efficient wave-optics methods and validation with symmetric lenses</a>
+      <span class="authors">G. Tambalo, M. Zumalacárregui, L. Dai, M. Cheung</span>
+      <span class="journal">Phys. Rev. D <strong>108</strong>, 043527 (2023)</span>
+    </li>
+    <li>
+      <a href="https://inspirehep.net/literature/2667175" rel="noopener">Weakly lensed gravitational waves: probing cosmic structures with wave-optics features</a>
+      <span class="authors">S. Savastano, G. Tambalo, H. Villarrubia-Rojo, M. Zumalacárregui</span>
+      <span class="journal">Phys. Rev. D <strong>108</strong>, 103532 (2023)</span>
+      <span class="feature">Featured by <a href="https://www.mpg.de/21438017/aei_jb_2023" rel="noopener">Max Planck Society Yearbook 2023</a></span>
+    </li>
+  </ul>
 
-    <figure>
-      <video width="1560" height="520" autoplay muted loop playsinline
-             poster="{{ '/imgs/pls_gamma_web_dark_still.png' | relative_url }}"
-             aria-label="Animation of the microcaustics, time-domain lensing integral and amplification factor as the slope of the lens profile is varied.">
-        <source src="{{ '/imgs/pls_gamma_web_dark.webm' | relative_url }}" type="video/webm">
-        <source src="{{ '/imgs/pls_gamma_web_dark.mp4' | relative_url }}" type="video/mp4">
-      </video>
-      <figcaption>
-        How the wave-optics signature responds to the shape of the lens. As the
-        density slope &gamma;&#771; is varied, the microcaustics in the lens
-        plane (left) reorganize, the time-domain arrivals (center) merge and
-        split, and the amplification factor |F(f)| (right) changes its
-        modulation pattern — which is why a single diffracted event constrains
-        the profile and not only the mass. Produced with
-        <a href="{{ '/software.html' | relative_url }}">GLoW</a>; the code and
-        data are in the
-        <a href="https://github.com/miguelzuma/GW231123_lensing_PLS" rel="noopener">GW231123 lensing release</a>.
-      </figcaption>
-    </figure>
+  <ul class="arrow-list">
+    <li><a href="https://youtu.be/ZGqOpDTL8k4" rel="noopener">A magnified and diffracted black-hole merger (GW231123)</a> — talk on Cosmology Talks (2026)</li>
+    <li><a href="https://www.youtube.com/watch?v=cNc5VilkQH0" rel="noopener">Lensing of GWs: new opportunities for fundamental physics</a> — talk at Cosmology from Home (2024)</li>
+    <li><a href="https://www.youtube.com/watch?v=zv9tStMviwA" rel="noopener">Introductory video on gravitational-wave lensing</a> — for a general audience</li>
+  </ul>
+</section>
 
-    <h4>Selected publications</h4>
-    <ul class="pubs">
-      <li>
-        <a href="https://inspirehep.net/literature/3094475" rel="noopener">Across the Universe: GW231123 as a magnified and diffracted black hole merger</a>
-        <span class="authors">S. Goyal, H. Villarrubia-Rojo, M. Zumalacárregui</span>
-        <span class="journal">Astrophys. J. Lett., accepted &middot; arXiv:2512.17631</span>
-      </li>
-      <li>
-        <a href="https://inspirehep.net/literature/2164124" rel="noopener">Lensing of gravitational waves: efficient wave-optics methods and validation with symmetric lenses</a>
-        <span class="authors">G. Tambalo, M. Zumalacárregui, L. Dai, M. Cheung</span>
-        <span class="journal">Phys. Rev. D <strong>108</strong>, 043527 (2023)</span>
-      </li>
-      <li>
-        <a href="https://inspirehep.net/literature/2667175" rel="noopener">Weakly lensed gravitational waves: probing cosmic structures with wave-optics features</a>
-        <span class="authors">S. Savastano, G. Tambalo, H. Villarrubia-Rojo, M. Zumalacárregui</span>
-        <span class="journal">Phys. Rev. D <strong>108</strong>, 103532 (2023)</span>
-        <span class="feature">Featured by <a href="https://www.mpg.de/21438017/aei_jb_2023" rel="noopener">Max Planck Society Yearbook 2023</a></span>
-      </li>
-    </ul>
+<!-- ---------- Dark matter ---------- -->
+<section class="section" id="dark-matter">
+  <h2>Dark matter and small-scale structure</h2>
 
-    <ul class="arrow-list">
-      <li><a href="https://youtu.be/ZGqOpDTL8k4" rel="noopener">A magnified and diffracted black-hole merger (GW231123)</a> — talk on Cosmology Talks (2026)</li>
-      <li><a href="https://www.youtube.com/watch?v=cNc5VilkQH0" rel="noopener">Lensing of GWs: new opportunities for fundamental physics</a> — talk at Cosmology from Home (2024)</li>
-      <li><a href="https://www.youtube.com/watch?v=zv9tStMviwA" rel="noopener">Introductory video on gravitational-wave lensing</a> — for a general audience</li>
-    </ul>
-  </section>
+  <figure class="float-right" style="width:330px;">
+    <img src="{{ '/imgs/no_LIGO_MACHO.jpg' | relative_url }}"
+         alt="Constraints on the fraction of dark matter in compact objects as a function of mass, from the lensing of type Ia supernovae." loading="lazy" width="330" height="212">
+    <figcaption>
+      The absence of lensing-induced skew in type Ia supernova brightnesses
+      rules out LIGO-mass compact objects (e.g. primordial black holes) as the
+      dominant form of dark matter.
+    </figcaption>
+  </figure>
 
-  <!-- ---------- Dark matter ---------- -->
-  <section class="section" id="dark-matter">
-    <h3>Dark matter and small-scale structure</h3>
+  <p>
+    Cold dark matter and its alternatives — e.g. warm, fuzzy,
+    self-interacting, primordial black holes — agree on large scales and
+    disagree below galactic scales. That is precisely where the observational
+    evidence is thinnest, because sub-galactic halos contain few or no stars.
+    Because lensing responds to mass instead of light, it provides means to
+    probe these elusive halos.
+  </p>
+  <p>
+    Two complementary handles come out of this. In some cases, diffraction by
+    a single object may be used to constrain the properties of an individual
+    halo. But even when no single lens dominates, the accumulated effect of
+    many small structures along the line of sight leaves a characteristic
+    imprint on the signal — lens stochastic diffraction, which resembles a
+    noise term but with a specific spectral shape and correlations with the
+    underlying signal. For LISA, that imprint would be sensitive to halos
+    of 10–10<sup>4</sup>&nbsp;M<sub>&#9737;</sub>, a range that is hard to reach
+    by other means.
+  </p>
+  <p>
+    The electromagnetic side of the same argument gave one of the sharpest
+    existing limits on compact dark matter: if a large fraction of dark matter
+    were in stellar-mass black holes, the brightnesses of distant type Ia
+    supernovae would be visibly skewed — most slightly dimmed, a few
+    substantially brighter. The observed distribution shows no such skew, which rules out
+    LIGO-mass black holes as the bulk of dark matter.
+  </p>
 
-    <figure class="float-right" style="width:330px;">
-      <img src="{{ '/imgs/no_LIGO_MACHO.jpg' | relative_url }}"
-           alt="Constraints on the fraction of dark matter in compact objects as a function of mass, from the lensing of type Ia supernovae." loading="lazy" width="330" height="212">
-      <figcaption>
-        The absence of lensing-induced skew in type Ia supernova brightnesses
-        rules out LIGO-mass compact objects (e.g. primordial black holes) as the
-        dominant form of dark matter.
-      </figcaption>
-    </figure>
+  <h3>Selected publications</h3>
+  <ul class="pubs">
+    <li>
+      <a href="https://inspirehep.net/literature/3180014" rel="noopener">Signatures of 10–10<sup>4</sup>&nbsp;M<sub>&#9737;</sub> dark matter halos in LISA via stochastic diffraction</a>
+      <span class="authors">H.-G. Choi, J. Urrutia, M. Zumalacárregui</span>
+      <span class="journal">arXiv:2607.11887</span>
+    </li>
+    <li>
+      <a href="https://inspirehep.net/literature/1641243" rel="noopener">Limits on stellar-mass compact objects as dark matter from gravitational lensing of type Ia supernovae</a>
+      <span class="authors">M. Zumalacárregui, U. Seljak</span>
+      <span class="journal">Phys. Rev. Lett. <strong>121</strong>, 141101 (2018)</span>
+      <span class="badge">Editors' Suggestion</span>
+      <a href="https://physics.aps.org/articles/v11/97" rel="noopener">APS Physics Viewpoint</a>
+      <span class="feature">Featured by <a href="https://news.berkeley.edu/2018/10/02/black-holes-ruled-out-as-universes-missing-dark-matter/" rel="noopener">UC Berkeley</a>, <a href="https://www.cea.fr/drf/Pages/Actualites/En-direct-des-labos/2018/matiere-noire--la-theorie-des-trous-noirs-disqualifiee-.aspx" rel="noopener">CEA</a>, <a href="https://www.newscientist.com/article/2156252-ancient-black-holes-ruled-out-as-source-of-all-dark-matter" rel="noopener">New Scientist</a></span>
+    </li>
+    <li>
+      <a href="https://inspirehep.net/literature/2617458" rel="noopener">Gravitational wave lensing as a probe of halo properties and dark matter</a>
+      <span class="authors">G. Tambalo, M. Zumalacárregui, L. Dai, M. Cheung</span>
+      <span class="journal">Phys. Rev. D <strong>108</strong>, 103529 (2023)</span>
+    </li>
+  </ul>
 
-    <p>
-      Cold dark matter and its alternatives — e.g. warm, fuzzy,
-      self-interacting, primordial black holes — agree on large scales and
-      disagree below galactic scales. That is precisely where the observational
-      evidence is thinnest, because sub-galactic halos contain few or no stars.
-      Because lensing responds to mass instead of light, it provides means to
-      probe these elusive halos.
-    </p>
-    <p>
-      Two complementary handles come out of this. In some cases, diffraction by
-      a single object may be used to constrain the properties of an individual
-      halo. But even when no single lens dominates, the accumulated effect of
-      many small structures along the line of sight leaves a characteristic
-      imprint on the signal — lens stochastic diffraction, which resembles a
-      noise term but with a specific spectral shape and correlations with the
-      underlying signal. For LISA, that imprint would be sensitive to halos
-      of 10–10<sup>4</sup>&nbsp;M<sub>&#9737;</sub>, a range that is hard to reach
-      by other means.
-    </p>
-    <p>
-      The electromagnetic side of the same argument gave one of the sharpest
-      existing limits on compact dark matter: if a large fraction of dark matter
-      were in stellar-mass black holes, the brightnesses of distant type Ia
-      supernovae would be visibly skewed — most slightly dimmed, a few
-      substantially brighter. The observed distribution shows no such skew, which rules out
-      LIGO-mass black holes as the bulk of dark matter.
-    </p>
+  <p class="small">
+    See also
+    <a href="https://inspirehep.net/literature/2781293" rel="noopener">Lens stochastic diffraction: a signature of compact objects in gravitational-wave data</a>.
+  </p>
 
-    <h4>Selected publications</h4>
-    <ul class="pubs">
-      <li>
-        <a href="https://inspirehep.net/literature/3180014" rel="noopener">Signatures of 10–10<sup>4</sup>&nbsp;M<sub>&#9737;</sub> dark matter halos in LISA via stochastic diffraction</a>
-        <span class="authors">H.-G. Choi, J. Urrutia, M. Zumalacárregui</span>
-        <span class="journal">arXiv:2607.11887</span>
-      </li>
-      <li>
-        <a href="https://inspirehep.net/literature/1641243" rel="noopener">Limits on stellar-mass compact objects as dark matter from gravitational lensing of type Ia supernovae</a>
-        <span class="authors">M. Zumalacárregui, U. Seljak</span>
-        <span class="journal">Phys. Rev. Lett. <strong>121</strong>, 141101 (2018)</span>
-        <span class="badge">Editors' Suggestion</span>
-        <a href="https://physics.aps.org/articles/v11/97" rel="noopener">APS Physics Viewpoint</a>
-        <span class="feature">Featured by <a href="https://news.berkeley.edu/2018/10/02/black-holes-ruled-out-as-universes-missing-dark-matter/" rel="noopener">UC Berkeley</a>, <a href="https://www.cea.fr/drf/Pages/Actualites/En-direct-des-labos/2018/matiere-noire--la-theorie-des-trous-noirs-disqualifiee-.aspx" rel="noopener">CEA</a>, <a href="https://www.newscientist.com/article/2156252-ancient-black-holes-ruled-out-as-source-of-all-dark-matter" rel="noopener">New Scientist</a></span>
-      </li>
-      <li>
-        <a href="https://inspirehep.net/literature/2617458" rel="noopener">Gravitational wave lensing as a probe of halo properties and dark matter</a>
-        <span class="authors">G. Tambalo, M. Zumalacárregui, L. Dai, M. Cheung</span>
-        <span class="journal">Phys. Rev. D <strong>108</strong>, 103529 (2023)</span>
-      </li>
-    </ul>
+  <ul class="arrow-list">
+    <li><a href="https://www.youtube.com/watch?v=a5lIDTDRo4c" rel="noopener">Probing low-mass dark matter halos with LISA</a> — talk on Cosmology Talks (2026, with Choi &amp; Urrutia)</li>
+    <li><a href="https://cds.cern.ch/record/2320183" rel="noopener">Primordial black-hole constraints from supernova lensing</a> — talk at a CERN workshop (2018)</li>
+  </ul>
+</section>
 
-    <p class="small">
-      See also
-      <a href="https://inspirehep.net/literature/2781293" rel="noopener">Lens stochastic diffraction: a signature of compact objects in gravitational-wave data</a>.
-    </p>
+<!-- ---------- Strong field & multi-messenger ---------- -->
+<section class="section" id="strong-field">
+  <h2>Strong-field and multi-messenger lensing</h2>
 
-    <ul class="arrow-list">
-      <li><a href="https://www.youtube.com/watch?v=a5lIDTDRo4c" rel="noopener">Probing low-mass dark matter halos with LISA</a> — talk on Cosmology Talks (2026, with Choi &amp; Urrutia)</li>
-      <li><a href="https://cds.cern.ch/record/2320183" rel="noopener">Primordial black-hole constraints from supernova lensing</a> — talk at a CERN workshop (2018)</li>
-    </ul>
-  </section>
+  <figure class="float-right" style="width:340px;">
+    <img src="{{ '/imgs/BH_as_telescopes.png' | relative_url }}"
+         alt="Simulated image of starlight (orange) gravitationally lensed by a supermassive black-hole binary." loading="lazy" width="340" height="191">
+    <figcaption>
+      Starlight lensed by a supermassive black-hole binary. As the binary
+      orbits, its caustic network sweeps across a background star.
+    </figcaption>
+  </figure>
 
-  <!-- ---------- Strong field & multi-messenger ---------- -->
-  <section class="section" id="strong-field">
-    <h3>Strong-field and multi-messenger lensing</h3>
+  <p>
+    Black hole binaries are usually studied as sources, but they are also
+    excellent lenses. When a star lies behind a supermassive binary, the
+    orbital rotation of the system produces a quasi-periodic magnification
+    with a distinctive shape. This phenomenon can open a new window into the
+    population of sub-parsec binary systems — the same systems that will
+    dominate the LISA and pulsar-timing signal, and which are otherwise very
+    hard to resolve. Closer to home, we found that
+    continuous gravitational waves from sources behind Sgr&nbsp;A* can be
+    <a href="https://inspirehep.net/literature/2619345" rel="noopener">detected well beyond the Einstein radius</a>,
+    and resolved as separate images.
+  </p>
+  <p>
+    Strong fields also change how the wave itself propagates. Near a massive
+    body the standard lensing formalism — weak fields, small deflections, a
+    single flat background — no longer holds: at first order beyond geometric
+    optics the wave's polarization couples to the background curvature, and
+    the two polarizations follow slightly different trajectories. This
+    gravitational spin-Hall effect makes the arrival time depend on both
+    frequency and polarization.
+  </p>
+  <p>
+    Multi-messenger lensing is the wider frontier. A lensed gravitational wave
+    and a lensed electromagnetic counterpart of the same event constrain the
+    lens far better than either alone, because they probe complementary
+    regimes: gravitational waves are diffracted by stars, but light is
+    described by geometric-optics lensing. Building this into a coherent
+    observational strategy across gravitational interferometers and
+    time-domain electromagnetic surveys is a community-scale effort where
+    wave-optics phenomena may be crucial for discovery.
+  </p>
 
-    <figure class="float-right" style="width:340px;">
-      <img src="{{ '/imgs/BH_as_telescopes.png' | relative_url }}"
-           alt="Simulated image of starlight (orange) gravitationally lensed by a supermassive black-hole binary." loading="lazy" width="340" height="191">
-      <figcaption>
-        Starlight lensed by a supermassive black-hole binary. As the binary
-        orbits, its caustic network sweeps across a background star.
-      </figcaption>
-    </figure>
+  <h3>Selected publications</h3>
+  <ul class="pubs">
+    <li>
+      <a href="https://inspirehep.net/literature/2937368" rel="noopener">Black holes as telescopes: discovering supermassive binaries through quasi-periodic lensed starlight</a>
+      <span class="authors">H. Wang, M. Zumalacárregui, B. Kocsis</span>
+      <span class="journal">Phys. Rev. Lett. <strong>136</strong>, 061403 (2026)</span>
+      <span class="badge">Editors' Suggestion</span>
+      <span class="feature">Featured by <a href="https://www.aei.mpg.de/1407139/new-method-could-reveal-hidden-supermassive-black-hole-binaries" rel="noopener">AEI</a>, <a href="https://www.physics.ox.ac.uk/news/new-method-could-reveal-hidden-supermassive-black-hole-binaries" rel="noopener">University of Oxford</a>, <a href="https://phys.org/news/2026-02-gravitational-lensing-technique-unveils-supermassive.html" rel="noopener">Phys.org</a></span>
+    </li>
+    <li>
+      <a href="https://inspirehep.net/literature/2151522" rel="noopener">From the gates of the abyss: frequency- and polarization-dependent lensing of gravitational waves in strong gravitational fields</a>
+      <span class="authors">M. Oancea, R. Stiskalek, M. Zumalacárregui</span>
+      <span class="journal">Phys. Rev. D <strong>109</strong>, 124045 (2024)</span>
+      <span class="feature">Featured by <a href="https://www.aei.mpg.de/1183585/strong-space-time-curvature" rel="noopener">AEI</a></span>
+    </li>
+    <li>
+      <a href="https://inspirehep.net/literature/2904454" rel="noopener">Multi-messenger gravitational lensing</a>
+      <span class="authors">G. Smith et al. — coordinator, microlensing section</span>
+      <span class="journal">Phil. Trans. R. Soc. A <strong>383</strong>, 20240134 (2025)</span>
+    </li>
+  </ul>
 
-    <p>
-      Black hole binaries are usually studied as sources, but they are also
-      excellent lenses. When a star lies behind a supermassive binary, the
-      orbital rotation of the system produces a quasi-periodic magnification
-      with a distinctive shape. This phenomenon can open a new window into the
-      population of sub-parsec binary systems — the same systems that will
-      dominate the LISA and pulsar-timing signal, and which are otherwise very
-      hard to resolve. Closer to home, we found that
-      continuous gravitational waves from sources behind Sgr&nbsp;A* can be
-      <a href="https://inspirehep.net/literature/2619345" rel="noopener">detected well beyond the Einstein radius</a>,
-      and resolved as separate images.
-    </p>
-    <p>
-      Strong fields also change how the wave itself propagates. Near a massive
-      body the standard lensing formalism — weak fields, small deflections, a
-      single flat background — no longer holds: at first order beyond geometric
-      optics the wave's polarization couples to the background curvature, and
-      the two polarizations follow slightly different trajectories. This
-      gravitational spin-Hall effect makes the arrival time depend on both
-      frequency and polarization.
-    </p>
-    <p>
-      Multi-messenger lensing is the wider frontier. A lensed gravitational wave
-      and a lensed electromagnetic counterpart of the same event constrain the
-      lens far better than either alone, because they probe complementary
-      regimes: gravitational waves are diffracted by stars, but light is
-      described by geometric-optics lensing. Building this into a coherent
-      observational strategy across gravitational interferometers and
-      time-domain electromagnetic surveys is a community-scale effort where
-      wave-optics phenomena may be crucial for discovery.
-    </p>
+</section>
 
-    <h4>Selected publications</h4>
-    <ul class="pubs">
-      <li>
-        <a href="https://inspirehep.net/literature/2937368" rel="noopener">Black holes as telescopes: discovering supermassive binaries through quasi-periodic lensed starlight</a>
-        <span class="authors">H. Wang, M. Zumalacárregui, B. Kocsis</span>
-        <span class="journal">Phys. Rev. Lett. <strong>136</strong>, 061403 (2026)</span>
-        <span class="badge">Editors' Suggestion</span>
-        <span class="feature">Featured by <a href="https://www.aei.mpg.de/1407139/new-method-could-reveal-hidden-supermassive-black-hole-binaries" rel="noopener">AEI</a>, <a href="https://www.physics.ox.ac.uk/news/new-method-could-reveal-hidden-supermassive-black-hole-binaries" rel="noopener">University of Oxford</a>, <a href="https://phys.org/news/2026-02-gravitational-lensing-technique-unveils-supermassive.html" rel="noopener">Phys.org</a></span>
-      </li>
-      <li>
-        <a href="https://inspirehep.net/literature/2151522" rel="noopener">From the gates of the abyss: frequency- and polarization-dependent lensing of gravitational waves in strong gravitational fields</a>
-        <span class="authors">M. Oancea, R. Stiskalek, M. Zumalacárregui</span>
-        <span class="journal">Phys. Rev. D <strong>109</strong>, 124045 (2024)</span>
-        <span class="feature">Featured by <a href="https://www.aei.mpg.de/1183585/strong-space-time-curvature" rel="noopener">AEI</a></span>
-      </li>
-      <li>
-        <a href="https://inspirehep.net/literature/2904454" rel="noopener">Multi-messenger gravitational lensing</a>
-        <span class="authors">G. Smith et al. — coordinator, microlensing section</span>
-        <span class="journal">Phil. Trans. R. Soc. A <strong>383</strong>, 20240134 (2025)</span>
-      </li>
-    </ul>
+<!-- ---------- Tests of gravity ---------- -->
+<section class="section" id="tests-of-gravity">
+  <h2>Tests of gravity and dark energy</h2>
 
-    <ul class="arrow-list">
-    </ul>
-  </section>
+  <figure class="float-right" style="width:210px;">
+    <img src="{{ '/imgs/LIB_results_Goyal_23_V.png' | relative_url }}"
+         alt="Posterior constraints on lens-induced birefringence from 43 gravitational-wave events." loading="lazy" width="210" height="318">
+    <figcaption>
+      A search for lens-induced birefringence across 43 gravitational-wave
+      events, bounding departures from general relativity. From
+      <a href="https://inspirehep.net/literature/2622629" rel="noopener">Goyal, Vijaykumar, Ezquiaga &amp; Zumalacárregui</a>.
+    </figcaption>
+  </figure>
 
-  <!-- ---------- Tests of gravity ---------- -->
-  <section class="section" id="tests-of-gravity">
-    <h3>Tests of gravity and dark energy</h3>
+  <p>
+    Any deviation from Einstein's theory builds up along a gravitational
+    wave's journey, making propagation a clean test of cosmological gravity.
+    My earlier work identified the speed of gravitational waves as a sharp
+    test for many classes of modified theories. GW170817 settled
+    the question: its near-simultaneous electromagnetic counterpart fixed that
+    speed to one part in 10<sup>15</sup>, which removed large classes of
+    dark-energy theories in a single stroke.
+  </p>
+  <p>
+    Lensing sharpens and broadens the test, because a lens does what a smooth
+    cosmological background cannot: it breaks the symmetry. In modified
+    theories, this allows the wave to mix with new fields of different spin
+    through couplings that vanish on a homogeneous, isotropic background. The
+    result is birefringence — the two polarizations propagating differently,
+    the lens acting as an anisotropic crystal — and dispersion — the frequency
+    components spread, like light forming a rainbow. These tests rely on
+    distortions of the waveform, requiring no electromagnetic counterpart and
+    allowing for searches over entire source catalogs.
+  </p>
+  <p>
+    The program extends this from the high-frequency expansion to a complete
+    wave-optics formalism, and from specific dark-energy models to a
+    theory-agnostic parameterization of lensing beyond Einstein — the analog
+    of the post-Newtonian parameters in the Solar System — delivered as a
+    likelihood module for cosmological analyses.
+  </p>
 
-    <figure class="float-right" style="width:210px;">
-      <img src="{{ '/imgs/LIB_results_Goyal_23_V.png' | relative_url }}"
-           alt="Posterior constraints on lens-induced birefringence from 43 gravitational-wave events." loading="lazy" width="210" height="318">
-      <figcaption>
-        A search for lens-induced birefringence across 43 gravitational-wave
-        events, bounding departures from general relativity. From
-        <a href="https://inspirehep.net/literature/2622629" rel="noopener">Goyal, Vijaykumar, Ezquiaga &amp; Zumalacárregui</a>.
-      </figcaption>
-    </figure>
+  <h3>Selected publications</h3>
+  <ul class="pubs">
+    <li>
+      <a href="https://inspirehep.net/literature/1630865" rel="noopener">Dark energy after GW170817: dead ends and the road ahead</a>
+      <span class="authors">J. M. Ezquiaga, M. Zumalacárregui</span>
+      <span class="journal">Phys. Rev. Lett. <strong>119</strong>, 251304 (2017)</span>
+      <span class="badge">Editors' Suggestion</span>
+      <a href="https://physics.aps.org/articles/v10/134" rel="noopener">APS Physics Viewpoint</a>
+      <span class="feature">Featured by <a href="https://newscenter.lbl.gov/2017/12/18/star-mergers-test-gravity-dark-energy-theories/" rel="noopener">Berkeley Lab</a></span>
+    </li>
+    <li>
+      <a href="https://inspirehep.net/literature/1819285" rel="noopener">Gravitational wave lensing beyond general relativity: birefringence, echoes and shadows</a>
+      <span class="authors">J. M. Ezquiaga, M. Zumalacárregui</span>
+      <span class="journal">Phys. Rev. D <strong>102</strong>, 124048 (2020)</span>
+      <span class="badge">Editors' Suggestion</span>
+      <span class="feature">Featured by <a href="https://www.aei.mpg.de/597240/testing-einstein-s-theory-with-lensing-of-gravitational-waves" rel="noopener">AEI</a>, <a href="https://news.uchicago.edu/story/ripples-space-time-could-provide-clues-missing-components-universe" rel="noopener">University of Chicago</a></span>
+    </li>
+    <li>
+      <a href="https://inspirehep.net/literature/3081772" rel="noopener">Gravitational-wave dispersion over inhomogeneous space-times: general relativity, screened theories of gravity and non-minimal dark energy</a>
+      <span class="authors">N. Menadeo, S. Giardino, M. Zumalacárregui</span>
+      <span class="journal">JCAP, accepted · arXiv:2511.08023</span>
+    </li>
+  </ul>
 
-    <p>
-      Any deviation from Einstein's theory builds up along a gravitational
-      wave's journey, making propagation a clean test of cosmological gravity.
-      My earlier work identified the speed of gravitational waves as a sharp
-      test for many classes of modified theories. GW170817 settled
-      the question: its near-simultaneous electromagnetic counterpart fixed that
-      speed to one part in 10<sup>15</sup>, which removed large classes of
-      dark-energy theories in a single stroke.
-    </p>
-    <p>
-      Lensing sharpens and broadens the test, because a lens does what a smooth
-      cosmological background cannot: it breaks the symmetry. In modified
-      theories, this allows the wave to mix with new fields of different spin
-      through couplings that vanish on a homogeneous, isotropic background. The
-      result is birefringence — the two polarizations propagating differently,
-      the lens acting as an anisotropic crystal — and dispersion — the frequency
-      components spread, like light forming a rainbow. These tests rely on
-      distortions of the waveform, requiring no electromagnetic counterpart and
-      allowing for searches over entire source catalogs.
-    </p>
-    <p>
-      The program extends this from the high-frequency expansion to a complete
-      wave-optics formalism, and from specific dark-energy models to a
-      theory-agnostic parameterization of lensing beyond Einstein — the analog
-      of the post-Newtonian parameters in the Solar System — delivered as a
-      likelihood module for cosmological analyses.
-    </p>
+  <p class="small">
+    See also the
+    <a href="https://inspirehep.net/literature/2847089" rel="noopener">geometric-optics expansion and lens-induced dispersion</a>,
+    the review
+    <a href="https://inspirehep.net/literature/1683707" rel="noopener">Dark energy in light of multi-messenger gravitational-wave astronomy</a>,
+    and
+    <a href="https://inspirehep.net/literature/1738351" rel="noopener">Testing modified gravity at cosmological distances with LISA standard sirens</a>.
+  </p>
 
-    <h4>Selected publications</h4>
-    <ul class="pubs">
-      <li>
-        <a href="https://inspirehep.net/literature/1630865" rel="noopener">Dark energy after GW170817: dead ends and the road ahead</a>
-        <span class="authors">J. M. Ezquiaga, M. Zumalacárregui</span>
-        <span class="journal">Phys. Rev. Lett. <strong>119</strong>, 251304 (2017)</span>
-        <span class="badge">Editors' Suggestion</span>
-        <a href="https://physics.aps.org/articles/v10/134" rel="noopener">APS Physics Viewpoint</a>
-        <span class="feature">Featured by <a href="https://newscenter.lbl.gov/2017/12/18/star-mergers-test-gravity-dark-energy-theories/" rel="noopener">Berkeley Lab</a></span>
-      </li>
-      <li>
-        <a href="https://inspirehep.net/literature/1819285" rel="noopener">Gravitational wave lensing beyond general relativity: birefringence, echoes and shadows</a>
-        <span class="authors">J. M. Ezquiaga, M. Zumalacárregui</span>
-        <span class="journal">Phys. Rev. D <strong>102</strong>, 124048 (2020)</span>
-        <span class="badge">Editors' Suggestion</span>
-        <span class="feature">Featured by <a href="https://www.aei.mpg.de/597240/testing-einstein-s-theory-with-lensing-of-gravitational-waves" rel="noopener">AEI</a>, <a href="https://news.uchicago.edu/story/ripples-space-time-could-provide-clues-missing-components-universe" rel="noopener">University of Chicago</a></span>
-      </li>
-      <li>
-        <a href="https://inspirehep.net/literature/3081772" rel="noopener">Gravitational-wave dispersion over inhomogeneous space-times: general relativity, screened theories of gravity and non-minimal dark energy</a>
-        <span class="authors">N. Menadeo, S. Giardino, M. Zumalacárregui</span>
-        <span class="journal">JCAP, accepted · arXiv:2511.08023</span>
-      </li>
-    </ul>
+  <ul class="arrow-list">
+    <li><a href="https://youtu.be/1k0o0QiL288" rel="noopener">Tests of gravitational-wave propagation</a> — talk at Dark Energy from Home (2026)</li>
+    <li><a href="https://www.youtube.com/watch?v=w2vnenwbJWY" rel="noopener">GW lensing beyond general relativity</a> — talk in the SISSA gravity webinars</li>
+    <li><a href="https://astrobites.org/2023/04/11/gravitational-waves-a-la-general-relativity-or-scrambled/" rel="noopener">Gravitational waves à la general relativity, or scrambled?</a> — Astrobites</li>
+  </ul>
+</section>
 
-    <p class="small">
-      See also the
-      <a href="https://inspirehep.net/literature/2847089" rel="noopener">geometric-optics expansion and lens-induced dispersion</a>,
-      the review
-      <a href="https://inspirehep.net/literature/1683707" rel="noopener">Dark energy in light of multi-messenger gravitational-wave astronomy</a>,
-      and
-      <a href="https://inspirehep.net/literature/1738351" rel="noopener">Testing modified gravity at cosmological distances with LISA standard sirens</a>.
-    </p>
+<!-- ---------- Methods ---------- -->
+<section class="section" id="methods">
+  <h2>Methods, inference and public software</h2>
 
-    <ul class="arrow-list">
-      <li><a href="https://youtu.be/1k0o0QiL288" rel="noopener">Tests of gravitational-wave propagation</a> — talk at Dark Energy from Home (2026)</li>
-      <li><a href="https://www.youtube.com/watch?v=w2vnenwbJWY" rel="noopener">GW lensing beyond general relativity</a> — talk in the SISSA gravity webinars</li>
-      <li><a href="https://astrobites.org/2023/04/11/gravitational-waves-a-la-general-relativity-or-scrambled/" rel="noopener">Gravitational waves à la general relativity, or scrambled?</a> — Astrobites</li>
-    </ul>
-  </section>
+  <p>
+    Wave-optics lensing is computationally challenging: the amplification
+    factor stems from an oscillatory integral, and a naive evaluation is far
+    too slow to sit inside a parameter-estimation loop. A large part of my
+    work is therefore methodological — finding formulations that are both
+    accurate and fast enough for systematic exploration and Bayesian
+    inference.
+  </p>
+  <p>
+    The results are public. <a href="{{ '/software.html' | relative_url }}">GLoW</a>
+    implements contour-integration and time-domain methods for general matter
+    distributions (see also
+    <a href="https://github.com/mhycheung/glworia" rel="noopener">Glworia</a>,
+    <a href="https://github.com/manchunyeung/wolensing" rel="noopener">WOlensing</a> and
+    <a href="https://github.com/xkshan97/Microlensing_Wave_Effect" rel="noopener">Microlensing_Wave_Effect</a>).
+    These software tools facilitate the reproducibility of scientific results
+    and the exploration of new ideas.
+  </p>
+  <p>
+    Speed is not only a convenience. We have adapted machine learning methods
+    to facilitate systematic lensing searches over entire source catalogs: a
+    network trained on microlensed waveforms can perform analyses in minutes
+    rather than days.
+  </p>
 
-  <!-- ---------- Methods ---------- -->
-  <section class="section" id="methods">
-    <h3>Methods, inference and public software</h3>
+  <figure>
+    <video width="1560" height="520" autoplay muted loop playsinline
+           poster="{{ '/imgs/sampling_L1_web_dark_still.png' | relative_url }}"
+           aria-label="Animation of posterior samples for the lens of GW231123, each shown as the whitened strain template it predicts in LIGO Livingston.">
+      <source src="{{ '/imgs/sampling_L1_web_dark.webm' | relative_url }}" type="video/webm">
+      <source src="{{ '/imgs/sampling_L1_web_dark.mp4' | relative_url }}" type="video/mp4">
+    </video>
+    <figcaption>
+      Every posterior sample is a lens. Walking up the GW231123 lensing
+      posterior in the (M<sub>Lz</sub>, &gamma;&#771;) plane (left), each
+      sample predicts a different whitened template in LIGO Livingston
+      (right): the merger stays anchored while the post-merger diffraction
+      echoes move and reshape as the sampler climbs toward the best fit.
+      Samples from the
+      <a href="https://github.com/miguelzuma/GW231123_lensing_PLS" rel="noopener">public data release</a>.
+    </figcaption>
+  </figure>
 
-    <p>
-      Wave-optics lensing is computationally challenging: the amplification
-      factor stems from an oscillatory integral, and a naive evaluation is far
-      too slow to sit inside a parameter-estimation loop. A large part of my
-      work is therefore methodological — finding formulations that are both
-      accurate and fast enough for systematic exploration and Bayesian
-      inference.
-    </p>
-    <p>
-      The results are public. <a href="{{ '/software.html' | relative_url }}">GLoW</a>
-      implements contour-integration and time-domain methods for general matter
-      distributions (see also
-      <a href="https://github.com/mhycheung/glworia" rel="noopener">Glworia</a>,
-      <a href="https://github.com/manchunyeung/wolensing" rel="noopener">WOlensing</a> and
-      <a href="https://github.com/xkshan97/Microlensing_Wave_Effect" rel="noopener">Microlensing_Wave_Effect</a>).
-      These software tools facilitate the reproducibility of scientific results
-      and the exploration of new ideas.
-    </p>
-    <p>
-      Speed is not only a convenience. We have adapted machine learning methods
-      to facilitate systematic lensing searches over entire source catalogs: a
-      network trained on microlensed waveforms can perform analyses in minutes
-      rather than days.
-    </p>
+  <h3>Selected publications</h3>
+  <ul class="pubs">
+    <li>
+      <a href="https://inspirehep.net/literature/2826315" rel="noopener">GLoW: novel methods for wave-optics phenomena in gravitational lensing</a>
+      <span class="authors">H. Villarrubia-Rojo, S. Savastano, M. Zumalacárregui, L. Choi, S. Goyal, L. Dai, G. Tambalo</span>
+      <span class="journal">Phys. Rev. D <strong>111</strong>, 103539 (2025)</span>
+    </li>
+    <li>
+      <a href="https://inspirehep.net/literature/3081783" rel="noopener">Accelerated inference of microlensed gravitational waves with machine learning</a>
+      <span class="authors">M. Caldarola, S. Goyal, N. Gupte, S. R. Green, M. Zumalacárregui</span>
+      <span class="journal">Phys. Rev. D <strong>113</strong>, 104073 (2026)</span>
+    </li>
+    <li>
+      <a href="https://inspirehep.net/literature/3169257" rel="noopener">Effective description of lensed gravitational waves diffracted by stellar fields</a>
+      <span class="authors">M. Zumalacárregui, X. Shan</span>
+      <span class="journal">arXiv:2606.17765</span>
+    </li>
+  </ul>
 
-    <figure>
-      <video width="1560" height="520" autoplay muted loop playsinline
-             poster="{{ '/imgs/sampling_L1_web_dark_still.png' | relative_url }}"
-             aria-label="Animation of posterior samples for the lens of GW231123, each shown as the whitened strain template it predicts in LIGO Livingston.">
-        <source src="{{ '/imgs/sampling_L1_web_dark.webm' | relative_url }}" type="video/webm">
-        <source src="{{ '/imgs/sampling_L1_web_dark.mp4' | relative_url }}" type="video/mp4">
-      </video>
-      <figcaption>
-        Every posterior sample is a lens. Walking up the GW231123 lensing
-        posterior in the (M<sub>Lz</sub>, &gamma;&#771;) plane (left), each
-        sample predicts a different whitened template in LIGO Livingston
-        (right): the merger stays anchored while the post-merger diffraction
-        echoes move and reshape as the sampler climbs toward the best fit.
-        Samples from the
-        <a href="https://github.com/miguelzuma/GW231123_lensing_PLS" rel="noopener">public data release</a>.
-      </figcaption>
-    </figure>
+  <div class="btn-row">
+    <a class="btn" href="{{ '/software.html' | relative_url }}">All software</a>
+    <a class="btn" href="https://github.com/miguelzuma/GLoW_public" rel="noopener">GLoW on GitHub</a>
+  </div>
+</section>
 
-    <h4>Selected publications</h4>
-    <ul class="pubs">
-      <li>
-        <a href="https://inspirehep.net/literature/2826315" rel="noopener">GLoW: novel methods for wave-optics phenomena in gravitational lensing</a>
-        <span class="authors">H. Villarrubia-Rojo, S. Savastano, M. Zumalacárregui, L. Choi, S. Goyal, L. Dai, G. Tambalo</span>
-        <span class="journal">Phys. Rev. D <strong>111</strong>, 103539 (2025)</span>
-      </li>
-      <li>
-        <a href="https://inspirehep.net/literature/3081783" rel="noopener">Accelerated inference of microlensed gravitational waves with machine learning</a>
-        <span class="authors">M. Caldarola, S. Goyal, N. Gupte, S. R. Green, M. Zumalacárregui</span>
-        <span class="journal">Phys. Rev. D <strong>113</strong>, 104073 (2026)</span>
-      </li>
-      <li>
-        <a href="https://inspirehep.net/literature/3169257" rel="noopener">Effective description of lensed gravitational waves diffracted by stellar fields</a>
-        <span class="authors">M. Zumalacárregui, X. Shan</span>
-        <span class="journal">arXiv:2606.17765</span>
-      </li>
-    </ul>
-
-    <div class="btn-row">
-      <a class="btn" href="{{ '/software.html' | relative_url }}">All software</a>
-      <a class="btn" href="https://github.com/miguelzuma/GLoW_public" rel="noopener">GLoW on GitHub</a>
-    </div>
-  </section>
-
-</div>
 
 <!-- ==================================================================
      FOUNDATIONS

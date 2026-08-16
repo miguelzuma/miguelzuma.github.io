@@ -246,6 +246,11 @@ These came from the site's owner. They matter more than the code.
 
 ## 10. What differs for the GLOW site
 
+*Status: the GLOW site has been built (in its own repository), not yet public.
+Once it has a URL, the personal site owes it links — the GLOW card's
+"in preparation" note on projects.html, and the wave-optics section of
+research.html.*
+
 Reuse the stack, the build tooling, the data-driven pattern, the verification
 routine, and §8 wholesale. Differences to plan for:
 

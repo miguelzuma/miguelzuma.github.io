@@ -709,16 +709,6 @@ figure.float-left {
 
 .section { margin: 2.8rem 0; }
 
-/* The dominant research program gets a subtle left rail. It runs per section
-   rather than unbroken down the whole block, so the five read as five things
-   sharing a rail and not as one continuous stretch of page. */
-.program { margin-left: 0; }
-
-.program > .section {
-	border-left: 2px solid var(--accent-dim);
-	padding-left: 1.6rem;
-}
-
 /* Secondary material sits in a quieter, denser block */
 .secondary {
 	background: var(--bg-raised);
@@ -960,8 +950,6 @@ h2 + .stage-heading { margin-top: 1.2rem; }
 		max-width: 100% !important;
 		width: 100% !important;
 	}
-
-	.program { padding-left: 1rem; }
 
 	.secondary { padding: 1.1rem; }
 
