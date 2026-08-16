@@ -52,9 +52,10 @@ current:
     summary: >-
       A philanthropically funded program developing new methods to identify
       lensed gravitational waves and to use them to probe the small-scale
-      structure of dark matter. Because the funding comes from private donors,
-      the project carries an explicit outreach commitment: explaining lensed
-      gravitational waves to a non-specialist public.
+      structure of dark matter. It set the methodological foundations that led
+      to the GLoW code and its first applications. The project also carries an
+      explicit outreach commitment: explaining lensed gravitational waves to a
+      non-specialist public.
     links:
       - text: "Max Planck Annual Project 2024"
         url: "https://www.mpg.de/annualproject2024"
