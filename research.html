@@ -211,16 +211,6 @@ sections:
 <section class="section" id="dark-matter">
   <h2>Dark matter and small-scale structure</h2>
 
-  <figure class="float-right" style="width:330px;">
-    <img src="{{ '/imgs/no_LIGO_MACHO.jpg' | relative_url }}"
-         alt="Constraints on the fraction of dark matter in compact objects as a function of mass, from the lensing of type Ia supernovae." loading="lazy" width="330" height="212">
-    <figcaption>
-      The absence of lensing-induced skew in type Ia supernova brightnesses
-      rules out LIGO-mass compact objects (e.g. primordial black holes) as the
-      dominant form of dark matter.
-    </figcaption>
-  </figure>
-
   <p>
     Cold dark matter and its alternatives — e.g. warm, fuzzy,
     self-interacting, primordial black holes — agree on large scales and
@@ -240,6 +230,35 @@ sections:
     of 10–10<sup>4</sup>&nbsp;M<sub>&#9737;</sub>, a range that is hard to reach
     by other means.
   </p>
+
+  <figure>
+    <video autoplay muted loop playsinline preload="metadata"
+           poster="{{ '/imgs/stochastic_diffraction_dark_still.png' | relative_url }}"
+           width="1560" height="520"
+           aria-label="Animation of lens stochastic diffraction: cold-dark-matter halos along the line of sight to a gravitational-wave source, and the frequency-dependent distortion they imprint on the signal.">
+      <source src="{{ '/imgs/stochastic_diffraction_dark.webm' | relative_url }}" type="video/webm">
+      <source src="{{ '/imgs/stochastic_diffraction_dark.mp4' | relative_url }}" type="video/mp4">
+    </video>
+    <figcaption>
+      Lens stochastic diffraction. Left: cold-dark-matter halos between a
+      gravitational-wave source and the observer; the outline marks the region
+      whose halos affect the signal, which widens as the frequency sweep moves
+      toward long wavelengths. Right: the distortion those halos imprint —
+      an effect that would let LISA detect halos of
+      10–10<sup>4</sup>&nbsp;M<sub>&#9737;</sub>.
+    </figcaption>
+  </figure>
+  <script>
+    // A permanently looping animation is exactly what prefers-reduced-motion
+    // asks not to have: those readers get the poster frame instead.
+    (function () {
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      var v = document.currentScript.previousElementSibling.querySelector('video');
+      v.removeAttribute('autoplay');
+      v.pause();
+    })();
+  </script>
+
   <p>
     The electromagnetic side of the same argument gave one of the sharpest
     existing limits on compact dark matter: if a large fraction of dark matter
