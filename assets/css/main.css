@@ -445,6 +445,29 @@ main { padding-bottom: 3rem; }
 	margin-top: 0.5rem;
 }
 
+/* Photo credit laid over the foot of an image, the way the AEI credits the
+   same portrait: present and legible, but not competing with the page. The
+   wrapper is sized to the image so the strip cannot outrun it. */
+.portrait {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	line-height: 0;
+}
+
+.photo-credit {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 3px 7px;
+	font-size: 10px;
+	line-height: 1.5;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 0 0 var(--radius) var(--radius);
+}
+
 /* ---- Roles strip ----------------------------------------------------- */
 
 .roles {

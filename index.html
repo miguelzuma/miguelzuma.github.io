@@ -31,8 +31,15 @@ description: >-
       </div>
     </div>
     <div class="hero-media">
-      <img class="hero-portrait" src="{{ '/imgs/miguelzuma_aei.jpg' | relative_url }}"
-           alt="Portrait of Miguel Zumalacárregui" width="422" height="544">
+      {%- comment -%}
+        The portrait is the AEI's, credited as it is on aei.mpg.de: a small
+        line over the foot of the image rather than a caption beside it.
+      {%- endcomment -%}
+      <figure class="portrait">
+        <img class="hero-portrait" src="{{ '/imgs/miguelzuma_aei.jpg' | relative_url }}"
+             alt="Portrait of Miguel Zumalacárregui" width="422" height="544">
+        <figcaption class="photo-credit">© sevens[+]maltry</figcaption>
+      </figure>
     </div>
   </section>
 
