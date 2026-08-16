@@ -446,8 +446,11 @@ main { padding-bottom: 3rem; }
 }
 
 /* Photo credit laid over the foot of an image, the way the AEI credits the
-   same portrait: present and legible, but not competing with the page. The
-   wrapper is sized to the image so the strip cannot outrun it. */
+   same portrait: revealed on hover, so it is there when looked for and out of
+   the way otherwise. It stays in the document either way, so assistive
+   technology reads it, and it is shown outright where there is no hover to
+   reveal it with. The wrapper is sized to the image so the strip cannot
+   outrun it. */
 .portrait {
 	position: relative;
 	display: inline-block;
@@ -466,6 +469,22 @@ main { padding-bottom: 3rem; }
 	color: #fff;
 	background: rgba(0, 0, 0, 0.5);
 	border-radius: 0 0 var(--radius) var(--radius);
+	opacity: 0;
+	transition: opacity 0.15s ease;
+}
+
+.portrait:hover .photo-credit,
+.portrait:focus-within .photo-credit {
+	opacity: 1;
+}
+
+/* Touch screens have no hover to reveal it with */
+@media (hover: none) {
+	.photo-credit { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.photo-credit { transition: none; }
 }
 
 /* ---- Roles strip ----------------------------------------------------- */
