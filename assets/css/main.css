@@ -762,15 +762,15 @@ h2 + .stage-heading { margin-top: 1.2rem; }
 
 .person-incoming { margin: 0 0 0.4rem; }
 
-.alumni-list { list-style: none; padding: 0; }
+.people-list { list-style: none; padding: 0; }
 
-.alumni-list li {
+.people-list li {
 	padding: 0.5rem 0;
 	border-bottom: 1px solid var(--border);
 	font-size: 0.94rem;
 }
 
-.alumni-list .next::before { content: " → "; color: var(--accent-dim); }
+.people-list .next::before { content: " → "; color: var(--accent-dim); }
 
 /* Project and software logos float right so the card text wraps around them.
    Declared before the heading in source order, which is what float needs. */

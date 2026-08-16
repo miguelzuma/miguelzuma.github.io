@@ -25,7 +25,7 @@
 
 # How the PDF groups the Supervision section. The people come from people.yml,
 # which already drives the Group page: `stages` picks them out of its `current`
-# and `alumni` lists, in that order. `default_roles` are the roles the heading
+# and `former` lists, in that order. `default_roles` are the roles the heading
 # already states, left off each line. `style: paragraph` runs the group as
 # running text instead of a list, for the groups with the most names in them.
 #

@@ -84,13 +84,13 @@ The publication record is maintained on
 \end{entries}
 
 % ----------------------------------------------------------- supervision ----
-% Team members only: the `current` and `alumni` lists of _data/people.yml.
+% Team members only: the `current` and `former` lists of _data/people.yml.
 % Visiting researchers and the informal mentees from before the Potsdam group
 % are left to the Group page, which is where the full record lives.
 \section{Supervision}
 {%- for g in site.data.cv.supervision_groups %}
 {%- assign cur = site.data.people.current | where_exp: "p", "g.stages contains p.stage" %}
-{%- assign alu = site.data.people.alumni | where_exp: "p", "g.stages contains p.stage" %}
+{%- assign alu = site.data.people.former | where_exp: "p", "g.stages contains p.stage" %}
 {%- assign members = cur | concat: alu %}
 
 \subsection{ {{- g.heading -}} }

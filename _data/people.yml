@@ -1,4 +1,4 @@
-# Group members and alumni.
+# Group members, past and present.
 #
 # Source: CV_Miguel_Zuma.tex, "Supervision & coordination".  Everyone hosted
 # from 2020 onwards (the start of the MPI-Grav group) is listed as a group
@@ -6,14 +6,14 @@
 # `earlier_mentees`.
 #
 # Fields: name (required), stage (postdoc|phd|masters|intern|undergrad --
-# groups the Current members section and labels alumni rows; `intern` is for
+# groups the Current members section and labels the Former members rows; `intern` is for
 # anyone who worked here on a project rather than on a thesis supervised in
 # the group), end (year the person left,
 # duration (only given for stays longer than a week), end (year they left,
-# used to sort alumni and visitors chronologically, newest first; for an
+# used to sort former members and visitors chronologically, newest first; for an
 # ongoing collaboration use the current year; 0 when unknown),
 # role, years, topic, url (personal page),
-# photo (path under /imgs/collaborators/), next (destination, alumni only),
+# photo (path under /imgs/collaborators/), next (destination, former members only),
 # incoming (true -> card shows a "starts <starts>" badge), starts.
 #
 # To add a photo: drop a square-ish JPG in imgs/collaborators/ and set
@@ -253,7 +253,7 @@ visitors:
     topic: "Gravitational spin-Hall effect."
 
 
-alumni:
+former:
   - name: "Nicola Menadeo"
     url: "https://inspirehep.net/authors/2661950"
     stage: phd

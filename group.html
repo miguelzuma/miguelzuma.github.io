@@ -10,13 +10,13 @@ lede: >-
   project assignments.
 description: >-
   Research group of Miguel Zumalacárregui at the Albert Einstein Institute:
-  current members, visitors, alumni and information for prospective students,
-  postdocs and visitors.
+  current and former members, visitors and information for prospective
+  students, postdocs and visitors.
 sections:
   - id: current
-    label: "Current members"
-  - id: alumni
-    label: "Alumni"
+    label: "Current"
+  - id: former
+    label: "Former"
   - id: visitors
     label: "Visitors"
   - id: joining
@@ -66,9 +66,9 @@ sections:
   {%- endfor %}
 </section>
 
-<section class="section" id="alumni">
-  <h2>Alumni</h2>
-  <p>Former members of the group, and where they went next. Most recent first.</p>
+<section class="section" id="former">
+  <h2>Former members</h2>
+  <p>Where they went next. Most recent first.</p>
 
   {%- comment -%}
     "intern" covers everyone who worked here on a project rather than on a
@@ -80,10 +80,10 @@ sections:
   {%- assign al_labels = "Postdoctoral researchers,PhD students,Master's students,Research internships and projects,Undergraduates" | split: "," %}
 
   {%- for stage in al_stages %}
-  {%- assign people = site.data.people.alumni | where: "stage", stage | sort: "end" | reverse %}
+  {%- assign people = site.data.people.former | where: "stage", stage | sort: "end" | reverse %}
   {%- if people.size > 0 %}
   <h3 class="stage-heading">{{ al_labels[forloop.index0] }}</h3>
-  <ul class="alumni-list">
+  <ul class="people-list">
     {%- for p in people %}
     <li>
       <strong>{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</strong>{% if p.role %} — {{ p.role }}{% if p.years %}, {{ p.years }}{% endif %}{% elsif p.years %} — {{ p.years }}{% endif %}{% if p.next %}<span class="next">{{ p.next }}</span>{% endif %}
@@ -103,7 +103,7 @@ sections:
   {%- assign people = site.data.people.earlier_mentees | where: "stage", stage | sort: "end" | reverse %}
   {%- if people.size > 0 %}
   <h3 class="stage-heading">{{ al_labels[forloop.index0] }}</h3>
-  <ul class="alumni-list">
+  <ul class="people-list">
     {%- for p in people %}
     <li>
       <strong>{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</strong>{% if p.role %} — {{ p.role }}{% if p.years %}, {{ p.years }}{% endif %}{% elsif p.years %} — {{ p.years }}{% endif %}{% if p.next %}<span class="next">{{ p.next }}</span>{% endif %}
@@ -120,7 +120,7 @@ sections:
     Researchers who have spent extended periods working with the group, most of
     them on projects that led to joint publications.
   </p>
-  <ul class="alumni-list">
+  <ul class="people-list">
     {%- assign vis = site.data.people.visitors | sort: "end" | reverse %}
     {%- for p in vis %}
     <li>
