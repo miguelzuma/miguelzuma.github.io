@@ -80,6 +80,9 @@ current:
       wave-optics work.
     links: []
 
+# Grants led by someone else, where the contribution is a defined part of
+# the science rather than the direction of the whole.
+collaborations:
   - acronym: "GWSky"
     title: "Making Sense of the Gravitational-Wave Sky"
     funder: "European Research Council — Synergy Grant"

@@ -4,10 +4,10 @@ nav: projects
 title: "Projects & Funding"
 eyebrow: "Programs"
 lede: >-
-  Four current programs support the group's work, the largest of them the
-  GLOW ERC Consolidator Grant. Together they fund postdoctoral and doctoral
-  positions, the development of public software, and an explicit outreach
-  commitment.
+  Three programs support the group's work, the largest of them the GLOW ERC
+  Consolidator Grant. Together they fund postdoctoral and doctoral positions,
+  the development of public software, and an explicit outreach commitment. A
+  fourth grant, led elsewhere, draws on the same work.
 description: >-
   Research projects and funding led by Miguel Zumalacárregui: the GLOW ERC
   Consolidator Grant, With Einstein on Crooked Paths, the Ramón y Cajal
@@ -15,58 +15,27 @@ description: >-
 ---
 
 <p class="page-toc">
-  On this page: the <a href="#current">current projects</a>, and the
-  <a href="#positions">previous positions and fellowships</a> that have
+  On this page: the <a href="#current">projects I lead</a>, the
+  <a href="#collaborations">projects led by others</a> that I contribute to,
+  and the <a href="#positions">previous positions and fellowships</a> that have
   supported the work.
 </p>
 
 <section class="section" id="current">
-  <h2>Current projects</h2>
+  <h2>Projects I lead</h2>
 
   {%- for pr in site.data.projects.current %}
-  <article class="card section" id="{{ pr.acronym | downcase | replace: ' ', '-' }}"
-           style="{% if pr.flagship %}border-color: var(--accent-dim);{% endif %}">
+  {%- include project-card.html pr=pr %}
+  {%- endfor %}
+</section>
 
-    {%- if pr.logo %}
-    <img class="card-logo" src="{{ pr.logo | relative_url }}" alt="" loading="lazy">
-    {%- endif %}
+<section class="section" id="collaborations">
+  <h2>Projects led by others</h2>
+  <p>Grants where I contribute a defined part of the science rather than
+  directing the whole.</p>
 
-    {%- comment -%}
-      Must follow the card logo in the source: a float cannot rise above where
-      it appears in flow, and clear:right is what stacks it underneath.
-    {%- endcomment -%}
-    {%- if pr.funding_logo %}
-    <img class="funding-logo" src="{{ pr.funding_logo.src | relative_url }}"
-         alt="{{ pr.funding_logo.alt }}" loading="lazy">
-    {%- endif %}
-
-    <h3 class="card-title" style="font-size:1.3rem;">
-      {{ pr.acronym }}{% if pr.title != pr.acronym %} — {{ pr.title }}{% endif %}
-    </h3>
-    <p class="card-meta">
-      {{ pr.funder }} &middot; {{ pr.dates }} &middot; <strong>{{ pr.role }}</strong>
-      {%- if pr.grant %}<br>{{ pr.grant }}{% endif %}
-    </p>
-
-    <p>{{ pr.summary }}</p>
-
-    {%- if pr.work_packages %}
-    <ul class="small">
-      {%- for wp in pr.work_packages %}<li>{{ wp }}</li>{% endfor %}
-    </ul>
-    {%- endif %}
-
-    {%- if pr.note %}<p class="small"><em>{{ pr.note }}</em></p>{% endif %}
-
-    {%- if pr.links and pr.links.size > 0 %}
-    <div class="btn-row" style="margin-bottom:0;">
-      {%- for l in pr.links %}
-      <a class="btn" href="{{ l.url }}" rel="noopener">{{ l.text }}</a>
-      {%- endfor %}
-    </div>
-    {%- endif %}
-
-  </article>
+  {%- for pr in site.data.projects.collaborations %}
+  {%- include project-card.html pr=pr %}
   {%- endfor %}
 </section>
 
