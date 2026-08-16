@@ -7,7 +7,7 @@ Used by both sections of projects.html — the projects led here, and the ones
 led elsewhere — so the two never drift apart in layout.
 {%- endcomment -%}
 {%- assign pr = include.pr -%}
-<article class="card section" id="{{ pr.acronym | downcase | replace: ' ', '-' }}"
+<article class="card section" id="{{ pr.slug | default: pr.acronym | downcase | replace: ' ', '-' }}"
          style="{% if pr.flagship %}border-color: var(--accent-dim);{% endif %}">
 
   {%- if pr.logo %}
