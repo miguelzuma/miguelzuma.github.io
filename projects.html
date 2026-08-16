@@ -4,10 +4,10 @@ nav: projects
 title: "Projects & Funding"
 eyebrow: "Programs"
 lede: >-
-  Three programs support the group's work, the largest of them the GLOW ERC
-  Consolidator Grant. Together they fund postdoctoral and doctoral positions,
-  the development of public software, and an explicit outreach commitment. A
-  fourth grant, led elsewhere, draws on the same work.
+  Three programs support the group's work: GLOW, With Einstein on Crooked
+  Paths and the Ramón y Cajal program. Together they fund postdoctoral and
+  doctoral positions, the development of public software, and an explicit
+  outreach commitment. A fourth grant, led elsewhere, draws on the same work.
 description: >-
   Research projects and funding led by Miguel Zumalacárregui: the GLOW ERC
   Consolidator Grant, With Einstein on Crooked Paths, the Ramón y Cajal
@@ -15,14 +15,14 @@ description: >-
 ---
 
 <p class="page-toc">
-  On this page: the <a href="#current">projects I lead</a>, the
-  <a href="#collaborations">projects led by others</a> that I contribute to,
-  and the <a href="#positions">previous positions and fellowships</a> that have
-  supported the work.
+  On this page: the <a href="#current">current projects</a>, the grants
+  <a href="#collaborations">contributed to</a>, and the
+  <a href="#positions">past projects and fellowships</a> that have supported
+  the work.
 </p>
 
 <section class="section" id="current">
-  <h2>Projects I lead</h2>
+  <h2>Current projects</h2>
 
   {%- for pr in site.data.projects.current %}
   {%- include project-card.html pr=pr %}
@@ -30,9 +30,8 @@ description: >-
 </section>
 
 <section class="section" id="collaborations">
-  <h2>Projects led by others</h2>
-  <p>Grants where I contribute a defined part of the science rather than
-  directing the whole.</p>
+  <h2>Contributing to</h2>
+  <p>Grants led elsewhere that draw on this work.</p>
 
   {%- for pr in site.data.projects.collaborations %}
   {%- include project-card.html pr=pr %}
@@ -40,7 +39,7 @@ description: >-
 </section>
 
 <section class="section" id="positions">
-  <h2>Previous positions and fellowships</h2>
+  <h2>Past projects and fellowships</h2>
 
   <div class="grid grid-2">
     {%- for p in site.data.projects.positions %}
