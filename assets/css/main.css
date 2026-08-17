@@ -540,6 +540,122 @@ figure.float-left {
 .section::after,
 .clearfix::after { content: ""; display: block; clear: both; }
 
+/* ---- Einstein-predictions rosette (venn-glyph.html) ------------------ */
+
+/* Four circles = the predictions; the dashed frame = general relativity
+   itself. Everything starts dim; a `lit-<set>` class on the <svg> (baked in
+   for heading glyphs, toggled by venn.js on the hero) brightens a set.
+   `venn-focus` marks that a selection is active, which pushes the rest
+   further back so the lit sets read as the figure, not merely brighter. */
+
+.venn-set circle {
+	fill: currentColor;
+	fill-opacity: 0.14;
+	stroke: currentColor;
+	stroke-opacity: 0.5;
+	stroke-width: 1.5;
+	transition: fill-opacity 0.25s, stroke-opacity 0.25s;
+}
+
+.venn-set text {
+	fill: var(--text-soft);
+	font-size: 13px;
+	transition: fill 0.25s;
+}
+
+.venn-set-cosmology  { color: #3f9d6e; }
+.venn-set-blackholes { color: #c96a4a; }
+.venn-set-lensing    { color: var(--accent-dim); }
+.venn-set-waves      { color: #5583d9; }
+
+.venn-frame {
+	fill: none;
+	stroke: var(--text-mute);
+	stroke-opacity: 0.55;
+	stroke-width: 1.5;
+	stroke-dasharray: 5 5;
+	transition: stroke 0.25s, stroke-opacity 0.25s;
+}
+
+.venn-flabel {
+	fill: var(--text-mute);
+	font-size: 10px;
+	letter-spacing: 0.14em;
+	transition: fill 0.25s;
+}
+
+/* While a strand is selected, unlit sets recede... */
+.venn-focus .venn-set circle { fill-opacity: 0.05; stroke-opacity: 0.25; }
+.venn-focus .venn-set text   { fill: var(--text-mute); }
+
+/* ...and the lit ones come forward. */
+.venn-focus.lit-cosmology  .venn-set-cosmology  circle,
+.venn-focus.lit-blackholes .venn-set-blackholes circle,
+.venn-focus.lit-lensing    .venn-set-lensing    circle,
+.venn-focus.lit-waves      .venn-set-waves      circle {
+	fill-opacity: 0.4;
+	stroke-opacity: 1;
+}
+
+.venn-focus.lit-cosmology  .venn-set-cosmology  text,
+.venn-focus.lit-blackholes .venn-set-blackholes text,
+.venn-focus.lit-lensing    .venn-set-lensing    text,
+.venn-focus.lit-waves      .venn-set-waves      text {
+	fill: var(--text);
+}
+
+.venn-focus.lit-frame .venn-frame  { stroke: var(--accent); stroke-opacity: 1; }
+.venn-focus.lit-frame .venn-flabel { fill: var(--accent); }
+
+@media (prefers-reduced-motion: reduce) {
+	.venn-set circle, .venn-set text, .venn-frame, .venn-flabel {
+		transition: none;
+	}
+}
+
+/* Hero: diagram beside the strand legend, stacking when narrow */
+.venn-hero {
+	display: flex;
+	align-items: center;
+	gap: 1rem 2rem;
+	flex-wrap: wrap;
+	margin: 1.6rem 0;
+}
+
+.venn-hero-svg { flex: 1 1 280px; max-width: 380px; height: auto; }
+
+.venn-legend {
+	flex: 1 1 240px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.venn-legend li + li { margin-top: 0.15rem; }
+
+.venn-legend a {
+	display: block;
+	padding: 0.45rem 0.7rem;
+	border-left: 2px solid var(--border);
+	color: var(--text-soft);
+	text-decoration: none;
+}
+
+.venn-legend a:hover,
+.venn-legend a:focus-visible {
+	color: var(--text);
+	border-left-color: var(--accent);
+	background: var(--bg-raised);
+}
+
+/* Section-heading locator: the same rosette, small and decorative */
+h2 .venn-glyph {
+	float: right;
+	width: 56px;
+	height: 42px;
+	margin: 0.1rem 0 0 1rem;
+}
+
 /* ---- Responsive embeds ----------------------------------------------- */
 
 .video {

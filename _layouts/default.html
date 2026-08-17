@@ -20,6 +20,9 @@
 {%- endif %}
 <script src="{{ '/assets/js/anchor-aliases.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/external-links.js' | relative_url }}" defer></script>
+{%- if page.nav == 'research' %}
+<script src="{{ '/assets/js/venn.js' | relative_url }}" defer></script>
+{%- endif %}
 
 </body>
 </html>

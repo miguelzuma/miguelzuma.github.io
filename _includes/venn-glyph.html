@@ -1,0 +1,49 @@
+{%- comment -%}
+The Einstein-predictions rosette: four circles (cosmology, black holes,
+gravitational lensing, gravitational waves) inside a dashed frame that stands
+for general relativity itself. Work on modified gravity lights the frame, not
+a circle — the theory is the canvas the predictions are drawn on.
+
+Two forms from one geometry:
+
+    {% include venn-glyph.html hero=true %}
+        Full-size labeled diagram. Starts unlit; venn.js adds
+        `venn-focus lit-<set>` classes while a legend link is hovered.
+
+    {% include venn-glyph.html lit="lensing waves" %}
+        Small decorative locator for a section heading, permanently lit
+        with the named sets. Sets: cosmology blackholes lensing waves frame.
+
+All appearance lives in main.css under `.venn`.
+{%- endcomment -%}
+{%- assign lit = include.lit | default: "" | split: " " -%}
+{%- capture litcls %}{% for s in lit %} lit-{{ s }}{% endfor %}{% endcapture -%}
+{%- if include.hero -%}
+<svg class="venn venn-hero-svg" viewBox="0 0 320 240" role="img" aria-labelledby="venn-title">
+  <title id="venn-title">The research areas drawn as four predictions of
+    general relativity — cosmology, black holes, gravitational lensing and
+    gravitational waves — inside the theory that contains them.</title>
+{%- else -%}
+<svg class="venn venn-glyph venn-focus{{ litcls }}" viewBox="0 0 320 240" aria-hidden="true" focusable="false">
+{%- endif %}
+  <rect class="venn-frame" x="10" y="10" width="300" height="220" rx="18"/>
+  {%- if include.hero %}
+  <text class="venn-flabel" x="160" y="30" text-anchor="middle">GENERAL RELATIVITY</text>
+  {%- endif %}
+  <g class="venn-set venn-set-cosmology">
+    <circle cx="126" cy="90" r="58"/>
+    {%- if include.hero %}<text x="96" y="74" text-anchor="middle">Cosmology</text>{% endif %}
+  </g>
+  <g class="venn-set venn-set-blackholes">
+    <circle cx="194" cy="90" r="58"/>
+    {%- if include.hero %}<text x="224" y="74" text-anchor="middle">Black holes</text>{% endif %}
+  </g>
+  <g class="venn-set venn-set-lensing">
+    <circle cx="126" cy="150" r="58"/>
+    {%- if include.hero %}<text x="96" y="164" text-anchor="middle">Gravitational<tspan x="96" dy="13">lensing</tspan></text>{% endif %}
+  </g>
+  <g class="venn-set venn-set-waves">
+    <circle cx="194" cy="150" r="58"/>
+    {%- if include.hero %}<text x="224" y="164" text-anchor="middle">Gravitational<tspan x="224" dy="13">waves</tspan></text>{% endif %}
+  </g>
+</svg>
