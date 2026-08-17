@@ -564,7 +564,7 @@ figure.float-left {
 }
 
 .venn-set-cosmology  { color: #3f9d6e; }
-.venn-set-blackholes { color: #c96a4a; }
+.venn-set-blackholes { color: #d9a63f; }
 .venn-set-lensing    { color: var(--accent-dim); }
 .venn-set-waves      { color: #5583d9; }
 
@@ -648,12 +648,26 @@ figure.float-left {
 	background: var(--bg-raised);
 }
 
-/* Section-heading locator: the same rosette, small and decorative */
-h2 .venn-glyph {
+/* Section-heading locator: the same rosette, small, linking back to the
+   hero diagram (#overview) as a "you are here" that can take you home */
+h2 .venn-glyph-link {
 	float: right;
+	display: block;
+	padding: 2px 4px;
+	margin: 0 0 0 1rem;
+	border-radius: 8px;
+	line-height: 0;
+}
+
+h2 .venn-glyph-link:hover,
+h2 .venn-glyph-link:focus-visible {
+	background: var(--bg-raised);
+	box-shadow: 0 0 0 1px var(--border-strong);
+}
+
+h2 .venn-glyph {
 	width: 56px;
-	height: 42px;
-	margin: 0.1rem 0 0 1rem;
+	height: 44px;
 }
 
 /* ---- Responsive embeds ----------------------------------------------- */

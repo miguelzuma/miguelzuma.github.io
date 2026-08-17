@@ -11,39 +11,43 @@ Two forms from one geometry:
         `venn-focus lit-<set>` classes while a legend link is hovered.
 
     {% include venn-glyph.html lit="lensing waves" %}
-        Small decorative locator for a section heading, permanently lit
-        with the named sets. Sets: cosmology blackholes lensing waves frame.
+        Small locator for a section heading, permanently lit with the named
+        sets, wrapped in a link back to the hero diagram (`#overview`).
+        Sets: cosmology blackholes lensing waves frame.
 
 All appearance lives in main.css under `.venn`.
 {%- endcomment -%}
 {%- assign lit = include.lit | default: "" | split: " " -%}
 {%- capture litcls %}{% for s in lit %} lit-{{ s }}{% endfor %}{% endcapture -%}
 {%- if include.hero -%}
-<svg class="venn venn-hero-svg" viewBox="0 0 320 240" role="img" aria-labelledby="venn-title">
+<svg class="venn venn-hero-svg" viewBox="0 0 320 252" role="img" aria-labelledby="venn-title">
   <title id="venn-title">The research areas drawn as four predictions of
     general relativity — cosmology, black holes, gravitational lensing and
     gravitational waves — inside the theory that contains them.</title>
 {%- else -%}
-<svg class="venn venn-glyph venn-focus{{ litcls }}" viewBox="0 0 320 240" aria-hidden="true" focusable="false">
+<a class="venn-glyph-link" href="#overview"
+   aria-label="This section on the research overview diagram">
+<svg class="venn venn-glyph venn-focus{{ litcls }}" viewBox="0 0 320 252" aria-hidden="true" focusable="false">
 {%- endif %}
-  <rect class="venn-frame" x="10" y="10" width="300" height="220" rx="18"/>
+  <rect class="venn-frame" x="10" y="10" width="300" height="232" rx="18"/>
   {%- if include.hero %}
   <text class="venn-flabel" x="160" y="30" text-anchor="middle">GENERAL RELATIVITY</text>
   {%- endif %}
   <g class="venn-set venn-set-cosmology">
-    <circle cx="126" cy="90" r="58"/>
-    {%- if include.hero %}<text x="96" y="74" text-anchor="middle">Cosmology</text>{% endif %}
+    <circle cx="126" cy="104" r="58"/>
+    {%- if include.hero %}<text x="96" y="88" text-anchor="middle">Cosmology</text>{% endif %}
   </g>
   <g class="venn-set venn-set-blackholes">
-    <circle cx="194" cy="90" r="58"/>
-    {%- if include.hero %}<text x="224" y="74" text-anchor="middle">Black holes</text>{% endif %}
+    <circle cx="194" cy="104" r="58"/>
+    {%- if include.hero %}<text x="224" y="88" text-anchor="middle">Black holes</text>{% endif %}
   </g>
   <g class="venn-set venn-set-lensing">
-    <circle cx="126" cy="150" r="58"/>
-    {%- if include.hero %}<text x="96" y="164" text-anchor="middle">Gravitational<tspan x="96" dy="13">lensing</tspan></text>{% endif %}
+    <circle cx="126" cy="164" r="58"/>
+    {%- if include.hero %}<text x="96" y="178" text-anchor="middle">Gravitational<tspan x="96" dy="13">lensing</tspan></text>{% endif %}
   </g>
   <g class="venn-set venn-set-waves">
-    <circle cx="194" cy="150" r="58"/>
-    {%- if include.hero %}<text x="224" y="164" text-anchor="middle">Gravitational<tspan x="224" dy="13">waves</tspan></text>{% endif %}
+    <circle cx="194" cy="164" r="58"/>
+    {%- if include.hero %}<text x="224" y="178" text-anchor="middle">Gravitational<tspan x="224" dy="13">waves</tspan></text>{% endif %}
   </g>
 </svg>
+{%- unless include.hero %}</a>{% endunless %}
