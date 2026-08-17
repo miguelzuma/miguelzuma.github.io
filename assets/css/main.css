@@ -563,10 +563,10 @@ figure.float-left {
 	transition: fill 0.25s;
 }
 
-.venn-set-cosmology  { color: #3f9d6e; }
-.venn-set-blackholes { color: #d9a63f; }
+.venn-set-cosmology  { color: #d9a63f; }
+.venn-set-blackholes { color: #5583d9; }
 .venn-set-lensing    { color: var(--accent-dim); }
-.venn-set-waves      { color: #5583d9; }
+.venn-set-waves      { color: #3f9d6e; }
 
 .venn-frame {
 	fill: none;
