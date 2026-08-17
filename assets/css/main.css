@@ -666,8 +666,24 @@ h2 .venn-glyph-link:focus-visible {
 }
 
 h2 .venn-glyph {
-	width: 56px;
-	height: 44px;
+	width: 76px;
+	height: 60px;
+}
+
+/* Acronyms stand in for the full names at locator size */
+.venn-set .venn-abbr {
+	font-size: 34px;
+	font-weight: 650;
+	fill: var(--text-mute);
+	fill-opacity: 0.55;
+}
+
+.venn-focus.lit-cosmology  .venn-set-cosmology  .venn-abbr,
+.venn-focus.lit-blackholes .venn-set-blackholes .venn-abbr,
+.venn-focus.lit-lensing    .venn-set-lensing    .venn-abbr,
+.venn-focus.lit-waves      .venn-set-waves      .venn-abbr {
+	fill: var(--text);
+	fill-opacity: 1;
 }
 
 /* ---- Responsive embeds ----------------------------------------------- */

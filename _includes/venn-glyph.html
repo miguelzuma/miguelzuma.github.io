@@ -34,19 +34,23 @@ All appearance lives in main.css under `.venn`.
   <text class="venn-flabel" x="160" y="30" text-anchor="middle">GENERAL RELATIVITY</text>
   {%- endif %}
   <g class="venn-set venn-set-cosmology">
-    <circle cx="126" cy="104" r="58"/>
+        <circle cx="126" cy="104" r="58"/>
+    {%- unless include.hero %}<text class="venn-abbr" x="98" y="108" text-anchor="middle">C</text>{% endunless %}
     {%- if include.hero %}<text x="96" y="88" text-anchor="middle">Cosmology</text>{% endif %}
   </g>
   <g class="venn-set venn-set-blackholes">
-    <circle cx="194" cy="104" r="58"/>
+        <circle cx="194" cy="104" r="58"/>
+    {%- unless include.hero %}<text class="venn-abbr" x="222" y="108" text-anchor="middle">BH</text>{% endunless %}
     {%- if include.hero %}<text x="224" y="88" text-anchor="middle">Black holes</text>{% endif %}
   </g>
   <g class="venn-set venn-set-lensing">
-    <circle cx="126" cy="164" r="58"/>
+        <circle cx="126" cy="164" r="58"/>
+    {%- unless include.hero %}<text class="venn-abbr" x="98" y="182" text-anchor="middle">GL</text>{% endunless %}
     {%- if include.hero %}<text x="96" y="178" text-anchor="middle">Gravitational<tspan x="96" dy="13">lensing</tspan></text>{% endif %}
   </g>
   <g class="venn-set venn-set-waves">
-    <circle cx="194" cy="164" r="58"/>
+        <circle cx="194" cy="164" r="58"/>
+    {%- unless include.hero %}<text class="venn-abbr" x="222" y="182" text-anchor="middle">GW</text>{% endunless %}
     {%- if include.hero %}<text x="224" y="178" text-anchor="middle">Gravitational<tspan x="224" dy="13">waves</tspan></text>{% endif %}
   </g>
 </svg>
