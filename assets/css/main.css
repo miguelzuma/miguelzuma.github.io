@@ -670,20 +670,20 @@ h2 .venn-glyph {
 	height: 60px;
 }
 
-/* Acronyms stand in for the full names at locator size */
+/* Acronyms stand in for the full names at locator size, centered on their
+   circles and shown only for the lit sets */
 .venn-set .venn-abbr {
+	display: none;
 	font-size: 34px;
 	font-weight: 650;
-	fill: var(--text-mute);
-	fill-opacity: 0.55;
+	fill: var(--text);
 }
 
 .venn-focus.lit-cosmology  .venn-set-cosmology  .venn-abbr,
 .venn-focus.lit-blackholes .venn-set-blackholes .venn-abbr,
 .venn-focus.lit-lensing    .venn-set-lensing    .venn-abbr,
 .venn-focus.lit-waves      .venn-set-waves      .venn-abbr {
-	fill: var(--text);
-	fill-opacity: 1;
+	display: inline;
 }
 
 /* ---- Responsive embeds ----------------------------------------------- */
