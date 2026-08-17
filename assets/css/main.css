@@ -1006,7 +1006,16 @@ h2 + .stage-heading { margin-top: 1.2rem; }
 	margin: 2rem 0 0;
 }
 
-.photo-strip figure { margin: 0; }
+/* display:table shrinks each figure to its image, so the caption wraps at
+   the photo's width instead of spilling into the gap beside it */
+.photo-strip figure { margin: 0; display: table; }
+
+.photo-strip figcaption {
+	display: table-caption;
+	caption-side: bottom;
+	font-size: 0.78rem;
+	margin-top: 0.35rem;
+}
 
 .photo-strip img {
 	height: 190px;
