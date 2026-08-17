@@ -38,8 +38,20 @@ sections:
   gravitational waves (ripples in spacetime itself), black holes (regions where
   gravity is strong enough to trap light) and gravitational lensing (the
   distortion of signals traveling through the Universe). I use these phenomena
-  to explore astrophysics, dark matter, dark energy and gravity.
+  to explore astrophysics, dark matter, dark energy and gravity — including
+  general relativity itself, the theory that contains all four.
 </p>
+
+<div class="venn-hero">
+  {% include venn-glyph.html hero=true %}
+  <ul class="venn-legend">
+    <li><a href="#lensing-waves" data-lights="lensing waves">Wave-optics lensing phenomena</a></li>
+    <li><a href="#dark-matter" data-lights="cosmology lensing waves">Dark matter and small-scale structure</a></li>
+    <li><a href="#strong-field" data-lights="blackholes lensing waves">Strong-field and multi-messenger lensing</a></li>
+    <li><a href="#tests-of-gravity" data-lights="frame waves cosmology">Tests of gravity and dark energy</a></li>
+    <li><a href="#cosmology" data-lights="frame cosmology">Cosmology and gravity theories</a></li>
+  </ul>
+</div>
 
 <figure class="skymap">
   <div class="skymap-frame">
@@ -107,7 +119,7 @@ sections:
 
 <!-- ---------- Wave optics ---------- -->
 <section class="section" id="lensing-waves">
-  <h2>Wave-optics lensing phenomena</h2>
+  <h2>{% include venn-glyph.html lit="lensing waves" %}Wave-optics lensing phenomena</h2>
 
   <p class="lede">
     A gravitational wave that passes near a mass is not simply magnified. When
@@ -209,7 +221,7 @@ sections:
 
 <!-- ---------- Dark matter ---------- -->
 <section class="section" id="dark-matter">
-  <h2>Dark matter and small-scale structure</h2>
+  <h2>{% include venn-glyph.html lit="cosmology lensing waves" %}Dark matter and small-scale structure</h2>
 
   <p>
     Cold dark matter and its alternatives — e.g. warm, fuzzy,
@@ -303,7 +315,7 @@ sections:
 
 <!-- ---------- Strong field & multi-messenger ---------- -->
 <section class="section" id="strong-field">
-  <h2>Strong-field and multi-messenger lensing</h2>
+  <h2>{% include venn-glyph.html lit="blackholes lensing waves" %}Strong-field and multi-messenger lensing</h2>
 
   <figure class="float-right" style="width:340px;">
     <img src="{{ '/imgs/BH_as_telescopes.png' | relative_url }}"
@@ -382,7 +394,7 @@ sections:
 
 <!-- ---------- Tests of gravity ---------- -->
 <section class="section" id="tests-of-gravity">
-  <h2>Tests of gravity and dark energy</h2>
+  <h2>{% include venn-glyph.html lit="frame waves cosmology" %}Tests of gravity and dark energy</h2>
 
   <figure class="float-right" style="width:210px;">
     <img src="{{ '/imgs/LIB_results_Goyal_23_V.png' | relative_url }}"
@@ -539,7 +551,7 @@ sections:
      FOUNDATIONS
      ================================================================== -->
 
-<h2 id="cosmology">Cosmology and gravity theories</h2>
+<h2 id="cosmology">{% include venn-glyph.html lit="frame cosmology" %}Cosmology and gravity theories</h2>
 
 <p class="lede">
   Cosmological tests of dark energy, and the scalar–tensor theories behind them.
