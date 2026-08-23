@@ -43,17 +43,36 @@ Markdown fighting inline tags.
 ## 2. Local preview
 
 ```sh
+tools/preview.sh                          # build, then serve on :8794
+```
+
+Equivalent to, and a wrapper around:
+
+```sh
 ruby tools/jekyll_build.rb . _site        # "Built 12 pages -> _site"
-cd _site && python3 -m http.server 8794 --bind 127.0.0.1
+cd _site && python3 -m http.server 8794 --bind 0.0.0.0
 ```
 
 `tools/jekyll_build.rb` exists because RubyGems' dependency activation broke on
 this machine; it loads Jekyll from `~/.local/share/gem` directly. Use it rather
 than `bundle exec jekyll`.
 
-Bind to `0.0.0.0` instead of `127.0.0.1` to read the site on a phone on the same
-Wi-Fi (find the address with `ip -4 addr show scope global`). That exposes the
-draft to the local network, so stop the server afterwards.
+`preview.sh` binds to `0.0.0.0` so the site can be read on a phone on the same
+Wi-Fi, and prints that address on startup. That exposes the draft to the local
+network, so stop the server afterwards; `BIND=127.0.0.1 tools/preview.sh` keeps
+it to this machine, and `PORT=` moves it.
+
+Two other scripts produce things outside the site itself:
+
+```sh
+tools/make_review_doc.sh                  # site prose -> ODT + PDF in Dropbox
+python3 tools/make_icons.py [scheme]      # favicon.svg, favicon-32, apple-touch
+```
+
+`make_review_doc.sh` extracts the visible prose with `tools/extract_site_text.py`
+(navigation, media and the research rosette's legend dropped; figure captions
+kept) and converts it for offline revision. `make_icons.py` regenerates the
+three icon files from the baked Computer Modern outlines of the site's mark.
 
 **CSS and JS cache hard. Always hard-reload (`ctrl+shift+r`) before believing
 what the browser shows.**
