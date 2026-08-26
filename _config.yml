@@ -1,5 +1,9 @@
 title: "Miguel Zumalacárregui"
 tagline: "Gravitation, Cosmology and Data Interpretation"
+# The hero line under the name. The tagline above is the field list for the
+# <title> and the research-page eyebrow, where a reader is scanning for a
+# subject; this one is the sentence a human reads on the home page.
+slogan: "Opening windows into gravitation, astrophysics and cosmology"
 description: >-
   Miguel Zumalacárregui leads a research program on wave-optics lensing, dark
   matter, black holes and tests of gravity at the Max Planck Institute for

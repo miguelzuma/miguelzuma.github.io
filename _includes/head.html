@@ -4,7 +4,7 @@
 {%- endcomment -%}
 {%- assign page_title = page.title | default: site.title -%}
 {%- if page.nav == "home" -%}
-  {%- assign full_title = "Miguel Zumalacárregui | Gravitation, Cosmology and Data Interpretation" -%}
+  {%- assign full_title = site.title | append: " | " | append: site.tagline -%}
 {%- else -%}
   {%- assign full_title = page_title | append: " | Miguel Zumalacárregui" -%}
 {%- endif -%}

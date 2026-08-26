@@ -426,6 +426,10 @@ main { padding-bottom: 3rem; }
 	font-weight: 550;
 	color: var(--accent);
 	margin: 0 0 1rem;
+	/* One line on a wide screen; at the widths where it has to wrap, split it
+	   evenly rather than leaving a single word stranded on the second line.
+	   Ignored by browsers without it, which just get the default wrap. */
+	text-wrap: balance;
 }
 
 .hero-portrait {
