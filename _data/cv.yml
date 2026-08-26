@@ -287,7 +287,7 @@ talks:
 
 languages: "Spanish (native), English (C2), German (C1)."
 
-# The selection from CVA_Zumalacarregui_2026, plus the GW231123 paper accepted
+# The selection from CVA_Zumalacarregui_2026, plus the GW231123 paper published
 # since. Newest first. Citation counts and contribution statements stay in the
 # application documents — this is a website, not a funding form.
 #
@@ -296,7 +296,7 @@ selected_publications:
   - lead: "Across the Universe: GW231123 as a magnified and diffracted black hole merger"
     lead_url: "https://inspirehep.net/literature/3094475"
     meta:
-      - "S. Goyal, H. Villarrubia-Rojo, M. Zumalacárregui · Astrophys. J. Lett., accepted · arXiv:2512.17631"
+      - "S. Goyal, H. Villarrubia-Rojo, M. Zumalacárregui · Astrophys. J. Lett. 1008, L12 (2026)"
 
   - lead: "Black holes as telescopes: discovering supermassive binaries through quasi-periodic lensed starlight"
     lead_url: "https://inspirehep.net/literature/2937368"

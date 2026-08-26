@@ -25,16 +25,16 @@
     - text: "AEI press release"
       url: "https://www.aei.mpg.de/1407139/new-method-could-reveal-hidden-supermassive-black-hole-binaries"
 
-# CHECK THE MONTH: dated to the acceptance, which is what makes it news again.
-# August is an assumption — the preprint went out in December 2025.
-- date: 2026-08-01
+- date: 2026-08-25
   text: >-
     Our analysis of GW231123 as a magnified and diffracted black-hole merger,
-    the first compelling candidate of its kind, has been accepted in
+    the first compelling candidate of its kind, was published in
     The Astrophysical Journal Letters.
   links:
-    - text: "arXiv:2512.17631"
-      url: "https://arxiv.org/abs/2512.17631"
+    - text: "ApJL 1008, L12"
+      url: "https://doi.org/10.3847/2041-8213/ae93b1"
+    - text: "AEI press release"
+      url: "https://www.aei.mpg.de/1490509/do-black-holes-pretend-to-have-large-masses"
     - text: "Cosmology Talk"
       url: "https://youtu.be/ZGqOpDTL8k4"
 
