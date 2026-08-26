@@ -1,9 +1,17 @@
 title: "Miguel Zumalacárregui"
-tagline: "Gravitation, Cosmology and Data Interpretation"
-# The hero line under the name. The tagline above is the field list for the
-# <title> and the research-page eyebrow, where a reader is scanning for a
-# subject; this one is the sentence a human reads on the home page.
-slogan: "Opening windows into gravitation, astrophysics and cosmology"
+# Both strings land in HTML text, so the ampersand is stored escaped.
+#
+# tagline  the field list, used only in <title> and the share cards, where a
+#          reader (or a search engine) is scanning for a subject.
+# slogan   the sentence a human reads under the name on the home page.
+#
+# Topics live here; the research page is labeled by approach instead
+# ("Theory, phenomenology & data interpretation"), so the two do not repeat
+# each other. Gravitation leads because it is the theory and the other two
+# are the arenas it is applied in -- the same frame-and-predictions structure
+# the research-page rosette draws.
+tagline: "Gravitation, Cosmology &amp; Astrophysics"
+slogan: "Exploring gravitation, cosmology &amp; astrophysics"
 description: >-
   Miguel Zumalacárregui leads a research program on wave-optics lensing, dark
   matter, black holes and tests of gravity at the Max Planck Institute for
