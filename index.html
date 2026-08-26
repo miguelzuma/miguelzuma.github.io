@@ -44,32 +44,13 @@ description: >-
   </section>
 
   <!-- ============ News ============
-       Events, from _data/news.yml, newest first. The "New" flag is driven by
-       the item's own date against FRESH_DAYS below, so it expires by itself —
-       at the next site build, which for GitHub Pages means the next push. -->
-  {%- assign FRESH_DAYS = 90 %}
-  {%- assign fresh_window = FRESH_DAYS | times: 86400 %}
-  {%- assign fresh_after = site.time | date: '%s' | plus: 0 | minus: fresh_window %}
-  {%- assign news = site.data.news | sort: 'date' | reverse %}
+       The four most recent items from _data/news.yml; news.html carries the
+       full archive. Markup and the "New" flag live in the shared include so
+       the two cannot drift apart. -->
   <section class="section" aria-labelledby="news-heading">
     <h2 id="news-heading">News</h2>
-    <ul class="news">
-      {%- for n in news limit: 4 %}
-      {%- assign stamp = n.date | date: '%s' | plus: 0 %}
-      <li>
-        <time class="news-date" datetime="{{ n.date | date: '%Y-%m' }}">{{ n.date | date: '%b %Y' }}</time>
-        <p class="news-body">
-          {%- if stamp > fresh_after %}<span class="news-flag">New</span>{% endif -%}
-          {{ n.text }}
-          {%- if n.links %}
-          <span class="news-links">
-            {%- for l in n.links %}<a href="{{ l.url }}" rel="noopener">{{ l.text }}</a>{% unless forloop.last %} &middot; {% endunless %}{% endfor -%}
-          </span>
-          {%- endif %}
-        </p>
-      </li>
-      {%- endfor %}
-    </ul>
+    {% include news-list.html limit=4 %}
+    <p class="small"><a href="{{ '/news.html' | relative_url }}">All news &rarr;</a></p>
   </section>
 
   <!-- ============ Roles ============ -->

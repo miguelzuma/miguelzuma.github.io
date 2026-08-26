@@ -38,6 +38,15 @@
     - text: "Cosmology Talk"
       url: "https://youtu.be/ZGqOpDTL8k4"
 
+- date: 2026-05-29
+  text: >-
+    A machine-learning method for inferring microlensed gravitational waves,
+    fast enough to make wave-optics analysis routine, appeared in Physical
+    Review D.
+  links:
+    - text: "PRD 113, 104073"
+      url: "https://inspirehep.net/literature/3081783"
+
 - date: 2025-12-01
   text: >-
     GLOW, Gravitational Lensing of Waves, was awarded an ERC Consolidator Grant
@@ -47,3 +56,96 @@
       url: "https://www.aei.mpg.de/1359867/erc-consolidator-grant-for-miguel-zumalac-rregui"
     - text: "ERC results"
       url: "https://erc.europa.eu/news-events/news/erc-2025-consolidator-grants-results"
+
+- date: 2025-07-08
+  text: >-
+    Our model-independent reconstruction of the dark-energy density in light of
+    DESI BAO data was an Editors' Suggestion in Physical Review D.
+  links:
+    - text: "PRD 112, 023518"
+      url: "https://doi.org/10.1103/dj3k-84v4"
+    - text: "AEI feature"
+      url: "https://www.aei.mpg.de/1260854/a-model-independent-reconstruction-of-dark-energy-through-the-universe-s-history"
+
+- date: 2025-05-30
+  text: >-
+    GLoW, our code for wave-optics phenomena in gravitational lensing, was
+    released publicly alongside the paper describing its methods.
+  links:
+    - text: "PRD 111, 103539"
+      url: "https://inspirehep.net/literature/2826315"
+    - text: "GLoW on GitHub"
+      url: "https://github.com/miguelzuma/GLoW_public"
+
+- date: 2024-06-20
+  text: >-
+    Frequency- and polarization-dependent lensing of gravitational waves in
+    strong gravitational fields appeared in Physical Review D.
+  links:
+    - text: "PRD 109, 124045"
+      url: "https://inspirehep.net/literature/2151522"
+    - text: "AEI feature"
+      url: "https://www.aei.mpg.de/1183585/strong-space-time-curvature"
+
+- date: 2023-11-22
+  text: >-
+    Two papers extended wave-optics lensing to realistic structures: weakly
+    lensed signals as a probe of cosmic structure, and lensing as a probe of
+    halo properties and dark matter.
+  links:
+    - text: "PRD 108, 103532"
+      url: "https://inspirehep.net/literature/2667175"
+    - text: "PRD 108, 103529"
+      url: "https://inspirehep.net/literature/2617458"
+    - text: "MPG Yearbook 2023"
+      url: "https://www.mpg.de/21438017/aei_jb_2023"
+
+- date: 2023-08-23
+  text: >-
+    Our efficient methods for computing wave-optics amplification factors, and
+    their validation against symmetric lenses, appeared in Physical Review D.
+  links:
+    - text: "PRD 108, 043527"
+      url: "https://inspirehep.net/literature/2164124"
+
+- date: 2020-12-21
+  text: >-
+    Gravitational wave lensing beyond general relativity, on birefringence,
+    echoes and shadows, was an Editors' Suggestion in Physical Review D.
+  links:
+    - text: "PRD 102, 124048"
+      url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.102.124048"
+    - text: "AEI press release"
+      url: "https://www.aei.mpg.de/597240/testing-einstein-s-theory-with-lensing-of-gravitational-waves"
+
+- date: 2018-10-01
+  text: >-
+    Our limit on stellar-mass compact objects as dark matter, from the lensing
+    of type Ia supernovae, was an Editors' Suggestion in Physical Review
+    Letters with an APS Physics Viewpoint.
+  links:
+    - text: "PRL 121, 141101"
+      url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.121.141101"
+    - text: "Viewpoint"
+      url: "https://physics.aps.org/articles/v11/97"
+
+- date: 2017-12-18
+  text: >-
+    Dark energy after GW170817, on which scalar-tensor theories survive the
+    neutron-star merger's bound on the speed of gravity, was an Editors'
+    Suggestion in Physical Review Letters with an APS Physics Viewpoint.
+  links:
+    - text: "PRL 119, 251304"
+      url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.119.251304"
+    - text: "Viewpoint"
+      url: "https://physics.aps.org/articles/v10/134"
+
+- date: 2016-05-01
+  text: >-
+    hi_class, which extends the CLASS Einstein-Boltzmann solver to Horndeski's
+    theory, had its first public release.
+  links:
+    - text: "hiclass-code.net"
+      url: "https://hiclass-code.net"
+    - text: "JCAP 08 (2017) 019"
+      url: "https://inspirehep.net/literature/1462237"

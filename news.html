@@ -1,0 +1,24 @@
+---
+layout: page
+nav: news
+title: "News"
+eyebrow: "News"
+lede: >-
+  Papers, awards and releases, newest first.
+description: >-
+  News from Miguel Zumalacárregui: published results, grants, software
+  releases and press, with links to the papers and announcements behind them.
+---
+
+{%- comment -%}
+  The full archive. The home page shows the most recent few and links here;
+  this page never truncates.
+
+  Not in the top menu on purpose — the menu is for the parts of the site, and
+  news is a stream rather than a part. The home page and the footer carry it,
+  which is where a reader looks for a page that is not a section.
+{%- endcomment -%}
+<section class="section" aria-labelledby="all-news-heading">
+  <h2 id="all-news-heading">All news</h2>
+  {% include news-list.html %}
+</section>
