@@ -17,6 +17,9 @@ description: >-
   matter, black holes and tests of gravity at the Max Planck Institute for
   Gravitational Physics (Albert Einstein Institute).
 url: "https://miguelzuma.github.io"
+# GoatCounter site code -- stats at https://<code>.goatcounter.com/.
+# Empty disables analytics entirely (see _includes/analytics.html).
+goatcounter: "miguelzuma"
 baseurl: ""
 lang: en
 

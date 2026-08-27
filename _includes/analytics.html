@@ -1,0 +1,39 @@
+{%- comment -%}
+  Analytics: GoatCounter (https://www.goatcounter.com). Cookieless, stores no
+  personal data and sets nothing on the visitor's device, so no consent banner
+  is required -- which is the reason for choosing it over the alternatives.
+
+  The same setup the hi_class site uses, with one addition. That site is only
+  ever served from its real domain, but this one is previewed constantly with
+  tools/preview.sh, which binds 0.0.0.0 so a phone on the same network can
+  reach it. count.js skips localhost on its own, but a phone hitting
+  192.168.x.x is not localhost and would be counted as a real visitor. So the
+  host is checked against site.url before anything is requested.
+
+  Do Not Track is honoured before the script is fetched, so a reader who asks
+  not to be counted causes no request at all rather than one discarded at the
+  far end.
+
+  Set `goatcounter:` in _config.yml to the site code; leave it empty and this
+  emits nothing at all. Stats live at https://<code>.goatcounter.com/.
+{%- endcomment -%}
+{%- if site.goatcounter and site.goatcounter != '' -%}
+{%- assign prod_host = site.url | remove: 'https://' | remove: 'http://' | split: '/' | first -%}
+<script>
+(function () {
+	'use strict';
+	if (location.hostname !== {{ prod_host | jsonify }}) { return; }
+
+	var dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+	if (dnt === '1' || dnt === 'yes') { return; }
+
+	// count.js prefers a data-goatcounter attribute and falls back to this global.
+	window.goatcounter = { endpoint: 'https://{{ site.goatcounter }}.goatcounter.com/count' };
+
+	var s = document.createElement('script');
+	s.async = true;
+	s.src = 'https://gc.zgo.at/count.js';
+	document.head.appendChild(s);
+})();
+</script>
+{%- endif -%}
