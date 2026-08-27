@@ -7,7 +7,8 @@ point at it), or reference this absolute path:
 
     /home/mzuma/code/miguelzuma.github.io/docs/SITE_CONVENTIONS.md
 
-Everything below describes `miguelzuma.github.io`, the personal academic site.
+Everything below describes the personal academic site, served at
+`glow-astro.org` (repo formerly `miguelzuma.github.io`).
 The last section covers what changes for GLOW.
 
 ---

@@ -1,6 +1,6 @@
-# miguelzuma.github.io
+# glow-astro.org
 
-Personal academic site. Jekyll, built automatically by GitHub Pages — there is
+Personal academic site, served at `glow-astro.org`. Jekyll, built automatically by GitHub Pages — there is
 no build step to run before pushing.
 
 ## Where things live
