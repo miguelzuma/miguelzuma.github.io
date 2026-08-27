@@ -9,8 +9,8 @@ flagship:
     purpose: >-
       GLoW computes the amplification factor for gravitational waves propagating
       through a gravitational lens, in the wave-optics regime where diffraction
-      and interference matter. It handles general matter distributions — not only
-      the handful of symmetric lenses with closed-form solutions — by combining
+      and interference matter. It handles general matter distributions (not only
+      the handful of symmetric lenses with closed-form solutions) by combining
       contour-integration and time-domain methods with careful treatment of the
       singular Fermat potential, and it is fast enough to sit inside a
       parameter-estimation loop. It is the engine behind our analyses of
@@ -35,8 +35,8 @@ flagship:
     logo_alt: ""
     purpose: >-
       hi_class extends the CLASS Einstein–Boltzmann solver to general Horndeski
-      scalar–tensor theories, producing accurate cosmological observables — CMB
-      spectra, matter power spectra, background evolution — for essentially any
+      scalar–tensor theories, producing accurate cosmological observables (CMB
+      spectra, matter power spectra, background evolution) for essentially any
       dark-energy or modified-gravity model in that class. Fast and stable
       enough for Markov-chain analyses and interfaced with MontePython, it is
       used to confront gravity theories with cosmological data, and was behind

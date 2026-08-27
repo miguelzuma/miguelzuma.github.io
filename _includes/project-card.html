@@ -24,7 +24,7 @@ led elsewhere — so the two never drift apart in layout.
   {%- endif %}
 
   <h3 class="card-title" style="font-size:1.3rem;">
-    {{ pr.acronym }}{% if pr.title != pr.acronym %} — {{ pr.title }}{% endif %}
+    {{ pr.acronym }}{% if pr.title != pr.acronym %} ({{ pr.title }}){% endif %}
   </h3>
   <p class="card-meta">
     {{ pr.funder }} &middot; {{ pr.dates }} &middot; <strong>{{ pr.role }}</strong>

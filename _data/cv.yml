@@ -155,7 +155,7 @@ workshops:
 
 teaching_schools:
   - lead: "Gravitational waves"
-    lead_rest: " — TAE (Taller de Altas Energías), Benasque, 2024"
+    lead_rest: ", TAE (Taller de Altas Energías), Benasque, 2024"
     meta:
       - links:
           - text: "Slides"
@@ -166,14 +166,14 @@ teaching_schools:
       - "II Mesoamerican Workshop on Gravity and Cosmology, Chiapas, 2018"
 
   - lead: "Alternative gravity theories"
-    lead_rest: " — Cosmology School in the Canary Islands, 2017"
+    lead_rest: ", Cosmology School in the Canary Islands, 2017"
     meta:
       - links:
           - text: "Video lecture"
             url: "http://iactalks.iac.es/talks/view/1081"
 
   - lead: "School for Cosmology Tools"
-    lead_rest: " — IFT Madrid, 2017"
+    lead_rest: ", IFT Madrid, 2017"
     meta:
       - text: "Lectures on CLASS, hi_class and MontePython; material on the"
         links:
@@ -181,50 +181,50 @@ teaching_schools:
             url: "/talks.html#teaching"
 
   - lead: "Workshop on CLASS and MontePython"
-    lead_rest: " — MPIA Munich, 2014"
+    lead_rest: ", MPIA Munich, 2014"
 
 teaching_courses:
   - lead: "Berkeley Connect Instructor"
-    lead_rest: " — UC Berkeley, 2018–2019"
+    lead_rest: ", UC Berkeley, 2018–2019"
     meta:
       - "Two semesters of undergraduate mentoring and teaching"
 
   - lead: "Lecturer"
-    lead_rest: " — University of Heidelberg, 2014–2015"
+    lead_rest: ", University of Heidelberg, 2014–2015"
     meta:
       - "Advanced Cosmology; Introduction to CMB Physics; Statistical Mechanics; advanced seminar"
 
   - lead: "Teaching assistant"
-    lead_rest: " — University of Heidelberg, 2014–2015"
+    lead_rest: ", University of Heidelberg, 2014–2015"
     meta:
       - "Theoretical Astrophysics (graduate), with M. Bartelmann"
 
   - lead: "Teaching assistant"
-    lead_rest: " — Universidad Autónoma de Madrid, 2013"
+    lead_rest: ", Universidad Autónoma de Madrid, 2013"
     meta:
       - "Gravitation and Cosmology; Physics of the Cosmos"
 
   - lead: "Mini-course on inhomogeneous cosmologies"
-    lead_rest: " — University of Barcelona, 2012"
+    lead_rest: ", University of Barcelona, 2012"
 
 # Competitive awards and fellowships. The funded programs also appear on the
 # Projects page with their scope and dates; here they are listed as awards.
 # No amounts — this is a website, not a funding form.
 awards:
-  - "ERC Consolidator Grant (2025) — GLOW, Gravitational Lensing of Waves."
+  - "ERC Consolidator Grant (2025): GLOW, Gravitational Lensing of Waves."
   - "Ramón y Cajal Fellowship (2024 call, awarded 2025)."
-  - "Max Planck Society Annual Project (2024) — With Einstein on Crooked Paths."
+  - "Max Planck Society Annual Project (2024): With Einstein on Crooked Paths."
   - "R3 certification, Spanish Research Agency."
   - "Berkeley Connect Fellow, UC Berkeley (2018)."
   - "Marie Skłodowska-Curie Global Fellowship (2015)."
   - "Nordita Fellowship (2015)."
-  - "Yggdrasil Fellowship (2011) — research stay at ITA Oslo."
+  - "Yggdrasil Fellowship (2011): research stay at ITA Oslo."
   - "FPI doctoral fellowship (2008) and UAM Master's scholarship (2007)."
 
 panels:
   - "NASA Hubble Fellowship Program, Physics and Cosmology panel."
-  - "FCT — Portuguese Foundation for Science and Technology, Individual Support Call."
-  - "Max Planck Institute for Gravitational Physics — postdoctoral hiring committee, since 2020."
+  - "FCT (Portuguese Foundation for Science and Technology), Individual Support Call."
+  - "Max Planck Institute for Gravitational Physics, postdoctoral hiring committee, since 2020."
 
 agencies: >-
   European Research Council (Starting Grants), STFC/UKRI, Swiss National
@@ -241,54 +241,54 @@ refereeing: >-
 # Group page applies to people.
 talks:
   - lead: "IAS and Princeton University"
-    lead_rest: " — gravitational-wave meeting, Princeton, 2026 · seminar"
+    lead_rest: ", gravitational-wave meeting, Princeton, 2026 · seminar"
     meta:
       - "GW231123 as a diffracted and magnified black-hole merger"
 
   - lead: "Spanish & Portuguese Relativity Meeting"
-    lead_rest: " — Universidad de Murcia, 2026 · plenary"
+    lead_rest: ", Universidad de Murcia, 2026 · plenary"
     meta:
       - "Gravitational lensing of waves: a new window into astrophysics, dark matter and gravity"
 
   - lead: "Leibniz Institute for Astrophysics"
-    lead_rest: " — Potsdam, 2024 · institute colloquium"
+    lead_rest: ", Potsdam, 2024 · institute colloquium"
     meta:
       - "Gravitational lensing of waves"
 
   - lead: "New Frontiers in Strong Gravity"
-    lead_rest: " — Benasque, 2024 · plenary"
+    lead_rest: ", Benasque, 2024 · plenary"
     meta:
       - "Wave-optical phenomena in gravitational-wave lensing"
 
   - lead: "Workshop on Tensions in Cosmology"
-    lead_rest: " — Corfu, 2022 · plenary"
+    lead_rest: ", Corfu, 2022 · plenary"
     meta:
       - "Towards solutions to the Hubble problem beyond Einstein's gravity"
 
   - lead: "EuCAPT Annual Symposium"
-    lead_rest: " — CERN, 2022 · plenary review"
+    lead_rest: ", CERN, 2022 · plenary review"
     meta:
       - links:
           - text: "Dark energy and tests of gravity with cosmology and gravitational-wave propagation"
             url: "https://cds.cern.ch/record/2810852"
 
   - lead: "Institute of Theoretical Astrophysics"
-    lead_rest: " — University of Oslo, 2021 · institute colloquium"
+    lead_rest: ", University of Oslo, 2021 · institute colloquium"
     meta:
       - "The dark Universe in the era of gravitational-wave astronomy"
 
   - lead: "Progress in Old and New Themes in Cosmology"
-    lead_rest: " — Palais des Papes, Avignon, 2020 · plenary"
+    lead_rest: ", Palais des Papes, Avignon, 2020 · plenary"
     meta:
       - "Tests of gravity with gravitational waves"
 
   - lead: "COSMO"
-    lead_rest: " — Aachen University, 2019 · plenary"
+    lead_rest: ", Aachen University, 2019 · plenary"
     meta:
       - "Tests of dark energy and modified gravity"
 
   - lead: "Rencontres du Vietnam"
-    lead_rest: " — Very High Energy Phenomena in the Universe, 2018 · plenary"
+    lead_rest: ", Very High Energy Phenomena in the Universe, 2018 · plenary"
     meta:
       - "The dark Universe in the era of gravitational-wave astronomy"
 

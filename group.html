@@ -4,7 +4,7 @@ nav: group
 title: "Group"
 eyebrow: "People"
 lede: >-
-  A group working on wave-optics lensing — postdoctoral researchers, PhD and
+  My group works on wave-optics lensing: postdoctoral researchers, PhD and
   Master's students, and regular visitors. This page is a concise
   overview; the forthcoming GLOW project website will carry full profiles and
   project assignments.
@@ -93,7 +93,7 @@ sections:
   <ul class="people-list">
     {%- for p in people %}
     <li>
-      <strong>{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</strong>{% if p.role %} — {{ p.role }}{% if p.years %}, {{ p.years }}{% endif %}{% elsif p.years %} — {{ p.years }}{% endif %}{% if p.next %}<span class="next">{{ p.next }}</span>{% endif %}
+      <strong>{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</strong>{% if p.role %}, {{ p.role }}{% if p.years %}, {{ p.years }}{% endif %}{% elsif p.years %}, {{ p.years }}{% endif %}{% if p.next %}<span class="next">{{ p.next }}</span>{% endif %}
     </li>
     {%- endfor %}
   </ul>
@@ -113,7 +113,7 @@ sections:
   <ul class="people-list">
     {%- for p in people %}
     <li>
-      <strong>{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</strong>{% if p.role %} — {{ p.role }}{% if p.years %}, {{ p.years }}{% endif %}{% elsif p.years %} — {{ p.years }}{% endif %}{% if p.next %}<span class="next">{{ p.next }}</span>{% endif %}
+      <strong>{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</strong>{% if p.role %}, {{ p.role }}{% if p.years %}, {{ p.years }}{% endif %}{% elsif p.years %}, {{ p.years }}{% endif %}{% if p.next %}<span class="next">{{ p.next }}</span>{% endif %}
     </li>
     {%- endfor %}
   </ul>
@@ -132,8 +132,8 @@ sections:
     {%- for p in vis %}
     <li>
       <strong>{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</strong>
-      {%- if p.role %} — {{ p.role }}{% if p.years %}, {{ p.years }}{% endif %}
-      {%- elsif p.years %} — {{ p.years }}{% endif %}
+      {%- if p.role %}, {{ p.role }}{% if p.years %}, {{ p.years }}{% endif %}
+      {%- elsif p.years %}, {{ p.years }}{% endif %}
       {%- if p.duration %} ({{ p.duration }}){% endif %}
       {%- if p.topic %} &middot; {{ p.topic }}{% endif %}
     </li>
@@ -146,7 +146,7 @@ sections:
 
   <p class="lede">
     Funded positions are advertised publicly and applications go through the
-    advert. Brief questions are welcome; a reply is not always possible.
+    advert. Brief questions are welcome, although a reply is not always possible.
   </p>
 
   <div class="grid grid-2">
@@ -160,7 +160,7 @@ sections:
         <a href="https://inspirehep.net/jobs" rel="noopener">INSPIRE-HEP</a>.
         That is where to look, and applying through the advert is what counts.
         A brief expression of interest or a specific question about a position
-        is welcome — but please do not count on a reply, as I rarely have time
+        is welcome, but please do not count on a reply, as I rarely have time
         to discuss research directions before the interview stage.
       </p>
     </article>
@@ -190,7 +190,7 @@ sections:
       <h3 class="card-title">Visits</h3>
       <p>
         Research visits normally grow out of an existing collaboration, and
-        several have led to joint publications — see the
+        several have led to joint publications: see the
         <a href="#visitors">visitors</a> above.
       </p>
     </article>

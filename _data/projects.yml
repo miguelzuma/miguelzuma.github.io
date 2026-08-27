@@ -7,7 +7,7 @@
 current:
   - acronym: "GLOW"
     title: "Gravitational Lensing of Waves"
-    funder: "European Research Council — Consolidator Grant"
+    funder: "European Research Council, Consolidator Grant"
     dates: "2026–2031"
     role: "Principal Investigator"
     flagship: true
@@ -17,7 +17,7 @@ current:
     # what the emblem rules ask for on a dark background.
     funding_logo:
       src: "/imgs/erc_eu_funding_dark.png"
-      alt: "Funded by the European Union — European Research Council"
+      alt: "Funded by the European Union, European Research Council"
     grant: "Grant agreement 101230608 · 60 months"
     summary: >-
       Gravitational waves and fast radio bursts are coherent: their phase
@@ -29,9 +29,9 @@ current:
       general relativity and dark energy through lensed propagation. All
       software and data products will be public.
     work_packages:
-      - "WP1 — Wave-optics phenomena: microlensing and plasma-lensing theory"
-      - "WP2 — Discovering lensed GWs: microlensed waveforms, accelerated inference, populations"
-      - "WP3 — Fundamental physics: dark matter, GW propagation and dark energy"
+      - "WP1 (Wave-optics phenomena): microlensing and plasma-lensing theory"
+      - "WP2 (Discovering lensed GWs): microlensed waveforms, accelerated inference, populations"
+      - "WP3 (Fundamental physics): dark matter, GW propagation and dark energy"
     links:
       - text: "CORDIS project page"
         url: "https://cordis.europa.eu/project/id/101230608"
@@ -86,7 +86,7 @@ current:
 collaborations:
   - acronym: "GWSky"
     title: "Making Sense of the Gravitational-Wave Sky"
-    funder: "European Research Council — Synergy Grant"
+    funder: "European Research Council, Synergy Grant"
     dates: "ongoing"
     role: "Senior collaborator"
     logo: "/imgs/gwsky_logo.png"
@@ -97,7 +97,7 @@ collaborations:
       interface between waveform modeling and data analysis: the distortion has
       to enter the templates and the inference machinery before lensing can be
       searched for at catalog scale. The same work cuts the other way, since
-      unmodeled lensing is a systematic — a diffracted signal can otherwise be
+      unmodeled lensing is a systematic: a diffracted signal can otherwise be
       read as exotic source physics or as a biased set of parameters.
     links:
       - text: "GWSky team page"
@@ -117,7 +117,7 @@ positions:
   - headline: "Marie Skłodowska-Curie Global Fellowship"
     org: "European Commission"
     dates: "2015–2020"
-    project: "NLO-CO — Next-to-Leading-Order Cosmology"
+    project: "NLO-CO (Next-to-Leading-Order Cosmology)"
     detail: >-
       Novel tests of dark matter, dark energy and gravity. Outgoing phase at the
       Berkeley Center for Cosmological Physics, return phase at IPhT Saclay.
