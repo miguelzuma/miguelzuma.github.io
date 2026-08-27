@@ -57,6 +57,27 @@
     - text: "ERC results"
       url: "https://erc.europa.eu/news-events/news/erc-2025-consolidator-grants-results"
 
+- date: 2025-06-01
+  text: >-
+    I was awarded a Ramón y Cajal fellowship by the Spanish Research Agency,
+    with the accompanying Atracción de Talento award and the CSIC RyC-MaX
+    supplement.
+  links:
+    - text: "The program"
+      url: "/projects.html#ramon-y-cajal"
+
+- date: 2025-01-01
+  text: >-
+    With Einstein on Crooked Paths began, a philanthropically funded program on
+    lensed gravitational waves and the small-scale structure of dark matter,
+    supported by Max Planck members as the Society's Annual Project.
+  links:
+    - text: "Max Planck Annual Project"
+      url: "https://www.mpg.de/annualproject2024"
+    - text: "AEI feature"
+      url: "https://www.aei.mpg.de/1227766/with-einstein-on-crooked-paths"
+
+
 - date: 2025-07-08
   text: >-
     Our model-independent reconstruction of the dark-energy density in light of
@@ -117,6 +138,17 @@
       url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.102.124048"
     - text: "AEI press release"
       url: "https://www.aei.mpg.de/597240/testing-einstein-s-theory-with-lensing-of-gravitational-waves"
+
+- date: 2019-09-01
+  text: >-
+    hi_class 2.0 was released, together with the paper documenting how the code
+    solves the background, sets initial conditions and switches approximation
+    schemes.
+  links:
+    - text: "Bellini, Sawicki & Zumalacárregui, JCAP 02 (2020) 008"
+      url: "https://inspirehep.net/literature/1752568"
+    - text: "arXiv:1909.01828"
+      url: "https://arxiv.org/abs/1909.01828"
 
 - date: 2018-10-01
   text: >-

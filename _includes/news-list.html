@@ -7,11 +7,11 @@
       {% include news-list.html limit=4 %}    the most recent four
       {% include news-list.html %}            everything
 
-  The "New" flag is driven by the item's own date against FRESH_DAYS, so it
+  The "New" flag is driven by the item's own date against FRESH_DAYS (six months), so it
   expires by itself at the next site build — which for GitHub Pages means the
   next push.
 {%- endcomment -%}
-{%- assign FRESH_DAYS = 90 -%}
+{%- assign FRESH_DAYS = 183 -%}
 {%- assign fresh_window = FRESH_DAYS | times: 86400 -%}
 {%- assign fresh_after = site.time | date: '%s' | plus: 0 | minus: fresh_window -%}
 {%- assign all_news = site.data.news | sort: 'date' | reverse -%}
