@@ -80,7 +80,14 @@ sections:
   {%- assign al_labels = "Postdoctoral researchers,PhD students,Master's students,Research internships and projects,Undergraduates" | split: "," %}
 
   {%- for stage in al_stages %}
-  {%- assign people = site.data.people.former | where: "stage", stage | sort: "end" | reverse %}
+  {%- comment -%}
+    Newest first, then alphabetically by surname within a year. The pre-sort is
+    REVERSED on purpose: Liquid's `sort` is stable, so the final `reverse` --
+    which is what puts the newest year first -- would also flip the names
+    within each year into reverse-alphabetical order. Reversing them first
+    cancels that out.
+  {%- endcomment -%}
+  {%- assign people = site.data.people.former | where: "stage", stage | sort_natural: "sortkey" | reverse | sort: "end" | reverse %}
   {%- if people.size > 0 %}
   <h3 class="stage-heading">{{ al_labels[forloop.index0] }}</h3>
   <ul class="people-list">
@@ -100,7 +107,7 @@ sections:
   </p>
 
   {%- for stage in al_stages %}
-  {%- assign people = site.data.people.earlier_mentees | where: "stage", stage | sort: "end" | reverse %}
+  {%- assign people = site.data.people.earlier_mentees | where: "stage", stage | sort_natural: "sortkey" | reverse | sort: "end" | reverse %}
   {%- if people.size > 0 %}
   <h3 class="stage-heading">{{ al_labels[forloop.index0] }}</h3>
   <ul class="people-list">
@@ -121,7 +128,7 @@ sections:
     them on projects that led to joint publications.
   </p>
   <ul class="people-list">
-    {%- assign vis = site.data.people.visitors | sort: "end" | reverse %}
+    {%- assign vis = site.data.people.visitors | sort_natural: "sortkey" | reverse | sort: "end" | reverse %}
     {%- for p in vis %}
     <li>
       <strong>{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</strong>

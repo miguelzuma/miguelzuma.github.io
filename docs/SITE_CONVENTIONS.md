@@ -137,6 +137,25 @@ adding a field.
 Front matter carries only what is unique to a page: `title`, `eyebrow`, `lede`,
 `description`, `nav`, and `sections` for the in-page bar.
 
+### Ordering people and events
+
+Dated lists run **newest first, then alphabetically within a date**. People
+carry a `sortkey` (surname, lowercased, ASCII-folded, particles included:
+`van zyl`, `vega del castillo`, `diaz-guerra sanchez`) because the display name
+is given-name-first and cannot be sorted on.
+
+There is a trap. Liquid's `sort` is stable, so the trailing `reverse` that puts
+the newest year first *also* flips the names inside each year into reverse
+alphabetical order. Pre-sort in reverse to cancel it:
+
+```liquid
+{%- assign vis = site.data.people.visitors
+      | sort_natural: "sortkey" | reverse | sort: "end" | reverse %}
+```
+
+Hand-ordered lists in `_data/cv.yml` (`talks`, `workshops`) follow the same
+rule by hand, since nothing sorts them at render time.
+
 ## 5. One source, two outputs (the CV)
 
 `_data/cv.yml` renders to **both** `cv.html` and `cv.tex`, and `people.yml`

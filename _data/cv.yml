@@ -237,16 +237,18 @@ refereeing: >-
   Physical Review D, Nature Astronomy, JCAP, The Astrophysical Journal and
   Astrophysical Journal Letters.
 
+# Newest first; alphabetically by name within the same year, the same rule the
+# Group page applies to people.
 talks:
-  - lead: "Spanish & Portuguese Relativity Meeting"
-    lead_rest: " — Universidad de Murcia, 2026 · plenary"
-    meta:
-      - "Gravitational lensing of waves: a new window into astrophysics, dark matter and gravity"
-
   - lead: "IAS and Princeton University"
     lead_rest: " — gravitational-wave meeting, Princeton, 2026 · seminar"
     meta:
       - "GW231123 as a diffracted and magnified black-hole merger"
+
+  - lead: "Spanish & Portuguese Relativity Meeting"
+    lead_rest: " — Universidad de Murcia, 2026 · plenary"
+    meta:
+      - "Gravitational lensing of waves: a new window into astrophysics, dark matter and gravity"
 
   - lead: "Leibniz Institute for Astrophysics"
     lead_rest: " — Potsdam, 2024 · institute colloquium"

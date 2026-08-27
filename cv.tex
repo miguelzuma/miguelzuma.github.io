@@ -89,8 +89,14 @@ The publication record is maintained on
 % are left to the Group page, which is where the full record lives.
 \section{Supervision}
 {%- for g in site.data.cv.supervision_groups %}
-{%- assign cur = site.data.people.current | where_exp: "p", "g.stages contains p.stage" %}
-{%- assign alu = site.data.people.former | where_exp: "p", "g.stages contains p.stage" %}
+{%- comment -%}
+Same order as the Group page: current members alphabetically by surname,
+former members newest first and alphabetically within a year. The pre-sort on
+`alu` is reversed because Liquid's stable `sort` means the trailing `reverse`
+would otherwise flip the names within each year as well.
+{%- endcomment -%}
+{%- assign cur = site.data.people.current | where_exp: "p", "g.stages contains p.stage" | sort_natural: "sortkey" %}
+{%- assign alu = site.data.people.former | where_exp: "p", "g.stages contains p.stage" | sort_natural: "sortkey" | reverse | sort: "end" | reverse %}
 {%- assign members = cur | concat: alu %}
 
 \subsection{ {{- g.heading -}} }

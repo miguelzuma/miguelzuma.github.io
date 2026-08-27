@@ -119,6 +119,7 @@ current:
 
 visitors:
   - name: "Macarena Lagos"
+    sortkey: "lagos"
     url: "https://inspirehep.net/authors/1507748"
     end: 2025
     role: "Professor, Universidad Andrés Bello, Santiago"
@@ -126,11 +127,13 @@ visitors:
     topic: "Propagation and lensing of gravitational waves."
 
   - name: "Zachary Slepian"
+    sortkey: "slepian"
     end: 2025
     role: "Professor, University of Florida"
     years: "2024, 2025"
 
   - name: "Dylan Jow"
+    sortkey: "jow"
     url: "https://inspirehep.net/authors/1912080"
     end: 2024
     role: "Postdoc, Stanford University"
@@ -138,40 +141,47 @@ visitors:
     topic: "Wave-optics lensing and the Hubble constant."
 
   - name: "Jenny Wagner"
+    sortkey: "wagner"
     url: "https://inspirehep.net/authors/1779043"
     end: 2024
     role: "Bahamas Advanced Study Institute and Conferences; visiting scholar at ASIAA, Academia Sinica"
     years: "2024"
 
   - name: "Charles Dalang"
+    sortkey: "dalang"
     url: "https://inspirehep.net/authors/1809345"
     end: 2024
     role: "Postdoc, Queen Mary University of London and ICG Portsmouth"
     years: "2024"
 
   - name: "Kieran Wood"
+    sortkey: "wood"
     url: "https://inspirehep.net/authors/2653639"
     end: 2024
     role: "University of Nottingham"
     years: "2024"
 
   - name: "Uddeepta Deka"
+    sortkey: "deka"
     url: "https://inspirehep.net/authors/2586041"
     end: 2024
     years: "2024"
 
   - name: "Ankur Barsode"
+    sortkey: "barsode"
     url: "https://inspirehep.net/authors/3081663"
     end: 2024
     years: "2024"
 
   - name: "Upala Mukhopadhyay"
+    sortkey: "mukhopadhyay"
     url: "https://inspirehep.net/authors/1044823"
     end: 2023
     role: "Centre for Theoretical Physics, Jamia Millia Islamia"
     years: "2023"
 
   - name: "Parita Mehta"
+    sortkey: "mehta"
     url: "https://inspirehep.net/authors/1019229"
     end: 2023
     role: "PhD student, Astronomical Observatory, University of Warsaw"
@@ -180,6 +190,7 @@ visitors:
     topic: "Strong lensing of gravitational waves."
 
   - name: "David Díaz-Guerra Sánchez"
+    sortkey: "diaz-guerra sanchez"
     url: "https://inspirehep.net/authors/3088465"
     end: 2023
     role: "Master's student, Universidad Complutense de Madrid"
@@ -188,12 +199,14 @@ visitors:
     topic: "Fuzzy dark matter and pulsar timing."
 
   - name: "Hiroki Takeda"
+    sortkey: "takeda"
     url: "https://inspirehep.net/authors/1684306"
     end: 2023
     role: "Theoretical Astrophysics Group, Kyoto University"
     years: "2023"
 
   - name: "Luisa G. Jaime"
+    sortkey: "jaime"
     url: "https://inspirehep.net/authors/1258854"
     end: 2022
     role: "UNAM, Mexico"
@@ -201,12 +214,14 @@ visitors:
     duration: "3 weeks"
 
   - name: "Julian Adamek"
+    sortkey: "adamek"
     url: "https://inspirehep.net/authors/1057360"
     end: 2022
     role: "Institute for Computational Science, University of Zurich"
     years: "2020, 2022"
 
   - name: "Manish Tamta"
+    sortkey: "tamta"
     end: 2026
     url: "https://inspirehep.net/authors/2797698"
     role: "PhD student, IISc Bangalore"
@@ -215,6 +230,7 @@ visitors:
     topic: "Lensing diffraction and dark matter."
 
   - name: "Marienza Caldarola"
+    sortkey: "caldarola"
     end: 2025
     url: "https://inspirehep.net/authors/2673999"
     role: "PhD student, IFT-UAM/CSIC"
@@ -223,6 +239,7 @@ visitors:
     topic: "Simulation-based inference for lensing."
 
   - name: "Hanxi Wang"
+    sortkey: "wang"
     end: 2024
     url: "https://inspirehep.net/literature?q=a%20Hanxi%20Wang"
     role: "PhD student, U. Oxford"
@@ -231,6 +248,7 @@ visitors:
     topic: "Lensing of starlight by supermassive black-hole binaries."
 
   - name: "Martin Pijnenburg"
+    sortkey: "pijnenburg"
     end: 2024
     url: "https://inspirehep.net/authors/2864691"
     role: "PhD student, U. Geneva"
@@ -239,6 +257,7 @@ visitors:
     topic: "Collective diffraction effects."
 
   - name: "Luka Vujeva"
+    sortkey: "vujeva"
     end: 2024
     url: "https://inspirehep.net/authors/2873304"
     role: "PhD student, U. Copenhagen"
@@ -246,6 +265,7 @@ visitors:
     topic: "Strong lensing of gravitational waves."
 
   - name: "Marius Oancea"
+    sortkey: "oancea"
     end: 2022
     url: "https://inspirehep.net/authors/1800686"
     role: "Postdoc, U. Vienna"
@@ -255,6 +275,7 @@ visitors:
 
 former:
   - name: "Nicola Menadeo"
+    sortkey: "menadeo"
     url: "https://inspirehep.net/authors/2661950"
     stage: phd
     end: 2025
@@ -263,6 +284,7 @@ former:
     next: "Postdoc at Humboldt University of Berlin"
 
   - name: "Srashti Goyal"
+    sortkey: "goyal"
     url: "https://inspirehep.net/authors/1877314"
     stage: postdoc
     end: 2026
@@ -271,6 +293,7 @@ former:
     next: "Independent Fellow at IUCAA"
 
   - name: "Serena Giardino"
+    sortkey: "giardino"
     url: "https://inspirehep.net/authors/1799396"
     stage: postdoc
     end: 2025
@@ -279,6 +302,7 @@ former:
     next: "Postdoc at Imperial College London"
 
   - name: "Guilherme Brando"
+    sortkey: "brando"
     url: "https://inspirehep.net/authors/1700346"
     stage: postdoc
     end: 2024
@@ -287,6 +311,7 @@ former:
     next: "Tenured Researcher at UFES, Brazil"
 
   - name: "Giovanni Tambalo"
+    sortkey: "tambalo"
     url: "https://inspirehep.net/authors/1762176"
     stage: postdoc
     end: 2023
@@ -295,6 +320,7 @@ former:
     next: "Postdoc at ETH Zürich, then Marie Skłodowska-Curie Fellow at IPhT Saclay"
 
   - name: "Stefano Savastano"
+    sortkey: "savastano"
     url: "https://inspirehep.net/authors/1820538"
     stage: phd
     end: 2024
@@ -303,6 +329,7 @@ former:
     next: "PhD awarded at HU Berlin"
 
   - name: "Selin Üstündag"
+    sortkey: "ustundag"
     stage: intern
     end: 2026
     role: "Research intern"
@@ -310,12 +337,14 @@ former:
     next: "PhD at Newcastle University"
 
   - name: "Marcel Glätzer"
+    sortkey: "glatzer"
     stage: intern
     end: 2025
     role: "Research project, HU Berlin"
     years: "2024–2025"
 
   - name: "Jaime Raynaud"
+    sortkey: "raynaud"
     stage: intern
     end: 2025
     role: "Research intern, TU Berlin & KTH"
@@ -323,12 +352,14 @@ former:
     next: "PhD at MPIA"
 
   - name: "Vaibhav Omble"
+    sortkey: "omble"
     stage: intern
     end: 2024
     role: "Research project, LMU"
     years: "2023–2024"
 
   - name: "Julius Streibert"
+    sortkey: "streibert"
     url: "https://inspirehep.net/authors/2776373"
     stage: masters
     end: 2023
@@ -336,6 +367,7 @@ former:
     years: "2022–2023"
 
   - name: "Shashwat Singh"
+    sortkey: "singh"
     url: "https://inspirehep.net/authors/2964272"
     stage: masters
     end: 2023
@@ -344,6 +376,7 @@ former:
     next: "PhD at the University of Glasgow"
 
   - name: "Richard Stiskalek"
+    sortkey: "stiskalek"
     url: "https://inspirehep.net/authors/1878325"
     stage: masters
     end: 2022
@@ -352,6 +385,7 @@ former:
     next: "PhD at Oxford, pre-doctoral Fellow at CCA, now postdoc at Oxford"
 
   - name: "Alessandro Longo"
+    sortkey: "longo"
     url: "https://inspirehep.net/authors/2742948"
     stage: masters
     end: 2021
@@ -360,12 +394,14 @@ former:
     next: "PhD student at SISSA"
 
   - name: "Daryna Yushchenko"
+    sortkey: "yushchenko"
     stage: intern
     end: 2024
     role: "Undergraduate, Princeton summer program"
     years: "2024"
 
   - name: "Lyla Choi"
+    sortkey: "choi"
     url: "https://inspirehep.net/authors/2660856"
     stage: intern
     end: 2023
@@ -376,6 +412,7 @@ former:
 # Mentees from before the Potsdam group (2020), kept for the record.
 earlier_mentees:
   - name: "Ho Yeuk Cheung"
+    sortkey: "cheung"
     url: "https://inspirehep.net/authors/1853401"
     stage: phd
     end: 2025
@@ -384,6 +421,7 @@ earlier_mentees:
     next: "Fellow at Princeton IAS"
 
   - name: "José María Ezquiaga"
+    sortkey: "ezquiaga"
     url: "https://inspirehep.net/authors/1430977"
     stage: phd
     end: 2019
@@ -392,6 +430,7 @@ earlier_mentees:
     next: "NASA Einstein Fellow at U. Chicago, now Associate Professor at NBI and chair of the LVK lensing group"
 
   - name: "Carlos García-García"
+    sortkey: "garcia-garcia"
     url: "https://inspirehep.net/authors/1763622"
     stage: phd
     end: 2020
@@ -401,6 +440,7 @@ earlier_mentees:
     photo: "Carlos_Garcia-Garcia.jpg"
 
   - name: "Dina Traykova"
+    sortkey: "traykova"
     url: "https://inspirehep.net/authors/1724905"
     stage: phd
     end: 2021
@@ -409,6 +449,7 @@ earlier_mentees:
     next: "Postdoc at MPI-Grav"
 
   - name: "Janina Renk"
+    sortkey: "renk"
     url: "https://inspirehep.net/authors/1448250"
     stage: masters
     end: 2016
@@ -418,6 +459,7 @@ earlier_mentees:
     photo: "Janina_Renk.jpg"
 
   - name: "Micah Brush"
+    sortkey: "brush"
     url: "https://inspirehep.net/authors/2549427"
     stage: phd
     end: 2019
@@ -426,6 +468,7 @@ earlier_mentees:
     next: "Postdoc at the University of Alberta"
 
   - name: "Alessio Spurio Mancini"
+    sortkey: "spurio mancini"
     url: "https://inspirehep.net/authors/1698172"
     stage: phd
     end: 2016
@@ -434,6 +477,7 @@ earlier_mentees:
     next: "Postdoc at the University of Cambridge"
 
   - name: "Yukei Murakami"
+    sortkey: "murakami"
     url: "https://inspirehep.net/authors/2000678"
     stage: intern
     end: 2019
@@ -442,6 +486,7 @@ earlier_mentees:
     next: "PhD at Johns Hopkins University"
 
   - name: "Brindha Kanniah"
+    sortkey: "kanniah"
     stage: intern
     end: 2015
     role: "Undergraduate, MIT summer program in Heidelberg"
