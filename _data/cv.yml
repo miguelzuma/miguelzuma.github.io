@@ -207,8 +207,13 @@ teaching_courses:
   - lead: "Mini-course on inhomogeneous cosmologies"
     lead_rest: " — University of Barcelona, 2012"
 
+# Competitive awards and fellowships. The funded programs also appear on the
+# Projects page with their scope and dates; here they are listed as awards.
+# No amounts — this is a website, not a funding form.
 awards:
+  - "ERC Consolidator Grant (2025) — GLOW, Gravitational Lensing of Waves."
   - "Ramón y Cajal Fellowship (2024 call, awarded 2025)."
+  - "Max Planck Society Annual Project (2024) — With Einstein on Crooked Paths."
   - "R3 certification, Spanish Research Agency."
   - "Berkeley Connect Fellow, UC Berkeley (2018)."
   - "Marie Skłodowska-Curie Global Fellowship (2015)."
