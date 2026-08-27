@@ -16,10 +16,10 @@ description: >-
   Miguel Zumalacárregui leads a research program on wave-optics lensing, dark
   matter, black holes and tests of gravity at the Max Planck Institute for
   Gravitational Physics (Albert Einstein Institute).
-url: "https://glow-astro.org"
+url: "https://miguelzuma.github.io"
 # GoatCounter site code -- stats at https://<code>.goatcounter.com/.
 # Empty disables analytics entirely (see _includes/analytics.html).
-goatcounter: "glow-astro"
+goatcounter: "miguelzuma"
 baseurl: ""
 lang: en
 
