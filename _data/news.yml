@@ -141,12 +141,14 @@
 
 - date: 2019-09-01
   text: >-
-    hi_class 2.0 was released, together with a paper by Bellini, Sawicki and
-    Zumalacárregui documenting how the code solves the background, sets initial
-    conditions and switches approximation schemes.
+    hi_class 2.0 was released, together with the paper documenting how the code
+    solves the background, sets initial conditions and switches approximation
+    schemes.
   links:
     - text: "hiclass-code.net"
       url: "https://hiclass-code.net"
+    - text: "arXiv:1909.01828"
+      url: "https://arxiv.org/abs/1909.01828"
 
 - date: 2018-10-01
   text: >-
@@ -156,7 +158,7 @@
   links:
     - text: "PRL 121, 141101"
       url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.121.141101"
-    - text: "Viewpoint"
+    - text: "APS Viewpoint"
       url: "https://physics.aps.org/articles/v11/97"
 
 - date: 2017-12-18
@@ -167,7 +169,7 @@
   links:
     - text: "PRL 119, 251304"
       url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.119.251304"
-    - text: "Viewpoint"
+    - text: "APS Viewpoint"
       url: "https://physics.aps.org/articles/v10/134"
 
 - date: 2016-05-01
