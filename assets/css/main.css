@@ -134,9 +134,15 @@ a:focus-visible {
 	white-space: nowrap;
 }
 
+/* Sized and nudged so the mark reads as a glyph on the same line as the
+   wordmark: the M meets the cap height and the z hangs as a descender, the
+   way the g in "Miguel" does. Both values are in em so they track the
+   wordmark's font-size. At 1.6rem the mark overshot the caps top and bottom
+   and floated free of the type. */
 .brand-mark {
-	width: 1.6rem;
-	height: 1.6rem;
+	width: 1.29em;
+	height: 1.29em;
+	transform: translateY(0.09em);
 	display: block;
 	flex: 0 0 auto;
 }
