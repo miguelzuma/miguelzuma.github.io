@@ -141,9 +141,9 @@
 
 - date: 2019-09-01
   text: >-
-    hi_class 2.0 was released, together with the paper documenting how the code
-    solves the background, sets initial conditions and switches approximation
-    schemes.
+    hi_class 2.0 was released, together with a paper by Bellini, Sawicki and
+    Zumalacárregui documenting how the code solves the background, sets initial
+    conditions and switches approximation schemes.
   links:
     - text: "hiclass-code.net"
       url: "https://hiclass-code.net"
