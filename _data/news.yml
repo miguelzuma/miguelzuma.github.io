@@ -145,10 +145,8 @@
     solves the background, sets initial conditions and switches approximation
     schemes.
   links:
-    - text: "Bellini, Sawicki & Zumalacárregui, JCAP 02 (2020) 008"
-      url: "https://inspirehep.net/literature/1752568"
-    - text: "arXiv:1909.01828"
-      url: "https://arxiv.org/abs/1909.01828"
+    - text: "hiclass-code.net"
+      url: "https://hiclass-code.net"
 
 - date: 2018-10-01
   text: >-
