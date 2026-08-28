@@ -21,7 +21,7 @@ sections:
   - id: strong-field
     label: "Strong fields"
   - id: tests-of-gravity
-    label: "Tests of gravity"
+    label: "GW propagation"
   - id: methods
     label: "Methods &amp; software"
   # A rule sets the last two apart: they stand outside the lensing strands.
@@ -49,7 +49,7 @@ sections:
     <li><a href="#lensing-waves" data-lights="blackholes lensing waves">Wave-optics lensing phenomena</a></li>
     <li><a href="#dark-matter" data-lights="cosmology lensing waves">Dark matter and small-scale structure</a></li>
     <li><a href="#strong-field" data-lights="cosmology blackholes lensing waves">Strong-field and multi-messenger lensing</a></li>
-    <li><a href="#tests-of-gravity" data-lights="frame waves cosmology">Tests of gravity and dark energy</a></li>
+    <li><a href="#tests-of-gravity" data-lights="frame waves cosmology">Gravitational-wave propagation and dark energy</a></li>
     <li><a href="#cosmology" data-lights="frame cosmology">Cosmology and gravity theories</a></li>
     <li><a href="#leadership" data-lights="cosmology waves">Scientific coordination and future observatories</a></li>
   </ul>
@@ -342,9 +342,14 @@ sections:
 
 </section>
 
-<!-- ---------- Tests of gravity ---------- -->
+<!-- ---------- GW propagation ---------- -->
+{%- comment -%}
+  The id stays tests-of-gravity: it is linked from index.html, from the Venn
+  legend above and from outside the site, and a heading is cheaper to change
+  than a URL.
+{%- endcomment -%}
 <section class="section" id="tests-of-gravity">
-  <h2>{% include venn-glyph.html lit="frame waves cosmology" %}Tests of gravity and dark energy</h2>
+  <h2>{% include venn-glyph.html lit="frame waves cosmology" %}Gravitational-wave propagation and dark energy</h2>
 
   <figure class="float-right" style="width:210px;">
     <img src="{{ '/imgs/LIB_results_Goyal_23_V.png' | relative_url }}"
