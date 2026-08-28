@@ -16,9 +16,9 @@ flagship:
       parameter-estimation loop. It is the engine behind our analyses of
       stochastic diffraction, of weakly lensed gravitational waves, and of
       GW231123 as a magnified and diffracted merger.
-    repo: "https://github.com/miguelzuma/GLoW_public"
-    docs: "https://miguelzuma.github.io/GLoW_public/index.html"
-    install: "git clone https://github.com/miguelzuma/GLoW_public\ncd GLoW_public\npip install ."
+    repo: "https://github.com/glow-astro/GLoW"
+    docs: "https://glow-astro.github.io/GLoW/"
+    install: "git clone https://github.com/glow-astro/GLoW\ncd GLoW\npip install ."
     install_note: "Requires numpy and scipy; the optional C backend also needs GSL. See the repository README for details."
     papers:
       - short: "Villarrubia-Rojo et al., arXiv:2409.04606"
