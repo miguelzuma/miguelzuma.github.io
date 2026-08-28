@@ -116,7 +116,11 @@ a:focus-visible {
 .site-header .wrap {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: baseline;
+	/* Centred rather than baseline-aligned: the brand carries an image beside
+	   its text, and an inline-flex box takes its baseline from its first item,
+	   so the mark's bottom edge -- not the name -- was being lined up with the
+	   nav links. Same fix as the GLOW site. */
+	align-items: center;
 	gap: 0.4rem 1.5rem;
 	padding-top: 0.7rem;
 	padding-bottom: 0.7rem;
@@ -140,8 +144,8 @@ a:focus-visible {
    wordmark's font-size. At 1.6rem the mark overshot the caps top and bottom
    and floated free of the type. */
 .brand-mark {
-	width: 1.29em;
-	height: 1.29em;
+	width: 1.45em;
+	height: 1.45em;
 	transform: translateY(0.09em);
 	display: block;
 	flex: 0 0 auto;
