@@ -1,6 +1,19 @@
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="{{ '/' | relative_url }}">Miguel Zumalac&aacute;rregui</a>
+    {%- comment -%}
+      The mark is decorative: the name sits right beside it, so a screen reader
+      announcing "script M subscript z" would only repeat what the text already
+      says. favicon.svg is the mark on its own, drawn with stroked outlines so
+      it survives small sizes -- see tools/make_icons.py.
+
+      aria-current moves to the brand on the home page, since the menu no
+      longer carries a Home item: the wordmark is the home link, as on the
+      hi_class and GLOW sites.
+    {%- endcomment -%}
+    <a class="brand" href="{{ '/' | relative_url }}"{% if page.nav == 'home' %} aria-current="page"{% endif %}>
+      <img class="brand-mark" src="{{ '/favicon.svg' | relative_url }}" alt="" width="32" height="32">
+      <span>Miguel Zumalac&aacute;rregui</span>
+    </a>
     <nav class="site-nav" aria-label="Main">
       {%- for item in site.data.nav %}
       <a href="{{ item.url | relative_url }}"{% if page.nav == item.id %} aria-current="page"{% endif %}>{{ item.title }}</a>
