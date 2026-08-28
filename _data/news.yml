@@ -97,13 +97,14 @@
     - text: "AEI feature"
       url: "https://www.aei.mpg.de/1260854/a-model-independent-reconstruction-of-dark-energy-through-the-universe-s-history"
 
-- date: 2025-05-30
+- date: 2025-09-01
   text: >-
     GLoW, our code for wave-optics phenomena in gravitational lensing, was
-    released publicly alongside the paper describing its methods.
+    released publicly, with the methods paper describing how it computes
+    amplification factors for general matter distributions.
   links:
-    - text: "PRD 111, 103539"
-      url: "https://inspirehep.net/literature/2826315"
+    - text: "arXiv:2409.04606"
+      url: "https://arxiv.org/abs/2409.04606"
     - text: "GLoW on GitHub"
       url: "https://github.com/glow-astro/GLoW"
 
