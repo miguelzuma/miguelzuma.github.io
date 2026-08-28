@@ -38,6 +38,15 @@
     - text: "Cosmology Talk"
       url: "https://youtu.be/ZGqOpDTL8k4"
 
+- date: 2026-08-24
+  text: >-
+    Beyond-Horndeski (GLPV) theories and the conformally coupled Galileon became
+    part of the public hi_class code, widening the set of dark-energy and
+    modified-gravity models whose cosmological observables it can compute.
+  links:
+    - text: "hiclass-code.net"
+      url: "https://hiclass-code.net"
+
 - date: 2026-05-29
   text: >-
     A machine-learning method for inferring microlensed gravitational waves,
