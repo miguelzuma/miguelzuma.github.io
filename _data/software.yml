@@ -42,11 +42,11 @@ flagship:
       used to confront gravity theories with cosmological data, and was behind
       our work on Galileon solutions to the Hubble tension and on the
       observational future of scalar–tensor cosmology.
-    repo: "https://github.com/miguelzuma/hi_class_public"
+    repo: "https://github.com/hiclass-code/hi_class_public"
+    # No separate docs link: hiclass-code.net is the documentation site.
     website: "https://hiclass-code.net"
-    docs: "https://miguelzuma.github.io/hi_class_public/"
     docs_note: "Manual in doc/manual; explanatory.ini documents every input parameter."
-    install: "git clone https://github.com/miguelzuma/hi_class_public\ncd hi_class_public/class\nmake clean; make   # `make class` builds without the Python wrapper"
+    install: "git clone https://github.com/hiclass-code/hi_class_public\ncd hi_class_public/class\nmake clean; make   # `make class` builds without the Python wrapper"
     install_note: "Builds like CLASS, and includes the classy Python wrapper. Test the build with ./class explanatory.ini."
     papers:
       - short: "Zumalacárregui et al., JCAP 08 (2017) 019"
@@ -56,7 +56,7 @@ flagship:
     cite: "both hi_class papers, plus the CLASS references (at minimum arXiv:1104.2933)"
     contributors: "Miguel Zumalacárregui, Emilio Bellini, Ignacy Sawicki, Julien Lesgourgues, Pedro G. Ferreira."
     usage: "Used in 80+ publications."
-    usage_url: "https://miguelzuma.github.io/hi_class_public/#pubs"
+    usage_url: "https://hiclass-code.net/#pubs"
     examples: "explanatory.ini, plus course material on the Talks & Outreach page"
     tags: ["C", "Python wrapper", "Einstein–Boltzmann", "dark energy", "open source"]
 
@@ -89,7 +89,7 @@ related:
 # Repositories that reproduce the results of a specific paper.
 papers:
   - name: "GW231123_lensing_PLS"
-    repo: "https://github.com/miguelzuma/GW231123_lensing_PLS"
+    repo: "https://github.com/glow-astro/GW231123_lensing_PLS"
     description: >-
       Scripts and notebooks that regenerate the figures and numbers of the
       GW231123 lensing analysis, starting from the released posterior samples.
