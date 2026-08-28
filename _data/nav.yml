@@ -1,8 +1,8 @@
 # Site navigation. `id` must match the `nav` front-matter key of each page so
 # the active link can be highlighted.
-- id: home
-  title: Home
-  url: /
+# No Home item: the wordmark in the header is the home link, which is the
+# convention on the hi_class and GLOW sites and everywhere else. index.html
+# keeps `nav: home` so the header can mark the brand as the current page.
 - id: research
   title: Research
   url: /research.html
