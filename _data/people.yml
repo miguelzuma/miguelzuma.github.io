@@ -411,6 +411,44 @@ former:
     next: "PhD at Stanford"
 
 # Mentees from before the Potsdam group (2020), kept for the record.
+
+  - name: "Carlos García-García"
+    sortkey: "garcia-garcia"
+    url: "https://inspirehep.net/authors/1763622"
+    stage: phd
+    end: 2020
+    role: "PhD student, IFF-CSIC (co-supervised)"
+    years: "2017–2020"
+    next: "Beecroft Fellow at Oxford, now tenure-track scientist at CIEMAT"
+    photo: "Carlos_Garcia-Garcia.jpg"
+
+  - name: "Janina Renk"
+    sortkey: "renk"
+    url: "https://inspirehep.net/authors/1448250"
+    stage: masters
+    end: 2016
+    role: "Master's student, U. Heidelberg (co-supervised)"
+    years: "2015–2016"
+    next: "PhD at Stockholm University"
+    photo: "Janina_Renk.jpg"
+
+  - name: "Yukei Murakami"
+    sortkey: "murakami"
+    url: "https://inspirehep.net/authors/2000678"
+    stage: intern
+    end: 2019
+    role: "Undergraduate, UC Berkeley"
+    years: "2018–2019"
+    next: "PhD at Johns Hopkins University"
+
+  - name: "Brindha Kanniah"
+    sortkey: "kanniah"
+    stage: intern
+    end: 2015
+    role: "Undergraduate, MIT summer program in Heidelberg"
+    years: "2015"
+    next: "Master's at MIT"
+
 earlier_mentees:
   - name: "Ho Yeuk Cheung"
     sortkey: "cheung"
@@ -430,16 +468,6 @@ earlier_mentees:
     years: "2015–2019"
     next: "NASA Einstein Fellow at U. Chicago, now Associate Professor at NBI and chair of the LVK lensing group"
 
-  - name: "Carlos García-García"
-    sortkey: "garcia-garcia"
-    url: "https://inspirehep.net/authors/1763622"
-    stage: phd
-    end: 2020
-    role: "PhD student, IFF-CSIC (co-supervised)"
-    years: "2017–2020"
-    next: "Beecroft Fellow at Oxford, now tenure-track scientist at CIEMAT"
-    photo: "Carlos_Garcia-Garcia.jpg"
-
   - name: "Dina Traykova"
     sortkey: "traykova"
     url: "https://inspirehep.net/authors/1724905"
@@ -448,16 +476,6 @@ earlier_mentees:
     role: "PhD student, U. Oxford (close collaboration)"
     years: "2018–2021"
     next: "Postdoc at MPI-Grav"
-
-  - name: "Janina Renk"
-    sortkey: "renk"
-    url: "https://inspirehep.net/authors/1448250"
-    stage: masters
-    end: 2016
-    role: "Master's student, U. Heidelberg (co-supervised)"
-    years: "2015–2016"
-    next: "PhD at Stockholm University"
-    photo: "Janina_Renk.jpg"
 
   - name: "Micah Brush"
     sortkey: "brush"
@@ -476,20 +494,3 @@ earlier_mentees:
     role: "PhD student, U. Heidelberg (close collaboration)"
     years: "2016"
     next: "Postdoc at the University of Cambridge"
-
-  - name: "Yukei Murakami"
-    sortkey: "murakami"
-    url: "https://inspirehep.net/authors/2000678"
-    stage: intern
-    end: 2019
-    role: "Undergraduate, UC Berkeley"
-    years: "2018–2019"
-    next: "PhD at Johns Hopkins University"
-
-  - name: "Brindha Kanniah"
-    sortkey: "kanniah"
-    stage: intern
-    end: 2015
-    role: "Undergraduate, MIT summer program in Heidelberg"
-    years: "2015"
-    next: "Master's at MIT"

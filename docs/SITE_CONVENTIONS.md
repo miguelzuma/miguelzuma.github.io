@@ -124,9 +124,12 @@ adding a field.
 
 - `nav.yml` — site navigation; each `id` matches a page's `nav:` front-matter
   key, which is how the active link is marked.
-- `people.yml` — `current`, `visitors`, `alumni`, `earlier_mentees`. Each person
+- `people.yml` — `current`, `visitors`, `former`, `earlier_mentees`. Each person
   has a `stage` (`postdoc|phd|masters|intern|undergrad`) that both groups the
-  cards and labels the alumni rows.
+  cards and labels the alumni rows. `former` is everyone supervised or
+  co-supervised, wherever they were based, and is what the CV's Supervision
+  section is built from; `earlier_mentees` is the close collaborations, whose
+  theses someone else supervised, and appears on the Group page only.
 - `projects.yml` — `current` projects and past `positions`. Optional
   `funding_logo: {src, alt}` renders a funder acknowledgment.
 - `news.yml` — dated one-sentence items; see §7.
