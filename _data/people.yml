@@ -24,10 +24,10 @@
 #
 #     Role, Institution (relationship)
 #
-# The relationship is one of: (co-supervised), (co-supervised with X), or
-# (close collaboration) -- the last for people who were never formally mine to
-# supervise, which is stated rather than left for the reader to guess. Leave it
-# off when the supervision was simply mine. The CV template reads this shape:
+# The relationship is (co-supervised) or (co-supervised with X). Leave it off
+# when the supervision was simply mine, and also in `earlier_mentees`, where
+# the section heading already says the supervision was informal: repeating it
+# on every line says the same thing twice. The CV template reads this shape:
 # _includes/tex-person.html drops the leading role and keeps the rest.
 
 current:
@@ -455,7 +455,7 @@ earlier_mentees:
     url: "https://inspirehep.net/authors/1853401"
     stage: phd
     end: 2025
-    role: "Undergraduate at UC Berkeley, then PhD student at JHU (close collaboration)"
+    role: "Undergraduate at UC Berkeley, then PhD student at JHU"
     years: "2020–2025"
     next: "Fellow at Princeton IAS"
 
@@ -464,7 +464,7 @@ earlier_mentees:
     url: "https://inspirehep.net/authors/1430977"
     stage: phd
     end: 2019
-    role: "PhD student, IFT-UAM (close collaboration)"
+    role: "PhD student, IFT-UAM"
     years: "2015–2019"
     next: "NASA Einstein Fellow at U. Chicago, now Associate Professor at NBI and chair of the LVK lensing group"
 
@@ -473,7 +473,7 @@ earlier_mentees:
     url: "https://inspirehep.net/authors/1724905"
     stage: phd
     end: 2021
-    role: "PhD student, U. Oxford (close collaboration)"
+    role: "PhD student, U. Oxford"
     years: "2018–2021"
     next: "Postdoc at MPI-Grav"
 
@@ -482,15 +482,31 @@ earlier_mentees:
     url: "https://inspirehep.net/authors/2549427"
     stage: phd
     end: 2019
-    role: "PhD student, UC Berkeley (close collaboration)"
+    role: "PhD student, UC Berkeley"
     years: "2019"
     next: "Postdoc at the University of Alberta"
+
+  - name: "Frank Könnig"
+    sortkey: "konnig"
+    url: "https://inspirehep.net/authors/1380098"
+    stage: phd
+    end: 2016
+    role: "PhD student, U. Heidelberg"
+    years: "2015–2016"
+
+  - name: "Henrik Nersisyan"
+    sortkey: "nersisyan"
+    url: "https://inspirehep.net/authors/1259150"
+    stage: phd
+    end: 2016
+    role: "PhD student, U. Heidelberg"
+    years: "2016"
 
   - name: "Alessio Spurio Mancini"
     sortkey: "spurio mancini"
     url: "https://inspirehep.net/authors/1698172"
     stage: phd
     end: 2016
-    role: "PhD student, U. Heidelberg (close collaboration)"
+    role: "PhD student, U. Heidelberg"
     years: "2016"
     next: "Postdoc at the University of Cambridge"
