@@ -72,12 +72,12 @@ current:
     # site is dark, and each body's brand manual asks for the negative version
     # on a dark ground.
     funding_logos:
-      - src: "/imgs/logo_aei_dark.png"
-        alt: "Agencia Estatal de Investigación"
+      - src: "/imgs/logo_miciu_aei_dark.png"
+        alt: "Ministerio de Ciencia, Innovación y Universidades, Agencia Estatal de Investigación"
       - src: "/imgs/logo_csic_dark.png"
         alt: "Consejo Superior de Investigaciones Científicas"
     summary: >-
-      Three linked components of a single return-to-Spain program: the Ramón y
+      Three linked components of a single faculty recruitment program: the Ramón y
       Cajal fellowship, the accompanying Atracción de Talento award from the same
       national agency, and the CSIC RyC-MaX supplement. Together they support
       work on the gravitational lensing of electromagnetic sources: static ones

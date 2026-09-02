@@ -1005,21 +1005,26 @@ h2 + .stage-heading { margin-top: 1.2rem; }
 	margin: 0 0 1.2rem 1.6rem;
 }
 
+/* Stacked rather than side by side: funder lockups are wide (roughly 4:1
+   here), so a row of them would push past the width a floated block can take
+   inside a card. Matched on height, which is what makes marks of different
+   aspect ratios read as equals. */
 .funding-logos {
 	float: right;
 	clear: right;
 	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	gap: 0.9rem 1.1rem;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.8rem;
 	margin: 0 0 1.2rem 1.6rem;
 	max-width: 100%;
 }
 
 .funding-logos img {
 	display: block;
-	height: 40px;
+	height: 48px;
 	width: auto;
+	max-width: 100%;
 }
 
 @media (max-width: 620px) {
