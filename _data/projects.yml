@@ -68,6 +68,14 @@ current:
     funder: "Spanish Research Agency and CSIC"
     dates: "2026–"
     role: "Fellow / Principal Investigator"
+    # Both funders of the program, in their white-on-transparent variants: the
+    # site is dark, and each body's brand manual asks for the negative version
+    # on a dark ground.
+    funding_logos:
+      - src: "/imgs/logo_aei_dark.png"
+        alt: "Agencia Estatal de Investigación"
+      - src: "/imgs/logo_csic_dark.png"
+        alt: "Consejo Superior de Investigaciones Científicas"
     summary: >-
       Three linked components of a single return-to-Spain program: the Ramón y
       Cajal fellowship, the accompanying Atracción de Talento award from the same

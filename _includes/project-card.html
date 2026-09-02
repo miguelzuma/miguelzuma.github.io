@@ -23,6 +23,19 @@ led elsewhere — so the two never drift apart in layout.
        alt="{{ pr.funding_logo.alt }}" loading="lazy">
   {%- endif %}
 
+  {%- comment -%}
+    Several funder logos at once. Matched on height rather than width, since
+    they come in different aspect ratios and a shared width would make the
+    squarer one tower over the others.
+  {%- endcomment -%}
+  {%- if pr.funding_logos %}
+  <div class="funding-logos">
+    {%- for fl in pr.funding_logos %}
+    <img src="{{ fl.src | relative_url }}" alt="{{ fl.alt }}" loading="lazy">
+    {%- endfor %}
+  </div>
+  {%- endif %}
+
   <h3 class="card-title" style="font-size:1.3rem;">
     {{ pr.acronym }}{% if pr.title != pr.acronym %} ({{ pr.title }}){% endif %}
   </h3>

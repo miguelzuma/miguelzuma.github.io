@@ -1005,7 +1005,29 @@ h2 + .stage-heading { margin-top: 1.2rem; }
 	margin: 0 0 1.2rem 1.6rem;
 }
 
+.funding-logos {
+	float: right;
+	clear: right;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.9rem 1.1rem;
+	margin: 0 0 1.2rem 1.6rem;
+	max-width: 100%;
+}
+
+.funding-logos img {
+	display: block;
+	height: 40px;
+	width: auto;
+}
+
 @media (max-width: 620px) {
+	.funding-logos {
+		float: none;
+		margin: 0 0 1rem;
+	}
+
 	.card-logo {
 		float: none;
 		max-height: 76px;
