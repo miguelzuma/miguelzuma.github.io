@@ -55,7 +55,7 @@ current:
     role: "Postdoctoral researcher"
     years: "2026–"
     incoming: true
-    starts: "October 2026"
+    starts: "November 2026"
     topic: "Dark-matter halos and diffraction signatures in space-based gravitational-wave data."
 
   - name: "Héctor Villarrubia-Rojo"
@@ -64,8 +64,6 @@ current:
     stage: postdoc
     role: "Postdoctoral researcher"
     years: "2026–"
-    incoming: true
-    starts: "October 2026"
     topic: "Lead developer of the GLoW code; wave-optics methods for gravitational lensing. Previously a Margarita Salas Fellow in the group (2022–2024)."
 
   - name: "Daniel Ballard"
@@ -75,7 +73,7 @@ current:
     role: "Postdoctoral researcher"
     years: "2026–"
     incoming: true
-    starts: "October 2026"
+    starts: "November 2026"
     topic: "Lens modeling and analysis."
 
   - name: "Manon van Zyl"
