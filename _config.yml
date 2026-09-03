@@ -48,8 +48,9 @@ affiliation:
   aei_name: "Max Planck Institute for Gravitational Physics (Albert Einstein Institute)"
   aei_short: "AEI Potsdam"
   aei_url: "https://www.aei.mpg.de/"
-  # Full department name where there is room for it, the acronym in the
-  # one-line role list on the home page.
+  # The acronym everywhere the role is displayed: spelled out, the department
+  # name wraps and makes the AEI card taller than the IFT one. The full form
+  # survives only in the structured data, where an acronym would be opaque.
   aei_role: "Group Leader, ACR Department"
   aei_role_full: "Group Leader, Astrophysical and Cosmological Relativity (ACR) Department"
   aei_address: "Am Mühlenberg 1, 14476 Potsdam, Germany"
