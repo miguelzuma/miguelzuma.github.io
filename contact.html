@@ -15,6 +15,24 @@ description: >-
 <div class="grid grid-2">
 
   <section class="card">
+    <h2 style="margin-top:0;">{{ site.affiliation.secondary_short }}</h2>
+    <p>
+      <strong>Dr Miguel Zumalacárregui</strong><br>
+      {{ site.affiliation.secondary_role }}<br>
+      <a href="{{ site.affiliation.secondary_url }}" rel="noopener">{{ site.affiliation.secondary_name }}</a>
+    </p>
+    <p>
+      {{ site.affiliation.secondary_office }}<br>
+      C/ Nicolás Cabrera 13-15<br>
+      Campus de Cantoblanco<br>
+      28049 Madrid, Spain
+    </p>
+    <p>
+      <a href="{{ site.author.institutional_page_secondary }}" rel="noopener">Institutional profile</a>
+    </p>
+  </section>
+
+  <section class="card">
     <h2 style="margin-top:0;">{{ site.affiliation.primary_short }}</h2>
     <p>
       <strong>Dr Miguel Zumalacárregui</strong><br>
@@ -30,24 +48,6 @@ description: >-
     <p>
       <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a><br>
       <a href="{{ site.author.institutional_page }}" rel="noopener">Institutional profile</a>
-    </p>
-  </section>
-
-  <section class="card">
-    <h2 style="margin-top:0;">{{ site.affiliation.secondary_short }}</h2>
-    <p>
-      <strong>Dr Miguel Zumalacárregui</strong><br>
-      {{ site.affiliation.secondary_role }}<br>
-      <a href="{{ site.affiliation.secondary_url }}" rel="noopener">{{ site.affiliation.secondary_name }}</a>
-    </p>
-    <p>
-      {{ site.affiliation.secondary_office }}<br>
-      C/ Nicolás Cabrera 13-15<br>
-      Campus de Cantoblanco<br>
-      28049 Madrid, Spain
-    </p>
-    <p>
-      <a href="{{ site.author.institutional_page_secondary }}" rel="noopener">Institutional profile</a>
     </p>
   </section>
 
