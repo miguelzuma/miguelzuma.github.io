@@ -54,9 +54,9 @@ sitemap: false
 % ---------------------------------------------------------------- header ----
 \begin{center}
   {\LARGE\bfseries {{ site.author.name }}}\\[0.45em]
-  {\color{soft}{{ site.affiliation.primary_role }} ---
-   {{ site.affiliation.primary_name }}, Potsdam}\\[0.2em]
-  {\color{soft}{{ site.affiliation.secondary_role }} --- {{ site.affiliation.secondary_name }}, Madrid}\\[0.5em]
+  {\color{soft}{{ site.affiliation.ift_role }} --- {{ site.affiliation.ift_name }}, Madrid}\\[0.2em]
+  {\color{soft}{{ site.affiliation.aei_role }} ---
+   {{ site.affiliation.aei_name }}, Potsdam}\\[0.5em]
   {\small
    \href{mailto:{{ site.author.email }}}{ {{- site.author.email -}} }
    \quad$\cdot$\quad
@@ -112,9 +112,13 @@ would otherwise flip the names within each year as well.
 {%- endfor %}
 
 \vspace{0.4em}
-{\small\color{soft}Visiting researchers, and the students mentored informally before the group
-started in 2020, are listed at
+% sloppypar: the URL is one unbreakable word, so justified spacing cannot
+% absorb it and the line runs into the margin instead.
+\begin{sloppypar}
+{\small\color{soft}Visiting researchers, and students mentored informally rather
+than formally supervised, are listed at
 \href{ {{- '/group.html' | absolute_url -}} }{ {{- site.url | remove: 'https://' -}} /group.html}.}
+\end{sloppypar}
 
 % ---------------------------------------------------------- coordination ----
 \section{Scientific coordination}
@@ -177,8 +181,7 @@ started in 2020, are listed at
 
 % ---------------------------------------------------------- publications ----
 \section{Selected publications}
-{\small\color{soft}Chosen for what they opened up rather than for where they appeared.
-The complete record is on \href{ {{- site.author.inspire -}} }{INSPIRE-HEP}.}
+{\small\color{soft}The complete record is on \href{ {{- site.author.inspire -}} }{INSPIRE-HEP}.}
 \begin{entries}
 {%- for e in site.data.cv.selected_publications %}{% include tex-entry.html e=e %}{% endfor %}
 \end{entries}
