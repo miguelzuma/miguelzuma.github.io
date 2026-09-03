@@ -33,6 +33,7 @@ author:
   ads: "https://ui.adsabs.harvard.edu/search/q=author%3A%22Zumalacarregui%2C%20Miguel%22&sort=date%20desc"
   github: "https://github.com/miguelzuma"
   institutional_page: "https://www.aei.mpg.de/person/104068/337435"
+  institutional_page_secondary: "https://www.ift.uam-csic.es/en/person/?uid=732"
 
 # Both affiliations, on equal footing. Every page that names an affiliation
 # reads from here.
@@ -42,11 +43,13 @@ affiliation:
   primary_url: "https://www.aei.mpg.de/"
   primary_role: "Group Leader, Astrophysical and Cosmological Relativity"
   primary_address: "Am Mühlenberg 1, 14476 Potsdam, Germany"
+  primary_office: "Office 2.22"
   secondary_name: "Instituto de Física Teórica IFT-UAM/CSIC"
   secondary_short: "IFT Madrid"
   secondary_url: "https://www.ift.uam-csic.es/"
   secondary_role: "Ramón y Cajal Fellow"
   secondary_address: "C/ Nicolás Cabrera 13-15, Campus de Cantoblanco, 28049 Madrid, Spain"
+  secondary_office: "Office 301"
 
 # Social sharing image used for Open Graph / Twitter cards
 og_image: "/imgs/miguelzuma_aei.jpg"
