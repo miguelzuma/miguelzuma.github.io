@@ -56,7 +56,7 @@
       "name": "Miguel Zumalacárregui",
       "givenName": "Miguel",
       "familyName": "Zumalacárregui",
-      "jobTitle": {{ site.affiliation.primary_role | jsonify }},
+      "jobTitle": {{ site.affiliation.aei_role_full | jsonify }},
       "description": "Theoretical physicist working on wave-optics lensing, dark matter, black holes and tests of gravity.",
       "url": "{{ site.url }}/",
       "image": "{{ site.og_image | absolute_url }}",
@@ -64,13 +64,13 @@
       "affiliation": [
         {
           "@type": "Organization",
-          "name": {{ site.affiliation.primary_name | jsonify }},
-          "url": "{{ site.affiliation.primary_url }}"
+          "name": {{ site.affiliation.ift_name | jsonify }},
+          "url": "{{ site.affiliation.ift_url }}"
         },
         {
           "@type": "Organization",
-          "name": {{ site.affiliation.secondary_name | jsonify }},
-          "url": "{{ site.affiliation.secondary_url }}"
+          "name": {{ site.affiliation.aei_name | jsonify }},
+          "url": "{{ site.affiliation.aei_url }}"
         }
       ],
       "knowsAbout": [
@@ -88,8 +88,8 @@
         "{{ site.author.inspire }}",
         "{{ site.author.scholar }}",
         "{{ site.author.github }}",
-        "{{ site.author.institutional_page }}",
-        "{{ site.author.institutional_page_secondary }}"
+        "{{ site.author.institutional_page_aei }}",
+        "{{ site.author.institutional_page_ift }}"
       ]
     }
   ]
