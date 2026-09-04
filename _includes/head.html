@@ -25,6 +25,14 @@
 <meta property="og:description" content="{{ page_desc | strip_newlines | strip }}">
 <meta property="og:url" content="{{ canonical }}">
 <meta property="og:image" content="{{ share_image }}">
+{%- comment -%}
+  Dimensions let a scraper lay the card out before the image arrives, and are
+  what makes Twitter/X and Slack commit to the wide format rather than a
+  thumbnail. Update them if the card is ever rebuilt at another size.
+{%- endcomment -%}
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ site.title }}: the research areas as four overlapping circles (cosmology, black holes, gravitational lensing, gravitational waves) inside general relativity.">
 <meta property="og:locale" content="en_US">
 
 <meta name="twitter:card" content="summary_large_image">

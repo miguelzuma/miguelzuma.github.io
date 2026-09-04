@@ -59,8 +59,10 @@ affiliation:
   aei_address: "Am Mühlenberg 1, 14476 Potsdam, Germany"
   aei_office: "Office 2.22"
 
-# Social sharing image used for Open Graph / Twitter cards
-og_image: "/imgs/miguelzuma_aei.jpg"
+# Social sharing image used for Open Graph / Twitter cards. The research
+# rosette rather than a portrait; rebuild it with tools/build_share_card.sh
+# after editing tools/share-card.html.
+og_image: "/imgs/share-card.png"
 
 markdown: kramdown
 kramdown:
