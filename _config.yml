@@ -80,3 +80,7 @@ exclude:
   - vendor
   - .jekyll-cache
   - tools
+  # Working files, kept in the repo but not published: the single-file review
+  # preview that tools/make_preview.py regenerates, and the conventions notes.
+  - site-preview.html
+  - docs
