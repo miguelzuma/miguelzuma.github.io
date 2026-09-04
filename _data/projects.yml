@@ -33,6 +33,8 @@ current:
       - "WP2 (Discovering lensed GWs): microlensed waveforms, accelerated inference, populations"
       - "WP3 (Fundamental physics): dark matter, GW propagation and dark energy"
     links:
+      - text: "glow-astro.org"
+        url: "https://glow-astro.org/"
       - text: "CORDIS project page"
         url: "https://cordis.europa.eu/project/id/101230608"
       - text: "AEI press release"
@@ -41,7 +43,6 @@ current:
         url: "https://erc.europa.eu/news-events/news/erc-2025-consolidator-grants-results"
       - text: "Max Planck Society announcement"
         url: "https://www.mpg.de/25845263/erc-consolidator-grants-2025"
-    note: "A dedicated GLOW project website with work packages, team profiles and openings is in preparation."
 
   - acronym: "With Einstein on Crooked Paths"
     title: "Mit Einstein auf krummen Wegen"
