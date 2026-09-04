@@ -16,7 +16,10 @@ description: >-
   Miguel Zumalacárregui leads a research program on wave-optics lensing, dark
   matter, black holes and tests of gravity at the Max Planck Institute for
   Gravitational Physics (Albert Einstein Institute).
-url: "https://miguelzuma.github.io"
+# The canonical domain. GitHub Pages reads the CNAME file at the repo root and
+# redirects miguelzuma.github.io here, so every absolute URL (sitemap, JSON-LD,
+# share cards, the CV PDF) is built against this one.
+url: "https://miguelzumalacarregui.es"
 # GoatCounter site code -- stats at https://<code>.goatcounter.com/.
 # Empty disables analytics entirely (see _includes/analytics.html).
 goatcounter: "miguelzuma"

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://miguelzuma.github.io/sitemap.xml
+Sitemap: https://miguelzumalacarregui.es/sitemap.xml
