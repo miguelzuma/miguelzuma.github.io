@@ -248,6 +248,41 @@ description: >-
     </div>
   </section>
 
+  <!-- ============ Supported by ============
+       Institutions first, then the funders. The marks in imgs/support/ are
+       built by tools/make_support_logos.py from the originals in imgs/: three
+       of those are dark artwork or half-transparent, and would be invisible
+       on this background. -->
+  <section class="section" aria-labelledby="support-heading">
+    <h2 class="support-heading" id="support-heading">Supported by</h2>
+    <div class="logo-row logo-row-support">
+      <a href="{{ site.affiliation.ift_url }}" rel="noopener">
+        <img class="logo-tall" src="{{ '/imgs/support/ift.png' | relative_url }}"
+             alt="Instituto de F&iacute;sica Te&oacute;rica IFT-UAM/CSIC" loading="lazy"
+             width="88" height="88"></a>
+      <a href="{{ site.affiliation.aei_url }}" rel="noopener">
+        <img src="{{ '/imgs/support/aei.png' | relative_url }}"
+             alt="Max Planck Institute for Gravitational Physics (Albert Einstein Institute)"
+             loading="lazy" width="286" height="64"></a>
+      <a href="https://erc.europa.eu/" rel="noopener">
+        <img class="logo-tall" src="{{ '/imgs/support/erc-eu.png' | relative_url }}"
+             alt="Funded by the European Union, European Research Council" loading="lazy"
+             width="205" height="88"></a>
+      <a href="https://www.ciencia.gob.es/" rel="noopener">
+        <img src="{{ '/imgs/support/miciu-aei.png' | relative_url }}"
+             alt="Ministerio de Ciencia, Innovaci&oacute;n y Universidades, Agencia Estatal de Investigaci&oacute;n"
+             loading="lazy" width="255" height="64"></a>
+      <a href="https://www.csic.es/" rel="noopener">
+        <img src="{{ '/imgs/support/csic.png' | relative_url }}"
+             alt="Consejo Superior de Investigaciones Cient&iacute;ficas" loading="lazy"
+             width="261" height="64"></a>
+      <a href="https://www.mpg.de/" rel="noopener">
+        <img class="logo-tall" src="{{ '/imgs/support/mpg.png' | relative_url }}"
+             alt="Max-Planck-Gesellschaft" loading="lazy"
+             width="108" height="88"></a>
+    </div>
+  </section>
+
 </div>
 
 <script>
