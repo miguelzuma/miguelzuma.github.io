@@ -86,11 +86,12 @@ education:
           - text: "defense presentation"
             url: "https://prezi.com/a2mhizem_sod/"
 
-  - lead: "Master's thesis"
+  - lead: "Master in Theoretical Physics"
     meta:
-      - text: "Universidad Autónoma de Madrid ·"
+      - "Universidad Autónoma de Madrid · 2009"
+      - text: "Thesis:"
         links:
-          - text: "PDF"
+          - text: "Disformal Quintessence: Observational Constraints and Linear Perturbations"
             url: "/files/master_thesis_miguel_zuma.pdf"
 
 coordination:
