@@ -24,11 +24,7 @@
       </div>
 
       <div>
-        {%- comment -%}
-          The heading dropped "on this site" when the GLOW project site joined
-          the list: everything above it is internal, the last one is not.
-        {%- endcomment -%}
-        <h2>Elsewhere</h2>
+        <h2>Elsewhere on this site</h2>
         <ul>
           <li><a href="{{ '/research.html' | relative_url }}">Research program</a></li>
           <li><a href="{{ '/group.html' | relative_url }}">Group and people</a></li>
@@ -37,7 +33,18 @@
           <li><a href="{{ '/talks.html' | relative_url }}">Talks &amp; teaching</a></li>
           <li><a href="{{ '/outreach.html' | relative_url }}">Outreach &amp; press</a></li>
           <li><a href="{{ '/news.html' | relative_url }}">News archive</a></li>
-          <li><a href="https://glow-astro.org/" rel="noopener">GLOW project site</a></li>
+        </ul>
+      </div>
+
+      {%- comment -%}
+        The ERC project has its own site and its own hiring, so it gets a
+        column rather than a line at the foot of the internal-pages list.
+      {%- endcomment -%}
+      <div>
+        <h2>The GLOW project</h2>
+        <ul>
+          <li><a href="https://glow-astro.org/" rel="noopener">glow-astro.org</a></li>
+          <li><a href="https://glow-astro.org/join.html" rel="noopener">Open positions</a></li>
         </ul>
       </div>
 

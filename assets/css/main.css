@@ -1151,10 +1151,21 @@ h2 + .stage-heading { margin-top: 1.2rem; }
 	margin-top: 3rem;
 }
 
+/* Four fixed columns rather than auto-fit: with four items, auto-fit leaves
+   one of them orphaned on a row of its own through a wide band of widths. */
 .footer-grid {
 	display: grid;
 	gap: 1.5rem;
-	grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+	grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 900px) {
+	.footer-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Below this the ORCID line no longer fits in half a screen. */
+@media (max-width: 460px) {
+	.footer-grid { grid-template-columns: 1fr; }
 }
 
 .site-footer h2 {
