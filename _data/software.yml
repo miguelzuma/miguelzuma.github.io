@@ -47,9 +47,11 @@ flagship:
       our work on Galileon solutions to the Hubble tension and on the
       observational future of scalar–tensor cosmology.
     repo: "https://github.com/hiclass-code/hi_class_public"
-    # No separate docs link: hiclass-code.net is the documentation site.
+    # The wiki is the written documentation (installation, running, the Python
+    # wrapper, how to specify a model); hiclass-code.net is the landing page.
+    docs: "https://github.com/hiclass-code/hi_class_public/wiki"
     website: "https://hiclass-code.net"
-    docs_note: "Manual in doc/manual; explanatory.ini documents every input parameter."
+    docs_note: "The wiki covers installation, running and how to specify a model, either through a covariant Lagrangian or through the EFT α-functions. explanatory.ini documents every input parameter."
     install: "git clone https://github.com/hiclass-code/hi_class_public\ncd hi_class_public/class\nmake clean; make   # `make class` builds without the Python wrapper"
     install_note: "Builds like CLASS, and includes the classy Python wrapper. Test the build with ./class explanatory.ini."
     papers:
