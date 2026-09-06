@@ -24,7 +24,11 @@
       </div>
 
       <div>
-        <h2>Elsewhere on this site</h2>
+        {%- comment -%}
+          The heading dropped "on this site" when the GLOW project site joined
+          the list: everything above it is internal, the last one is not.
+        {%- endcomment -%}
+        <h2>Elsewhere</h2>
         <ul>
           <li><a href="{{ '/research.html' | relative_url }}">Research program</a></li>
           <li><a href="{{ '/group.html' | relative_url }}">Group and people</a></li>
@@ -33,6 +37,7 @@
           <li><a href="{{ '/talks.html' | relative_url }}">Talks &amp; teaching</a></li>
           <li><a href="{{ '/outreach.html' | relative_url }}">Outreach &amp; press</a></li>
           <li><a href="{{ '/news.html' | relative_url }}">News archive</a></li>
+          <li><a href="https://glow-astro.org/" rel="noopener">GLOW project site</a></li>
         </ul>
       </div>
 
