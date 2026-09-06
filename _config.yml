@@ -28,8 +28,11 @@ lang: en
 
 author:
   name: "Miguel Zumalacárregui"
-  email: "miguel.zumalacarregui@aei.mpg.de"
-  email_ift: "miguel.zumalacarregui@csic.es"
+  # The CSIC address is the default: it is what the footer, the CV and the
+  # structured data show. The AEI address appears only beside the Potsdam
+  # card on the contact page.
+  email: "miguel.zumalacarregui@csic.es"
+  email_aei: "miguel.zumalacarregui@aei.mpg.de"
   orcid: "0000-0002-9943-6490"
   orcid_url: "https://orcid.org/0000-0002-9943-6490"
   inspire: "https://inspirehep.net/authors/1113379"
