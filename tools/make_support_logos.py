@@ -24,7 +24,6 @@ MARKS = [
     ("aei.png",        "MPI-AEI_wide_E_neg_rgb_transparent.png",   32, False, True),
     ("erc-eu.png",     "erc_eu_funding_dark.png",                  44, False, False),
     ("miciu-aei.png",  "logo_miciu_aei_dark.png",                  32, False, False),
-    ("csic.png",       "logo_csic_dark.png",                       32, False, False),
     ("mpg.png",        "2560px-Max-Planck-Gesellschaft.png",       44, True,  False),
 ]
 
