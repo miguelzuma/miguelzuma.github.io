@@ -11,14 +11,21 @@ description: >-
   Open-source scientific software: GLoW (wave-optics gravitational lensing) and
   hi_class (Horndeski cosmology), related codes such as GSHE, Glworia and
   WOlensing, and repositories reproducing individual papers.
+sections:
+  - id: glow
+    label: "GLoW"
+  - id: hi_class
+    label: "hi_class"
+  - id: related
+    label: "Related projects"
+    rule: true
+  - id: papers
+    label: "Code with papers"
+  - id: resources
+    label: "For students"
 ---
 
-<p class="page-toc">
-  On this page: <a href="#glow">GLoW</a> and <a href="#hi_class">hi_class</a>,
-  <a href="#related">related projects</a> led by collaborators and group
-  members, <a href="#papers">code accompanying individual papers</a>, and
-  <a href="#resources">resources for students</a>.
-</p>
+{% include subnav.html %}
 
 {%- for s in site.data.software.flagship %}
 <article class="card section" id="{{ s.name | downcase }}" style="border-color: var(--accent-dim);">
