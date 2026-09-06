@@ -29,7 +29,7 @@ flagship:
     cite: "the paper and the repository, plus the method papers for the algorithms you use"
     examples: "notebooks in the repository"
     contributors: "Héctor Villarrubia-Rojo (lead developer), Stefano Savastano, Lyla Choi, Srashti Goyal, Liang Dai, Giovanni Tambalo, Miguel Zumalacárregui."
-    usage: "Used in 18+ publications."
+    usage: "Used in 18 publications."
     usage_url: "https://glow-astro.org/glow-code.html#papers"
     tags: ["Python", "wave optics", "gravitational-wave lensing", "open source"]
 
@@ -59,7 +59,7 @@ flagship:
         url: "https://inspirehep.net/literature/1752568"
     cite: "both hi_class papers, plus the CLASS references (at minimum arXiv:1104.2933)"
     contributors: "Miguel Zumalacárregui, Emilio Bellini, Ignacy Sawicki, Julien Lesgourgues, Pedro G. Ferreira."
-    usage: "Used in 80+ publications."
+    usage: "Used in 99 publications."
     usage_url: "https://hiclass-code.net/#pubs"
     examples: "explanatory.ini, plus course material on the Talks & Outreach page"
     tags: ["C", "Python wrapper", "Einstein–Boltzmann", "dark energy", "open source"]
