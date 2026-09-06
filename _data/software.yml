@@ -18,6 +18,9 @@ flagship:
       GW231123 as a magnified and diffracted merger.
     repo: "https://github.com/glow-astro/GLoW"
     docs: "https://glow-astro.github.io/GLoW/"
+    # The ERC project site carries the code's own page, with the list of
+    # papers that use it. hi_class points at hiclass-code.net the same way.
+    website: "https://glow-astro.org/glow-code.html"
     install: "git clone https://github.com/glow-astro/GLoW\ncd GLoW\npip install ."
     install_note: "Requires numpy and scipy; the optional C backend also needs GSL. See the repository README for details."
     papers:
@@ -27,6 +30,7 @@ flagship:
     examples: "notebooks in the repository"
     contributors: "Héctor Villarrubia-Rojo (lead developer), Stefano Savastano, Lyla Choi, Srashti Goyal, Liang Dai, Giovanni Tambalo, Miguel Zumalacárregui."
     usage: "Used in 18+ publications."
+    usage_url: "https://glow-astro.org/glow-code.html#papers"
     tags: ["Python", "wave optics", "gravitational-wave lensing", "open source"]
 
   - name: "hi_class"

@@ -12,14 +12,16 @@ description: >-
   Research projects and funding led by Miguel Zumalacárregui: the GLOW ERC
   Consolidator Grant, With Einstein on Crooked Paths, the Ramón y Cajal
   program and the GWSky ERC Synergy Grant.
+sections:
+  - id: current
+    label: "Current projects"
+  - id: collaborations
+    label: "Contributing to"
+  - id: positions
+    label: "Past projects"
 ---
 
-<p class="page-toc">
-  On this page: the <a href="#current">current projects</a>, the grants
-  <a href="#collaborations">contributed to</a>, and the
-  <a href="#positions">past projects and fellowships</a> that have supported
-  the work.
-</p>
+{% include subnav.html %}
 
 <section class="section" id="current">
   <h2>Current projects</h2>
@@ -31,7 +33,6 @@ description: >-
 
 <section class="section" id="collaborations">
   <h2>Contributing to</h2>
-  <p>Grants led elsewhere that draw on this work.</p>
 
   {%- for pr in site.data.projects.collaborations %}
   {%- include project-card.html pr=pr %}
@@ -60,5 +61,5 @@ description: >-
 
 <div class="logo-row logo-row-quiet">
   <a href="https://erc.europa.eu/" rel="noopener"><img src="{{ '/imgs/LOGO_ERC-FLAG_EU_darkbg_fixed.png' | relative_url }}" alt="European Research Council" loading="lazy" width="2048" height="882" style="height:70px;width:auto;"></a>
-  <a href="https://www.mpg.de/" rel="noopener"><img src="{{ '/imgs/MPI-AEI_wide_E_neg_rgb_transparent.png' | relative_url }}" alt="Max Planck Institute for Gravitational Physics" loading="lazy" width="1945" height="436" style="height:60px;width:auto;"></a>
+  <a href="https://www.mpg.de/en" rel="noopener"><img src="{{ '/imgs/MPI-AEI_wide_E_neg_rgb_transparent.png' | relative_url }}" alt="Max Planck Institute for Gravitational Physics" loading="lazy" width="1945" height="436" style="height:60px;width:auto;"></a>
 </div>
