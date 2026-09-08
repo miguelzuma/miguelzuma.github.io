@@ -1,0 +1,174 @@
+# Headline results: the works that earn a card. This is not a publication
+# list -- INSPIRE is the complete record, and results.html links to it. A few
+# entries a year. Newest first is not required: the templates sort by date.
+#
+#   id        slug. Becomes the entry's anchor on results.html, so it must be
+#             unique across that page.
+#   date      YYYY-MM-DD, the publication date. Orders both lists and groups
+#             the archive by year. Use 01 when the day does not matter.
+#   featured  optional. true puts the entry in line for a home-page card; the
+#             home page shows the newest few of the flagged ones.
+#   title     short form, for the card. No trailing period.
+#   full_title  optional. The paper's own title, used in the archive where
+#             there is room. Falls back to title.
+#   url       one canonical link, used by both the card and the archive.
+#             The DOI once published, INSPIRE while a preprint.
+#   authors   surname form for the card: "Goyal, Villarrubia-Rojo &amp;
+#             Zumalacárregui". Emitted raw, so write &amp; and not &.
+#   reference the citation, raw HTML: "ApJL <strong>1008</strong>, L12 (2026)",
+#             or "arXiv:2607.11887 (2026)" while it is a preprint. One field
+#             rather than separate journal and year fields, because a preprint
+#             has no journal and joining two fields would leave the comma.
+#             The volume goes in <strong>, as it does everywhere else here.
+#   blurb     optional. One sentence: the claim, not how well it was received.
+#             Required on a featured entry, since it is the body of the card.
+#             Raw HTML, because these carry entities -- M<sub>&#9737;</sub>,
+#             &nbsp;, 10<sup>4</sup>.
+#   badge     optional, e.g. "Editors' Suggestion".
+#   tags      optional [{text, accent}]. Two is the working number: the
+#             facility or object first, with accent: true, then the method.
+#   links     optional [{text, url}], shown in the archive entry only -- the
+#             press release, the data release, the talk. Keep it to the few
+#             that a reader would follow; the full coverage is on outreach.html.
+#
+# The same results are also written by hand on research.html (as .pubs entries
+# inside the argument they belong to) and on outreach.html (as press
+# paragraphs). Those are prose, not lists, and are deliberately not generated
+# from here. When a fact changes -- a DOI on publication, a new press link --
+# it has to change in all three.
+
+- id: gw231123
+  date: 2026-08-25
+  featured: true
+  title: "GW231123: a magnified and diffracted merger"
+  full_title: "Across the Universe: GW231123 as a magnified and diffracted black hole merger"
+  url: "https://doi.org/10.3847/2041-8213/ae93b1"
+  authors: "Goyal, Villarrubia-Rojo &amp; Zumalacárregui"
+  reference: "ApJL <strong>1008</strong>, L12 (2026)"
+  blurb: >-
+    The first compelling candidate for a black-hole merger magnified and
+    diffracted by a compact object of 190–850&nbsp;M<sub>&#9737;</sub>.
+  tags:
+    - text: "LIGO–Virgo–KAGRA"
+      accent: true
+    - text: "wave optics"
+  links:
+    - text: "AEI press release"
+      url: "https://www.aei.mpg.de/1490509/do-black-holes-pretend-to-have-large-masses"
+    - text: "Data release"
+      url: "https://github.com/glow-astro/GW231123_lensing_PLS"
+    - text: "Cosmology Talks"
+      url: "https://youtu.be/ZGqOpDTL8k4"
+
+# The arXiv identifier is 2607.11887, so this is July 2026. The home page card
+# it replaces said (2025), which was wrong.
+- id: lsd-lisa
+  date: 2026-07-01
+  featured: true
+  title: "Stochastic diffraction with LISA"
+  full_title: "Signatures of 10–10<sup>4</sup>&nbsp;M<sub>&#9737;</sub> dark matter halos in LISA via stochastic diffraction"
+  url: "https://inspirehep.net/literature/3180014"
+  authors: "Choi, Urrutia &amp; Zumalacárregui"
+  reference: "arXiv:2607.11887 (2026)"
+  blurb: >-
+    Populations of 10–10<sup>4</sup>&nbsp;M<sub>&#9737;</sub> dark-matter halos
+    leave a coherent diffraction imprint, potentially within LISA's reach.
+  tags:
+    - text: "LISA"
+      accent: true
+    - text: "dark matter"
+
+- id: bh-telescopes
+  date: 2026-02-01
+  featured: true
+  title: "Black holes as telescopes"
+  full_title: "Black holes as telescopes: discovering supermassive binaries through quasi-periodic lensed starlight"
+  url: "https://journals.aps.org/prl/abstract/10.1103/1sfl-87t4"
+  authors: "Wang, Zumalacárregui &amp; Kocsis"
+  reference: "PRL <strong>136</strong>, 061403 (2026)"
+  badge: "Editors' Suggestion"
+  blurb: >-
+    Quasi-periodic lensed starlight could reveal supermassive black-hole
+    binaries and their orbital dynamics.
+  tags:
+    - text: "SMBH binaries"
+      accent: true
+    - text: "strong lensing"
+  links:
+    - text: "AEI press release"
+      url: "https://www.aei.mpg.de/1407139/new-method-could-reveal-hidden-supermassive-black-hole-binaries"
+    - text: "University of Oxford"
+      url: "https://www.physics.ox.ac.uk/news/new-method-could-reveal-hidden-supermassive-black-hole-binaries"
+
+- id: glow-code
+  date: 2025-09-01
+  title: "GLoW, wave optics for gravitational lensing"
+  full_title: "GLoW: novel methods for wave-optics phenomena in gravitational lensing"
+  url: "https://inspirehep.net/literature/2826315"
+  authors: "Villarrubia-Rojo, Savastano, Zumalacárregui et al."
+  reference: "PRD <strong>111</strong>, 103539 (2025)"
+  links:
+    - text: "The code"
+      url: "https://glow-astro.org/glow-code.html"
+
+- id: desi-dark-energy
+  date: 2025-07-08
+  title: "A model-independent reconstruction of dark energy"
+  full_title: "Model-independent reconstruction of the dark-energy density in light of DESI BAO data"
+  url: "https://doi.org/10.1103/dj3k-84v4"
+  authors: "Zumalacárregui et al."
+  reference: "PRD <strong>112</strong>, 023518 (2025)"
+  badge: "Editors' Suggestion"
+  links:
+    - text: "AEI feature"
+      url: "https://www.aei.mpg.de/1260854/a-model-independent-reconstruction-of-dark-energy-through-the-universe-s-history"
+
+- id: gw-lensing-halos
+  date: 2023-11-01
+  title: "Lensing as a probe of halo properties"
+  full_title: "Gravitational wave lensing as a probe of halo properties and dark matter"
+  url: "https://inspirehep.net/literature/2617458"
+  authors: "Tambalo, Zumalacárregui, Dai &amp; Cheung"
+  reference: "PRD <strong>108</strong>, 103529 (2023)"
+
+- id: gw-lensing-beyond-gr
+  date: 2020-12-01
+  title: "Lensing beyond Einstein's theory"
+  full_title: "Gravitational wave lensing beyond general relativity: birefringence, echoes and shadows"
+  url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.102.124048"
+  authors: "Ezquiaga &amp; Zumalacárregui"
+  reference: "PRD <strong>102</strong>, 124048 (2020)"
+  badge: "Editors' Suggestion"
+  links:
+    - text: "AEI press release"
+      url: "https://www.aei.mpg.de/597240/testing-einstein-s-theory-with-lensing-of-gravitational-waves"
+    - text: "University of Chicago"
+      url: "https://news.uchicago.edu/story/ripples-space-time-could-provide-clues-missing-components-universe"
+
+- id: pbh-sne
+  date: 2018-10-01
+  title: "Compact objects as dark matter, from lensed supernovae"
+  full_title: "Limits on stellar-mass compact objects as dark matter from gravitational lensing of type Ia supernovae"
+  url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.121.141101"
+  authors: "Zumalacárregui &amp; Seljak"
+  reference: "PRL <strong>121</strong>, 141101 (2018)"
+  badge: "Editors' Suggestion"
+  links:
+    - text: "APS Viewpoint"
+      url: "https://physics.aps.org/articles/v11/97"
+    - text: "UC Berkeley News"
+      url: "https://news.berkeley.edu/2018/10/02/black-holes-ruled-out-as-universes-missing-dark-matter/"
+
+- id: de-after-gw170817
+  date: 2017-12-01
+  title: "Dark energy after GW170817"
+  full_title: "Dark energy after GW170817: dead ends and the road ahead"
+  url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.119.251304"
+  authors: "Ezquiaga &amp; Zumalacárregui"
+  reference: "PRL <strong>119</strong>, 251304 (2017)"
+  badge: "Editors' Suggestion"
+  links:
+    - text: "APS Viewpoint"
+      url: "https://physics.aps.org/articles/v10/134"
+    - text: "Quanta Magazine"
+      url: "https://www.quantamagazine.org/troubled-times-for-alternatives-to-einsteins-theory-of-gravity-20180430/"

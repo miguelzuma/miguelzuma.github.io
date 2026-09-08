@@ -773,6 +773,19 @@ h2 .venn-glyph {
    down the left edge. */
 .pubs-stacked .journal { display: block; font-size: 0.9rem; }
 
+/* The one-line claim a result makes, on results.html. Not .feature: that is
+   the coverage line, and the two sit one above the other. */
+.pubs .claim {
+	display: block;
+	margin-top: 0.25rem;
+	color: var(--text-soft);
+}
+
+/* Year heading in the results archive: the .pubs list draws its own top
+   border, so the heading needs room above it rather than a rule of its own. */
+.results-year { margin: 2rem 0 0; }
+.results-year:first-of-type { margin-top: 0.6rem; }
+
 /* Institutional or press coverage of a paper, distinct from its citation */
 .pubs .feature {
 	display: block;

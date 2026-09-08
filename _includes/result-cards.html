@@ -1,0 +1,40 @@
+{%- comment -%}
+  Home-page cards for the flagged entries of _data/results.yml, newest first.
+  Kept as an include for the same reason news-list.html is: the markup and the
+  selection rule belong in one place, so the home page and the archive on
+  results.html cannot state the same result differently.
+
+      {% include result-cards.html limit=3 %}   the newest three flagged
+      {% include result-cards.html %}           every flagged entry
+
+  Only entries with `featured: true` appear here. results.html shows all of
+  them, through result-list.html.
+
+  Nothing in _data/results.yml goes through escape_once, unlike _data/cv.yml:
+  the blurbs carry M<sub>&#9737;</sub>, 10<sup>4</sup> and &nbsp;, and the
+  references carry <strong> around the volume, so every field is emitted raw.
+{%- endcomment -%}
+{%- assign flagged = site.data.results | where: 'featured', true | sort: 'date' | reverse -%}
+{%- if include.limit -%}
+  {%- assign shown = flagged | slice: 0, include.limit -%}
+{%- else -%}
+  {%- assign shown = flagged -%}
+{%- endif -%}
+<div class="grid grid-3">
+  {%- for r in shown %}
+  <article class="card">
+    <p class="card-title">
+      <a href="{{ r.url }}" rel="noopener">{{ r.title }}</a>
+    </p>
+    <p class="card-meta">{{ r.authors }}, {{ r.reference }}</p>
+    <p>{{ r.blurb }}{% if r.badge %} <span class="badge">{{ r.badge }}</span>{% endif %}</p>
+    {%- if r.tags %}
+    <ul class="tags">
+      {%- for t in r.tags %}
+      <li class="tag{% if t.accent %} tag-accent{% endif %}">{{ t.text }}</li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+  </article>
+  {%- endfor %}
+</div>

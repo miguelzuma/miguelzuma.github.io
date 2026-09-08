@@ -1,0 +1,34 @@
+---
+layout: page
+nav: results
+title: "Results"
+eyebrow: "Results"
+lede: >-
+  Headline results, newest first, with the papers, press and releases behind
+  them.
+description: >-
+  Selected results from Miguel Zumalacárregui's research on wave-optics
+  lensing, dark matter, black holes and tests of gravity, with the papers,
+  press releases and data releases behind them.
+---
+
+{%- comment -%}
+  The archive. The home page shows the flagged few and links here; this page
+  never truncates.
+
+  Not in the top menu, for the reason news.html is not: the menu is for the
+  parts of the site, and this is a stream rather than a part. The home page and
+  the footer carry it, which is where a reader looks for a page that is not a
+  section. `nav: results` therefore matches no entry in _data/nav.yml.
+
+  A selection, not a publication list: research.html carries the papers inside
+  the argument they belong to, and the complete record is on INSPIRE.
+{%- endcomment -%}
+<section class="section" aria-labelledby="all-results-heading">
+  <h2 id="all-results-heading">All results</h2>
+  {% include result-list.html %}
+  <p class="small">
+    These are the results this site highlights. The complete publication
+    record is on <a href="{{ site.author.inspire }}" rel="noopener">INSPIRE-HEP</a>.
+  </p>
+</section>

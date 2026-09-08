@@ -78,54 +78,16 @@ description: >-
     </ul>
   </section>
 
-  <!-- ============ Featured results ============ -->
+  <!-- ============ Featured results ============
+       The flagged entries of _data/results.yml, newest first; results.html
+       carries the archive. The figure stays here by hand: it belongs to the
+       third card, but it is the home page's hero image rather than a field of
+       the result, and the archive is a list rather than a gallery. Keeping it
+       inline also keeps it under the reduced-motion script at the foot of
+       this page. -->
   <section class="section" aria-labelledby="featured-heading">
     <h2 id="featured-heading">Featured recent results</h2>
-
-    <div class="grid grid-3">
-
-      <article class="card">
-        <p class="card-title">
-          <a href="https://doi.org/10.3847/2041-8213/ae93b1" rel="noopener">GW231123: a magnified and diffracted merger</a>
-        </p>
-        <p class="card-meta">Goyal, Villarrubia-Rojo &amp; Zumalacárregui, ApJL <strong>1008</strong>, L12 (2026)</p>
-        <p>The first compelling candidate for a black-hole merger magnified and
-        diffracted by a compact object of 190–850&nbsp;M<sub>&#9737;</sub>.</p>
-        <ul class="tags">
-          <li class="tag tag-accent">LIGO–Virgo–KAGRA</li>
-          <li class="tag">wave optics</li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <p class="card-title">
-          <a href="https://inspirehep.net/literature/3180014" rel="noopener">Stochastic diffraction with LISA</a>
-        </p>
-        <p class="card-meta">Choi, Urrutia &amp; Zumalacárregui (2025)</p>
-        <p>Populations of 10–10<sup>4</sup>&nbsp;M<sub>&#9737;</sub> dark-matter
-        halos leave a coherent diffraction imprint, potentially within LISA's
-        reach.</p>
-        <ul class="tags">
-          <li class="tag tag-accent">LISA</li>
-          <li class="tag">dark matter</li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <p class="card-title">
-          <a href="https://journals.aps.org/prl/abstract/10.1103/1sfl-87t4" rel="noopener">Black holes as telescopes</a>
-        </p>
-        <p class="card-meta">Wang, Zumalacárregui &amp; Kocsis, PRL <strong>136</strong>, 061403 (2026)</p>
-        <p>Quasi-periodic lensed starlight could reveal supermassive black-hole
-        binaries and their orbital dynamics.
-        <span class="badge">Editors' Suggestion</span></p>
-        <ul class="tags">
-          <li class="tag tag-accent">SMBH binaries</li>
-          <li class="tag">strong lensing</li>
-        </ul>
-      </article>
-
-    </div>
+    {% include result-cards.html limit=3 %}
 
     <figure>
       <video width="960" height="540" autoplay muted loop playsinline
@@ -141,6 +103,7 @@ description: >-
         <a href="https://arxiv.org/abs/2506.16544" rel="noopener">Wang, Zumalacárregui &amp; Kocsis, PRL <strong>136</strong>, 061403 (2026)</a>.
       </figcaption>
     </figure>
+    <p class="small"><a href="{{ '/results.html' | relative_url }}">All results &rarr;</a></p>
   </section>
 
   <!-- ============ Program ============ -->

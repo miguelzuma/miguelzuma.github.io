@@ -1,0 +1,33 @@
+{%- comment -%}
+  The results archive: every entry in _data/results.yml, newest first, under a
+  heading per year. Rendered as a .pubs list, the same markup research.html
+  uses for a paper, so it carries no CSS of its own: .authors and .journal for
+  the citation, .badge for a distinction, .feature for the press release, data
+  release or talk beside it.
+
+  A card would repeat the home page at four times the height. The archive is a
+  list a reader scans, and the claim it makes is one line under the title.
+{%- endcomment -%}
+{%- assign all_results = site.data.results | sort: 'date' | reverse -%}
+{%- assign years = all_results | group_by_exp: 'r', 'r.date | date: "%Y"' -%}
+{%- for y in years %}
+<h3 class="results-year">{{ y.name }}</h3>
+<ul class="pubs pubs-stacked">
+  {%- for r in y.items %}
+  <li id="{{ r.id }}">
+    <a href="{{ r.url }}" rel="noopener">{{ r.full_title | default: r.title }}</a>
+    {%- if r.badge %} <span class="badge">{{ r.badge }}</span>{% endif %}
+    <span class="authors">{{ r.authors }}</span>
+    <span class="journal">{{ r.reference }}</span>
+    {%- if r.blurb %}
+    <span class="claim">{{ r.blurb }}</span>
+    {%- endif %}
+    {%- if r.links %}
+    <span class="feature">
+      {%- for l in r.links %}<a href="{{ l.url }}" rel="noopener">{{ l.text }}</a>{% unless forloop.last %} &middot; {% endunless %}{% endfor -%}
+    </span>
+    {%- endif %}
+  </li>
+  {%- endfor %}
+</ul>
+{%- endfor %}
