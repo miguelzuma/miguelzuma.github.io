@@ -1130,29 +1130,30 @@ h2 + .stage-heading { margin-top: 1.2rem; }
 .logo-row-support a:hover img,
 .logo-row-support a:focus-visible img { opacity: 1; }
 
-/* The trajectory row below it: smaller and dimmer, so the reader sees the
-   current support first and the history as a footnote to it. */
+/* The trajectory row below it: the marks keep their colour, so they are held
+   back by size and a little transparency rather than by being drained. It is
+   allowed to run to two lines. */
 .support-heading-past { margin-top: 2rem; }
 
-.logo-row-past { gap: 0.9rem 1.7rem; }
+.logo-row-past { gap: 1rem 1.8rem; }
 
 .logo-row-past img {
 	height: 26px;
-	opacity: 0.55;
+	opacity: 0.8;
 }
 
 .logo-row-past .logo-tall { height: 34px; }
 
 .logo-row-past a:hover img,
-.logo-row-past a:focus-visible img { opacity: 0.9; }
+.logo-row-past a:focus-visible img { opacity: 1; }
 
 @media (max-width: 620px) {
 	.logo-row-support { gap: 0.9rem 1.4rem; }
 	.logo-row-support img { height: 26px; }
 	.logo-row-support .logo-tall { height: 36px; }
 	.logo-row-past { gap: 0.8rem 1.2rem; }
-	.logo-row-past img { height: 21px; }
-	.logo-row-past .logo-tall { height: 28px; }
+	.logo-row-past img { height: 24px; }
+	.logo-row-past .logo-tall { height: 32px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
