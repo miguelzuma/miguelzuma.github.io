@@ -1,11 +1,10 @@
 ---
 layout: page
 nav: results
-title: "Results"
-eyebrow: "Results"
+title: "Featured works"
+eyebrow: "Research highlights"
 lede: >-
-  Headline results, newest first, with the papers, press and releases behind
-  them.
+  Newest first, with the papers, press and releases behind them.
 description: >-
   Selected results from Miguel Zumalacárregui's research on wave-optics
   lensing, dark matter, black holes and tests of gravity, with the papers,
@@ -23,12 +22,13 @@ description: >-
 
   A selection, not a publication list: research.html carries the papers inside
   the argument they belong to, and the complete record is on INSPIRE.
+
+  No wrapper heading: the years are the page's own structure, so
+  result-list.html emits them at the h2 level and each anchors its own year.
 {%- endcomment -%}
-<section class="section" aria-labelledby="all-results-heading">
-  <h2 id="all-results-heading">All results</h2>
-  {% include result-list.html %}
-  <p class="small">
-    These are the results this site highlights. The complete publication
-    record is on <a href="{{ site.author.inspire }}" rel="noopener">INSPIRE-HEP</a>.
-  </p>
-</section>
+{% include result-list.html %}
+
+<p class="small">
+  These are the works this site highlights. The complete publication record is
+  on <a href="{{ site.author.inspire }}" rel="noopener">INSPIRE-HEP</a>.
+</p>

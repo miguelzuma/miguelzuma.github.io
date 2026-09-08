@@ -781,10 +781,11 @@ h2 .venn-glyph {
 	color: var(--text-soft);
 }
 
-/* Year heading in the results archive: the .pubs list draws its own top
-   border, so the heading needs room above it rather than a rule of its own. */
-.results-year { margin: 2rem 0 0; }
-.results-year:first-of-type { margin-top: 0.6rem; }
+/* Year heading in the archive of featured works: the .pubs list draws its own
+   top border, so the heading needs room above it rather than a rule of its
+   own. */
+.results-year { margin: 2.4rem 0 0; }
+.results-year:first-of-type { margin-top: 0; }
 
 /* An archive entry that carries a figure. The thumbnail is placed in the right
    column rather than written there, because it comes first in the source: on a

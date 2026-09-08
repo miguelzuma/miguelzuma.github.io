@@ -28,8 +28,11 @@
 #   tags      optional [{text, accent}]. Two is the working number: the
 #             facility or object first, with accent: true, then the method.
 #   links     optional [{text, url}], shown in the archive entry only -- the
-#             press release, the data release, the talk. Keep it to the few
-#             that a reader would follow; the full coverage is on outreach.html.
+#             press releases, the notable coverage, the data release, the talk.
+#             Say what each one is: an institution issuing a press release and
+#             an institution running a research highlight are different things,
+#             and "University of Oxford" tells the reader neither. The full
+#             coverage stays on outreach.html.
 #   figure    optional. One representative plot or animation for this result,
 #             shown as a thumbnail on results.html. Not a media library: a
 #             result that has no figure worth showing simply omits it, and a
@@ -70,6 +73,10 @@
   links:
     - text: "AEI press release"
       url: "https://www.aei.mpg.de/1490509/do-black-holes-pretend-to-have-large-masses"
+    - text: "Max Planck press release"
+      url: "https://www.mpg.de/26940743/do-black-holes-pretend-to-have-large-masses"
+    - text: "Science"
+      url: "https://www.science.org/content/article/extreme-black-hole-merger-may-be-cosmic-illusion"
     - text: "Data release"
       url: "https://github.com/glow-astro/GW231123_lensing_PLS"
     - text: "Cosmology Talks"
@@ -126,7 +133,7 @@
   links:
     - text: "AEI press release"
       url: "https://www.aei.mpg.de/1407139/new-method-could-reveal-hidden-supermassive-black-hole-binaries"
-    - text: "University of Oxford"
+    - text: "Oxford press release"
       url: "https://www.physics.ox.ac.uk/news/new-method-could-reveal-hidden-supermassive-black-hole-binaries"
   # The home page's hero. Its width and height are the video's own 1560x520:
   # the markup this replaced declared 960x540, which reserved the wrong shape
@@ -174,7 +181,7 @@
   reference: "PRD <strong>112</strong>, 023518 (2025)"
   badge: "Editors' Suggestion"
   links:
-    - text: "AEI feature"
+    - text: "AEI highlight"
       url: "https://www.aei.mpg.de/1260854/a-model-independent-reconstruction-of-dark-energy-through-the-universe-s-history"
   figure:
     kind: image
@@ -182,6 +189,17 @@
     width: 1200
     height: 615
     alt: "Reconstructed change in the dark-energy density relative to its present value, as a function of redshift, with confidence bands that widen with redshift and remain consistent with zero."
+
+- id: weak-lensing-structures
+  date: 2023-11-22
+  title: "Weakly lensed gravitational waves"
+  full_title: "Weakly lensed gravitational waves: probing cosmic structures with wave-optics features"
+  url: "https://inspirehep.net/literature/2667175"
+  authors: "Savastano, Tambalo, Villarrubia-Rojo &amp; Zumalacárregui"
+  reference: "PRD <strong>108</strong>, 103532 (2023)"
+  links:
+    - text: "Max Planck Yearbook 2023"
+      url: "https://www.mpg.de/21438017/aei_jb_2023"
 
 - id: gw-lensing-halos
   date: 2023-11-01
@@ -200,10 +218,12 @@
   reference: "PRD <strong>102</strong>, 124048 (2020)"
   badge: "Editors' Suggestion"
   links:
-    - text: "AEI press release"
+    - text: "AEI highlight"
       url: "https://www.aei.mpg.de/597240/testing-einstein-s-theory-with-lensing-of-gravitational-waves"
-    - text: "University of Chicago"
+    - text: "Chicago press release"
       url: "https://news.uchicago.edu/story/ripples-space-time-could-provide-clues-missing-components-universe"
+    - text: "Forbes"
+      url: "https://www.forbes.com/sites/startswithabang/2020/12/24/how-gravitational-waves-might-wind-up-proving-einstein-wrong"
 
 - id: pbh-sne
   date: 2018-10-01
@@ -216,8 +236,12 @@
   links:
     - text: "APS Viewpoint"
       url: "https://physics.aps.org/articles/v11/97"
-    - text: "UC Berkeley News"
+    - text: "Berkeley press release"
       url: "https://news.berkeley.edu/2018/10/02/black-holes-ruled-out-as-universes-missing-dark-matter/"
+    - text: "Wired"
+      url: "https://www.wired.com/story/for-dark-matter-hunters-out-there-theories-are-catching-on/"
+    - text: "New Scientist"
+      url: "https://www.newscientist.com/article/2156252-ancient-black-holes-ruled-out-as-source-of-all-dark-matter"
   figure:
     kind: image
     src: "/imgs/lensed_crop_cut2_high.jpeg"
@@ -238,3 +262,5 @@
       url: "https://physics.aps.org/articles/v10/134"
     - text: "Quanta Magazine"
       url: "https://www.quantamagazine.org/troubled-times-for-alternatives-to-einsteins-theory-of-gravity-20180430/"
+    - text: "Wired"
+      url: "https://www.wired.com/story/troubled-times-for-alternatives-to-einsteins-theory-of-gravity/"
