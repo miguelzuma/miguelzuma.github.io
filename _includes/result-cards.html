@@ -4,8 +4,14 @@
   selection rule belong in one place, so the home page and the archive on
   results.html cannot state the same result differently.
 
-      {% include result-cards.html limit=3 %}   the newest three flagged
-      {% include result-cards.html %}           every flagged entry
+      {% include result-cards.html limit=3 %}              the newest three flagged
+      {% include result-cards.html limit=3 figure=true %}  ... and the hero figure
+      {% include result-cards.html %}                      every flagged entry
+
+  figure=true renders, under the grid, the figure of the shown entry that
+  carries `hero: true`. It is asked for rather than implied because it is the
+  home page's one large image, not something every card owns: three cards each
+  bringing an autoplaying video would be a different page altogether.
 
   Only entries with `featured: true` appear here. results.html shows all of
   them, through result-list.html.
@@ -38,3 +44,22 @@
   </article>
   {%- endfor %}
 </div>
+{%- if include.figure %}
+{%- assign hero = shown | where_exp: 'r', 'r.figure.hero' | first %}
+{%- if hero %}
+<figure>
+  {%- if hero.figure.kind == 'video' %}
+  <video width="{{ hero.figure.width }}" height="{{ hero.figure.height }}" autoplay muted loop playsinline
+         poster="{{ hero.figure.poster | relative_url }}"
+         aria-label="{{ hero.figure.alt }}">
+    <source src="{{ hero.figure.webm | relative_url }}" type="video/webm">
+    <source src="{{ hero.figure.mp4 | relative_url }}" type="video/mp4">
+  </video>
+  {%- else %}
+  <img src="{{ hero.figure.src | relative_url }}" alt="{{ hero.figure.alt }}"
+       width="{{ hero.figure.width }}" height="{{ hero.figure.height }}">
+  {%- endif %}
+  <figcaption>{{ hero.figure.caption }}</figcaption>
+</figure>
+{%- endif %}
+{%- endif %}

@@ -7,6 +7,12 @@
 
   A card would repeat the home page at four times the height. The archive is a
   list a reader scans, and the claim it makes is one line under the title.
+
+  An entry that carries a `figure` shows it small, beside the text. An
+  animation appears as its poster frame, not as a video: the animations are
+  3:1 strips, and at 200 px a browser's own control bar covers half of one.
+  The archive is a list to scan, the animations play at full width on the home
+  page and inside research.html, and the alt text says what each one shows.
 {%- endcomment -%}
 {%- assign all_results = site.data.results | sort: 'date' | reverse -%}
 {%- assign years = all_results | group_by_exp: 'r', 'r.date | date: "%Y"' -%}
@@ -14,7 +20,15 @@
 <h3 class="results-year">{{ y.name }}</h3>
 <ul class="pubs pubs-stacked">
   {%- for r in y.items %}
-  <li id="{{ r.id }}">
+  <li id="{{ r.id }}"{% if r.figure %} class="has-thumb"{% endif %}>
+    {%- if r.figure %}
+    <span class="pub-thumb">
+      {%- assign thumb = r.figure.src | default: r.figure.poster %}
+      <img src="{{ thumb | relative_url }}" alt="{{ r.figure.alt }}"
+           width="{{ r.figure.width }}" height="{{ r.figure.height }}" loading="lazy">
+    </span>
+    {%- endif %}
+    <span class="pub-body">
     <a href="{{ r.url }}" rel="noopener">{{ r.full_title | default: r.title }}</a>
     {%- if r.badge %} <span class="badge">{{ r.badge }}</span>{% endif %}
     <span class="authors">{{ r.authors }}</span>
@@ -27,6 +41,7 @@
       {%- for l in r.links %}<a href="{{ l.url }}" rel="noopener">{{ l.text }}</a>{% unless forloop.last %} &middot; {% endunless %}{% endfor -%}
     </span>
     {%- endif %}
+    </span>
   </li>
   {%- endfor %}
 </ul>

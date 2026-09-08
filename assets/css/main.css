@@ -786,6 +786,36 @@ h2 .venn-glyph {
 .results-year { margin: 2rem 0 0; }
 .results-year:first-of-type { margin-top: 0.6rem; }
 
+/* An archive entry that carries a figure. The thumbnail is placed in the right
+   column rather than written there, because it comes first in the source: on a
+   narrow screen it then falls below the text instead of pushing the title down
+   the page. Titles keep a common left edge whether an entry has a figure or
+   not, which is what makes the list scannable. */
+.pubs li.has-thumb {
+	display: grid;
+	grid-template-columns: 1fr 200px;
+	gap: 0 1.4rem;
+	align-items: start;
+}
+
+.pubs li.has-thumb .pub-body { grid-column: 1; grid-row: 1; }
+.pubs li.has-thumb .pub-thumb { grid-column: 2; grid-row: 1; }
+
+.pub-body { display: block; min-width: 0; }
+
+.pub-thumb img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 6px;
+	background: #000;
+}
+
+@media (max-width: 620px) {
+	.pubs li.has-thumb { grid-template-columns: 1fr; gap: 0.7rem 0; }
+	.pubs li.has-thumb .pub-thumb { grid-column: 1; grid-row: 2; }
+}
+
 /* Institutional or press coverage of a paper, distinct from its citation */
 .pubs .feature {
 	display: block;

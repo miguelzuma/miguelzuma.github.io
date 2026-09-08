@@ -30,6 +30,21 @@
 #   links     optional [{text, url}], shown in the archive entry only -- the
 #             press release, the data release, the talk. Keep it to the few
 #             that a reader would follow; the full coverage is on outreach.html.
+#   figure    optional. One representative plot or animation for this result,
+#             shown as a thumbnail on results.html. Not a media library: a
+#             result that has no figure worth showing simply omits it, and a
+#             result with several keeps the rest where they are, in the
+#             argument they belong to on research.html.
+#               kind    "image" or "video"
+#               src     the image (kind: image)
+#               poster, webm, mp4   the still and the two encodings (kind: video)
+#               width, height   intrinsic pixel size, so the browser reserves
+#                       the right shape before the file arrives
+#               alt     describes it; becomes alt= or the video's aria-label
+#               hero    optional, true. The one figure the home page shows in
+#                       full under the cards. At most one featured entry should
+#                       carry it, and its `caption` is what appears there.
+#               caption required with hero, raw HTML, may carry links
 #
 # The same results are also written by hand on research.html (as .pubs entries
 # inside the argument they belong to) and on outreach.html (as press
@@ -59,6 +74,12 @@
       url: "https://github.com/glow-astro/GW231123_lensing_PLS"
     - text: "Cosmology Talks"
       url: "https://youtu.be/ZGqOpDTL8k4"
+  figure:
+    kind: image
+    src: "/imgs/GW231123_annotation.png"
+    width: 870
+    height: 619
+    alt: "Time–frequency representation of GW231123 with the modulation expected from a magnified and diffracted signal marked on it."
 
 # The arXiv identifier is 2607.11887, so this is July 2026. The home page card
 # it replaces said (2025), which was wrong.
@@ -77,6 +98,14 @@
     - text: "LISA"
       accent: true
     - text: "dark matter"
+  figure:
+    kind: video
+    poster: "/imgs/stochastic_diffraction_dark_still.png"
+    webm: "/imgs/stochastic_diffraction_dark.webm"
+    mp4: "/imgs/stochastic_diffraction_dark.mp4"
+    width: 1560
+    height: 520
+    alt: "Animation of lens stochastic diffraction: cold-dark-matter halos along the line of sight to a gravitational-wave source, and the frequency-dependent distortion they imprint on the signal."
 
 - id: bh-telescopes
   date: 2026-02-01
@@ -99,6 +128,23 @@
       url: "https://www.aei.mpg.de/1407139/new-method-could-reveal-hidden-supermassive-black-hole-binaries"
     - text: "University of Oxford"
       url: "https://www.physics.ox.ac.uk/news/new-method-could-reveal-hidden-supermassive-black-hole-binaries"
+  # The home page's hero. Its width and height are the video's own 1560x520:
+  # the markup this replaced declared 960x540, which reserved the wrong shape
+  # and shifted the page as the file arrived.
+  figure:
+    kind: video
+    hero: true
+    poster: "/imgs/qpls_loop_fold_still.png"
+    webm: "/imgs/qpls_loop_fold.webm"
+    mp4: "/imgs/qpls_loop_fold.mp4"
+    width: 1560
+    height: 520
+    alt: "Animation of quasi-periodic lensing of starlight by a supermassive black-hole binary"
+    caption: >-
+      Quasi-periodic lensing of starlight: as a sub-parsec black-hole binary
+      orbits, its caustics sweep repeatedly across a background star in the
+      host galaxy. From
+      <a href="https://arxiv.org/abs/2506.16544" rel="noopener">Wang, Zumalacárregui &amp; Kocsis, PRL <strong>136</strong>, 061403 (2026)</a>.
 
 - id: glow-code
   date: 2025-09-01
@@ -110,6 +156,14 @@
   links:
     - text: "The code"
       url: "https://glow-astro.org/glow-code.html"
+  figure:
+    kind: video
+    poster: "/imgs/sampling_L1_web_dark_still.png"
+    webm: "/imgs/sampling_L1_web_dark.webm"
+    mp4: "/imgs/sampling_L1_web_dark.mp4"
+    width: 1560
+    height: 520
+    alt: "Animation of posterior samples for the lens of GW231123, each shown as the whitened strain template it predicts in LIGO Livingston."
 
 - id: desi-dark-energy
   date: 2025-07-08
@@ -122,6 +176,12 @@
   links:
     - text: "AEI feature"
       url: "https://www.aei.mpg.de/1260854/a-model-independent-reconstruction-of-dark-energy-through-the-universe-s-history"
+  figure:
+    kind: image
+    src: "/imgs/desi_de_reconstruction.png"
+    width: 1200
+    height: 615
+    alt: "Reconstructed change in the dark-energy density relative to its present value, as a function of redshift, with confidence bands that widen with redshift and remain consistent with zero."
 
 - id: gw-lensing-halos
   date: 2023-11-01
@@ -158,6 +218,12 @@
       url: "https://physics.aps.org/articles/v11/97"
     - text: "UC Berkeley News"
       url: "https://news.berkeley.edu/2018/10/02/black-holes-ruled-out-as-universes-missing-dark-matter/"
+  figure:
+    kind: image
+    src: "/imgs/lensed_crop_cut2_high.jpeg"
+    width: 1834
+    height: 1216
+    alt: "Artistic rendering of a type Ia supernova as it would appear when lensed by a black hole."
 
 - id: de-after-gw170817
   date: 2017-12-01

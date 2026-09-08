@@ -80,29 +80,13 @@ description: >-
 
   <!-- ============ Featured results ============
        The flagged entries of _data/results.yml, newest first; results.html
-       carries the archive. The figure stays here by hand: it belongs to the
-       third card, but it is the home page's hero image rather than a field of
-       the result, and the archive is a list rather than a gallery. Keeping it
-       inline also keeps it under the reduced-motion script at the foot of
-       this page. -->
+       carries the archive. The figure under the cards is the one entry marked
+       `hero` in that file, so the paper its caption cites cannot drift from
+       the card standing above it. -->
   <section class="section" aria-labelledby="featured-heading">
     <h2 id="featured-heading">Featured recent results</h2>
-    {% include result-cards.html limit=3 %}
+    {% include result-cards.html limit=3 figure=true %}
 
-    <figure>
-      <video width="960" height="540" autoplay muted loop playsinline
-             poster="{{ '/imgs/qpls_loop_fold_still.png' | relative_url }}"
-             aria-label="Animation of quasi-periodic lensing of starlight by a supermassive black-hole binary">
-        <source src="{{ '/imgs/qpls_loop_fold.webm' | relative_url }}" type="video/webm">
-        <source src="{{ '/imgs/qpls_loop_fold.mp4' | relative_url }}" type="video/mp4">
-      </video>
-      <figcaption>
-        Quasi-periodic lensing of starlight: as a sub-parsec black-hole binary
-        orbits, its caustics sweep repeatedly across a background star in the
-        host galaxy. From
-        <a href="https://arxiv.org/abs/2506.16544" rel="noopener">Wang, Zumalacárregui &amp; Kocsis, PRL <strong>136</strong>, 061403 (2026)</a>.
-      </figcaption>
-    </figure>
     <p class="small"><a href="{{ '/results.html' | relative_url }}">All results &rarr;</a></p>
   </section>
 
