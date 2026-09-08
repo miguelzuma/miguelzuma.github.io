@@ -105,6 +105,9 @@
     - text: "LISA"
       accent: true
     - text: "dark matter"
+  links:
+    - text: "Cosmology Talks"
+      url: "https://www.youtube.com/watch?v=a5lIDTDRo4c"
   figure:
     kind: video
     poster: "/imgs/stochastic_diffraction_dark_still.png"
