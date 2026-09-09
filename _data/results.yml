@@ -292,15 +292,16 @@
     - text: "New Scientist"
       url: "https://www.newscientist.com/article/2156252-ancient-black-holes-ruled-out-as-source-of-all-dark-matter"
   figure:
-    # The diagram Physical Review Letters ran with the Editors' Suggestion, from
-    # ~/Dropbox/Projects/BH_SN_lensing/publication_files/PRL Editor's diagram/.
-    # The artistic rendering it replaced is still on outreach.html, beside the
-    # press paragraph, where an illustration belongs.
+    # The illustration APS drew for the Physics Viewpoint, physics.aps.org/
+    # articles/v11/97. Their artwork, not ours, so it carries a credit. The
+    # artistic rendering it replaced is still on outreach.html, beside the press
+    # paragraph, where an illustration belongs.
     kind: image
-    src: "/imgs/pbh_sne_editors.png"
-    width: 800
-    height: 800
-    alt: "A supernova seen past a black hole whose Einstein radius scales as the square root of its mass, above the magnification distribution that lensing by such objects would produce."
+    src: "/imgs/pbh_sne_aps_viewpoint.webp"
+    width: 500
+    height: 313
+    alt: "A supernova seen from a space telescope, brighter when a black hole lies between it and the observer, whose gravity lenses and magnifies the light."
+    credit: "Illustration: APS/Carin Cain"
 
 - id: de-after-gw170817
   date: 2017-12-01
@@ -322,10 +323,11 @@
     - text: "Wired"
       url: "https://www.wired.com/story/troubled-times-for-alternatives-to-einsteins-theory-of-gravity/"
   figure:
-    # The diagram Physical Review Letters ran with the Editors' Suggestion,
-    # from ~/Dropbox/Projects/completed/2017_GW and DE/Diagrams/.
+    # The illustration APS drew for the Physics Viewpoint, physics.aps.org/
+    # articles/v10/134. Their artwork, not ours, so it carries a credit.
     kind: image
-    src: "/imgs/de_after_gw170817.jpg"
-    width: 1200
-    height: 900
-    alt: "Gravitational-wave speed against redshift for covariant Galileon models, every cosmologically viable one departing from the measured value of one."
+    src: "/imgs/de_after_gw170817_aps_viewpoint.webp"
+    width: 500
+    height: 226
+    alt: "Gravitational waves and light leaving a neutron-star merger and reaching Earth, drawn as two waves crossing a time-dependent scalar field."
+    credit: "Illustration: APS/Alan Stonebraker"
