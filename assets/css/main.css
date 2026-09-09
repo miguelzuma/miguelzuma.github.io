@@ -1178,18 +1178,18 @@ h2 + .stage-heading { margin-top: 1.2rem; }
 }
 
 .logo-row-support {
-	gap: 1.1rem 2rem;
+	gap: 1.1rem 1.5rem;
 	margin-top: 1.2rem;
 }
 
 .logo-row-support img {
-	height: 32px;
+	height: 35px;
 	width: auto;
 	opacity: 0.85;
 	transition: opacity 0.2s;
 }
 
-.logo-row-support .logo-tall { height: 44px; }
+.logo-row-support .logo-tall { height: 48px; }
 
 .logo-row-support a:hover img,
 .logo-row-support a:focus-visible img { opacity: 1; }
@@ -1199,40 +1199,29 @@ h2 + .stage-heading { margin-top: 1.2rem; }
    allowed to run to two lines. */
 .support-heading-past { margin-top: 2rem; }
 
-.logo-row-past { gap: 1rem 1.8rem; }
+.logo-row-past { gap: 1rem 1.5rem; }
 
 .logo-row-past img {
-	height: 26px;
+	height: 28px;
 	opacity: 0.8;
 }
 
-.logo-row-past .logo-tall { height: 34px; }
+.logo-row-past .logo-tall { height: 37px; }
 
 .logo-row-past a:hover img,
 .logo-row-past a:focus-visible img { opacity: 1; }
 
-/* On a wide screen the strip leaves the page measure behind. The measure is
-   set by the length of a line of text, and a row of logos does not read along
-   a line: held to 1000px the marks have to shrink to where the lettering is
-   lost, and the row ends level with the video above it, as though the two
-   belonged together. Widened to 1200px they grow by 40% and justify across it.
+/* Both rows span the text column rather than ending wherever the last mark
+   falls, which left a quarter of the width empty and made the strip look like
+   an appendix to the video above it. space-between does the spanning, so the
+   marks are sized to nearly fill the column on their own and the gaps take up
+   what is left.
 
-   The treatment starts at 1151px because it depends on the six current marks
-   fitting on one line. Below that they wrap, and space-between would strand
-   the last one against the left edge, so everything narrower keeps the sizes
-   above and the ordinary flow. */
-@media (min-width: 1151px) {
-	.section-support {
-		width: min(1200px, calc(100vw - 3rem));
-		margin-left: 50%;
-		transform: translateX(-50%);
-	}
-
+   Only once each row fits on one line: on a wrapped row space-between would
+   strand the last mark against the left edge. Each row measures about 770px
+   unstretched, so 840px is where the column stops being able to hold it. */
+@media (min-width: 840px) {
 	.logo-row-support { justify-content: space-between; }
-	.logo-row-support img { height: 44px; }
-	.logo-row-support .logo-tall { height: 60px; }
-	.logo-row-past img { height: 34px; }
-	.logo-row-past .logo-tall { height: 46px; }
 }
 
 @media (max-width: 620px) {
