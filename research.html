@@ -56,7 +56,19 @@ sections:
 </div>
 
 
-<p>Selected work appears below. The complete and current record is on:</p>
+{%- comment -%}
+  Three tiers, named in the order a reader meets them: the sections below carry
+  the papers inside the argument they belong to, results.html carries the few
+  with press and releases behind them, and the profiles carry everything. The
+  link is in the sentence rather than in the button row, which is for the
+  external records only.
+{%- endcomment %}
+<p>
+  Selected work appears below. The
+  <a href="{{ '/results.html' | relative_url }}">research highlights</a> gather
+  the results with the press coverage and data releases behind them, and the
+  complete and current record is on:
+</p>
 
 <div class="btn-row">
   <a class="btn" href="{{ site.author.inspire }}" rel="noopener">INSPIRE-HEP</a>
