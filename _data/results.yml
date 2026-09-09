@@ -187,11 +187,15 @@
     - text: "AEI highlight"
       url: "https://www.aei.mpg.de/1260854/a-model-independent-reconstruction-of-dark-energy-through-the-universe-s-history"
   figure:
+    # The illustration from the AEI highlight, which Physical Review D also used
+    # for the Editors' Suggestion. research.html keeps the paper's own
+    # reconstruction plot: the argument wants the data, the archive wants the
+    # picture the result was told with.
     kind: image
-    src: "/imgs/desi_de_reconstruction.png"
-    width: 1200
-    height: 615
-    alt: "Reconstructed change in the dark-energy density relative to its present value, as a function of redshift, with confidence bands that widen with redshift and remain consistent with zero."
+    src: "/imgs/desi_de_aei_highlight.jpg"
+    width: 800
+    height: 800
+    alt: "Illustration of the dark-energy density as a band running from today back to the cosmic microwave background, widening with redshift, with supernovae and baryon acoustic oscillations marking the epochs that constrain it."
 
 - id: weak-lensing-structures
   date: 2023-11-22

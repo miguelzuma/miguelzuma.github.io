@@ -804,10 +804,16 @@ h2 .venn-glyph {
 
 .pub-body { display: block; min-width: 0; }
 
+/* A thumbnail is as wide as its column, but never taller than a wide one:
+   the figures are mostly 2:1 strips, and a square illustration at 200px would
+   double the height of its row and leave the citation stranded beside it. */
 .pub-thumb img {
 	display: block;
-	width: 100%;
+	width: auto;
 	height: auto;
+	max-width: 100%;
+	max-height: 130px;
+	margin-left: auto;
 	border-radius: 6px;
 	background: #000;
 }
@@ -815,6 +821,9 @@ h2 .venn-glyph {
 @media (max-width: 620px) {
 	.pubs li.has-thumb { grid-template-columns: 1fr; gap: 0.7rem 0; }
 	.pubs li.has-thumb .pub-thumb { grid-column: 1; grid-row: 2; }
+	/* Below the text rather than beside it, so the figure takes the column and
+	   the height cap only has to keep a square one from filling the screen. */
+	.pub-thumb img { max-height: 300px; margin-left: 0; }
 }
 
 /* Institutional or press coverage of a paper, distinct from its citation */
