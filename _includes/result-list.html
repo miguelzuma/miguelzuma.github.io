@@ -27,6 +27,9 @@
       {%- assign thumb = r.figure.src | default: r.figure.poster %}
       <img src="{{ thumb | relative_url }}" alt="{{ r.figure.alt }}"
            width="{{ r.figure.width }}" height="{{ r.figure.height }}" loading="lazy">
+      {%- if r.figure.credit %}
+      <span class="pub-credit">{{ r.figure.credit }}</span>
+      {%- endif %}
     </span>
     {%- endif %}
     <span class="pub-body">

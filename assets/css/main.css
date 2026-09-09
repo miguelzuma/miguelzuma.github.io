@@ -805,21 +805,32 @@ h2 .venn-glyph {
 .pub-body { display: block; min-width: 0; }
 
 /* A thumbnail is as wide as its column, but never taller than a wide one:
-   the figures are mostly 2:1 strips, and a square illustration at 200px would
-   double the height of its row and leave the citation stranded beside it. */
+   the figures are mostly 2:1 strips, so the cap is what such a strip measures
+   in a 200px column. A square figure at the full column width would be twice
+   the height of its neighbours and leave the citation stranded beside it. */
 .pub-thumb img {
 	display: block;
 	width: auto;
 	height: auto;
 	max-width: 100%;
-	max-height: 130px;
+	max-height: 104px;
 	margin-left: auto;
 	border-radius: 6px;
 	background: #000;
 }
 
+/* Credit for a figure someone outside the author list drew */
+.pub-credit {
+	display: block;
+	margin-top: 0.25rem;
+	font-size: 0.75rem;
+	color: var(--text-mute);
+	text-align: right;
+}
+
 @media (max-width: 620px) {
 	.pubs li.has-thumb { grid-template-columns: 1fr; gap: 0.7rem 0; }
+	.pub-credit { text-align: left; }
 	.pubs li.has-thumb .pub-thumb { grid-column: 1; grid-row: 2; }
 	/* Below the text rather than beside it, so the figure takes the column and
 	   the height cap only has to keep a square one from filling the screen. */

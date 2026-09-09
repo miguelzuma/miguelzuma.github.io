@@ -44,6 +44,9 @@
 #               width, height   intrinsic pixel size, so the browser reserves
 #                       the right shape before the file arrives
 #               alt     describes it; becomes alt= or the video's aria-label
+#               credit  optional. Who made it, when that is someone other than
+#                       the authors of the paper, shown under the thumbnail:
+#                       "Illustration: Maria Berti".
 #               hero    optional, true. The one figure the home page shows in
 #                       full under the cards. At most one featured entry should
 #                       carry it, and its `caption` is what appears there.
@@ -163,6 +166,10 @@
   url: "https://inspirehep.net/literature/2826315"
   authors: "Villarrubia-Rojo, Savastano, Zumalacárregui et al."
   reference: "PRD <strong>111</strong>, 103539 (2025)"
+  blurb: >-
+    Wave-optics amplification for general lenses, computed in milliseconds,
+    which brings diffraction within reach of gravitational-wave parameter
+    estimation.
   links:
     - text: "The code"
       url: "https://glow-astro.org/glow-code.html"
@@ -182,20 +189,30 @@
   url: "https://doi.org/10.1103/dj3k-84v4"
   authors: "Zumalacárregui et al."
   reference: "PRD <strong>112</strong>, 023518 (2025)"
+  blurb: >-
+    Dark energy reconstructed straight from CMB, supernova and DESI BAO data,
+    with no parameterization assumed, prefers evolution away from a
+    cosmological constant at up to 2.4&sigma;.
   badge: "Editors' Suggestion"
   links:
     - text: "AEI highlight"
       url: "https://www.aei.mpg.de/1260854/a-model-independent-reconstruction-of-dark-energy-through-the-universe-s-history"
+    - text: "Nova Gorica highlight"
+      url: "https://ung.si/en/news/news/7007/when-data-lead-the-way-to-unveiling-dark-energy/"
+    - text: "Astrobites"
+      url: "https://astrobites.org/2025/08/30/the-continuing-saga-of-the-not-so-constant-constant/"
   figure:
-    # The illustration from the AEI highlight, which Physical Review D also used
-    # for the Editors' Suggestion. research.html keeps the paper's own
-    # reconstruction plot: the argument wants the data, the archive wants the
-    # picture the result was told with.
+    # Maria Berti's illustration, the one the AEI highlight and the Editors'
+    # Suggestion both ran, rendered from her original in
+    # ~/Dropbox/Projects/completed/2025_DESI_DE_reconstruction/. research.html
+    # keeps the paper's own reconstruction plot: the argument wants the data,
+    # the archive wants the picture the result was told with.
     kind: image
-    src: "/imgs/desi_de_aei_highlight.jpg"
+    src: "/imgs/desi_de_illustration.jpg"
     width: 800
     height: 800
     alt: "Illustration of the dark-energy density as a band running from today back to the cosmic microwave background, widening with redshift, with supernovae and baryon acoustic oscillations marking the epochs that constrain it."
+    credit: "Illustration: Maria Berti"
 
 - id: weak-lensing-structures
   date: 2023-11-22
@@ -204,6 +221,10 @@
   url: "https://inspirehep.net/literature/2667175"
   authors: "Savastano, Tambalo, Villarrubia-Rojo &amp; Zumalacárregui"
   reference: "PRD <strong>108</strong>, 103532 (2023)"
+  blurb: >-
+    Every gravitational wave is at least weakly lensed, and the resulting
+    wave-optics features encode the number, masses, and inner profiles of the
+    halos along the line of sight.
   links:
     - text: "Max Planck Yearbook 2023"
       url: "https://www.mpg.de/21438017/aei_jb_2023"
@@ -215,6 +236,10 @@
   url: "https://inspirehep.net/literature/2617458"
   authors: "Tambalo, Zumalacárregui, Dai &amp; Cheung"
   reference: "PRD <strong>108</strong>, 103529 (2023)"
+  blurb: >-
+    Diffraction and central images in a strongly lensed signal measure the mass
+    of the lens, the slope of its density profile and the size of its core,
+    turning lensed gravitational waves into a test of dark-matter models.
 
 - id: gw-lensing-beyond-gr
   date: 2020-12-01
@@ -223,6 +248,10 @@
   url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.102.124048"
   authors: "Ezquiaga &amp; Zumalacárregui"
   reference: "PRD <strong>102</strong>, 124048 (2020)"
+  blurb: >-
+    In theories beyond Einstein, a lens splits a gravitational wave into
+    eigenstates that propagate at different speeds, producing birefringence,
+    echoes and shadows.
   badge: "Editors' Suggestion"
   links:
     - text: "AEI highlight"
@@ -231,6 +260,15 @@
       url: "https://news.uchicago.edu/story/ripples-space-time-could-provide-clues-missing-components-universe"
     - text: "Forbes"
       url: "https://www.forbes.com/sites/startswithabang/2020/12/24/how-gravitational-waves-might-wind-up-proving-einstein-wrong"
+  figure:
+    # The image Physical Review D ran with the Editors' Suggestion, from
+    # ~/Dropbox/Projects/completed/2020_gw_delay_spatial/publication_files/.
+    # The version without the arXiv number stamped on it.
+    kind: image
+    src: "/imgs/gw_lensing_beyond_gr.png"
+    width: 800
+    height: 800
+    alt: "Two panels: the two polarizations of a lensed gravitational wave arriving with a relative delay, and the detector strain that results, offset from the waveform general relativity predicts."
 
 - id: pbh-sne
   date: 2018-10-01
@@ -239,6 +277,10 @@
   url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.121.141101"
   authors: "Zumalacárregui &amp; Seljak"
   reference: "PRL <strong>121</strong>, 141101 (2018)"
+  blurb: >-
+    The brightnesses of distant type Ia supernovae carry no lensing skew, which
+    limits compact objects above 0.01&nbsp;M<sub>&#9737;</sub> to less than 35%
+    of the matter in the Universe.
   badge: "Editors' Suggestion"
   links:
     - text: "APS Viewpoint"
@@ -263,6 +305,10 @@
   url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.119.251304"
   authors: "Ezquiaga &amp; Zumalacárregui"
   reference: "PRL <strong>119</strong>, 251304 (2017)"
+  blurb: >-
+    The near-simultaneous counterpart of GW170817 fixes the speed of
+    gravitational waves to one part in 10<sup>15</sup>, leaving only three ways
+    for a scalar-tensor theory to modify gravity today.
   badge: "Editors' Suggestion"
   links:
     - text: "APS Viewpoint"
@@ -271,3 +317,11 @@
       url: "https://www.quantamagazine.org/troubled-times-for-alternatives-to-einsteins-theory-of-gravity-20180430/"
     - text: "Wired"
       url: "https://www.wired.com/story/troubled-times-for-alternatives-to-einsteins-theory-of-gravity/"
+  figure:
+    # The diagram Physical Review Letters ran with the Editors' Suggestion,
+    # from ~/Dropbox/Projects/completed/2017_GW and DE/Diagrams/.
+    kind: image
+    src: "/imgs/de_after_gw170817.jpg"
+    width: 1200
+    height: 900
+    alt: "Gravitational-wave speed against redshift for covariant Galileon models, every cosmologically viable one departing from the measured value of one."
