@@ -331,3 +331,53 @@
     height: 226
     alt: "Gravitational waves and light leaving a neutron-star merger and reaching Earth, drawn as two waves crossing a time-dependent scalar field."
     credit: "Illustration: APS/Alan Stonebraker"
+
+- id: gw-speed-fate
+  date: 2017-04-14
+  title: "What an anomalous gravitational-wave speed requires"
+  full_title: "Speed of gravitational waves and the fate of scalar–tensor gravity"
+  url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.95.084029"
+  authors: "Bettoni, Ezquiaga, Hinterbichler &amp; Zumalacárregui"
+  reference: "PRD <strong>95</strong>, 084029 (2017)"
+  blurb: >-
+    We established the necessary conditions for gravitational waves to travel
+    at a speed different than light: the scalar field has to break Lorentz
+    invariance spontaneously and couple to the metric through the Weyl tensor,
+    which is what turns multi-messenger observations into a decisive test of
+    dark energy.
+
+- id: beyond-horndeski
+  date: 2014-03-19
+  title: "Scalar–tensor gravity beyond Horndeski"
+  full_title: "Transforming gravity: from derivative couplings to matter to second-order scalar–tensor theories beyond the Horndeski Lagrangian"
+  url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.89.064046"
+  authors: "Zumalacárregui &amp; García-Bellido"
+  reference: "PRD <strong>89</strong>, 064046 (2014)"
+  blurb: >-
+    A derivative coupling between matter and a scalar field produces healthy
+    theories whose equations of motion are of higher order, previously deemed
+    fatal: the first explicit examples of scalar–tensor gravity beyond
+    Horndeski.
+  figure:
+    # The paper's own map of theory space, and the one figure of it anyone
+    # remembers. research.html runs the same file in the scalar-tensor card,
+    # which is the one place on the site a figure is deliberately shown twice:
+    # there it illustrates the argument, here it identifies the paper.
+    kind: image
+    src: "/imgs/beyond_Horndeski.jpg"
+    width: 3436
+    height: 2417
+    alt: "Hand-drawn map of scalar–tensor theory space, showing labeled regions such as JBD and Horndeski as islands separated by an expanse marked Ostrogradski's Sea."
+
+- id: disformal-screening
+  date: 2012-12-10
+  title: "Disformal screening"
+  full_title: "Screening modifications of gravity through disformally coupled fields"
+  url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.109.241102"
+  authors: "Koivisto, Mota &amp; Zumalacárregui"
+  reference: "PRL <strong>109</strong>, 241102 (2012)"
+  blurb: >-
+    A scalar field coupled to matter through its own gradients switches off its
+    coupling in high-density regions, which keeps it invisible to solar-system
+    tests however strong the coupling, and leaves it free to drive cosmic
+    acceleration: the disformal screening mechanism.
