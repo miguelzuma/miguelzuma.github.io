@@ -51,6 +51,11 @@
 #                       full under the cards. At most one featured entry should
 #                       carry it, and its `caption` is what appears there.
 #               caption required with hero, raw HTML, may carry links
+#   thumb     optional, the same shape as figure (src, width, height, alt and
+#             an optional credit). When present, results.html shows this in
+#             place of the figure. For the entry whose figure is the home
+#             page's hero: the hero is chosen to open the site, and what
+#             identifies a paper in a list is a different picture.
 #
 # The same results are also written by hand on research.html (as .pubs entries
 # inside the argument they belong to) and on outreach.html (as press
@@ -141,6 +146,15 @@
       url: "https://www.aei.mpg.de/1407139/new-method-could-reveal-hidden-supermassive-black-hole-binaries"
     - text: "Oxford press release"
       url: "https://www.physics.ox.ac.uk/news/new-method-could-reveal-hidden-supermassive-black-hole-binaries"
+  # The diagram drawn for the Physical Review Letters editors, from
+  # ~/Dropbox/Projects/binary_smbh_lightcurves/. It is not the paper's Fig. 1,
+  # which is the same argument in three panels of detail: this one states the
+  # result in four labels, which is what a thumbnail can carry.
+  thumb:
+    src: "/imgs/bh_telescopes_editors_diagram.jpg"
+    width: 655
+    height: 541
+    alt: "Diagram: light from a star curves around a pair of orbiting black holes, which also emit a gravitational wave, and arrives as a light curve of repeated sharp peaks."
   # The home page's hero. Its width and height are the video's own 1560x520:
   # the markup this replaced declared 960x540, which reserved the wrong shape
   # and shifted the page as the file arrived.

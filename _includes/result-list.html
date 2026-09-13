@@ -14,6 +14,11 @@
   3:1 strips, and at 200 px a browser's own control bar covers half of one.
   The archive is a list to scan, the animations play at full width on the home
   page and inside research.html, and the alt text says what each one shows.
+
+  An entry may carry a `thumb` instead, of the same shape as `figure`, and
+  then the archive shows that and the figure belongs to the other pages. One
+  entry needs it: its figure is the home page's hero animation, and a poster
+  frame of a hero is not what identifies the paper in a list.
 {%- endcomment -%}
 {%- assign all_results = site.data.results | sort: 'date' | reverse -%}
 {%- assign years = all_results | group_by_exp: 'r', 'r.date | date: "%Y"' -%}
@@ -21,14 +26,15 @@
 <h2 class="results-year" id="year-{{ y.name }}">{{ y.name }}</h2>
 <ul class="pubs pubs-stacked">
   {%- for r in y.items %}
-  <li id="{{ r.id }}"{% if r.figure %} class="has-thumb"{% endif %}>
-    {%- if r.figure %}
+  {%- assign f = r.thumb | default: r.figure %}
+  <li id="{{ r.id }}"{% if f %} class="has-thumb"{% endif %}>
+    {%- if f %}
     <span class="pub-thumb">
-      {%- assign thumb = r.figure.src | default: r.figure.poster %}
-      <img src="{{ thumb | relative_url }}" alt="{{ r.figure.alt }}"
-           width="{{ r.figure.width }}" height="{{ r.figure.height }}" loading="lazy">
-      {%- if r.figure.credit %}
-      <span class="pub-credit">{{ r.figure.credit }}</span>
+      {%- assign thumb = f.src | default: f.poster %}
+      <img src="{{ thumb | relative_url }}" alt="{{ f.alt }}"
+           width="{{ f.width }}" height="{{ f.height }}" loading="lazy">
+      {%- if f.credit %}
+      <span class="pub-credit">{{ f.credit }}</span>
       {%- endif %}
     </span>
     {%- endif %}
