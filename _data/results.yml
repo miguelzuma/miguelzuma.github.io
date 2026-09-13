@@ -174,13 +174,16 @@
     - text: "The code"
       url: "https://glow-astro.org/glow-code.html"
   figure:
-    kind: video
-    poster: "/imgs/sampling_L1_web_dark_still.png"
-    webm: "/imgs/sampling_L1_web_dark.webm"
-    mp4: "/imgs/sampling_L1_web_dark.mp4"
-    width: 1560
-    height: 520
-    alt: "Animation of posterior samples for the lens of GW231123, each shown as the whitened strain template it predicts in LIGO Livingston."
+    # The code's own mark rather than a result computed with it: this entry is
+    # the software, and the sampling animation it used to carry says more about
+    # GW231123 than about GLoW. That animation stays on research.html, inside
+    # the argument it illustrates. Trimmed to the artwork from the primary logo
+    # in the brand kit, the full-colour version drawn for dark backgrounds.
+    kind: image
+    src: "/imgs/glow_code_logo.png"
+    width: 400
+    height: 521
+    alt: "The GLoW logo: a diamond lattice of rounded squares brightening from yellow at the edges to red at the centre, the caustic pattern of a lens, above the name GLoW."
 
 - id: desi-dark-energy
   date: 2025-07-08
