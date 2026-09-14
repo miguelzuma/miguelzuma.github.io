@@ -4,3 +4,4 @@ _cv/build/
 .sass-cache/
 Gemfile.lock
 __pycache__/
+scratchpad/
