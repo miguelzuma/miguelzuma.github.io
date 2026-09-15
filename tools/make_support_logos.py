@@ -37,7 +37,11 @@ SCALE = 2  # serve at twice the CSS height, for high-density screens
 
 # Institutions and funders behind the work today.
 MARKS = [
-    ("ift.png",       "ift_logo.png",                           44, {"whiten": True}),
+    # Negative rather than whiten: the mark is black lettering inside a thin
+    # gold ring, and whitening it wholesale threw the ring away. The ring is
+    # the only colour the strip has on the left, and it is what makes the
+    # mark read as the IFT rather than as three white letters.
+    ("ift.png",       "ift_logo.png",                           44, {"negative": True}),
     ("aei.png",       "MPI-AEI_wide_E_neg_rgb_transparent.png", 32, {"renorm": True}),
     ("erc-eu.png",    "erc_eu_funding_dark.png",                44, {}),
     ("miciu-aei.png", "logo_miciu_aei_dark.png",                32, {}),
