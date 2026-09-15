@@ -287,6 +287,22 @@
     height: 800
     alt: "Two panels: the two polarizations of a lensed gravitational wave arriving with a relative delay, and the detector strain that results, offset from the waveform general relativity predicts."
 
+- id: gravity-at-equality
+  date: 2020-07-14
+  title: "Gravity in the era of equality"
+  full_title: "Gravity in the era of equality: towards solutions to the Hubble problem without fine-tuned initial conditions"
+  url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.102.023523"
+  authors: "Zumalacárregui"
+  reference: "PRD <strong>102</strong>, 023523 (2020)"
+  blurb: >-
+    Two mechanisms in Horndeski gravity raise the expansion rate around
+    matter-radiation equality without the fine-tuned initial conditions early
+    dark energy needs, and the better of them brings the Hubble tension down
+    from 4.4&sigma; to 2.6&sigma;.
+  links:
+    - text: "Cosmology from Home talk"
+      url: "https://youtu.be/MHcLT31gaYQ"
+
 - id: pbh-sne
   date: 2018-10-01
   title: "Compact objects as dark matter, from lensed supernovae"
