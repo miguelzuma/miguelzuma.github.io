@@ -1194,6 +1194,12 @@ h2 + .stage-heading { margin-top: 1.2rem; }
 .logo-row-support a:hover img,
 .logo-row-support a:focus-visible img { opacity: 1; }
 
+/* Undimmed, for a mark whose own colour is already dark against this page.
+   The Max Planck Minerva is thin line art in the society's green, and the
+   0.85 the row applies to hold the white marks back takes it below where it
+   reads. */
+.logo-row-support img.logo-colour { opacity: 1; }
+
 /* The trajectory row below it: the marks keep their colour, so they are held
    back by size and a little transparency rather than by being drained. It is
    allowed to run to two lines. */
@@ -1218,9 +1224,11 @@ h2 + .stage-heading { margin-top: 1.2rem; }
    what is left.
 
    Only once each row fits on one line: on a wrapped row space-between would
-   strand the last mark against the left edge. Each row measures about 770px
-   unstretched, so 840px is where the column stops being able to hold it. */
-@media (min-width: 840px) {
+   strand the last mark against the left edge. The supporters row measures
+   about 810px unstretched, so 880px is where the column stops being able to
+   hold it. The number is tied to the marks: the AEI lockup gained 40px when it
+   changed to the colour version, and the threshold moved with it. */
+@media (min-width: 880px) {
 	.logo-row-support { justify-content: space-between; }
 }
 

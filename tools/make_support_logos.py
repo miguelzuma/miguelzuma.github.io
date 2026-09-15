@@ -42,11 +42,20 @@ MARKS = [
     # the only colour the strip has on the left, and it is what makes the
     # mark read as the IFT rather than as three white letters.
     ("ift.png",       "ift_logo.png",                           44, {"negative": True}),
-    ("aei.png",       "MPI-AEI_wide_E_neg_rgb_transparent.png", 32, {"renorm": True}),
+    # The colour lockup rather than the all-white one: the AEI mark is a
+    # claret square holding a script G, and the negative version paints it
+    # out. Negative keeps the claret and whitens the wordmark and the
+    # Minerva line art beside it. The claret is (195, 18, 72), above the
+    # value this treatment lifts to, so it comes through unchanged.
+    ("aei.png",       "MPI-AEI_wide_E_color_rgb.jpg",           32,
+     {"negative": True, "key_white": True, "crop": "alpha"}),
     ("erc-eu.png",    "erc_eu_funding_dark.png",                44, {}),
     ("miciu-aei.png", "logo_miciu_aei_dark.png",                32, {}),
     ("csic.png",      "logo_csic_dark.png",                     32, {}),
-    ("mpg.png",       "2560px-Max-Planck-Gesellschaft.png",     44, {"whiten": True}),
+    # Not whitened: the source is already transparent and already the
+    # institution's own green, (0, 125, 122), which reads on this
+    # background and is the colour the Max Planck Society draws Minerva in.
+    ("mpg.png",       "2560px-Max-Planck-Gesellschaft.png",     44, {}),
 ]
 
 # The trajectory strip, most recent first. These keep their brand colour: the
