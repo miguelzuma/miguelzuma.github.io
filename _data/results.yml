@@ -63,6 +63,36 @@
 # from here. When a fact changes -- a DOI on publication, a new press link --
 # it has to change in all three.
 
+- id: rosd
+  date: 2026-09-18
+  featured: true
+  title: "An effective description of stellar-field diffraction"
+  full_title: "Effective description of lensed gravitational waves diffracted by stellar fields"
+  url: "https://doi.org/10.1103/d5fx-xgd2"
+  authors: "Zumalacárregui &amp; Shan"
+  reference: "PRD <strong>114</strong>, 063038 (2026)"
+  badge: "Editors' Suggestion"
+  blurb: >-
+    Eight basis modes carry about 95% of the microlensing imprint of a field of
+    stars, putting wave-optics microlensing within reach of parameter
+    estimation.
+  tags:
+    - text: "Stars and remnants"
+      accent: true
+    - text: "reduced-order models"
+  links:
+    - text: "AEI research highlight"
+      url: "https://www.aei.mpg.de/1507473/listening-to-the-stars-beneath-the-waves"
+  # The square image drawn for the Physical Review D editors, from
+  # ~/Dropbox/Projects/microlensing_surrogate/publication_files/editors_suggestion/.
+  # The dark version of the two, which is the one made for this site.
+  figure:
+    kind: image
+    src: "/imgs/rosd_editors_diagram.jpg"
+    width: 800
+    height: 800
+    alt: "Two stacked panels joined by an arrow labelled SVD. Above, the microlensing amplification of many simulated stellar fields, each curve coloured by the magnification of the large lens it sits in, with modulations growing towards high frequency. Below, the handful of smooth basis modes a singular value decomposition extracts from them."
+
 - id: gw231123
   date: 2026-08-25
   featured: true
@@ -100,7 +130,6 @@
 # it replaces said (2025), which was wrong.
 - id: lsd-lisa
   date: 2026-07-01
-  featured: true
   title: "Stochastic diffraction with LISA"
   full_title: "Signatures of 10–10<sup>4</sup>&nbsp;M<sub>&#9737;</sub> dark matter halos in LISA via stochastic diffraction"
   url: "https://inspirehep.net/literature/3180014"

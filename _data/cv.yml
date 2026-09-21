@@ -295,12 +295,18 @@ talks:
 
 languages: "Spanish (native), English (C2), German (C1)."
 
-# The selection from CVA_Zumalacarregui_2026, plus the GW231123 paper published
-# since. Newest first. Citation counts and contribution statements stay in the
-# application documents — this is a website, not a funding form.
+# The selection from CVA_Zumalacarregui_2026, plus the two papers published
+# since: GW231123 and the stellar-field effective description. Newest first.
+# Citation counts and contribution statements stay in the application
+# documents — this is a website, not a funding form.
 #
 # References are copied from the same papers as they appear on research.html.
 selected_publications:
+  - lead: "Effective description of lensed gravitational waves diffracted by stellar fields"
+    lead_url: "https://inspirehep.net/literature/3169257"
+    meta:
+      - "M. Zumalacárregui, X. Shan · Phys. Rev. D 114, 063038 (2026) · Editors' Suggestion"
+
   - lead: "Across the Universe: GW231123 as a magnified and diffracted black hole merger"
     lead_url: "https://inspirehep.net/literature/3094475"
     meta:
