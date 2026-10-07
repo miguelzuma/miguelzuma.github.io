@@ -1,0 +1,12 @@
+# Open calls. The home page shows a highlighted "Positions" button while at
+# least one entry here is open, i.e. its deadline day has not yet ended. With
+# none open the button disappears by itself: at the next site build, and before
+# that in the browser, since the button carries its own expiry date.
+#
+#   id:        anchor of the call's block on the Group page
+#   title:     the call, as named in that block
+#   deadline:  last day to express interest (YYYY-MM-DD)
+
+- id: fpu-2026
+  title: "FPU 2026 PhD fellowship"
+  deadline: 2026-10-18

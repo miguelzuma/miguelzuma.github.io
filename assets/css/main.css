@@ -309,6 +309,36 @@ main { padding-bottom: 3rem; }
 	color: #14101f;
 }
 
+/* Open positions: outlined in the second accent, with a dot that pulses
+   through the same two colours as the news "New" flag. It only exists while a
+   call is open, so the motion always means something. Reduced motion stills
+   it via the global block at the end. */
+.btn-open {
+	border-color: var(--cyan);
+	color: var(--cyan);
+	background: rgba(111, 216, 238, 0.08);
+}
+
+.btn-open:visited { color: var(--cyan); }
+
+.btn-open::before {
+	content: "";
+	display: inline-block;
+	width: 0.5em;
+	height: 0.5em;
+	margin-right: 0.5em;
+	border-radius: 50%;
+	vertical-align: 0.08em;
+	background: var(--cyan);
+	animation: news-pulse 4.5s ease-in-out infinite;
+}
+
+.btn-open:hover, .btn-open:focus-visible {
+	border-color: var(--cyan);
+	color: var(--text);
+	background: rgba(111, 216, 238, 0.16);
+}
+
 /* ---- Cards ----------------------------------------------------------- */
 
 .card {
@@ -364,6 +394,9 @@ main { padding-bottom: 3rem; }
 
 /* A card that spans the whole grid, so an odd count still balances */
 .card-wide { grid-column: 1 / -1; }
+
+/* An open call: the same card, outlined in the accent so it reads first. */
+.card-open { border-color: var(--accent-dim); }
 
 .card-split { display: grid; grid-template-columns: 1fr minmax(240px, 340px); gap: 1.4rem 1.8rem; align-items: center; }
 .card-split > .card-col > :last-child { margin-bottom: 0; }
