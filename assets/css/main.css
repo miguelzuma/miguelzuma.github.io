@@ -309,35 +309,17 @@ main { padding-bottom: 3rem; }
 	color: #14101f;
 }
 
-/* Open positions: outlined in the second accent, with a dot that pulses
-   through the same two colours as the news "New" flag. It only exists while a
-   call is open, so the motion always means something. Reduced motion stills
-   it via the global block at the end. */
-.btn-open {
-	border-color: var(--cyan);
-	color: var(--cyan);
-	background: rgba(111, 216, 238, 0.08);
+/* An open call, under the hero buttons (index.html), as on glow-astro.org: a
+   plain link led by the pulsing News flag, so it stands out from the buttons
+   without competing with them for weight. */
+.hero-call {
+	margin: -0.4rem 0 1.4rem;
+	font-size: 0.95rem;
 }
 
-.btn-open:visited { color: var(--cyan); }
+.hero-call a { font-weight: 550; }
 
-.btn-open::before {
-	content: "";
-	display: inline-block;
-	width: 0.5em;
-	height: 0.5em;
-	margin-right: 0.5em;
-	border-radius: 50%;
-	vertical-align: 0.08em;
-	background: var(--cyan);
-	animation: news-pulse 4.5s ease-in-out infinite;
-}
-
-.btn-open:hover, .btn-open:focus-visible {
-	border-color: var(--cyan);
-	color: var(--text);
-	background: rgba(111, 216, 238, 0.16);
-}
+.hero-call-date { color: var(--text-mute); white-space: nowrap; }
 
 /* ---- Cards ----------------------------------------------------------- */
 

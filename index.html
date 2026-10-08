@@ -28,37 +28,34 @@ description: >-
         <a class="btn btn-primary" href="{{ '/research.html' | relative_url }}">Research program</a>
         <a class="btn" href="{{ '/group.html' | relative_url }}">Group</a>
         <a class="btn" href="{{ site.author.inspire }}" rel="noopener">Publications (INSPIRE)</a>
-        {%- comment -%}
-          Shown only while a call in _data/positions.yml is open. A single open
-          call links straight to its block; several link to the Joining section.
-          data-until is the last deadline: past it, an inline script hides the
-          button even before the next build drops it.
-        {%- endcomment -%}
-        {%- assign today = site.time | date: '%Y%m%d' | plus: 0 -%}
-        {%- assign open_calls = '' | split: '' -%}
-        {%- for p in site.data.positions -%}
-          {%- assign until = p.deadline | date: '%Y%m%d' | plus: 0 -%}
-          {%- if until >= today -%}{%- assign open_calls = open_calls | push: p -%}{%- endif -%}
-        {%- endfor -%}
-        {%- if open_calls.size > 0 -%}
-          {%- assign last = open_calls | sort: 'deadline' | last -%}
-          {%- if open_calls.size == 1 -%}
-            {%- capture positions_href -%}{{ '/group.html' | relative_url }}#{{ open_calls[0].id }}{%- endcapture -%}
-          {%- else -%}
-            {%- capture positions_href -%}{{ '/group.html' | relative_url }}#joining{%- endcapture -%}
-          {%- endif %}
-        <a class="btn btn-open" id="positions-btn" href="{{ positions_href }}"
-           data-until="{{ last.deadline | date: '%Y-%m-%d' }}"
-           title="{% for p in open_calls %}{{ p.title }}, deadline {{ p.deadline | date: '%-d %B %Y' }}{% unless forloop.last %}; {% endunless %}{% endfor %}">Positions</a>
-        <script>
-          (function () {
-            var b = document.getElementById('positions-btn');
-            var end = new Date(b.getAttribute('data-until') + 'T23:59:59');
-            if (new Date() > end) b.remove();
-          })();
-        </script>
-        {%- endif %}
       </div>
+      {%- comment -%}
+        An open call gets its own line under the buttons rather than a fourth
+        button beside them, as on glow-astro.org: it is the one thing here with
+        a deadline, not one more section of the site. It reuses the News flag,
+        pulse and reduced-motion handling included.
+
+        Driven by _data/positions.yml: a call shows while its deadline day has
+        not ended. The build drops the line after that, and data-until lets an
+        inline script hide it in the browser before the next build does.
+      {%- endcomment -%}
+      {%- assign today = site.time | date: '%Y%m%d' | plus: 0 -%}
+      {%- for p in site.data.positions -%}
+      {%- assign until = p.deadline | date: '%Y%m%d' | plus: 0 -%}
+      {%- if until >= today %}
+      <p class="hero-call" data-until="{{ p.deadline | date: '%Y-%m-%d' }}">
+        <a href="{{ '/group.html#' | append: p.id | relative_url }}"><span class="news-flag">Open call</span>{{ p.title }}</a><span class="hero-call-date"> · until {{ p.deadline | date: '%-d %B %Y' }}</span>
+      </p>
+      {%- assign any_call = true -%}
+      {%- endif -%}
+      {%- endfor %}
+      {%- if any_call %}
+      <script>
+        document.querySelectorAll('.hero-call[data-until]').forEach(function (c) {
+          if (new Date() > new Date(c.getAttribute('data-until') + 'T23:59:59')) c.remove();
+        });
+      </script>
+      {%- endif %}
     </div>
     <div class="hero-media">
       {%- comment -%}
