@@ -152,6 +152,15 @@ sections:
 
   <div class="grid grid-2">
 
+    {%- comment -%}
+      Shown only while its entry in _data/positions.yml is open, the same rule
+      as the home page's "Open call" line, so the two come and go together.
+      Kept in the source as a template for the next call.
+    {%- endcomment -%}
+    {%- assign today = site.time | date: '%Y%m%d' | plus: 0 -%}
+    {%- assign call = site.data.positions | where: 'id', 'fpu-2026' | first -%}
+    {%- assign until = call.deadline | date: '%Y%m%d' | plus: 0 -%}
+    {%- if call and until >= today %}
     <article class="card card-wide card-open" id="fpu-2026">
       <h3 class="card-title">FPU 2026 PhD fellowship</h3>
       <p class="card-meta">Expressions of interest by 18 October 2026</p>
@@ -194,6 +203,7 @@ sections:
         <a href="https://www.aei.gob.es/en/ayudas-fpu-2026" rel="noopener">aei.gob.es/en/ayudas-fpu-2026</a>.
       </p>
     </article>
+    {%- endif %}
 
     <article class="card">
       <h3 class="card-title">Funded positions</h3>
