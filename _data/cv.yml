@@ -298,7 +298,8 @@ talks:
 languages: "Spanish (native), English (C2), German (C1)."
 
 # The selection from CVA_Zumalacarregui_2026, plus the two papers published
-# since: GW231123 and the stellar-field effective description. Newest first.
+# since: GW231123 and the stellar-field effective description, less the GLoW
+# code paper (kept at ten; it is on the Software page). Newest first.
 # Citation counts and contribution statements stay in the application
 # documents — this is a website, not a funding form.
 #
@@ -318,11 +319,6 @@ selected_publications:
     lead_url: "https://inspirehep.net/literature/2937368"
     meta:
       - "H. Wang, M. Zumalacárregui, B. Kocsis · Phys. Rev. Lett. 136, 061403 (2026) · Editors' Suggestion"
-
-  - lead: "GLoW: novel methods for wave-optics phenomena in gravitational lensing"
-    lead_url: "https://inspirehep.net/literature/2826315"
-    meta:
-      - "H. Villarrubia-Rojo, S. Savastano, M. Zumalacárregui, L. Choi, S. Goyal, L. Dai, G. Tambalo · Phys. Rev. D 111, 103539 (2025)"
 
   - lead: "Gravitational wave lensing as a probe of halo properties and dark matter"
     lead_url: "https://inspirehep.net/literature/2617458"
