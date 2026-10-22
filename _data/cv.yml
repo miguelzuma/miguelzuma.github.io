@@ -246,10 +246,17 @@ talks:
     meta:
       - "GW231123 as a diffracted and magnified black-hole merger"
 
-  - lead: "Spanish & Portuguese Relativity Meeting"
-    lead_rest: ", Universidad de Murcia, 2026 · plenary"
+  - lead: "Multi-Messenger Lensing Program"
+    lead_rest: ", Lorentz Center, Leiden, 2026 · plenary"
     meta:
-      - "Gravitational lensing of waves: a new window into astrophysics, dark matter and gravity"
+      - "Don't kill the messenger! New phenomena, new challenges, new opportunities"
+
+  - lead: "Universidad Complutense de Madrid"
+    lead_rest: ", IPARCOS, 2026 · institute colloquium"
+    meta:
+      - links:
+          - text: "Gravitational lensing of waves"
+            url: "https://www.youtube.com/watch?v=VsK5Omc99DU"
 
   - lead: "Leibniz Institute for Astrophysics"
     lead_rest: ", Potsdam, 2024 · institute colloquium"
@@ -277,11 +284,6 @@ talks:
     lead_rest: ", University of Oslo, 2021 · institute colloquium"
     meta:
       - "The dark Universe in the era of gravitational-wave astronomy"
-
-  - lead: "Progress in Old and New Themes in Cosmology"
-    lead_rest: ", Palais des Papes, Avignon, 2020 · plenary"
-    meta:
-      - "Tests of gravity with gravitational waves"
 
   - lead: "COSMO"
     lead_rest: ", Aachen University, 2019 · plenary"
