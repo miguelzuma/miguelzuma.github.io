@@ -238,13 +238,12 @@ refereeing: >-
   Physical Review D, Nature Astronomy, JCAP, The Astrophysical Journal and
   Astrophysical Journal Letters.
 
-# Newest year first; within a year, in the order the talks were given (the
-# same order as the CVA).
+# Strictly newest first, by the date of the talk (the same order as the CVA).
 talks:
-  - lead: "IAS and Princeton University"
-    lead_rest: ", gravitational-wave meeting, Princeton, 2026 · seminar"
+  - lead: "Multi-Messenger Lensing Program"
+    lead_rest: ", Lorentz Center, Leiden, 2026 · plenary"
     meta:
-      - "GW231123 as a diffracted and magnified black-hole merger"
+      - "Don't kill the messenger! New phenomena, new challenges, new opportunities"
 
   - lead: "Universidad Complutense de Madrid"
     lead_rest: ", IPARCOS, 2026 · institute colloquium"
@@ -253,20 +252,25 @@ talks:
           - text: "Gravitational lensing of waves"
             url: "https://www.youtube.com/watch?v=VsK5Omc99DU"
 
-  - lead: "Multi-Messenger Lensing Program"
-    lead_rest: ", Lorentz Center, Leiden, 2026 · plenary"
+  - lead: "IAS and Princeton University"
+    lead_rest: ", gravitational-wave meeting, Princeton, 2026 · seminar"
     meta:
-      - "Don't kill the messenger! New phenomena, new challenges, new opportunities"
+      - "GW231123 as a diffracted and magnified black-hole merger"
+
+  - lead: "Leibniz Institute for Astrophysics"
+    lead_rest: ", Potsdam, 2024 · institute colloquium"
+    meta:
+      - "Gravitational lensing of waves"
 
   - lead: "New Frontiers in Strong Gravity"
     lead_rest: ", Benasque, 2024 · plenary"
     meta:
       - "Wave-optical phenomena in gravitational-wave lensing"
 
-  - lead: "Leibniz Institute for Astrophysics"
-    lead_rest: ", Potsdam, 2024 · institute colloquium"
+  - lead: "Workshop on Tensions in Cosmology"
+    lead_rest: ", Corfu, 2022 · plenary"
     meta:
-      - "Gravitational lensing of waves"
+      - "Towards solutions to the Hubble problem beyond Einstein's gravity"
 
   - lead: "EuCAPT Annual Symposium"
     lead_rest: ", CERN, 2022 · plenary review"
@@ -274,11 +278,6 @@ talks:
       - links:
           - text: "Dark energy and tests of gravity with cosmology and gravitational-wave propagation"
             url: "https://cds.cern.ch/record/2810852"
-
-  - lead: "Workshop on Tensions in Cosmology"
-    lead_rest: ", Corfu, 2022 · plenary"
-    meta:
-      - "Towards solutions to the Hubble problem beyond Einstein's gravity"
 
   - lead: "Institute of Theoretical Astrophysics"
     lead_rest: ", University of Oslo, 2021 · institute colloquium"
