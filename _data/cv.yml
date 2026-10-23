@@ -267,11 +267,6 @@ talks:
     meta:
       - "Wave-optical phenomena in gravitational-wave lensing"
 
-  - lead: "Workshop on Tensions in Cosmology"
-    lead_rest: ", Corfu, 2022 · plenary"
-    meta:
-      - "Towards solutions to the Hubble problem beyond Einstein's gravity"
-
   - lead: "EuCAPT Annual Symposium"
     lead_rest: ", CERN, 2022 · plenary review"
     meta:
@@ -283,6 +278,11 @@ talks:
     lead_rest: ", University of Oslo, 2021 · institute colloquium"
     meta:
       - "The dark Universe in the era of gravitational-wave astronomy"
+
+  - lead: "Progress on Old and New Themes in Cosmology"
+    lead_rest: ", Avignon (online), 2020 · plenary"
+    meta:
+      - "Tests of gravity with gravitational waves"
 
   - lead: "COSMO"
     lead_rest: ", Aachen University, 2019 · plenary"
