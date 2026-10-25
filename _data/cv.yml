@@ -267,17 +267,17 @@ talks:
     meta:
       - "Wave-optical phenomena in gravitational-wave lensing"
 
+  - lead: "VIII Meeting on Fundamental Cosmology"
+    lead_rest: ", Granada, 2022 · plenary"
+    meta:
+      - "Gravitational-wave lensing and fundamental physics"
+
   - lead: "EuCAPT Annual Symposium"
     lead_rest: ", CERN, 2022 · plenary review"
     meta:
       - links:
           - text: "Dark energy and tests of gravity with cosmology and gravitational-wave propagation"
             url: "https://cds.cern.ch/record/2810852"
-
-  - lead: "Institute of Theoretical Astrophysics"
-    lead_rest: ", University of Oslo, 2021 · institute colloquium"
-    meta:
-      - "The dark Universe in the era of gravitational-wave astronomy"
 
   - lead: "Progress on Old and New Themes in Cosmology"
     lead_rest: ", Avignon (online), 2020 · plenary"
