@@ -10,7 +10,8 @@
 #   lead_url   makes the headline a link instead
 #   lead_em    italic clause after the headline, preceded by a comma
 #   lead_rest  continuation of the headline, in ordinary weight
-#   amount     funding amount, appended to the headline in the PDF only
+#   amount     funding amount, appended to the headline in the PDF only. A
+#              meta line given as `text` can carry its own `amount` too.
 #   meta       list of quieter lines under it. Each is either a plain string,
 #              or `text` plus `links` when part of it should be a link:
 #
@@ -248,11 +249,12 @@ funding:
             url: "https://glow-astro.org/"
 
   - lead: "Ramón y Cajal Fellowship"
-    lead_rest: ", ranked 2nd in Physics"
-    amount: "100,000 € and 225,000 €"
+    lead_rest: ", ranked 2nd in Physics · IFT-UAM/CSIC · 2026–"
     meta:
-      - "Atracción de Talento award and CSIC RyC-MaX excellence funding"
-      - "Spanish Research Agency and CSIC · IFT-UAM/CSIC · 2026–"
+      - text: "Atracción de Talento award · Agencia Estatal de Investigación"
+        amount: "100,000 €"
+      - text: "RyC-MaX excellence funding · CSIC"
+        amount: "225,000 €"
 
   - lead: "Max Planck Society Annual Project"
     lead_rest: ", With Einstein on Crooked Paths"

@@ -26,6 +26,7 @@ but a newline left in the template survives, and LaTeX reads it as a space.
     {%- if forloop.first %}{% else %} $\cdot${% endif %}
     \href{ {{- url -}} }{ {%- include tex-escape.html s=l.text -%} }
   {%- endfor -%}
+  {%- if m.amount %}{% assign am = ' · ' | append: m.amount %}{% include tex-escape.html s=am %}{% endif -%}
 {%- else -%}
   {%- include tex-escape.html s=m -%}
 {%- endif -%}
