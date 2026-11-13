@@ -17,7 +17,7 @@ but a newline left in the template survives, and LaTeX reads it as a space.
 {%- else %}\textbf{ {%- include tex-escape.html s=e.lead -%} }{% endif %}
 {%- if e.lead_em %}, \emph{ {%- include tex-escape.html s=e.lead_em -%} }{% endif %}
 {%- if e.lead_rest %}{% include tex-escape.html s=e.lead_rest %}{% endif %}
-{%- for m in e.meta %}\\[0.1em]{\small\color{soft}
+{%- for m in e.meta %}\\*[0.1em]{\small\color{soft}
 {%- if m.text or m.links -%}
   {%- if m.text %}{% include tex-escape.html s=m.text %}{% endif -%}
   {%- for l in m.links -%}

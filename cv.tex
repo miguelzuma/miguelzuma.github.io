@@ -42,8 +42,9 @@ sitemap: false
 \titleformat{\subsection}{\normalfont\normalsize\bfseries}{}{0pt}{}
 \titlespacing*{\subsection}{0pt}{1.1em}{0.35em}
 
+% An entry never splits across a page: its meta lines stay with the headline.
 \newenvironment{entries}
-  {\begin{itemize}[leftmargin=1.1em,itemsep=0.32em,parsep=0pt,topsep=0.3em]}
+  {\begin{itemize}[leftmargin=1.1em,itemsep=0.32em,parsep=0pt,topsep=0.3em]\interlinepenalty=10000}
   {\end{itemize}}
 \newenvironment{plainlist}
   {\begin{itemize}[leftmargin=1.1em,itemsep=0.2em,parsep=0pt,topsep=0.3em]}
@@ -69,7 +70,7 @@ sitemap: false
 {\small\color{soft}
 The publication record is maintained on
 \href{ {{- site.author.inspire -}} }{INSPIRE-HEP}; research
-\href{ {{- '/projects.html' | absolute_url -}} }{projects and funding} are listed on the website.}
+\href{ {{- '/projects.html' | absolute_url -}} }{projects} are described on the website.}
 
 % ------------------------------------------------------------- positions ----
 \section{Positions}
@@ -145,12 +146,19 @@ than formally supervised, are listed at
 {%- for e in site.data.cv.teaching_courses %}{% include tex-entry.html e=e %}{% endfor %}
 \end{entries}
 
+% --------------------------------------------------------------- funding ----
+\section{Funding}
+\begin{entries}
+{%- for e in site.data.cv.funding %}{% include tex-entry.html e=e %}{% endfor %}
+\end{entries}
+
 % ---------------------------------------------------------------- awards ----
-\section{Awards and fellowships}
+% Awards marked `funding` are already in the Funding section above.
+\section{Other awards and fellowships}
 \begin{plainlist}
-{%- for a in site.data.cv.awards %}
-  \item {% include tex-escape.html s=a %}
-{%- endfor %}
+{%- for a in site.data.cv.awards %}{% unless a.funding %}{% assign at = a.text | default: a %}
+  \item {% include tex-escape.html s=at %}
+{%- endunless %}{% endfor %}
 \end{plainlist}
 
 % ----------------------------------------------------------- peer review ----

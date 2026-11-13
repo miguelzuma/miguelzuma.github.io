@@ -211,16 +211,77 @@ teaching_courses:
 # Competitive awards and fellowships. The funded programs also appear on the
 # Projects page with their scope and dates; here they are listed as awards.
 # No amounts — this is a website, not a funding form.
+#
+# An award given as `text` with `funding: true` is also in the `funding` list
+# below, so the PDF, which has a Funding section, leaves it out here.
 awards:
-  - "ERC Consolidator Grant (2025): GLOW, Gravitational Lensing of Waves."
-  - "Ramón y Cajal Fellowship (2024 call, awarded 2025)."
-  - "Max Planck Society Annual Project (2024): With Einstein on Crooked Paths."
+  - text: "ERC Consolidator Grant (2025): GLOW, Gravitational Lensing of Waves."
+    funding: true
+  - text: "Ramón y Cajal Fellowship (2024 call, awarded 2025)."
+    funding: true
+  - text: "Max Planck Society Annual Project (2024): With Einstein on Crooked Paths."
+    funding: true
   - "R3 certification, Spanish Research Agency."
   - "Berkeley Connect Fellow, UC Berkeley (2018)."
-  - "Marie Skłodowska-Curie Global Fellowship (2015)."
+  - text: "Marie Skłodowska-Curie Global Fellowship (2015)."
+    funding: true
   - "Nordita Fellowship (2015)."
   - "Yggdrasil Fellowship (2011): research stay at ITA Oslo."
-  - "FPI doctoral fellowship (2008) and UAM Master's scholarship (2007)."
+  - text: "FPI doctoral fellowship (2008)."
+    funding: true
+  - "UAM Master's scholarship (2007)."
+
+# Funding, for the PDF only: the website has the Projects page instead.
+# Amounts as in the Overleaf CV, per grant and with no grand total. The MPI
+# group's core funding carries no amount: it is institutional, not a grant.
+funding:
+  - lead: "ERC Consolidator Grant"
+    lead_rest: ", GLOW: Gravitational Lensing of Waves · 2,185,007 €"
+    meta:
+      - "Principal Investigator · European Research Council · 2026–2031"
+      - text: "Project site:"
+        links:
+          - text: "glow-astro.org"
+            url: "https://glow-astro.org/"
+
+  - lead: "Ramón y Cajal Fellowship"
+    lead_rest: ", ranked 2nd in Physics"
+    meta:
+      - "Atracción de Talento award, 100,000 € · CSIC RyC-MaX excellence funding, 225,000 €"
+      - "Spanish Research Agency and CSIC · IFT-UAM/CSIC · 2026–"
+
+  - lead: "Max Planck Society Annual Project"
+    lead_rest: ", With Einstein on Crooked Paths · 286,940 €"
+    meta:
+      - "Principal Investigator · funded by philanthropic donations · 2024–"
+
+  - lead: "Group Leader core funding"
+    lead_rest: ", Max Planck Institute for Gravitational Physics"
+    meta:
+      - "Five years of funding from the Astrophysical and Cosmological Relativity division for the group: two postdocs and one PhD student · 2020–"
+
+  - lead: "Workshop funding"
+    lead_rest: ", Lensing and Wave Optics in Strong Gravity · 12,000 €"
+    meta:
+      - "Erwin Schrödinger Institute, Vienna · 2024"
+
+  - lead: "Marie Skłodowska-Curie Global Fellowship"
+    lead_rest: ", NLO-CO · 264,668 €"
+    meta:
+      - "European Commission · UC Berkeley and IPhT Saclay · 2015–2020"
+
+  - lead: "FPI doctoral fellowship"
+    lead_rest: " · 54,816 €, and 14,550 € for research stays"
+    meta:
+      - "Spanish Ministry of Science · stays in Heidelberg and Oslo · 2008–2012"
+
+  - lead: "Senior collaborator"
+    lead_rest: ", GWSky ERC Synergy Grant"
+    meta:
+      - "Making Sense of the Gravitational-Wave Sky · lensing of gravitational waves"
+
+  - lead: "Host of externally funded fellows"
+    lead_rest: ": two Humboldt Fellowships (2022, 2025) and one Margarita Salas Fellowship (2022)"
 
 panels:
   - "NASA Hubble Fellowship Program, Physics and Cosmology panel."

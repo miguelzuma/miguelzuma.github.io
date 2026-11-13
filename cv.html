@@ -90,7 +90,7 @@ sections:
   <h2>Awards and fellowships</h2>
   <ul>
     {%- for a in cv.awards %}
-    <li>{{ a | escape_once }}</li>
+    <li>{{ a.text | default: a | escape_once }}</li>
     {%- endfor %}
   </ul>
   <p class="small">
