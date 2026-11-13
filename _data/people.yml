@@ -115,6 +115,20 @@ current:
     years: "2026"
     topic: "Gravitational-wave propagation beyond general relativity."
 
+  - name: "Luis Rodríguez de la Iglesia"
+    sortkey: "rodriguez de la iglesia"
+    stage: masters
+    role: "Master's student, UAM"
+    years: "2026"
+    topic: "Diffraction of gravitational waves by dark-matter ultracompact minihalos."
+
+  - name: "Luis Bermejo Lumbreras"
+    sortkey: "bermejo lumbreras"
+    stage: masters
+    role: "Master's student, UAM"
+    years: "2026"
+    topic: "Simulation-based inference for wave-optics lensing, with DINGO."
+
 visitors:
   - name: "Macarena Lagos"
     sortkey: "lagos"
