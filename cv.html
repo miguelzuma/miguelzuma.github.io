@@ -9,7 +9,7 @@ lede: >-
   on the Group page.
 description: >-
   Curriculum vitae of Miguel Zumalacárregui: positions, education, scientific
-  coordination, workshops organized, teaching, awards and peer-review service.
+  coordination, workshops organized, teaching, funding, awards and peer-review service.
 sections:
   - id: positions
     label: "Positions"
@@ -21,6 +21,8 @@ sections:
     label: "Workshops"
   - id: teaching
     label: "Teaching"
+  - id: funding
+    label: "Funding"
   - id: awards
     label: "Awards"
   - id: peer-review
@@ -86,17 +88,24 @@ sections:
   </ul>
 </section>
 
-<section class="section" id="awards">
-  <h2>Awards and fellowships</h2>
-  <ul>
-    {%- for a in cv.awards %}
-    <li>{{ a.text | default: a | escape_once }}</li>
-    {%- endfor %}
+<section class="section" id="funding">
+  <h2>Funding</h2>
+  <ul class="pubs">
+    {%- for e in cv.funding %}{% include cv-entry.html e=e %}{% endfor %}
   </ul>
   <p class="small">
-    Funding awards are listed on the
-    <a href="{{ '/projects.html' | relative_url }}">Projects &amp; Funding</a> page.
+    The scope of each project is described on the
+    <a href="{{ '/projects.html' | relative_url }}">Projects</a> page.
   </p>
+</section>
+
+<section class="section" id="awards">
+  <h2>Other awards and fellowships</h2>
+  <ul>
+    {%- for a in cv.awards %}{% unless a.funding %}
+    <li>{{ a.text | default: a | escape_once }}</li>
+    {%- endunless %}{% endfor %}
+  </ul>
 </section>
 
 <section class="section" id="peer-review">

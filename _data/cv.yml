@@ -10,6 +10,7 @@
 #   lead_url   makes the headline a link instead
 #   lead_em    italic clause after the headline, preceded by a comma
 #   lead_rest  continuation of the headline, in ordinary weight
+#   amount     funding amount, appended to the headline in the PDF only
 #   meta       list of quieter lines under it. Each is either a plain string,
 #              or `text` plus `links` when part of it should be a link:
 #
@@ -213,7 +214,7 @@ teaching_courses:
 # No amounts — this is a website, not a funding form.
 #
 # An award given as `text` with `funding: true` is also in the `funding` list
-# below, so the PDF, which has a Funding section, leaves it out here.
+# below, so both the page and the PDF leave it out here.
 awards:
   - text: "ERC Consolidator Grant (2025): GLOW, Gravitational Lensing of Waves."
     funding: true
@@ -231,12 +232,14 @@ awards:
     funding: true
   - "UAM Master's scholarship (2007)."
 
-# Funding, for the PDF only: the website has the Projects page instead.
-# Amounts as in the Overleaf CV, per grant and with no grand total. The MPI
-# group's core funding carries no amount: it is institutional, not a grant.
+# Funding, on the page and in the PDF. `amount` is appended to the headline in
+# the PDF only: the page links to the Projects page instead. Amounts as in the
+# Overleaf CV, per grant and with no grand total. The MPI group's core funding
+# carries no amount: it is institutional, not a grant.
 funding:
   - lead: "ERC Consolidator Grant"
-    lead_rest: ", GLOW: Gravitational Lensing of Waves · 2,185,007 €"
+    lead_rest: ", GLOW: Gravitational Lensing of Waves"
+    amount: "2,185,007 €"
     meta:
       - "Principal Investigator · European Research Council · 2026–2031"
       - text: "Project site:"
@@ -246,12 +249,14 @@ funding:
 
   - lead: "Ramón y Cajal Fellowship"
     lead_rest: ", ranked 2nd in Physics"
+    amount: "100,000 € and 225,000 €"
     meta:
-      - "Atracción de Talento award, 100,000 € · CSIC RyC-MaX excellence funding, 225,000 €"
+      - "Atracción de Talento award and CSIC RyC-MaX excellence funding"
       - "Spanish Research Agency and CSIC · IFT-UAM/CSIC · 2026–"
 
   - lead: "Max Planck Society Annual Project"
-    lead_rest: ", With Einstein on Crooked Paths · 286,940 €"
+    lead_rest: ", With Einstein on Crooked Paths"
+    amount: "286,940 €"
     meta:
       - "Principal Investigator · funded by philanthropic donations · 2024–"
 
@@ -262,17 +267,19 @@ funding:
       - "Two postdocs and one PhD student"
 
   - lead: "Workshop funding"
-    lead_rest: ", Lensing and Wave Optics in Strong Gravity · 12,000 €"
+    lead_rest: ", Lensing and Wave Optics in Strong Gravity"
+    amount: "12,000 €"
     meta:
       - "Erwin Schrödinger Institute, Vienna · 2024"
 
   - lead: "Marie Skłodowska-Curie Global Fellowship"
-    lead_rest: ", NLO-CO · 264,668 €"
+    lead_rest: ", NLO-CO"
+    amount: "264,668 €"
     meta:
       - "European Commission · UC Berkeley and IPhT Saclay · 2015–2020"
 
   - lead: "FPI doctoral fellowship"
-    lead_rest: " · 54,816 €, and 14,550 € for research stays"
+    amount: "54,816 € and 14,550 € for research stays"
     meta:
       - "Spanish Ministry of Science · stays in Heidelberg and Oslo · 2008–2012"
 
