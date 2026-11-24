@@ -14,6 +14,20 @@
 # record. Past a dozen or so, this wants an archive page rather than a longer
 # home page.
 
+- date: 2026-11-12
+  text: >-
+    Euclid released DR1 Foundation, its first major data release, including a
+    catalog of around 15,000 strong-lens candidates. I commented in the AEI
+    press release on how the catalog will help to identify lensed
+    gravitational waves.
+  links:
+    - text: "AEI press release"
+      url: "https://www.aei.mpg.de/1525988/euclid-lays-the-foundation-for-its-best-ever-3d-map-of-the-universe"
+    - text: "ESA announcement"
+      url: "https://www.esa.int/articles/about-us/directorates/science/euclid/euclid-lays-the-foundation-for-its-best-ever-3d-map-of-the-universe"
+    - text: "strong-lens catalog"
+      url: "https://euclid-eclipse-lenses.org/"
+
 - date: 2026-09-18
   text: >-
     Our effective description of gravitational waves diffracted by fields of
